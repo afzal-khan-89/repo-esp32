@@ -16,6 +16,8 @@
 
 #include "code_wifi.h"
 
+#include "tcp_server.h"
+
 static const char *TAG = "esp32-cam Webserver";
 
 #define PART_BOUNDARY "123456789000000000000987654321"
@@ -209,7 +211,9 @@ void app_main()
         printf("err: %s\n", esp_err_to_name(err));
         return;
     }
-    setup_server();
+    //setup_server();
+
+    TcpServer_Init();
 
     ESP_LOGI(TAG, "ESP32 CAM Web Server is up and running\n");
 

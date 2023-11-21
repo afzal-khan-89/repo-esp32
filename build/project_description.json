@@ -1,7 +1,7 @@
 {
     "version":            "1",
     "project_name":       "camera_example",
-    "project_version":    "ed07ff3-dirty",
+    "project_version":    "fbb6251-dirty",
     "project_path":       "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton",
     "idf_path":           "/home/afzal-khan/esp/esp-idf",
     "build_dir":          "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build",
@@ -519,7 +519,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [ "esp32-camera" ],
             "file": "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/main/camera_main.c", "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/main/code_wifi.c" ],
+            "sources": [ "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/main/camera_main.c", "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/main/code_wifi.c", "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/main/tcp_server.c" ],
             "include_dirs": []
         },
         "mbedtls": {
