@@ -6656,6 +6656,659 @@
                     {
                         "children": [
                             {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "SPIRAM",
+                                        "help": null,
+                                        "id": "SPIRAM_MODE_QUAD",
+                                        "name": "SPIRAM_MODE_QUAD",
+                                        "range": null,
+                                        "title": null,
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [
+                                            {
+                                                "children": [],
+                                                "depends_on": "<choice SPIRAM_TYPE>",
+                                                "help": null,
+                                                "id": "SPIRAM_TYPE_AUTO",
+                                                "name": "SPIRAM_TYPE_AUTO",
+                                                "range": null,
+                                                "title": "Auto-detect",
+                                                "type": "bool"
+                                            },
+                                            {
+                                                "children": [],
+                                                "depends_on": "<choice SPIRAM_TYPE>",
+                                                "help": null,
+                                                "id": "SPIRAM_TYPE_ESPPSRAM16",
+                                                "name": "SPIRAM_TYPE_ESPPSRAM16",
+                                                "range": null,
+                                                "title": "ESP-PSRAM16 or APS1604",
+                                                "type": "bool"
+                                            },
+                                            {
+                                                "children": [],
+                                                "depends_on": "<choice SPIRAM_TYPE>",
+                                                "help": null,
+                                                "id": "SPIRAM_TYPE_ESPPSRAM32",
+                                                "name": "SPIRAM_TYPE_ESPPSRAM32",
+                                                "range": null,
+                                                "title": "ESP-PSRAM32",
+                                                "type": "bool"
+                                            },
+                                            {
+                                                "children": [],
+                                                "depends_on": "<choice SPIRAM_TYPE>",
+                                                "help": null,
+                                                "id": "SPIRAM_TYPE_ESPPSRAM64",
+                                                "name": "SPIRAM_TYPE_ESPPSRAM64",
+                                                "range": null,
+                                                "title": "ESP-PSRAM64 or LY68L6400",
+                                                "type": "bool"
+                                            }
+                                        ],
+                                        "depends_on": "SPIRAM",
+                                        "help": null,
+                                        "id": "component-config-esp-psram-support-for-external-spi-connected-ram-spi-ram-config-type-of-spi-ram-chip-in-use",
+                                        "name": "SPIRAM_TYPE",
+                                        "title": "Type of SPI RAM chip in use",
+                                        "type": "choice"
+                                    },
+                                    {
+                                        "children": [
+                                            {
+                                                "children": [],
+                                                "depends_on": "<choice SPIRAM_SPEED>",
+                                                "help": null,
+                                                "id": "SPIRAM_SPEED_40M",
+                                                "name": "SPIRAM_SPEED_40M",
+                                                "range": null,
+                                                "title": "40MHz clock speed",
+                                                "type": "bool"
+                                            },
+                                            {
+                                                "children": [],
+                                                "depends_on": "ESPTOOLPY_FLASHFREQ_80M && <choice SPIRAM_SPEED>",
+                                                "help": null,
+                                                "id": "SPIRAM_SPEED_80M",
+                                                "name": "SPIRAM_SPEED_80M",
+                                                "range": null,
+                                                "title": "80MHz clock speed",
+                                                "type": "bool"
+                                            }
+                                        ],
+                                        "depends_on": "SPIRAM",
+                                        "help": "Select the speed for the SPI RAM chip.\nIf SPI RAM is enabled, we only support three combinations of SPI speed mode we supported now:\n\n1. Flash SPI running at 40Mhz and RAM SPI running at 40Mhz\n2. Flash SPI running at 80Mhz and RAM SPI running at 40Mhz\n3. Flash SPI running at 80Mhz and RAM SPI running at 80Mhz\n\nNote: If the third mode(80Mhz+80Mhz) is enabled for SPI RAM of type 32MBit, one of the HSPI/VSPI host\nwill be occupied by the system. Which SPI host to use can be selected by the config item\nSPIRAM_OCCUPY_SPI_HOST. Application code should never touch HSPI/VSPI hardware in this case. The\noption to select 80MHz will only be visible if the flash SPI speed is also 80MHz.\n(ESPTOOLPY_FLASHFREQ_80M is true)",
+                                        "id": "component-config-esp-psram-support-for-external-spi-connected-ram-spi-ram-config-set-ram-clock-speed",
+                                        "name": "SPIRAM_SPEED",
+                                        "title": "Set RAM clock speed",
+                                        "type": "choice"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "SPIRAM",
+                                        "help": null,
+                                        "id": "SPIRAM_SPEED",
+                                        "name": "SPIRAM_SPEED",
+                                        "range": null,
+                                        "title": null,
+                                        "type": "int"
+                                    },
+                                    {
+                                        "children": [
+                                            {
+                                                "children": [],
+                                                "depends_on": "SPIRAM_BOOT_INIT && !SPIRAM_ALLOW_BSS_SEG_EXTERNAL_MEMORY && SPIRAM",
+                                                "help": "Normally, if psram initialization is enabled during compile time but not found at runtime, it\nis seen as an error making the CPU panic. If this is enabled, booting will complete\nbut no PSRAM will be available.",
+                                                "id": "SPIRAM_IGNORE_NOTFOUND",
+                                                "name": "SPIRAM_IGNORE_NOTFOUND",
+                                                "range": null,
+                                                "title": "Ignore PSRAM when not found",
+                                                "type": "bool"
+                                            }
+                                        ],
+                                        "depends_on": "SPIRAM",
+                                        "help": "If this is enabled, the SPI RAM will be enabled during initial boot. Unless you\nhave specific requirements, you'll want to leave this enabled so memory allocated\nduring boot-up can also be placed in SPI RAM.",
+                                        "id": "SPIRAM_BOOT_INIT",
+                                        "name": "SPIRAM_BOOT_INIT",
+                                        "range": null,
+                                        "title": "Initialize SPI RAM during startup",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [
+                                            {
+                                                "children": [],
+                                                "depends_on": "<choice SPIRAM_USE>",
+                                                "help": null,
+                                                "id": "SPIRAM_USE_MEMMAP",
+                                                "name": "SPIRAM_USE_MEMMAP",
+                                                "range": null,
+                                                "title": "Integrate RAM into memory map",
+                                                "type": "bool"
+                                            },
+                                            {
+                                                "children": [],
+                                                "depends_on": "<choice SPIRAM_USE>",
+                                                "help": null,
+                                                "id": "SPIRAM_USE_CAPS_ALLOC",
+                                                "name": "SPIRAM_USE_CAPS_ALLOC",
+                                                "range": null,
+                                                "title": "Make RAM allocatable using heap_caps_malloc(..., MALLOC_CAP_SPIRAM)",
+                                                "type": "bool"
+                                            },
+                                            {
+                                                "children": [],
+                                                "depends_on": "<choice SPIRAM_USE>",
+                                                "help": null,
+                                                "id": "SPIRAM_USE_MALLOC",
+                                                "name": "SPIRAM_USE_MALLOC",
+                                                "range": null,
+                                                "title": "Make RAM allocatable using malloc() as well",
+                                                "type": "bool"
+                                            }
+                                        ],
+                                        "depends_on": "SPIRAM",
+                                        "help": "The SPI RAM can be accessed in multiple methods: by just having it available as an unmanaged\nmemory region in the CPU's memory map, by integrating it in the heap as 'special' memory\nneeding heap_caps_malloc to allocate, or by fully integrating it making malloc() also able to\nreturn SPI RAM pointers.",
+                                        "id": "component-config-esp-psram-support-for-external-spi-connected-ram-spi-ram-config-spi-ram-access-method",
+                                        "name": "SPIRAM_USE",
+                                        "title": "SPI RAM access method",
+                                        "type": "choice"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "SPIRAM_BOOT_INIT && SPIRAM",
+                                        "help": "Runs a rudimentary memory test on initialization. Aborts when memory test fails. Disable this for\nslightly faster startup.",
+                                        "id": "SPIRAM_MEMTEST",
+                                        "name": "SPIRAM_MEMTEST",
+                                        "range": null,
+                                        "title": "Run memory test on SPI RAM initialization",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "SPIRAM_USE_MALLOC && SPIRAM",
+                                        "help": "If malloc() is capable of also allocating SPI-connected ram, its allocation strategy will prefer to\nallocate chunks less than this size in internal memory, while allocations larger than this will be\ndone from external RAM. If allocation from the preferred region fails, an attempt is made to allocate\nfrom the non-preferred region instead, so malloc() will not suddenly fail when either internal or\nexternal memory is full.",
+                                        "id": "SPIRAM_MALLOC_ALWAYSINTERNAL",
+                                        "name": "SPIRAM_MALLOC_ALWAYSINTERNAL",
+                                        "range": [
+                                            0,
+                                            131072
+                                        ],
+                                        "title": "Maximum malloc() size, in bytes, to always put in internal memory",
+                                        "type": "int"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "(SPIRAM_USE_CAPS_ALLOC || SPIRAM_USE_MALLOC) && SPIRAM",
+                                        "help": "Try to allocate memories of WiFi and LWIP in SPIRAM firstly. If failed, try to allocate internal\nmemory then.",
+                                        "id": "SPIRAM_TRY_ALLOCATE_WIFI_LWIP",
+                                        "name": "SPIRAM_TRY_ALLOCATE_WIFI_LWIP",
+                                        "range": null,
+                                        "title": "Try to allocate memories of WiFi and LWIP in SPIRAM firstly. If failed, allocate internal memory",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "SPIRAM_USE_MALLOC && SPIRAM",
+                                        "help": "Because the external/internal RAM allocation strategy is not always perfect, it sometimes may happen\nthat the internal memory is entirely filled up. This causes allocations that are specifically done in\ninternal memory, for example the stack for new tasks or memory to service DMA or have memory that's\nalso available when SPI cache is down, to fail. This option reserves a pool specifically for requests\nlike that; the memory in this pool is not given out when a normal malloc() is called.\n\nSet this to 0 to disable this feature.\n\nNote that because FreeRTOS stacks are forced to internal memory, they will also use this memory pool;\nbe sure to keep this in mind when adjusting this value.\n\nNote also that the DMA reserved pool may not be one single contiguous memory region, depending on the\nconfigured size and the static memory usage of the app.",
+                                        "id": "SPIRAM_MALLOC_RESERVE_INTERNAL",
+                                        "name": "SPIRAM_MALLOC_RESERVE_INTERNAL",
+                                        "range": [
+                                            0,
+                                            262144
+                                        ],
+                                        "title": "Reserve this amount of bytes for data that specifically needs to be in DMA or internal memory",
+                                        "type": "int"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "SPIRAM && SPIRAM",
+                                        "help": "If enabled, variables with EXT_RAM_BSS_ATTR attribute will be placed in SPIRAM instead of internal DRAM.\nBSS section of `lwip`, `net80211`, `pp`, `bt` libraries will be automatically placed\nin SPIRAM. BSS sections from other object files and libraries can also be placed in SPIRAM through\nlinker fragment scheme `extram_bss`.\n\nNote that the variables placed in SPIRAM using EXT_RAM_BSS_ATTR will be zero initialized.",
+                                        "id": "SPIRAM_ALLOW_BSS_SEG_EXTERNAL_MEMORY",
+                                        "name": "SPIRAM_ALLOW_BSS_SEG_EXTERNAL_MEMORY",
+                                        "range": null,
+                                        "title": "Allow .bss segment placed in external memory",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "SPIRAM && IDF_TARGET_ESP32 && SPIRAM",
+                                        "help": "If enabled, noinit variables can be placed in PSRAM using EXT_RAM_NOINIT_ATTR.\n\nNote the values placed into this section will not be initialized at startup and should keep its value\nafter software restart.",
+                                        "id": "SPIRAM_ALLOW_NOINIT_SEG_EXTERNAL_MEMORY",
+                                        "name": "SPIRAM_ALLOW_NOINIT_SEG_EXTERNAL_MEMORY",
+                                        "range": null,
+                                        "title": "Allow .noinit segment placed in external memory",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "SPIRAM_MODE_OCT && IDF_TARGET_ESP32S3 && SPIRAM",
+                                        "help": "Enable MSPI Error-Correcting Code function when accessing SPIRAM.\n\nIf enabled, 1/16 of the SPI RAM total size will be reserved for error-correcting code.",
+                                        "id": "SPIRAM_ECC_ENABLE",
+                                        "name": "SPIRAM_ECC_ENABLE",
+                                        "range": null,
+                                        "title": "Enable SPI RAM ECC",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "(SPIRAM_USE_MEMMAP || SPIRAM_USE_CAPS_ALLOC || SPIRAM_USE_MALLOC) && ESP32_REV_MIN_FULL < 300 && SPIRAM",
+                                        "help": "Revision 1 of the ESP32 has a bug that can cause a write to PSRAM not to take place in some situations\nwhen the cache line needs to be fetched from external RAM and an interrupt occurs. This enables a\nfix in the compiler (-mfix-esp32-psram-cache-issue) that makes sure the specific code that is\nvulnerable to this will not be emitted.\n\nThis will also not use any bits of newlib that are located in ROM, opting for a version that is\ncompiled with the workaround and located in flash instead.\n\nThe workaround is not required for ESP32 revision 3 and above.",
+                                        "id": "SPIRAM_CACHE_WORKAROUND",
+                                        "name": "SPIRAM_CACHE_WORKAROUND",
+                                        "range": null,
+                                        "title": "Enable workaround for bug in SPI RAM cache for Rev1 ESP32s",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [
+                                            {
+                                                "children": [
+                                                    {
+                                                        "children": [],
+                                                        "depends_on": "<choice SPIRAM_CACHE_WORKAROUND_STRATEGY>",
+                                                        "help": null,
+                                                        "id": "SPIRAM_CACHE_WORKAROUND_STRATEGY_MEMW",
+                                                        "name": "SPIRAM_CACHE_WORKAROUND_STRATEGY_MEMW",
+                                                        "range": null,
+                                                        "title": "Insert memw after vulnerable instructions (default)",
+                                                        "type": "bool"
+                                                    },
+                                                    {
+                                                        "children": [],
+                                                        "depends_on": "<choice SPIRAM_CACHE_WORKAROUND_STRATEGY>",
+                                                        "help": null,
+                                                        "id": "SPIRAM_CACHE_WORKAROUND_STRATEGY_DUPLDST",
+                                                        "name": "SPIRAM_CACHE_WORKAROUND_STRATEGY_DUPLDST",
+                                                        "range": null,
+                                                        "title": "Duplicate LD/ST for 32-bit, memw for 8/16 bit",
+                                                        "type": "bool"
+                                                    },
+                                                    {
+                                                        "children": [],
+                                                        "depends_on": "<choice SPIRAM_CACHE_WORKAROUND_STRATEGY>",
+                                                        "help": null,
+                                                        "id": "SPIRAM_CACHE_WORKAROUND_STRATEGY_NOPS",
+                                                        "name": "SPIRAM_CACHE_WORKAROUND_STRATEGY_NOPS",
+                                                        "range": null,
+                                                        "title": "Insert nops between vulnerable loads/stores (old strategy, obsolete)",
+                                                        "type": "bool"
+                                                    }
+                                                ],
+                                                "depends_on": "SPIRAM_CACHE_WORKAROUND && SPIRAM",
+                                                "help": "Select the workaround strategy. Note that the strategy for precompiled\nlibraries (libgcc, newlib, bt, wifi) is not affected by this selection.\n\nUnless you know you need a different strategy, it's suggested you stay\nwith the default MEMW strategy. Note that DUPLDST can interfere with hardware\nencryption and this will be automatically disabled if this workaround is selected.\n'Insert nops' is the workaround that was used in older esp-idf versions. This workaround\nstill can cause faulty data transfers from/to SPI RAM in some situation.",
+                                                "id": "component-config-esp-psram-support-for-external-spi-connected-ram-spi-ram-config-spiram-cache-workaround-debugging-workaround-strategy",
+                                                "name": "SPIRAM_CACHE_WORKAROUND_STRATEGY",
+                                                "title": "Workaround strategy",
+                                                "type": "choice"
+                                            },
+                                            {
+                                                "children": [],
+                                                "depends_on": "SPIRAM",
+                                                "help": null,
+                                                "id": "SPIRAM_WORKAROUND_NEED_VOLATILE_SPINLOCK",
+                                                "name": "SPIRAM_WORKAROUND_NEED_VOLATILE_SPINLOCK",
+                                                "range": null,
+                                                "title": null,
+                                                "type": "bool"
+                                            }
+                                        ],
+                                        "depends_on": "SPIRAM",
+                                        "id": "component-config-esp-psram-support-for-external-spi-connected-ram-spi-ram-config-spiram-cache-workaround-debugging",
+                                        "title": "SPIRAM cache workaround debugging",
+                                        "type": "menu"
+                                    },
+                                    {
+                                        "children": [
+                                            {
+                                                "children": [],
+                                                "depends_on": "SPIRAM_CACHE_WORKAROUND && SPIRAM",
+                                                "help": "The functions affected by this option are: longjmp and setjmp.\nPutting these function in IRAM will allow them to be called when flash cache is disabled\nbut it will also reduce the available size of free IRAM for the user application.",
+                                                "id": "SPIRAM_CACHE_LIBJMP_IN_IRAM",
+                                                "name": "SPIRAM_CACHE_LIBJMP_IN_IRAM",
+                                                "range": null,
+                                                "title": "Put libc's jump related functions in IRAM",
+                                                "type": "bool"
+                                            },
+                                            {
+                                                "children": [],
+                                                "depends_on": "SPIRAM_CACHE_WORKAROUND && SPIRAM",
+                                                "help": "The functions affected by this option are: abs, div, labs, ldiv, quorem, fpclassify,\nand nan.\nPutting these function in IRAM will allow them to be called when flash cache is disabled\nbut it will also reduce the available size of free IRAM for the user application.",
+                                                "id": "SPIRAM_CACHE_LIBMATH_IN_IRAM",
+                                                "name": "SPIRAM_CACHE_LIBMATH_IN_IRAM",
+                                                "range": null,
+                                                "title": "Put libc's math related functions in IRAM",
+                                                "type": "bool"
+                                            },
+                                            {
+                                                "children": [],
+                                                "depends_on": "SPIRAM_CACHE_WORKAROUND && SPIRAM",
+                                                "help": "The functions affected by this option are: utoa, itoa, atoi, atol, strtol, and strtoul.\nPutting these function in IRAM will allow them to be called when flash cache is disabled\nbut it will also reduce the available size of free IRAM for the user application.",
+                                                "id": "SPIRAM_CACHE_LIBNUMPARSER_IN_IRAM",
+                                                "name": "SPIRAM_CACHE_LIBNUMPARSER_IN_IRAM",
+                                                "range": null,
+                                                "title": "Put libc's number parsing related functions in IRAM",
+                                                "type": "bool"
+                                            },
+                                            {
+                                                "children": [],
+                                                "depends_on": "SPIRAM_CACHE_WORKAROUND && SPIRAM",
+                                                "help": "The functions affected by this option are: wcrtomb, fvwrite, wbuf, wsetup, fputwc, wctomb_r,\nungetc, makebuf, fflush, refill, and sccl.\nPutting these function in IRAM will allow them to be called when flash cache is disabled\nbut it will also reduce the available size of free IRAM for the user application.",
+                                                "id": "SPIRAM_CACHE_LIBIO_IN_IRAM",
+                                                "name": "SPIRAM_CACHE_LIBIO_IN_IRAM",
+                                                "range": null,
+                                                "title": "Put libc's I/O related functions in IRAM",
+                                                "type": "bool"
+                                            },
+                                            {
+                                                "children": [],
+                                                "depends_on": "SPIRAM_CACHE_WORKAROUND && SPIRAM",
+                                                "help": "The functions affected by this option are: asctime, asctime_r, ctime, ctime_r, lcltime, lcltime_r,\ngmtime, gmtime_r, strftime, mktime, tzset_r, tzset, time, gettzinfo, systimes, month_lengths,\ntimelocal, tzvars, tzlock, tzcalc_limits, and strptime.\nPutting these function in IRAM will allow them to be called when flash cache is disabled\nbut it will also reduce the available size of free IRAM for the user application.",
+                                                "id": "SPIRAM_CACHE_LIBTIME_IN_IRAM",
+                                                "name": "SPIRAM_CACHE_LIBTIME_IN_IRAM",
+                                                "range": null,
+                                                "title": "Put libc's time related functions in IRAM",
+                                                "type": "bool"
+                                            },
+                                            {
+                                                "children": [],
+                                                "depends_on": "SPIRAM_CACHE_WORKAROUND && SPIRAM",
+                                                "help": "The functions affected by this option are: ctype_, toupper, tolower, toascii, strupr, bzero,\nisalnum, isalpha, isascii, isblank, iscntrl, isdigit, isgraph, islower, isprint, ispunct,\nisspace, and isupper.\nPutting these function in IRAM will allow them to be called when flash cache is disabled\nbut it will also reduce the available size of free IRAM for the user application.",
+                                                "id": "SPIRAM_CACHE_LIBCHAR_IN_IRAM",
+                                                "name": "SPIRAM_CACHE_LIBCHAR_IN_IRAM",
+                                                "range": null,
+                                                "title": "Put libc's characters related functions in IRAM",
+                                                "type": "bool"
+                                            },
+                                            {
+                                                "children": [],
+                                                "depends_on": "SPIRAM_CACHE_WORKAROUND && SPIRAM",
+                                                "help": "The functions affected by this option are: memccpy, memchr memmove, and memrchr.\nPutting these function in IRAM will allow them to be called when flash cache is disabled\nbut it will also reduce the available size of free IRAM for the user application.",
+                                                "id": "SPIRAM_CACHE_LIBMEM_IN_IRAM",
+                                                "name": "SPIRAM_CACHE_LIBMEM_IN_IRAM",
+                                                "range": null,
+                                                "title": "Put libc's memory related functions in IRAM",
+                                                "type": "bool"
+                                            },
+                                            {
+                                                "children": [],
+                                                "depends_on": "SPIRAM_CACHE_WORKAROUND && SPIRAM",
+                                                "help": "The functions affected by this option are: strcasecmp, strcasestr, strchr, strcoll,\nstrcpy, strcspn, strdup, strdup_r, strlcat, strlcpy, strlen, strlwr, strncasecmp,\nstrncat, strncmp, strncpy, strndup, strndup_r, strrchr, strsep, strspn, strstr,\nstrtok_r, and strupr.\nPutting these function in IRAM will allow them to be called when flash cache is disabled\nbut it will also reduce the available size of free IRAM for the user application.",
+                                                "id": "SPIRAM_CACHE_LIBSTR_IN_IRAM",
+                                                "name": "SPIRAM_CACHE_LIBSTR_IN_IRAM",
+                                                "range": null,
+                                                "title": "Put libc's string related functions in IRAM",
+                                                "type": "bool"
+                                            },
+                                            {
+                                                "children": [],
+                                                "depends_on": "SPIRAM_CACHE_WORKAROUND && SPIRAM",
+                                                "help": "The functions affected by this option are: srand, rand, and rand_r.\nPutting these function in IRAM will allow them to be called when flash cache is disabled\nbut it will also reduce the available size of free IRAM for the user application.",
+                                                "id": "SPIRAM_CACHE_LIBRAND_IN_IRAM",
+                                                "name": "SPIRAM_CACHE_LIBRAND_IN_IRAM",
+                                                "range": null,
+                                                "title": "Put libc's random related functions in IRAM",
+                                                "type": "bool"
+                                            },
+                                            {
+                                                "children": [],
+                                                "depends_on": "SPIRAM_CACHE_WORKAROUND && SPIRAM",
+                                                "help": "The functions affected by this option are: environ, envlock, and getenv_r.\nPutting these function in IRAM will allow them to be called when flash cache is disabled\nbut it will also reduce the available size of free IRAM for the user application.",
+                                                "id": "SPIRAM_CACHE_LIBENV_IN_IRAM",
+                                                "name": "SPIRAM_CACHE_LIBENV_IN_IRAM",
+                                                "range": null,
+                                                "title": "Put libc's environment related functions in IRAM",
+                                                "type": "bool"
+                                            },
+                                            {
+                                                "children": [],
+                                                "depends_on": "SPIRAM_CACHE_WORKAROUND && SPIRAM",
+                                                "help": "The functions affected by this option are: lock, isatty, fclose, open, close, creat, read,\nrshift, sbrk, stdio, syssbrk, sysclose, sysopen, creat, sysread, syswrite, impure, fwalk,\nand findfp.\nPutting these function in IRAM will allow them to be called when flash cache is disabled\nbut it will also reduce the available size of free IRAM for the user application.",
+                                                "id": "SPIRAM_CACHE_LIBFILE_IN_IRAM",
+                                                "name": "SPIRAM_CACHE_LIBFILE_IN_IRAM",
+                                                "range": null,
+                                                "title": "Put libc's file related functions in IRAM",
+                                                "type": "bool"
+                                            },
+                                            {
+                                                "children": [],
+                                                "depends_on": "SPIRAM_CACHE_WORKAROUND && SPIRAM",
+                                                "help": "The functions affected by this option are: raise and system\nPutting these function in IRAM will allow them to be called when flash cache is disabled\nbut it will also reduce the available size of free IRAM for the user application.",
+                                                "id": "SPIRAM_CACHE_LIBMISC_IN_IRAM",
+                                                "name": "SPIRAM_CACHE_LIBMISC_IN_IRAM",
+                                                "range": null,
+                                                "title": "Put libc's miscellaneous functions in IRAM, see help",
+                                                "type": "bool"
+                                            }
+                                        ],
+                                        "depends_on": "SPIRAM",
+                                        "id": "component-config-esp-psram-support-for-external-spi-connected-ram-spi-ram-config-spiram-workaround-libraries-placement",
+                                        "title": "SPIRAM workaround libraries placement",
+                                        "type": "menu"
+                                    },
+                                    {
+                                        "children": [
+                                            {
+                                                "children": [],
+                                                "depends_on": "SPIRAM_BANKSWITCH_ENABLE && SPIRAM",
+                                                "help": "Select the amount of banks reserved for bank switching. Note that the amount of RAM allocatable with\nmalloc/esp_heap_alloc_caps will decrease by 32K for each page reserved here.\n\nNote that this reservation is only actually done if your program actually uses the himem API. Without\nany himem calls, the reservation is not done and the original amount of memory will be available\nto malloc/esp_heap_alloc_caps.",
+                                                "id": "SPIRAM_BANKSWITCH_RESERVE",
+                                                "name": "SPIRAM_BANKSWITCH_RESERVE",
+                                                "range": [
+                                                    1,
+                                                    62
+                                                ],
+                                                "title": "Amount of 32K pages to reserve for bank switching",
+                                                "type": "int"
+                                            }
+                                        ],
+                                        "depends_on": "(SPIRAM_USE_MEMMAP || SPIRAM_USE_CAPS_ALLOC || SPIRAM_USE_MALLOC) && SPIRAM",
+                                        "help": "The ESP32 only supports 4MiB of external RAM in its address space. The hardware does support larger\nmemories, but these have to be bank-switched in and out of this address space. Enabling this allows you\nto reserve some MMU pages for this, which allows the use of the esp_himem api to manage these banks.\n\n#Note that this is limited to 62 banks, as esp_psram_extram_writeback_cache needs some kind of mapping of\n#some banks below that mark to work. We cannot at this moment guarantee this to exist when himem is\n#enabled.\n\nIf spiram 2T mode is enabled, the size of 64Mbit psram will be changed as 32Mbit, so himem will be\nunusable.",
+                                        "id": "SPIRAM_BANKSWITCH_ENABLE",
+                                        "name": "SPIRAM_BANKSWITCH_ENABLE",
+                                        "range": null,
+                                        "title": "Enable bank switching for >4MiB external RAM",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "SPIRAM_USE_MALLOC && SPIRAM",
+                                        "help": "Because some bits of the ESP32 code environment cannot be recompiled with the cache workaround,\nnormally tasks cannot be safely run with their stack residing in external memory; for this reason\nxTaskCreate (and related task creaton functions) always allocate stack in internal memory and\nxTaskCreateStatic will check if the memory passed to it is in internal memory. If you have a task that\nneeds a large amount of stack and does not call on ROM code in any way (no direct calls, but also no\nBluetooth/WiFi), you can try enable this to cause xTaskCreateStatic to allow tasks stack in external\nmemory.",
+                                        "id": "SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY",
+                                        "name": "SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY",
+                                        "range": null,
+                                        "title": "Allow external memory as an argument to xTaskCreateStatic",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [
+                                            {
+                                                "children": [],
+                                                "depends_on": "<choice SPIRAM_OCCUPY_SPI_HOST>",
+                                                "help": null,
+                                                "id": "SPIRAM_OCCUPY_HSPI_HOST",
+                                                "name": "SPIRAM_OCCUPY_HSPI_HOST",
+                                                "range": null,
+                                                "title": "HSPI host (SPI2)",
+                                                "type": "bool"
+                                            },
+                                            {
+                                                "children": [],
+                                                "depends_on": "<choice SPIRAM_OCCUPY_SPI_HOST>",
+                                                "help": null,
+                                                "id": "SPIRAM_OCCUPY_VSPI_HOST",
+                                                "name": "SPIRAM_OCCUPY_VSPI_HOST",
+                                                "range": null,
+                                                "title": "VSPI host (SPI3)",
+                                                "type": "bool"
+                                            },
+                                            {
+                                                "children": [],
+                                                "depends_on": "<choice SPIRAM_OCCUPY_SPI_HOST>",
+                                                "help": null,
+                                                "id": "SPIRAM_OCCUPY_NO_HOST",
+                                                "name": "SPIRAM_OCCUPY_NO_HOST",
+                                                "range": null,
+                                                "title": "Will not try to use any host, will abort if not able to use the PSRAM",
+                                                "type": "bool"
+                                            }
+                                        ],
+                                        "depends_on": "SPIRAM_SPEED_80M && SPIRAM",
+                                        "help": "When both flash and PSRAM is working under 80MHz, and the PSRAM is of type 32MBit, one of the HSPI/VSPI\nhost will be used to output the clock. Select which one to use here.",
+                                        "id": "component-config-esp-psram-support-for-external-spi-connected-ram-spi-ram-config-spi-host-to-use-for-32mbit-psram",
+                                        "name": "SPIRAM_OCCUPY_SPI_HOST",
+                                        "title": "SPI host to use for 32MBit PSRAM",
+                                        "type": "choice"
+                                    },
+                                    {
+                                        "children": [
+                                            {
+                                                "children": [],
+                                                "depends_on": "SPIRAM && SPIRAM",
+                                                "help": "The PSRAM CLOCK IO can be any unused GPIO, user can config it based on hardware design. If user use\n1.8V flash and 1.8V psram, this value can only be one of 6, 7, 8, 9, 10, 11, 16, 17.\n\nIf configured to the same pin as Flash, PSRAM shouldn't be rev0. Contact Espressif for more\ninformation.",
+                                                "id": "D0WD_PSRAM_CLK_IO",
+                                                "name": "D0WD_PSRAM_CLK_IO",
+                                                "range": [
+                                                    0,
+                                                    33
+                                                ],
+                                                "title": "PSRAM CLK IO number",
+                                                "type": "int"
+                                            },
+                                            {
+                                                "children": [],
+                                                "depends_on": "SPIRAM && SPIRAM",
+                                                "help": "The PSRAM CS IO can be any unused GPIO, user can config it based on hardware design. If user use\n1.8V flash and 1.8V psram, this value can only be one of 6, 7, 8, 9, 10, 11, 16, 17.",
+                                                "id": "D0WD_PSRAM_CS_IO",
+                                                "name": "D0WD_PSRAM_CS_IO",
+                                                "range": [
+                                                    0,
+                                                    33
+                                                ],
+                                                "title": "PSRAM CS IO number",
+                                                "type": "int"
+                                            }
+                                        ],
+                                        "depends_on": "SPIRAM",
+                                        "id": "component-config-esp-psram-support-for-external-spi-connected-ram-spi-ram-config-psram-clock-and-cs-io-for-esp32-dowd",
+                                        "title": "PSRAM clock and cs IO for ESP32-DOWD",
+                                        "type": "menu"
+                                    },
+                                    {
+                                        "children": [
+                                            {
+                                                "children": [],
+                                                "depends_on": "SPIRAM && SPIRAM",
+                                                "help": "User can config it based on hardware design. For ESP32-D2WD chip, the psram can only be 1.8V psram,\nso this value can only be one of 6, 7, 8, 9, 10, 11, 16, 17.\n\nIf configured to the same pin (GPIO6) as Flash, PSRAM shouldn't be rev0. Contact Espressif for more\ninformation.",
+                                                "id": "D2WD_PSRAM_CLK_IO",
+                                                "name": "D2WD_PSRAM_CLK_IO",
+                                                "range": [
+                                                    0,
+                                                    33
+                                                ],
+                                                "title": "PSRAM CLK IO number",
+                                                "type": "int"
+                                            },
+                                            {
+                                                "children": [],
+                                                "depends_on": "SPIRAM && SPIRAM",
+                                                "help": "User can config it based on hardware design. For ESP32-D2WD chip, the psram can only be 1.8V psram,\nso this value can only be one of 6, 7, 8, 9, 10, 11, 16, 17.",
+                                                "id": "D2WD_PSRAM_CS_IO",
+                                                "name": "D2WD_PSRAM_CS_IO",
+                                                "range": [
+                                                    0,
+                                                    33
+                                                ],
+                                                "title": "PSRAM CS IO number",
+                                                "type": "int"
+                                            }
+                                        ],
+                                        "depends_on": "SPIRAM",
+                                        "id": "component-config-esp-psram-support-for-external-spi-connected-ram-spi-ram-config-psram-clock-and-cs-io-for-esp32-d2wd",
+                                        "title": "PSRAM clock and cs IO for ESP32-D2WD",
+                                        "type": "menu"
+                                    },
+                                    {
+                                        "children": [
+                                            {
+                                                "children": [],
+                                                "depends_on": "SPIRAM && SPIRAM",
+                                                "help": "The PSRAM CS IO can be any unused GPIO, user can config it based on hardware design.\n\nFor ESP32-PICO chip, the psram share clock with flash, so user do not need to configure the clock\nIO.\nFor the reference hardware design, please refer to\nhttps://www.espressif.com/sites/default/files/documentation/esp32-pico-d4_datasheet_en.pdf",
+                                                "id": "PICO_PSRAM_CS_IO",
+                                                "name": "PICO_PSRAM_CS_IO",
+                                                "range": [
+                                                    0,
+                                                    33
+                                                ],
+                                                "title": "PSRAM CS IO number",
+                                                "type": "int"
+                                            }
+                                        ],
+                                        "depends_on": "SPIRAM",
+                                        "id": "component-config-esp-psram-support-for-external-spi-connected-ram-spi-ram-config-psram-clock-and-cs-io-for-esp32-pico-d4",
+                                        "title": "PSRAM clock and cs IO for ESP32-PICO-D4",
+                                        "type": "menu"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "IDF_TARGET_ESP32 && (ESPTOOLPY_FLASHMODE_DIO || ESPTOOLPY_FLASHMODE_DOUT) && SPIRAM",
+                                        "help": "This setting is only used if the SPI flash pins have been overridden by setting the eFuses\nSPI_PAD_CONFIG_xxx, and the SPI flash mode is DIO or DOUT.\n\nWhen this is the case, the eFuse config only defines 3 of the 4 Quad I/O data pins. The WP pin (aka\nESP32 pin \"SD_DATA_3\" or SPI flash pin \"IO2\") is not specified in eFuse. The psram only has QPI\nmode, so a WP pin setting is necessary.\n\nIf this config item is set to N (default), the correct WP pin will be automatically used for any\nEspressif chip or module with integrated flash. If a custom setting is needed, set this config item\nto Y and specify the GPIO number connected to the WP pin.\n\nWhen flash mode is set to QIO or QOUT, the PSRAM WP pin will be set the same as the SPI Flash WP pin\nconfigured in the bootloader.",
+                                        "id": "SPIRAM_CUSTOM_SPIWP_SD3_PIN",
+                                        "name": "SPIRAM_CUSTOM_SPIWP_SD3_PIN",
+                                        "range": null,
+                                        "title": "Use custom SPI PSRAM WP(SD3) Pin when flash pins set in eFuse (read help)",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "IDF_TARGET_ESP32 && (ESPTOOLPY_FLASHMODE_DIO || ESPTOOLPY_FLASHMODE_DOUT) && SPIRAM",
+                                        "help": "The option \"Use custom SPI PSRAM WP(SD3) pin\" must be set or this value is ignored\n\nIf burning a customized set of SPI flash pins in eFuse and using DIO or DOUT mode for flash, set this\nvalue to the GPIO number of the SPIRAM WP pin.",
+                                        "id": "SPIRAM_SPIWP_SD3_PIN",
+                                        "name": "SPIRAM_SPIWP_SD3_PIN",
+                                        "range": null,
+                                        "title": "Custom SPI PSRAM WP(SD3) Pin",
+                                        "type": "int"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "SPIRAM && SPIRAM",
+                                        "help": "Enable this option to fix single bit errors inside 64Mbit PSRAM.\n\nSome 64Mbit PSRAM chips have a hardware issue in the RAM which causes bit errors at multiple\nfixed bit positions.\n\nNote: If this option is enabled, the 64Mbit PSRAM chip will appear to be 32Mbit in size.\nApplications will not be affected unless the use the esp_himem APIs, which are not supported\nin 2T mode.",
+                                        "id": "SPIRAM_2T_MODE",
+                                        "name": "SPIRAM_2T_MODE",
+                                        "range": null,
+                                        "title": "Enable SPI PSRAM 2T mode",
+                                        "type": "bool"
+                                    }
+                                ],
+                                "depends_on": "SPIRAM",
+                                "id": "component-config-esp-psram-support-for-external-spi-connected-ram-spi-ram-config",
+                                "title": "SPI RAM config",
+                                "type": "menu"
+                            }
+                        ],
+                        "depends_on": null,
+                        "help": "This enables support for an external SPI RAM chip, connected in parallel with the\nmain SPI flash chip.",
+                        "id": "SPIRAM",
+                        "name": "SPIRAM",
+                        "range": null,
+                        "title": "Support for external, SPI-connected RAM",
+                        "type": "bool"
+                    }
+                ],
+                "depends_on": null,
+                "id": "component-config-esp-psram",
+                "title": "ESP PSRAM",
+                "type": "menu"
+            },
+            {
+                "children": [
+                    {
+                        "children": [
+                            {
                                 "children": [],
                                 "depends_on": "RINGBUF_PLACE_FUNCTIONS_INTO_FLASH",
                                 "help": "Place ISR ringbuf functions (like xRingbufferSendFromISR/xRingbufferReceiveFromISR) into flash.\nThis frees up IRAM, but the functions can no longer be called when the cache is disabled\nor from an IRAM interrupt context.\n\nThis option is not compatible with ESP-IDF drivers which are configured to\nrun the ISR from an IRAM context, e.g. CONFIG_UART_ISR_IN_IRAM.",
@@ -7906,7 +8559,10 @@
                         "help": "Set the number of WiFi static TX buffers. Each buffer takes approximately 1.6KB of RAM.\nThe static RX buffers are allocated when esp_wifi_init() is called, they are not released\nuntil esp_wifi_deinit() is called.\n\nFor each transmitted data frame from the higher layer TCP/IP stack, the WiFi driver makes a\ncopy of it in a TX buffer.  For some applications especially UDP applications, the upper\nlayer can deliver frames faster than WiFi layer can transmit. In these cases, we may run out\nof TX buffers.",
                         "id": "ESP32_WIFI_STATIC_TX_BUFFER_NUM",
                         "name": "ESP32_WIFI_STATIC_TX_BUFFER_NUM",
-                        "range": null,
+                        "range": [
+                            1,
+                            64
+                        ],
                         "title": "Max number of WiFi static TX buffers",
                         "type": "int"
                     },
@@ -7916,7 +8572,10 @@
                         "help": "Set the number of WiFi cache TX buffer number.\n\nFor each TX packet from uplayer, such as LWIP etc, WiFi driver needs to allocate a static TX\nbuffer and makes a copy of uplayer packet. If WiFi driver fails to allocate the static TX buffer,\nit caches the uplayer packets to a dedicated buffer queue, this option is used to configure the\nsize of the cached TX queue.",
                         "id": "ESP32_WIFI_CACHE_TX_BUFFER_NUM",
                         "name": "ESP32_WIFI_CACHE_TX_BUFFER_NUM",
-                        "range": null,
+                        "range": [
+                            16,
+                            128
+                        ],
                         "title": "Max number of WiFi cache TX buffers",
                         "type": "int"
                     },
@@ -7926,10 +8585,7 @@
                         "help": "Set the number of WiFi dynamic TX buffers. The size of each dynamic TX buffer is not fixed,\nit depends on the size of each transmitted data frame.\n\nFor each transmitted frame from the higher layer TCP/IP stack, the WiFi driver makes a copy\nof it in a TX buffer. For some applications, especially UDP applications, the upper layer\ncan deliver frames faster than WiFi layer can transmit. In these cases, we may run out of TX\nbuffers.",
                         "id": "ESP32_WIFI_DYNAMIC_TX_BUFFER_NUM",
                         "name": "ESP32_WIFI_DYNAMIC_TX_BUFFER_NUM",
-                        "range": [
-                            1,
-                            128
-                        ],
+                        "range": null,
                         "title": "Max number of WiFi dynamic TX buffers",
                         "type": "int"
                     },

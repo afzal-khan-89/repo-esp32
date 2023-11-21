@@ -163,16 +163,16 @@ void wifi_init(void) {
     
 
 
-    WIFI_INIT();
-    STA_INIT_IP("System-Teton", "tet09System", "192.168.1.52", "192.168.1.1", "255.255.255.0");
-    WIFI_START(WIFI_MODE_STA);
+    // WIFI_INIT();
+    // STA_INIT_IP("System-Teton", "tet09System", "192.168.1.52", "192.168.1.1", "255.255.255.0");
+    // WIFI_START(WIFI_MODE_STA);
     
 
-    /*
+    
     WIFI_INIT();
-    AP_INIT("wifi_ssid","password");
+    AP_INIT("attila","pass1234");
     WIFI_START(WIFI_MODE_AP); // WIFI_MODE_APSTA | WIFI_MODE_STA | WIFI_MODE_AP
-    */
+    
 }
 
 

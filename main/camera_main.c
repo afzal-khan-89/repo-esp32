@@ -9,6 +9,7 @@
 #include "esp_timer.h"
 #include "camera_pins.h"
 #include "esp_wifi.h"
+#include "esp_spi_flash.h"
 
 #include <inttypes.h>
 #include "esp_log.h"
@@ -130,19 +131,59 @@ esp_err_t jpg_stream_httpd_handler(httpd_req_t *req){
     return res;
 }
 
-httpd_uri_t uri_get = {
-    .uri = "/",
-    .method = HTTP_GET,
-    .handler = jpg_stream_httpd_handler,
-    .user_ctx = NULL};
+static esp_err_t demo_handler(httpd_req_t *req)
+{
+    char *response_message = "<!DOCTYPE html>\
+<html>\
+<head>\
+<style>\
+.button {\
+  border: none;\
+  color: white;\
+  padding: 15px 32px;\
+  text-align: center;\
+  text-decoration: none;\
+  display: inline-block;\
+  font-size: 16px;\
+  margin: 4px 2px;\
+  cursor: pointer;\
+}\
+\
+.button1 {background-color: #4CAF50;} \
+.button2 {background-color: #008CBA;} \
+</style>\
+</head>\
+<body>\
+\
+<h1>Teton Electronics Ltd.</h1>\
+<p>Ble Mesh Switching </p>\
+\
+<button class=\"button button1\" onclick=\"window.location.href='http://192.168.1.52/node-1';\" >NODE-1</button>\
+<button class=\"button button2\" onclick=\"window.location.href='http://192.168.1.52/node-2';\" >NODE-2</button>\
+\
+</body>\
+</html>\
+";
+    httpd_resp_send(req, response_message, HTTPD_RESP_USE_STRLEN);
+    return ESP_OK;
+}
+
 httpd_handle_t setup_server(void)
 {
     httpd_config_t config = HTTPD_DEFAULT_CONFIG();
     httpd_handle_t stream_httpd  = NULL;
 
+
+    httpd_uri_t uri_get = {
+        .uri = "/",
+        .method = HTTP_GET,
+        .handler = jpg_stream_httpd_handler,
+        .user_ctx = NULL};
+
     if (httpd_start(&stream_httpd , &config) == ESP_OK)
     {
         httpd_register_uri_handler(stream_httpd , &uri_get);
+        ESP_LOGI(TAG, "web server initialized .... ");
     }
 
     return stream_httpd;
@@ -150,6 +191,7 @@ httpd_handle_t setup_server(void)
 
 void app_main()
 {
+    ESP_LOGI(TAG, "ESP32 CAM Web Server .......\n");
     esp_err_t err;
 
     // Initialize NVS
