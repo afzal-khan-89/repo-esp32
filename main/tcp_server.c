@@ -27,9 +27,12 @@ From menuconfig, serial port that ESP32 is connected to must be chosen.
 #include "freertos/event_groups.h"
 #include "esp_system.h"
 #include "esp_wifi.h"
-#include "esp_event_loop.h"
+//#include "esp_event_loop.h"
 #include "esp_log.h"
 // #include "nvs_flash.h"
+
+#include "esp_camera.h"
+#include "esp_timer.h"
 
 #include "lwip/err.h"
 #include "lwip/sockets.h"
@@ -66,9 +69,9 @@ static const char *TAG_STA = "wifi station";
 static const char *TAG_AP = "wifi softAP";
 static const char *TAG = "TCP/IP socket";
 
-static int s_retry_num = 0;		//Initialise current retry to 0
-static uint8_t MAC_array[6];	//Initialise MAC address
-static char MAC_char[18];		//Display MAC characters
+//static int s_retry_num = 0;		//Initialise current retry to 0
+//static uint8_t MAC_array[6];	//Initialise MAC address
+//static char MAC_char[18];		//Display MAC characters
 
 int client_socket;
 int ip_protocol;
@@ -226,10 +229,97 @@ int listen_error;
 // }
 
 
+
+
+
+
+esp_err_t send_video_data(int video_client){
+    int tcp_error = -1 ;
+    camera_fb_t * fb = NULL;
+    esp_err_t res = ESP_OK;
+    size_t _jpg_buf_len;
+    uint8_t * _jpg_buf;
+    char * part_buf[64];
+    static int64_t last_frame = 0;
+    if(!last_frame) {
+        last_frame = esp_timer_get_time();
+    }
+
+    // res = httpd_resp_set_type(req, _STREAM_CONTENT_TYPE);
+    // if(res != ESP_OK){
+    //     return res;
+    // }
+
+    while(true){
+        fb = esp_camera_fb_get();
+        if (!fb) {
+            ESP_LOGE(TAG, "Camera capture failed");
+            res = ESP_FAIL;
+            break;
+        }
+        if(fb->format != PIXFORMAT_JPEG){
+            bool jpeg_converted = frame2jpg(fb, 80, &_jpg_buf, &_jpg_buf_len);
+            if(!jpeg_converted){
+                ESP_LOGE(TAG, "JPEG compression failed");
+                esp_camera_fb_return(fb);
+                res = ESP_FAIL;
+            }
+        } else {
+            _jpg_buf_len = fb->len;
+            _jpg_buf = fb->buf;
+            ESP_LOGE(TAG, "JPEG compression ok");
+        }
+        if(res == ESP_OK){
+            //res = httpd_resp_send_chunk(req, (const char *)_jpg_buf, _jpg_buf_len);
+            tcp_error = send(video_client, _jpg_buf, _jpg_buf_len, 0);
+            if (tcp_error < 0) 
+            {
+                ESP_LOGE(TAG, "Error occurred during sending: errno %d", errno);
+            }
+            else ESP_LOGI(TAG, "send %d bytes to client ... ", _jpg_buf_len);
+        }
+        if(fb->format != PIXFORMAT_JPEG){
+            free(_jpg_buf);
+        }
+        esp_camera_fb_return(fb);
+        if(res != ESP_OK || tcp_error < 0){
+            break;
+        }
+        int64_t fr_end = esp_timer_get_time();
+        int64_t frame_time = fr_end - last_frame;
+        last_frame = fr_end;
+        frame_time /= 1000;
+        // ESP_LOGI(TAG, "MJPG: %uKB %ums (%.1ffps)",
+        //     (uint32_t)(_jpg_buf_len/1024),
+        //     (uint32_t)frame_time, 1000.0 / (uint32_t)frame_time);
+    }
+
+    last_frame = 0;
+    return res;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 static void tcp_server_task(void *pvParameters)
 {
-    char rx_buffer[128];	// char array to store received data
-    char tx_buff[28] = "hello from server" ;
+    char rx_buffer[32];	// char array to store received data
+    char tx_buff[] = "hello from server" ;
     char addr_str[128];		// char array to store client IP
     int bytes_received;		// immediate bytes received
     int addr_family;		// Ipv4 address protocol variable
@@ -285,33 +375,34 @@ static void tcp_server_task(void *pvParameters)
 
             while(1)
             {
-                bytes_received = recv(client_socket, rx_buffer, sizeof(rx_buffer) - 1, 0);
-                if (bytes_received < 0)
-				{
-					ESP_LOGI(TAG, "Waiting for data...");
-					vTaskDelay(100 / portTICK_PERIOD_MS);
-				}
-                else if (bytes_received == 0)
-				{
-					ESP_LOGI(TAG, "Connection closed...");
-					break;
-				}
-                else
-                {
-                    ESP_LOGI(TAG, "Received : %s", rx_buffer);
+                // bytes_received = recv(client_socket, rx_buffer, sizeof(rx_buffer) - 1, 0);
+                // if (bytes_received < 0)
+				// {
+				// 	ESP_LOGI(TAG, "Waiting for data...");
+				// 	vTaskDelay(100 / portTICK_PERIOD_MS);
+				// }
+                // else if (bytes_received == 0)
+				// {
+				// 	ESP_LOGI(TAG, "Connection closed...");
+				// 	break;
+				// }
+                // else
+                // {
+                //     ESP_LOGI(TAG, "Received : %s", rx_buffer);
 
-                    memcpy(tx_buff, "hello client", 12);
-                    int err = send(client_socket, tx_buff, sizeof(tx_buff), 0);
-                    if (err < 0) 
-                    {
-                        ESP_LOGE(TAG, "Error occurred during sending: errno %d", errno);
-                        break;
-                    }
-                    ESP_LOGI(TAG, "successfully sent to client ... ");
-                    bzero(rx_buffer, sizeof(rx_buffer));
-                    bzero(tx_buff, sizeof(rx_buffer));
-                }
-
+                //     memcpy(tx_buff, "hello client", 12);
+                //     int err = send(client_socket, tx_buff, sizeof(tx_buff), 0);
+                //     if (err < 0) 
+                //     {
+                //         ESP_LOGE(TAG, "Error occurred during sending: errno %d", errno);
+                //         break;
+                //     }
+                //     ESP_LOGI(TAG, "successfully sent to client ... ");
+                //     bzero(rx_buffer, sizeof(rx_buffer));
+                //     bzero(tx_buff, sizeof(tx_buff));
+                // }
+                send_video_data(client_socket);
+                break;
             }
         }
     }
