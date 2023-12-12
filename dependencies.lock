@@ -1,0 +1,21 @@
+dependencies:
+  espressif/esp32-camera:
+    component_hash: null
+    source:
+      path: /home/afzal-khan/esp/projects/mCamera-esp32
+      type: local
+    version: '*'
+  espressif/mdns:
+    component_hash: 810ec139689ae93bf42520d05de4855fbb68f7140ef67797d91d8d61829589cb
+    source:
+      service_url: https://api.components.espressif.com/
+      type: service
+    version: 1.2.2
+  idf:
+    component_hash: null
+    source:
+      type: idf
+    version: 5.0.4
+manifest_hash: cc451b75e6f2aa5ffb1ff7b91498ad4bd51cf7b63157f6a6a58c0d6ddc292285
+target: esp32
+version: 1.0.0

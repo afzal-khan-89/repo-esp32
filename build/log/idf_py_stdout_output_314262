@@ -1,0 +1,2878 @@
+
+Brownout detector was triggered
+
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7332
+load:0x40078000,len:16496
+ho 0 tail 12 room 4
+load:0x40080400,len:4280
+entry 0x4008066c
+[0;32mI (29) boot: ESP-IDF v5.0.4 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 10:34:36[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v1.0[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=28acch (166604) map[0m
+[0;32mI (152) esp_image: segment 1: paddr=00048af4 vaddr=3ffb0000 size=04240h ( 16960) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=0004cd3c vaddr=40080000 size=032dch ( 13020) load[0m
+[0;32mI (162) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=916a0h (595616) map[0m
+[0;32mI (330) esp_image: segment 4: paddr=000e16c8 vaddr=400832dc size=19204h (102916) load[0m
+[0;32mI (378) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (378) boot: Disabling RNG early entropy source...[0m
+[0;32mI (389) cpu_start: Multicore app[0m
+[0;32mI (390) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (390) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (392) esp_psram: Speed: 80MHz[0m
+[0;32mI (395) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (403) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (412) cpu_start: Pro cpu up.[0m
+[0;32mI (416) cpu_start: Starting app cpu, entry point is 0x400816f4[0m
+[0;32mI (408) cpu_start: App cpu up.[0m
+[0;32mI (934) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (942) cpu_start: Pro cpu start user code[0m
+[0;32mI (942) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (942) cpu_start: Application information:[0m
+[0;32mI (945) cpu_start: Project name:     camera_example[0m
+[0;32mI (950) cpu_start: App version:      e1e4c7c-dirty[0m
+[0;32mI (956) cpu_start: Compile time:     Nov 23 2023 11:12:50[0m
+[0;32mI (962) cpu_start: ELF file SHA256:  9c1ef270e5d9c687...[0m
+[0;32mI (968) cpu_start: ESP-IDF:          v5.0.4[0m
+[0;32mI (973) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (977) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (982) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (987) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (994) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1000) heap_init: At 3FFBA0B0 len 00025F50 (151 KiB): DRAM[0m
+[0;32mI (1006) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1013) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1019) heap_init: At 4009C4E0 len 00003B20 (14 KiB): IRAM[0m
+[0;32mI (1026) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1034) spi_flash: detected chip: generic[0m
+[0;32mI (1038) spi_flash: flash io: qio[0m
+[0;32mI (1043) app_start: Starting scheduler on CPU0[0m
+[[0;32mI (1047) app_start: Starting scheduler on CPU1[0m
+0;32mI (1047) main_task: Started on CPU0[0m
+[0;32mI (1057) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1065) main_task: Calling app_main()[0m
+[0;32mI (1069) esp32-cam Webserver: ESP32 CAM Web Server .......
+[0m
+I (1106) wifi:wifi driver task: 3ffca0fc, prio:23, stack:6656, core=0
+[0;32mI (1106) system_api: Base MAC address is not set[0m
+[0;32mI (1106) system_api: read default base MAC address from EFUSE[0m
+I (1127) wifi:wifi firmware version: e2d0ad8
+I (1127) wifi:wifi certification version: v7.0
+I (1127) wifi:config NVS flash: enabled
+I (1127) wifi:config nano formating: disabled
+I (1132) wifi:Init data frame dynamic rx buffer num: 32
+I (1136) wifi:Init management frame dynamic rx buffer num: 32
+I (1142) wifi:Init management short buffer num: 32
+I (1147) wifi:Init static tx buffer num: 16
+I (1151) wifi:Init tx cache buffer num: 32
+I (1154) wifi:Init static rx buffer size: 1600
+I (1158) wifi:Init static rx buffer num: 10
+I (1162) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1167) wifi_init: rx ba win: 6[0m
+[0;32mI (1170) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1174) wifi_init: udp mbox: 6[0m
+[0;32mI (1178) wifi_init: tcp mbox: 6[0m
+[0;32mI (1182) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1186) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1190) wifi_init: tcp mss: 1440[0m
+[0;32mI (1194) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1199) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1208) phy_init: phy_version 4771,450c73b,Aug 16 2023,11:03:10[0m
+
+Brownout detector was triggered
+
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7332
+load:0x40078000,len:16496
+ho 0 tail 12 room 4
+load:0x40080400,len:4280
+entry 0x4008066c
+[0;32mI (29) boot: ESP-IDF v5.0.4 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 10:34:36[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v1.0[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=28acch (166604) map[0m
+[0;32mI (152) esp_image: segment 1: paddr=00048af4 vaddr=3ffb0000 size=04240h ( 16960) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=0004cd3c vaddr=40080000 size=032dch ( 13020) load[0m
+[0;32mI (162) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=916a0h (595616) map[0m
+[0;32mI (330) esp_image: segment 4: paddr=000e16c8 vaddr=400832dc size=19204h (102916) load[0m
+[0;32mI (378) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (378) boot: Disabling RNG early entropy source...[0m
+[0;32mI (389) cpu_start: Multicore app[0m
+[0;32mI (390) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (390) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (392) esp_psram: Speed: 80MHz[0m
+[0;32mI (395) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (403) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (412) cpu_start: Pro cpu up.[0m
+[0;32mI (416) cpu_start: Starting app cpu, entry point is 0x400816f4[0m
+[0;32mI (408) cpu_start: App cpu up.[0m
+[0;32mI (934) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (942) cpu_start: Pro cpu start user code[0m
+[0;32mI (942) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (942) cpu_start: Application information:[0m
+[0;32mI (945) cpu_start: Project name:     camera_example[0m
+[0;32mI (950) cpu_start: App version:      e1e4c7c-dirty[0m
+[0;32mI (956) cpu_start: Compile time:     Nov 23 2023 11:12:50[0m
+[0;32mI (962) cpu_start: ELF file SHA256:  9c1ef270e5d9c687...[0m
+[0;32mI (968) cpu_start: ESP-IDF:          v5.0.4[0m
+[0;32mI (973) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (977) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (982) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (987) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (994) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1000) heap_init: At 3FFBA0B0 len 00025F50 (151 KiB): DRAM[0m
+[0;32mI (1006) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1013) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1019) heap_init: At 4009C4E0 len 00003B20 (14 KiB): IRAM[0m
+[0;32mI (1026) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1034) spi_flash: detected chip: generic[0m
+[0;32mI (1038) spi_flash: flash io: qio[0m
+[0;32mI (1043) app_start: Starting scheduler on CPU0[0m
+[[0;32mI (1047) app_start: Starting scheduler on CPU1[0m
+0;32mI (1047) main_task: Started on CPU0[0m
+[0;32mI (1057) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1065) main_task: Calling app_main()[0m
+[0;32mI (1069) esp32-cam Webserver: ESP32 CAM Web Server .......
+[0m
+I (1106) wifi:wifi driver task: 3ffca0fc, prio:23, stack:6656, core=0
+[0;32mI (1106) system_api: Base MAC address is not set[0m
+[0;32mI (1106) system_api: read default base MAC address from EFUSE[0m
+I (1127) wifi:wifi firmware version: e2d0ad8
+I (1127) wifi:wifi certification version: v7.0
+I (1127) wifi:config NVS flash: enabled
+I (1127) wifi:config nano formating: disabled
+I (1132) wifi:Init data frame dynamic rx buffer num: 32
+I (1136) wifi:Init management frame dynamic rx buffer num: 32
+I (1142) wifi:Init management short buffer num: 32
+I (1147) wifi:Init static tx buffer num: 16
+I (1151) wifi:Init tx cache buffer num: 32
+I (1154) wifi:Init static rx buffer size: 1600
+I (1158) wifi:Init static rx buffer num: 10
+I (1162) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1167) wifi_init: rx ba win: 6[0m
+[0;32mI (1170) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1174) wifi_init: udp mbox: 6[0m
+[0;32mI (1178) wifi_init: tcp mbox: 6[0m
+[0;32mI (1182) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1186) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1190) wifi_init: tcp mss: 1440[0m
+[0;32mI (1194) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1199) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1208) phy_init: phy_version 4771,450c73b,Aug 16 2023,11:03:10[0m
+I (1277) wifi:mode : softAP (30:c6:f7:04:f9:d9)
+I (1279) wifi:Total power save buffer number: 8
+I (1279) wifi:Init max length of beacon: 752/752
+I (1279) wifi:Init max length of beacon: 752/752
+[0;32mI (1284) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1293) cam_hal: cam init ok[0m
+[0;32mI (1296) sccb: pin_sda 26 pin_scl 27[0m
+[0;32mI (1300) sccb: sccb_i2c_port=0[0m
+[0;32mI (1304) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1343) camera: Detected camera at address=0x30[0m
+[0;32mI (1346) camera: Detected OV2640 camera[0m
+[0;32mI (1346) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1431) cam_hal: buffer_size: 32768, half_buffer_size: 4096, node_buffer_size: 2048, node_cnt: 16, total_cnt: 15[0m
+[0;32mI (1432) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (1438) cam_hal: cam config ok[0m
+[0;32mI (1442) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (1530) esp32-cam Webserver: ESP32 CAM Web Server is up and running
+[0m
+[0;32mI (1530) main_task: Returned from app_main()[0m
+[0;32mI (1530) TCP/IP socket: Socket created[0m
+[0;32mI (1535) TCP/IP socket: Socket binded[0m
+[0;32mI (1540) TCP/IP socket: Socket listening ...[0m
+I (1843) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1
+I (1843) wifi:station: 28:d0:ea:5f:dc:3c join, AID=1, bgn, 40U
+I (2255) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:23, winSize:64
+[0;32mI (3905) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.254.2[0m
+[0;32mI (3905) wifi: SoftAP client connected with IP: 192.168.254.2.[0m
+I (3941) wifi:<ba-add>idx:3 (ifx:1, 28:d0:ea:5f:dc:3c), tid:6, ssn:2, winSize:64
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7332
+load:0x40078000,len:16496
+ho 0 tail 12 room 4
+load:0x40080400,len:4280
+entry 0x4008066c
+[0;32mI (28) boot: ESP-IDF v5.0.4 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time 10:34:36[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v1.0[0m
+[0;32mI (35) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=28acch (166604) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=00048af4 vaddr=3ffb0000 size=04240h ( 16960) load[0m
+[0;32mI (156) esp_image: segment 2: paddr=0004cd3c vaddr=40080000 size=032dch ( 13020) load[0m
+[0;32mI (161) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=916a0h (595616) map[0m
+[0;32mI (329) esp_image: segment 4: paddr=000e16c8 vaddr=400832dc size=19204h (102916) load[0m
+[0;32mI (377) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (377) boot: Disabling RNG early entropy source...[0m
+[0;32mI (388) cpu_start: Multicore app[0m
+[0;32mI (388) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (389) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (391) esp_psram: Speed: 80MHz[0m
+[0;32mI (394) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (402) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (411) cpu_start: Pro cpu up.[0m
+[0;32mI (415) cpu_start: Starting app cpu, entry point is 0x400816f4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (933) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (940) cpu_start: Pro cpu start user code[0m
+[0;32mI (940) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (941) cpu_start: Application information:[0m
+[0;32mI (944) cpu_start: Project name:     camera_example[0m
+[0;32mI (949) cpu_start: App version:      e1e4c7c-dirty[0m
+[0;32mI (955) cpu_start: Compile time:     Nov 23 2023 11:12:50[0m
+[0;32mI (961) cpu_start: ELF file SHA256:  9c1ef270e5d9c687...[0m
+[0;32mI (967) cpu_start: ESP-IDF:          v5.0.4[0m
+[0;32mI (971) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (976) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (981) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (986) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (993) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (999) heap_init: At 3FFBA0B0 len 00025F50 (151 KiB): DRAM[0m
+[0;32mI (1005) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1012) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1018) heap_init: At 4009C4E0 len 00003B20 (14 KiB): IRAM[0m
+[0;32mI (1025) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1033) spi_flash: detected chip: generic[0m
+[0;32mI (1037) spi_flash: flash io: qio[0m
+[0;32mI (1042) app_start: Starting scheduler on CPU0[0m
+[[0;32mI (1046) app_start: Starting scheduler on CPU1[0m
+0;32mI (1046) main_task: Started on CPU0[0m
+[0;32mI (1056) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1064) main_task: Calling app_main()[0m
+[0;32mI (1068) esp32-cam Webserver: ESP32 CAM Web Server .......
+[0m
+I (1105) wifi:wifi driver task: 3ffca0fc, prio:23, stack:6656, core=0
+[0;32mI (1105) system_api: Base MAC address is not set[0m
+[0;32mI (1105) system_api: read default base MAC address from EFUSE[0m
+I (1126) wifi:wifi firmware version: e2d0ad8
+I (1126) wifi:wifi certification version: v7.0
+I (1126) wifi:config NVS flash: enabled
+I (1126) wifi:config nano formating: disabled
+I (1131) wifi:Init data frame dynamic rx buffer num: 32
+I (1135) wifi:Init management frame dynamic rx buffer num: 32
+I (1141) wifi:Init management short buffer num: 32
+I (1146) wifi:Init static tx buffer num: 16
+I (1150) wifi:Init tx cache buffer num: 32
+I (1153) wifi:Init static rx buffer size: 1600
+I (1157) wifi:Init static rx buffer num: 10
+I (1161) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1166) wifi_init: rx ba win: 6[0m
+[0;32mI (1169) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1173) wifi_init: udp mbox: 6[0m
+[0;32mI (1177) wifi_init: tcp mbox: 6[0m
+[0;32mI (1181) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1185) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1189) wifi_init: tcp mss: 1440[0m
+[0;32mI (1193) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1198) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1207) phy_init: phy_version 4771,450c73b,Aug 16 2023,11:03:10[0m
+I (1276) wifi:mode : softAP (30:c6:f7:04:f9:d9)
+I (1278) wifi:Total power save buffer number: 8
+I (1278) wifi:Init max length of beacon: 752/752
+I (1279) wifi:Init max length of beacon: 752/752
+[0;32mI (1283) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1292) cam_hal: cam init ok[0m
+[0;32mI (1295) sccb: pin_sda 26 pin_scl 27[0m
+[0;32mI (1299) sccb: sccb_i2c_port=0[0m
+[0;32mI (1304) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1343) camera: Detected camera at address=0x30[0m
+[0;32mI (1346) camera: Detected OV2640 camera[0m
+[0;32mI (1346) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1431) cam_hal: buffer_size: 32768, half_buffer_size: 4096, node_buffer_size: 2048, node_cnt: 16, total_cnt: 15[0m
+[0;32mI (1432) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (1438) cam_hal: cam config ok[0m
+[0;32mI (1441) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (1530) esp32-cam Webserver: ESP32 CAM Web Server is up and running
+[0m
+[0;32mI (1530) main_task: Returned from app_main()[0m
+[0;32mI (1530) TCP/IP socket: Socket created[0m
+[0;32mI (1535) TCP/IP socket: Socket binded[0m
+[0;32mI (1540) TCP/IP socket: Socket listening ...[0m
+I (3849) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1
+I (3849) wifi:station: 28:d0:ea:5f:dc:3c join, AID=1, bgn, 40U
+I (3983) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:18, winSize:64
+I (5914) wifi:<ba-add>idx:3 (ifx:1, 28:d0:ea:5f:dc:3c), tid:6, ssn:0, winSize:64
+[0;32mI (5930) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.254.2[0m
+[0;32mI (5931) wifi: SoftAP client connected with IP: 192.168.254.2.[0m
+I (160838) wifi:<ba-del>idx
+I (169534) wifi:<ba-del>idx
+I (169541) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3267, winSize:64
+[0;32mI (517579) TCP/IP socket: Socket accepted ... [0m
+[0;31mE (517579) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (517587) TCP/IP socket: send 10885 bytes to client ... [0m
+[0;31mE (517652) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (517667) TCP/IP socket: send 12921 bytes to client ... [0m
+[0;31mE (517732) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (517763) TCP/IP socket: send 12757 bytes to client ... [0m
+[0;31mE (517812) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (517825) TCP/IP socket: send 13037 bytes to client ... [0m
+[0;31mE (517892) TCP/IP socket: JPEG compression ok[0m
+[0;31mE (517907) TCP/IP socket: Error occurred during sending: errno 104[0m
+[0;32mI (697135) TCP/IP socket: Socket accepted ... [0m
+[0;31mE (697136) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (697147) TCP/IP socket: send 13067 bytes to client ... [0m
+[0;31mE (697220) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (697233) TCP/IP socket: send 13224 bytes to client ... [0m
+[0;31mE (697300) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (697401) TCP/IP socket: send 13208 bytes to client ... [0m
+[0;31mE (697460) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (697470) TCP/IP socket: send 13055 bytes to client ... [0m
+[0;31mE (697540) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (697582) TCP/IP socket: send 13015 bytes to client ... [0m
+[0;31mE (697660) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (697694) TCP/IP socket: send 13063 bytes to client ... [0m
+[0;31mE (697740) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (697745) TCP/IP socket: send 13255 bytes to client ... [0m
+[0;31mE (697820) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (697894) TCP/IP socket: send 13262 bytes to client ... [0m
+[0;31mE (697940) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (697949) TCP/IP socket: send 13222 bytes to client ... [0m
+[0;31mE (698020) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (698080) TCP/IP socket: send 13674 bytes to client ... [0m
+[0;31mE (698140) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (698204) TCP/IP socket: send 14036 bytes to client ... [0m
+[0;31mE (698260) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (698280) TCP/IP socket: send 13009 bytes to client ... [0m
+[0;31mE (698340) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (698355) TCP/IP socket: send 13214 bytes to client ... [0m
+[0;31mE (698420) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (698462) TCP/IP socket: send 13024 bytes to client ... [0m
+[0;31mE (698540) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (698565) TCP/IP socket: send 13103 bytes to client ... [0m
+[0;31mE (698620) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (698627) TCP/IP socket: send 13021 bytes to client ... [0m
+[0;31mE (698700) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (698708) TCP/IP socket: send 13044 bytes to client ... [0m
+[0;31mE (698780) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (698798) TCP/IP socket: send 13046 bytes to client ... [0m
+[0;31mE (698860) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (698872) TCP/IP socket: send 13182 bytes to client ... [0m
+[0;31mE (698940) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (698949) TCP/IP socket: send 13130 bytes to client ... [0m
+[0;31mE (699020) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (699074) TCP/IP socket: send 13022 bytes to client ... [0m
+[0;31mE (699140) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (699251) TCP/IP socket: send 13027 bytes to client ... [0m
+[0;31mE (699299) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (699484) TCP/IP socket: send 13009 bytes to client ... [0m
+[0;31mE (699539) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (699610) TCP/IP socket: send 13033 bytes to client ... [0m
+[0;31mE (699659) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (699670) TCP/IP socket: send 12445 bytes to client ... [0m
+[0;31mE (699739) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (699789) TCP/IP socket: send 12334 bytes to client ... [0m
+[0;31mE (699859) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (699926) TCP/IP socket: send 12720 bytes to client ... [0m
+[0;31mE (699979) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (700036) TCP/IP socket: send 12858 bytes to client ... [0m
+[0;31mE (700099) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (700162) TCP/IP socket: send 12967 bytes to client ... [0m
+[0;31mE (700219) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (700312) TCP/IP socket: send 12929 bytes to client ... [0m
+[0;31mE (700379) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (700401) TCP/IP socket: send 13163 bytes to client ... [0m
+[0;31mE (700459) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (700465) TCP/IP socket: send 13260 bytes to client ... [0m
+[0;31mE (700539) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (700545) TCP/IP socket: send 13021 bytes to client ... [0m
+[0;31mE (700619) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (700627) TCP/IP socket: send 13046 bytes to client ... [0m
+[0;31mE (700699) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (700713) TCP/IP socket: send 13198 bytes to client ... [0m
+[0;31mE (700779) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (700868) TCP/IP socket: send 13045 bytes to client ... [0m
+[0;31mE (700939) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (701036) TCP/IP socket: send 13045 bytes to client ... [0m
+[0;31mE (701099) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (701121) TCP/IP socket: send 13235 bytes to client ... [0m
+[0;31mE (701179) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (701187) TCP/IP socket: send 13042 bytes to client ... [0m
+[0;31mE (701259) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (701265) TCP/IP socket: send 13006 bytes to client ... [0m
+[0;31mE (701339) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (702765) TCP/IP socket: send 13050 bytes to client ... [0m
+[0;31mE (702818) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (702845) TCP/IP socket: send 12894 bytes to client ... [0m
+[0;31mE (702898) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (703038) TCP/IP socket: send 12991 bytes to client ... [0m
+[0;31mE (703098) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (703221) TCP/IP socket: send 13020 bytes to client ... [0m
+[0;31mE (703298) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (703306) TCP/IP socket: send 13093 bytes to client ... [0m
+[0;31mE (703378) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (703392) TCP/IP socket: send 12985 bytes to client ... [0m
+[0;31mE (703458) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (703526) TCP/IP socket: send 13171 bytes to client ... [0m
+[0;31mE (703578) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (703596) TCP/IP socket: send 13251 bytes to client ... [0m
+[0;31mE (703658) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (703680) TCP/IP socket: send 13253 bytes to client ... [0m
+[0;31mE (703738) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (703784) TCP/IP socket: send 13002 bytes to client ... [0m
+[0;31mE (703858) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (703924) TCP/IP socket: send 13162 bytes to client ... [0m
+[0;31mE (703978) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (703993) TCP/IP socket: send 13225 bytes to client ... [0m
+[0;31mE (704058) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (704169) TCP/IP socket: send 13128 bytes to client ... [0m
+[0;31mE (704218) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (704264) TCP/IP socket: send 13385 bytes to client ... [0m
+[0;31mE (704337) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (704350) TCP/IP socket: send 13020 bytes to client ... [0m
+[0;31mE (704417) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (704428) TCP/IP socket: send 13038 bytes to client ... [0m
+[0;31mE (704497) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (704507) TCP/IP socket: send 13191 bytes to client ... [0m
+[0;31mE (704577) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (704603) TCP/IP socket: send 13199 bytes to client ... [0m
+[0;31mE (704657) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (704823) TCP/IP socket: send 13029 bytes to client ... [0m
+[0;31mE (704897) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (705015) TCP/IP socket: send 13325 bytes to client ... [0m
+[0;31mE (705057) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (705089) TCP/IP socket: send 13033 bytes to client ... [0m
+[0;31mE (705137) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (705166) TCP/IP socket: send 13062 bytes to client ... [0m
+[0;31mE (705217) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (705245) TCP/IP socket: send 13290 bytes to client ... [0m
+[0;31mE (705297) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (705363) TCP/IP socket: send 13185 bytes to client ... [0m
+[0;31mE (705417) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (705478) TCP/IP socket: send 13242 bytes to client ... [0m
+[0;31mE (705537) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (705640) TCP/IP socket: send 13021 bytes to client ... [0m
+[0;31mE (705697) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (705759) TCP/IP socket: send 13028 bytes to client ... [0m
+[0;31mE (705817) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (706055) TCP/IP socket: send 13253 bytes to client ... [0m
+[0;31mE (706097) TCP/IP socket: JPEG compression ok[0m
+[0;31mE (707555) TCP/IP socket: Error occurred during sending: errno 104[0m
+I (748893) wifi:<ba-del>idx
+I (748894) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:2105, winSize:64
+I (762499) wifi:<ba-del>idx
+I (762505) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:2238, winSize:64
+[0;32mI (864692) TCP/IP socket: Socket accepted ... [0m
+[0;31mE (864693) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (864707) TCP/IP socket: send 13011 bytes to client ... [0m
+[0;31mE (864753) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (864771) TCP/IP socket: send 12611 bytes to client ... [0m
+[0;31mE (864833) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (864845) TCP/IP socket: send 12595 bytes to client ... [0m
+[0;31mE (864913) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (864934) TCP/IP socket: send 12484 bytes to client ... [0m
+[0;31mE (864993) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (865002) TCP/IP socket: send 12476 bytes to client ... [0m
+[0;31mE (865073) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (865107) TCP/IP socket: send 12520 bytes to client ... [0m
+[0;31mE (865153) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (865211) TCP/IP socket: send 12653 bytes to client ... [0m
+[0;31mE (865273) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (865322) TCP/IP socket: send 12501 bytes to client ... [0m
+[0;31mE (865393) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (865402) TCP/IP socket: send 12460 bytes to client ... [0m
+[0;31mE (865473) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (865479) TCP/IP socket: send 12687 bytes to client ... [0m
+[0;31mE (865553) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (865561) TCP/IP socket: send 12652 bytes to client ... [0m
+[0;31mE (865633) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (865708) TCP/IP socket: send 12485 bytes to client ... [0m
+[0;31mE (865753) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (865758) TCP/IP socket: send 12590 bytes to client ... [0m
+[0;31mE (865833) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (865840) TCP/IP socket: send 12490 bytes to client ... [0m
+[0;31mE (865913) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (865926) TCP/IP socket: send 12472 bytes to client ... [0m
+[0;31mE (865993) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (866008) TCP/IP socket: send 12459 bytes to client ... [0m
+[0;31mE (866073) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (866105) TCP/IP socket: send 12599 bytes to client ... [0m
+[0;31mE (866153) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (866198) TCP/IP socket: send 12468 bytes to client ... [0m
+[0;31mE (866273) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (866300) TCP/IP socket: send 12730 bytes to client ... [0m
+[0;31mE (866353) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (866373) TCP/IP socket: send 12475 bytes to client ... [0m
+[0;31mE (866433) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (866438) TCP/IP socket: send 12462 bytes to client ... [0m
+[0;31mE (866513) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (866517) TCP/IP socket: send 12424 bytes to client ... [0m
+[0;31mE (866593) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (866606) TCP/IP socket: send 12592 bytes to client ... [0m
+[0;31mE (866672) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (866686) TCP/IP socket: send 13176 bytes to client ... [0m
+[0;31mE (866753) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (866758) TCP/IP socket: send 12536 bytes to client ... [0m
+[0;31mE (866833) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (866839) TCP/IP socket: send 12520 bytes to client ... [0m
+[0;31mE (866912) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (866920) TCP/IP socket: send 12653 bytes to client ... [0m
+[0;31mE (866992) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (867012) TCP/IP socket: send 12756 bytes to client ... [0m
+[0;31mE (867072) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (867093) TCP/IP socket: send 12469 bytes to client ... [0m
+[0;31mE (867152) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (867158) TCP/IP socket: send 12467 bytes to client ... [0m
+[0;31mE (867232) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (867241) TCP/IP socket: send 12495 bytes to client ... [0m
+[0;31mE (867312) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (867320) TCP/IP socket: send 12645 bytes to client ... [0m
+[0;31mE (867392) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (867399) TCP/IP socket: send 12655 bytes to client ... [0m
+[0;31mE (867472) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (867501) TCP/IP socket: send 12478 bytes to client ... [0m
+[0;31mE (867552) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (867561) TCP/IP socket: send 12494 bytes to client ... [0m
+[0;31mE (867632) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (867640) TCP/IP socket: send 12465 bytes to client ... [0m
+[0;31mE (867712) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (867741) TCP/IP socket: send 12685 bytes to client ... [0m
+[0;31mE (867792) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (867831) TCP/IP socket: send 12509 bytes to client ... [0m
+[0;31mE (867872) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (867878) TCP/IP socket: send 12528 bytes to client ... [0m
+[0;31mE (867952) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (867957) TCP/IP socket: send 12514 bytes to client ... [0m
+[0;31mE (868032) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (868040) TCP/IP socket: send 12687 bytes to client ... [0m
+[0;31mE (868112) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (868117) TCP/IP socket: send 12618 bytes to client ... [0m
+[0;31mE (868192) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (868197) TCP/IP socket: send 12502 bytes to client ... [0m
+[0;31mE (868272) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (868277) TCP/IP socket: send 12458 bytes to client ... [0m
+[0;31mE (868352) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (868362) TCP/IP socket: send 12499 bytes to client ... [0m
+[0;31mE (868432) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (868453) TCP/IP socket: send 12689 bytes to client ... [0m
+[0;31mE (868512) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (868521) TCP/IP socket: send 12420 bytes to client ... [0m
+[0;31mE (868592) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (868597) TCP/IP socket: send 12442 bytes to client ... [0m
+[0;31mE (868672) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (868678) TCP/IP socket: send 12492 bytes to client ... [0m
+[0;31mE (868752) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (868786) TCP/IP socket: send 12737 bytes to client ... [0m
+[0;31mE (868832) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (868859) TCP/IP socket: send 12708 bytes to client ... [0m
+[0;31mE (868912) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (868924) TCP/IP socket: send 12510 bytes to client ... [0m
+[0;31mE (868992) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (868998) TCP/IP socket: send 12494 bytes to client ... [0m
+[0;31mE (869072) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (869077) TCP/IP socket: send 12525 bytes to client ... [0m
+[0;31mE (869152) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (869162) TCP/IP socket: send 12696 bytes to client ... [0m
+[0;31mE (869232) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (869238) TCP/IP socket: send 12674 bytes to client ... [0m
+[0;31mE (869312) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (869318) TCP/IP socket: send 12500 bytes to client ... [0m
+[0;31mE (869391) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (869404) TCP/IP socket: send 12479 bytes to client ... [0m
+[0;31mE (869471) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (869476) TCP/IP socket: send 12543 bytes to client ... [0m
+[0;31mE (869551) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (869556) TCP/IP socket: send 12768 bytes to client ... [0m
+[0;31mE (869631) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (869640) TCP/IP socket: send 12604 bytes to client ... [0m
+[0;31mE (869711) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (869729) TCP/IP socket: send 12610 bytes to client ... [0m
+[0;31mE (869791) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (869799) TCP/IP socket: send 12559 bytes to client ... [0m
+[0;31mE (869871) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (869882) TCP/IP socket: send 12639 bytes to client ... [0m
+[0;31mE (869951) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (869963) TCP/IP socket: send 12768 bytes to client ... [0m
+[0;31mE (870031) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (870055) TCP/IP socket: send 12589 bytes to client ... [0m
+[0;31mE (870111) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (870117) TCP/IP socket: send 12541 bytes to client ... [0m
+[0;31mE (870191) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (870199) TCP/IP socket: send 12504 bytes to client ... [0m
+[0;31mE (870271) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (870287) TCP/IP socket: send 12718 bytes to client ... [0m
+[0;31mE (870351) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (870370) TCP/IP socket: send 12547 bytes to client ... [0m
+[0;31mE (870431) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (870438) TCP/IP socket: send 12576 bytes to client ... [0m
+[0;31mE (870511) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (870529) TCP/IP socket: send 12549 bytes to client ... [0m
+[0;31mE (870591) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (870600) TCP/IP socket: send 12699 bytes to client ... [0m
+[0;31mE (870671) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (870692) TCP/IP socket: send 12753 bytes to client ... [0m
+[0;31mE (870751) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (870759) TCP/IP socket: send 12610 bytes to client ... [0m
+[0;31mE (870831) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (870836) TCP/IP socket: send 12545 bytes to client ... [0m
+[0;31mE (870911) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (870916) TCP/IP socket: send 13368 bytes to client ... [0m
+[0;31mE (870991) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (871125) TCP/IP socket: send 12779 bytes to client ... [0m
+[0;31mE (871191) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (871354) TCP/IP socket: send 12766 bytes to client ... [0m
+[0;31mE (871431) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (871478) TCP/IP socket: send 12568 bytes to client ... [0m
+[0;31mE (871551) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (871580) TCP/IP socket: send 12985 bytes to client ... [0m
+[0;31mE (871631) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (871704) TCP/IP socket: send 12566 bytes to client ... [0m
+[0;31mE (871751) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (871759) TCP/IP socket: send 12556 bytes to client ... [0m
+[0;31mE (871831) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (871882) TCP/IP socket: send 12576 bytes to client ... [0m
+[0;31mE (871950) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (871969) TCP/IP socket: send 12529 bytes to client ... [0m
+[0;31mE (872030) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (872048) TCP/IP socket: send 13157 bytes to client ... [0m
+[0;31mE (872110) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (872131) TCP/IP socket: send 12714 bytes to client ... [0m
+[0;31mE (872190) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (872206) TCP/IP socket: send 12591 bytes to client ... [0m
+[0;31mE (872270) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (872285) TCP/IP socket: send 12608 bytes to client ... [0m
+[0;31mE (872350) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (872355) TCP/IP socket: send 12605 bytes to client ... [0m
+[0;31mE (872430) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (872453) TCP/IP socket: send 12733 bytes to client ... [0m
+[0;31mE (872510) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (872518) TCP/IP socket: send 12757 bytes to client ... [0m
+[0;31mE (872590) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (872614) TCP/IP socket: send 12603 bytes to client ... [0m
+[0;31mE (872670) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (872681) TCP/IP socket: send 12569 bytes to client ... [0m
+[0;31mE (872750) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (872760) TCP/IP socket: send 12586 bytes to client ... [0m
+[0;31mE (872830) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (872858) TCP/IP socket: send 12753 bytes to client ... [0m
+[0;31mE (872910) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (872933) TCP/IP socket: send 12591 bytes to client ... [0m
+[0;31mE (872990) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (873007) TCP/IP socket: send 12560 bytes to client ... [0m
+[0;31mE (873070) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (873079) TCP/IP socket: send 12580 bytes to client ... [0m
+[0;31mE (873150) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (873168) TCP/IP socket: send 12753 bytes to client ... [0m
+[0;31mE (873230) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (873262) TCP/IP socket: send 12747 bytes to client ... [0m
+[0;31mE (873310) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (873318) TCP/IP socket: send 13405 bytes to client ... [0m
+[0;31mE (873390) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (873395) TCP/IP socket: send 12588 bytes to client ... [0m
+[0;31mE (873470) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (873477) TCP/IP socket: send 12612 bytes to client ... [0m
+[0;31mE (873550) TCP/IP socket: JPEG compression ok[0m
+[0;31mE (873550) TCP/IP socket: Error occurred during sending: errno 104[0m
+[0;32mI (1230164) TCP/IP socket: Socket accepted ... [0m
+[0;31mE (1230165) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1230172) TCP/IP socket: send 12614 bytes to client ... [0m
+[0;31mE (1230247) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1230321) TCP/IP socket: send 13693 bytes to client ... [0m
+[0;31mE (1230367) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1230465) TCP/IP socket: send 13573 bytes to client ... [0m
+[0;31mE (1230527) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1230565) TCP/IP socket: send 14005 bytes to client ... [0m
+[0;31mE (1230607) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1230612) TCP/IP socket: send 13976 bytes to client ... [0m
+[0;31mE (1230687) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1230692) TCP/IP socket: send 13753 bytes to client ... [0m
+[0;31mE (1230767) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1230783) TCP/IP socket: send 13721 bytes to client ... [0m
+[0;31mE (1230847) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1230854) TCP/IP socket: send 13792 bytes to client ... [0m
+[0;31mE (1230927) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1230959) TCP/IP socket: send 13918 bytes to client ... [0m
+[0;31mE (1231007) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1232691) TCP/IP socket: send 13772 bytes to client ... [0m
+[0;31mE (1232766) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1232794) TCP/IP socket: send 13969 bytes to client ... [0m
+[0;31mE (1232846) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1232861) TCP/IP socket: send 13745 bytes to client ... [0m
+[0;31mE (1232926) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1232949) TCP/IP socket: send 13784 bytes to client ... [0m
+[0;31mE (1233006) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1233071) TCP/IP socket: send 13834 bytes to client ... [0m
+[0;31mE (1233126) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1233185) TCP/IP socket: send 13780 bytes to client ... [0m
+[0;31mE (1233246) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1233283) TCP/IP socket: send 13761 bytes to client ... [0m
+[0;31mE (1233326) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1233364) TCP/IP socket: send 13795 bytes to client ... [0m
+[0;31mE (1233406) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1233487) TCP/IP socket: send 13797 bytes to client ... [0m
+[0;31mE (1233566) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1233576) TCP/IP socket: send 13757 bytes to client ... [0m
+[0;31mE (1233646) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1233688) TCP/IP socket: send 13808 bytes to client ... [0m
+[0;31mE (1233766) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1233773) TCP/IP socket: send 13796 bytes to client ... [0m
+[0;31mE (1233846) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1233856) TCP/IP socket: send 13782 bytes to client ... [0m
+[0;31mE (1233926) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1233964) TCP/IP socket: send 13790 bytes to client ... [0m
+[0;31mE (1234006) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1234055) TCP/IP socket: send 13982 bytes to client ... [0m
+[0;31mE (1234125) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1234170) TCP/IP socket: send 13788 bytes to client ... [0m
+[0;31mE (1234245) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1234253) TCP/IP socket: send 13770 bytes to client ... [0m
+[0;31mE (1234325) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1234356) TCP/IP socket: send 13800 bytes to client ... [0m
+[0;31mE (1234405) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1234451) TCP/IP socket: send 14068 bytes to client ... [0m
+[0;31mE (1234525) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1234536) TCP/IP socket: send 13833 bytes to client ... [0m
+[0;31mE (1234605) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1234613) TCP/IP socket: send 13952 bytes to client ... [0m
+[0;31mE (1234685) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1234722) TCP/IP socket: send 13809 bytes to client ... [0m
+[0;31mE (1234765) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1234842) TCP/IP socket: send 13779 bytes to client ... [0m
+[0;31mE (1234885) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1234900) TCP/IP socket: send 13786 bytes to client ... [0m
+[0;31mE (1234965) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1234976) TCP/IP socket: send 13772 bytes to client ... [0m
+[0;31mE (1235045) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1235053) TCP/IP socket: send 13749 bytes to client ... [0m
+[0;31mE (1235125) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1235169) TCP/IP socket: send 14130 bytes to client ... [0m
+[0;31mE (1235245) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1235261) TCP/IP socket: send 13997 bytes to client ... [0m
+[0;31mE (1235325) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1235367) TCP/IP socket: send 14002 bytes to client ... [0m
+[0;31mE (1235445) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1235475) TCP/IP socket: send 14024 bytes to client ... [0m
+[0;31mE (1235525) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1235573) TCP/IP socket: send 14055 bytes to client ... [0m
+[0;31mE (1235645) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1235679) TCP/IP socket: send 14022 bytes to client ... [0m
+[0;31mE (1235725) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1235794) TCP/IP socket: send 13939 bytes to client ... [0m
+[0;31mE (1235845) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1235873) TCP/IP socket: send 13856 bytes to client ... [0m
+[0;31mE (1235925) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1235939) TCP/IP socket: send 14061 bytes to client ... [0m
+[0;31mE (1236005) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1236013) TCP/IP socket: send 13747 bytes to client ... [0m
+[0;31mE (1236085) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1236091) TCP/IP socket: send 13777 bytes to client ... [0m
+[0;31mE (1236165) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1236177) TCP/IP socket: send 13789 bytes to client ... [0m
+[0;31mE (1236245) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1236297) TCP/IP socket: send 14026 bytes to client ... [0m
+[0;31mE (1236365) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1236383) TCP/IP socket: send 13957 bytes to client ... [0m
+[0;31mE (1236445) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1236555) TCP/IP socket: send 13990 bytes to client ... [0m
+[0;31mE (1236604) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1236654) TCP/IP socket: send 13785 bytes to client ... [0m
+[0;31mE (1236724) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1236760) TCP/IP socket: send 13802 bytes to client ... [0m
+[0;31mE (1236804) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1236813) TCP/IP socket: send 13731 bytes to client ... [0m
+[0;31mE (1236884) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1236935) TCP/IP socket: send 13749 bytes to client ... [0m
+[0;31mE (1237004) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1237139) TCP/IP socket: send 13728 bytes to client ... [0m
+[0;31mE (1237204) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1237311) TCP/IP socket: send 13782 bytes to client ... [0m
+[0;31mE (1237364) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1237370) TCP/IP socket: send 13961 bytes to client ... [0m
+[0;31mE (1237444) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1237548) TCP/IP socket: send 13963 bytes to client ... [0m
+[0;31mE (1237604) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1237658) TCP/IP socket: send 13749 bytes to client ... [0m
+[0;31mE (1237724) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1237777) TCP/IP socket: send 13752 bytes to client ... [0m
+[0;31mE (1237844) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1237935) TCP/IP socket: send 13850 bytes to client ... [0m
+[0;31mE (1238004) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1238017) TCP/IP socket: send 14006 bytes to client ... [0m
+[0;31mE (1238084) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1238160) TCP/IP socket: send 13882 bytes to client ... [0m
+[0;31mE (1238204) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1238235) TCP/IP socket: send 13916 bytes to client ... [0m
+[0;31mE (1238284) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1238349) TCP/IP socket: send 14018 bytes to client ... [0m
+[0;31mE (1238404) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1238450) TCP/IP socket: send 14148 bytes to client ... [0m
+[0;31mE (1238524) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1238661) TCP/IP socket: send 13722 bytes to client ... [0m
+[0;31mE (1238724) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1238795) TCP/IP socket: send 13242 bytes to client ... [0m
+[0;31mE (1238843) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1238853) TCP/IP socket: send 13247 bytes to client ... [0m
+[0;31mE (1238924) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1238964) TCP/IP socket: send 13684 bytes to client ... [0m
+[0;31mE (1239044) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1239122) TCP/IP socket: send 13717 bytes to client ... [0m
+[0;31mE (1239163) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1239183) TCP/IP socket: send 13683 bytes to client ... [0m
+[0;31mE (1239243) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1239251) TCP/IP socket: send 13822 bytes to client ... [0m
+[0;31mE (1239323) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1239340) TCP/IP socket: send 13794 bytes to client ... [0m
+[0;31mE (1239403) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1239409) TCP/IP socket: send 13653 bytes to client ... [0m
+[0;31mE (1239483) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1239494) TCP/IP socket: send 13653 bytes to client ... [0m
+[0;31mE (1239563) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1239582) TCP/IP socket: send 13730 bytes to client ... [0m
+[0;31mE (1239643) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1239665) TCP/IP socket: send 13892 bytes to client ... [0m
+[0;31mE (1239723) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1239729) TCP/IP socket: send 13633 bytes to client ... [0m
+[0;31mE (1239803) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1239877) TCP/IP socket: send 13576 bytes to client ... [0m
+[0;31mE (1239923) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1239968) TCP/IP socket: send 13921 bytes to client ... [0m
+[0;31mE (1240043) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1240067) TCP/IP socket: send 13871 bytes to client ... [0m
+[0;31mE (1240123) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1240187) TCP/IP socket: send 13966 bytes to client ... [0m
+[0;31mE (1240243) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1240282) TCP/IP socket: send 14035 bytes to client ... [0m
+[0;31mE (1240323) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1240329) TCP/IP socket: send 13707 bytes to client ... [0m
+[0;31mE (1240403) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1240411) TCP/IP socket: send 13776 bytes to client ... [0m
+[0;31mE (1240483) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1240490) TCP/IP socket: send 13773 bytes to client ... [0m
+[0;31mE (1240563) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1240599) TCP/IP socket: send 13948 bytes to client ... [0m
+[0;31mE (1240643) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1240796) TCP/IP socket: send 13939 bytes to client ... [0m
+[0;31mE (1240843) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1240889) TCP/IP socket: send 14037 bytes to client ... [0m
+[0;31mE (1240963) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1241028) TCP/IP socket: send 14047 bytes to client ... [0m
+[0;31mE (1241083) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1241114) TCP/IP socket: send 13708 bytes to client ... [0m
+[0;31mE (1241163) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1241203) TCP/IP socket: send 13982 bytes to client ... [0m
+[0;31mE (1241283) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1241332) TCP/IP socket: send 13966 bytes to client ... [0m
+[0;31mE (1241403) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1241601) TCP/IP socket: send 13820 bytes to client ... [0m
+[0;31mE (1241642) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1241654) TCP/IP socket: send 13722 bytes to client ... [0m
+[0;31mE (1241722) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1241776) TCP/IP socket: send 13746 bytes to client ... [0m
+[0;31mE (1241842) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1241852) TCP/IP socket: send 13772 bytes to client ... [0m
+[0;31mE (1241922) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1241968) TCP/IP socket: send 13772 bytes to client ... [0m
+[0;31mE (1242042) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1242088) TCP/IP socket: send 13782 bytes to client ... [0m
+[0;31mE (1242162) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1242228) TCP/IP socket: send 13794 bytes to client ... [0m
+[0;31mE (1242282) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1242394) TCP/IP socket: send 13999 bytes to client ... [0m
+[0;31mE (1242442) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1242453) TCP/IP socket: send 13738 bytes to client ... [0m
+[0;31mE (1242522) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1242545) TCP/IP socket: send 13768 bytes to client ... [0m
+[0;31mE (1242602) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1242647) TCP/IP socket: send 13958 bytes to client ... [0m
+[0;31mE (1242722) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1242746) TCP/IP socket: send 13786 bytes to client ... [0m
+[0;31mE (1242802) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1242810) TCP/IP socket: send 13920 bytes to client ... [0m
+[0;31mE (1242882) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1242934) TCP/IP socket: send 13777 bytes to client ... [0m
+[0;31mE (1243002) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1243038) TCP/IP socket: send 13891 bytes to client ... [0m
+[0;31mE (1243082) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1243169) TCP/IP socket: send 13802 bytes to client ... [0m
+[0;31mE (1243242) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1243247) TCP/IP socket: send 13698 bytes to client ... [0m
+[0;31mE (1243322) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1243381) TCP/IP socket: send 13904 bytes to client ... [0m
+[0;31mE (1243442) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1243492) TCP/IP socket: send 13797 bytes to client ... [0m
+[0;31mE (1243562) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1243586) TCP/IP socket: send 13812 bytes to client ... [0m
+[0;31mE (1243642) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1243724) TCP/IP socket: send 13760 bytes to client ... [0m
+[0;31mE (1243802) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1243826) TCP/IP socket: send 13801 bytes to client ... [0m
+[0;31mE (1243882) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1243897) TCP/IP socket: send 13749 bytes to client ... [0m
+[0;31mE (1243962) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1243980) TCP/IP socket: send 13753 bytes to client ... [0m
+[0;31mE (1244042) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1244141) TCP/IP socket: send 13910 bytes to client ... [0m
+[0;31mE (1244201) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1244208) TCP/IP socket: send 13734 bytes to client ... [0m
+[0;31mE (1244281) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1244370) TCP/IP socket: send 13962 bytes to client ... [0m
+[0;31mE (1244441) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1244486) TCP/IP socket: send 14017 bytes to client ... [0m
+[0;31mE (1244561) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1244584) TCP/IP socket: send 13784 bytes to client ... [0m
+[0;31mE (1244641) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1244703) TCP/IP socket: send 13882 bytes to client ... [0m
+[0;31mE (1244761) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1244788) TCP/IP socket: send 13937 bytes to client ... [0m
+[0;31mE (1244841) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1244854) TCP/IP socket: send 13954 bytes to client ... [0m
+[0;31mE (1244921) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1244935) TCP/IP socket: send 13826 bytes to client ... [0m
+[0;31mE (1245001) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1245033) TCP/IP socket: send 13702 bytes to client ... [0m
+[0;31mE (1245081) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1245090) TCP/IP socket: send 13826 bytes to client ... [0m
+[0;31mE (1245161) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1245191) TCP/IP socket: send 13821 bytes to client ... [0m
+[0;31mE (1245241) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1245296) TCP/IP socket: send 13954 bytes to client ... [0m
+[0;31mE (1245361) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1245441) TCP/IP socket: send 13939 bytes to client ... [0m
+[0;31mE (1245521) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1245559) TCP/IP socket: send 13782 bytes to client ... [0m
+[0;31mE (1245601) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1245639) TCP/IP socket: send 13760 bytes to client ... [0m
+[0;31mE (1245681) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1245745) TCP/IP socket: send 13996 bytes to client ... [0m
+[0;31mE (1245801) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1245851) TCP/IP socket: send 13764 bytes to client ... [0m
+[0;31mE (1245921) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1245947) TCP/IP socket: send 13750 bytes to client ... [0m
+[0;31mE (1246001) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1246149) TCP/IP socket: send 13762 bytes to client ... [0m
+[0;31mE (1246201) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1246282) TCP/IP socket: send 13781 bytes to client ... [0m
+[0;31mE (1246361) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1246378) TCP/IP socket: send 13765 bytes to client ... [0m
+[0;31mE (1246441) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1246470) TCP/IP socket: send 13760 bytes to client ... [0m
+[0;31mE (1246521) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1246752) TCP/IP socket: send 13766 bytes to client ... [0m
+[0;31mE (1246800) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1246876) TCP/IP socket: send 13901 bytes to client ... [0m
+[0;31mE (1246920) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1247028) TCP/IP socket: send 14157 bytes to client ... [0m
+[0;31mE (1247080) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1247172) TCP/IP socket: send 13672 bytes to client ... [0m
+[0;31mE (1247240) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1247343) TCP/IP socket: send 13760 bytes to client ... [0m
+[0;31mE (1247400) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1247483) TCP/IP socket: send 13925 bytes to client ... [0m
+[0;31mE (1247560) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1247569) TCP/IP socket: send 13783 bytes to client ... [0m
+[0;31mE (1247640) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1247661) TCP/IP socket: send 13731 bytes to client ... [0m
+[0;31mE (1247720) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1247743) TCP/IP socket: send 14038 bytes to client ... [0m
+[0;31mE (1247800) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1247827) TCP/IP socket: send 13775 bytes to client ... [0m
+[0;31mE (1247880) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1247918) TCP/IP socket: send 13748 bytes to client ... [0m
+[0;31mE (1247960) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1247970) TCP/IP socket: send 13727 bytes to client ... [0m
+[0;31mE (1248040) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1248064) TCP/IP socket: send 13967 bytes to client ... [0m
+[0;31mE (1248120) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1248158) TCP/IP socket: send 13966 bytes to client ... [0m
+[0;31mE (1248200) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1248231) TCP/IP socket: send 13791 bytes to client ... [0m
+[0;31mE (1248280) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1248316) TCP/IP socket: send 13745 bytes to client ... [0m
+[0;31mE (1248360) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1248471) TCP/IP socket: send 13773 bytes to client ... [0m
+[0;31mE (1248520) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1248611) TCP/IP socket: send 13874 bytes to client ... [0m
+[0;31mE (1248680) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1248691) TCP/IP socket: send 13695 bytes to client ... [0m
+[0;31mE (1248760) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1248834) TCP/IP socket: send 13709 bytes to client ... [0m
+[0;31mE (1248880) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1248918) TCP/IP socket: send 13720 bytes to client ... [0m
+[0;31mE (1248960) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1249035) TCP/IP socket: send 13965 bytes to client ... [0m
+[0;31mE (1249080) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1249119) TCP/IP socket: send 13711 bytes to client ... [0m
+[0;31mE (1249199) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1249302) TCP/IP socket: send 13730 bytes to client ... [0m
+[0;31mE (1249359) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1249422) TCP/IP socket: send 13952 bytes to client ... [0m
+[0;31mE (1249479) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1249593) TCP/IP socket: send 13756 bytes to client ... [0m
+[0;31mE (1249639) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1249728) TCP/IP socket: send 13802 bytes to client ... [0m
+[0;31mE (1249799) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1249846) TCP/IP socket: send 13748 bytes to client ... [0m
+[0;31mE (1249919) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1250017) TCP/IP socket: send 13687 bytes to client ... [0m
+[0;31mE (1250079) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1250121) TCP/IP socket: send 13858 bytes to client ... [0m
+[0;31mE (1250199) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1250315) TCP/IP socket: send 13725 bytes to client ... [0m
+[0;31mE (1250359) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1250375) TCP/IP socket: send 13738 bytes to client ... [0m
+[0;31mE (1250439) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1250470) TCP/IP socket: send 13718 bytes to client ... [0m
+[0;31mE (1250519) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1250525) TCP/IP socket: send 13669 bytes to client ... [0m
+[0;31mE (1250599) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1250678) TCP/IP socket: send 13781 bytes to client ... [0m
+[0;31mE (1250719) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1250741) TCP/IP socket: send 13652 bytes to client ... [0m
+[0;31mE (1250799) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1250939) TCP/IP socket: send 13786 bytes to client ... [0m
+[0;31mE (1250999) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1251040) TCP/IP socket: send 14041 bytes to client ... [0m
+[0;31mE (1251119) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1251172) TCP/IP socket: send 13769 bytes to client ... [0m
+[0;31mE (1251239) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1251292) TCP/IP socket: send 13786 bytes to client ... [0m
+[0;31mE (1251359) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1251367) TCP/IP socket: send 13705 bytes to client ... [0m
+[0;31mE (1251439) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1251505) TCP/IP socket: send 13637 bytes to client ... [0m
+[0;31mE (1251559) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1251659) TCP/IP socket: send 13710 bytes to client ... [0m
+[0;31mE (1251718) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1251796) TCP/IP socket: send 13865 bytes to client ... [0m
+[0;31mE (1251838) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1251882) TCP/IP socket: send 13779 bytes to client ... [0m
+[0;31mE (1251958) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1251987) TCP/IP socket: send 13775 bytes to client ... [0m
+[0;31mE (1252038) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1252105) TCP/IP socket: send 13710 bytes to client ... [0m
+[0;31mE (1252158) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1252250) TCP/IP socket: send 13769 bytes to client ... [0m
+[0;31mE (1252318) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1252351) TCP/IP socket: send 13944 bytes to client ... [0m
+[0;31mE (1252398) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1252410) TCP/IP socket: send 13767 bytes to client ... [0m
+[0;31mE (1252478) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1252525) TCP/IP socket: send 13747 bytes to client ... [0m
+[0;31mE (1252598) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1252605) TCP/IP socket: send 13714 bytes to client ... [0m
+[0;31mE (1252678) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1252771) TCP/IP socket: send 13729 bytes to client ... [0m
+[0;31mE (1252838) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1252843) TCP/IP socket: send 13143 bytes to client ... [0m
+[0;31mE (1252918) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1252999) TCP/IP socket: send 12818 bytes to client ... [0m
+[0;31mE (1253078) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1253108) TCP/IP socket: send 13075 bytes to client ... [0m
+[0;31mE (1253158) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1253199) TCP/IP socket: send 13499 bytes to client ... [0m
+[0;31mE (1253278) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1253295) TCP/IP socket: send 13336 bytes to client ... [0m
+[0;31mE (1253358) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1253405) TCP/IP socket: send 13703 bytes to client ... [0m
+[0;31mE (1253478) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1253494) TCP/IP socket: send 13781 bytes to client ... [0m
+[0;31mE (1253558) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1253677) TCP/IP socket: send 13953 bytes to client ... [0m
+[0;31mE (1253718) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1253740) TCP/IP socket: send 13733 bytes to client ... [0m
+[0;31mE (1253798) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1253823) TCP/IP socket: send 13786 bytes to client ... [0m
+[0;31mE (1253878) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1253892) TCP/IP socket: send 13915 bytes to client ... [0m
+[0;31mE (1253958) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1254032) TCP/IP socket: send 13933 bytes to client ... [0m
+[0;31mE (1254077) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1254198) TCP/IP socket: send 13964 bytes to client ... [0m
+[0;31mE (1254277) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1254341) TCP/IP socket: send 14731 bytes to client ... [0m
+[0;31mE (1254397) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1254542) TCP/IP socket: send 13824 bytes to client ... [0m
+[0;31mE (1254597) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1254625) TCP/IP socket: send 13814 bytes to client ... [0m
+[0;31mE (1254677) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1254778) TCP/IP socket: send 13978 bytes to client ... [0m
+[0;31mE (1254837) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1254956) TCP/IP socket: send 13742 bytes to client ... [0m
+[0;31mE (1254997) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1255025) TCP/IP socket: send 13850 bytes to client ... [0m
+[0;31mE (1255077) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1255120) TCP/IP socket: send 14091 bytes to client ... [0m
+[0;31mE (1255197) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1255296) TCP/IP socket: send 13893 bytes to client ... [0m
+[0;31mE (1255357) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1255393) TCP/IP socket: send 13709 bytes to client ... [0m
+[0;31mE (1255437) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1255535) TCP/IP socket: send 13811 bytes to client ... [0m
+[0;31mE (1255597) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1255687) TCP/IP socket: send 13903 bytes to client ... [0m
+[0;31mE (1255757) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1255981) TCP/IP socket: send 13745 bytes to client ... [0m
+[0;31mE (1256037) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1256066) TCP/IP socket: send 13727 bytes to client ... [0m
+[0;31mE (1256117) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1256239) TCP/IP socket: send 13943 bytes to client ... [0m
+[0;31mE (1256317) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1256328) TCP/IP socket: send 14110 bytes to client ... [0m
+[0;31mE (1256397) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1256426) TCP/IP socket: send 13839 bytes to client ... [0m
+[0;31mE (1256477) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1256506) TCP/IP socket: send 13910 bytes to client ... [0m
+[0;31mE (1256557) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1256575) TCP/IP socket: send 13758 bytes to client ... [0m
+[0;31mE (1256636) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1256677) TCP/IP socket: send 13900 bytes to client ... [0m
+[0;31mE (1256756) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1256780) TCP/IP socket: send 13812 bytes to client ... [0m
+[0;31mE (1256836) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1256887) TCP/IP socket: send 13942 bytes to client ... [0m
+[0;31mE (1256956) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1256973) TCP/IP socket: send 13813 bytes to client ... [0m
+[0;31mE (1257036) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1257047) TCP/IP socket: send 13900 bytes to client ... [0m
+[0;31mE (1257116) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1257191) TCP/IP socket: send 13782 bytes to client ... [0m
+[0;31mE (1257236) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1257291) TCP/IP socket: send 13970 bytes to client ... [0m
+[0;31mE (1257356) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1257368) TCP/IP socket: send 13983 bytes to client ... [0m
+[0;31mE (1257436) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1257451) TCP/IP socket: send 13977 bytes to client ... [0m
+[0;31mE (1257516) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1257610) TCP/IP socket: send 13832 bytes to client ... [0m
+[0;31mE (1257676) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1257805) TCP/IP socket: send 13787 bytes to client ... [0m
+[0;31mE (1257876) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1257985) TCP/IP socket: send 13822 bytes to client ... [0m
+[0;31mE (1258036) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1258043) TCP/IP socket: send 13790 bytes to client ... [0m
+[0;31mE (1258116) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1258134) TCP/IP socket: send 13871 bytes to client ... [0m
+[0;31mE (1258196) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1258258) TCP/IP socket: send 13747 bytes to client ... [0m
+[0;31mE (1258316) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1258402) TCP/IP socket: send 13770 bytes to client ... [0m
+[0;31mE (1258476) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1258526) TCP/IP socket: send 13897 bytes to client ... [0m
+[0;31mE (1258596) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1258640) TCP/IP socket: send 13803 bytes to client ... [0m
+[0;31mE (1258716) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1258809) TCP/IP socket: send 13803 bytes to client ... [0m
+[0;31mE (1258876) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1259048) TCP/IP socket: send 13926 bytes to client ... [0m
+[0;31mE (1259116) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1259139) TCP/IP socket: send 13783 bytes to client ... [0m
+[0;31mE (1259195) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1259276) TCP/IP socket: send 14016 bytes to client ... [0m
+[0;31mE (1259355) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1259394) TCP/IP socket: send 13768 bytes to client ... [0m
+[0;31mE (1259435) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1259566) TCP/IP socket: send 13807 bytes to client ... [0m
+[0;31mE (1259635) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1259777) TCP/IP socket: send 13809 bytes to client ... [0m
+[0;31mE (1259835) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1259867) TCP/IP socket: send 13834 bytes to client ... [0m
+[0;31mE (1259915) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1260076) TCP/IP socket: send 13994 bytes to client ... [0m
+[0;31mE (1260155) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1260187) TCP/IP socket: send 13805 bytes to client ... [0m
+[0;31mE (1260235) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1260291) TCP/IP socket: send 13832 bytes to client ... [0m
+[0;31mE (1260355) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1260424) TCP/IP socket: send 13792 bytes to client ... [0m
+[0;31mE (1260475) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1260551) TCP/IP socket: send 13755 bytes to client ... [0m
+[0;31mE (1260595) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1260605) TCP/IP socket: send 13810 bytes to client ... [0m
+[0;31mE (1260675) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1260880) TCP/IP socket: send 13758 bytes to client ... [0m
+[0;31mE (1260955) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1261229) TCP/IP socket: send 13825 bytes to client ... [0m
+[0;31mE (1261275) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1261403) TCP/IP socket: send 13859 bytes to client ... [0m
+[0;31mE (1261475) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1261601) TCP/IP socket: send 13759 bytes to client ... [0m
+[0;31mE (1261674) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1261682) TCP/IP socket: send 13788 bytes to client ... [0m
+[0;31mE (1261754) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1261779) TCP/IP socket: send 13934 bytes to client ... [0m
+[0;31mE (1261834) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1261957) TCP/IP socket: send 13825 bytes to client ... [0m
+[0;31mE (1262034) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1262101) TCP/IP socket: send 13951 bytes to client ... [0m
+[0;31mE (1262154) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1262237) TCP/IP socket: send 14030 bytes to client ... [0m
+[0;31mE (1262314) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1262328) TCP/IP socket: send 13756 bytes to client ... [0m
+[0;31mE (1262394) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1262415) TCP/IP socket: send 13834 bytes to client ... [0m
+[0;31mE (1262474) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1262537) TCP/IP socket: send 13971 bytes to client ... [0m
+[0;31mE (1262594) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1262638) TCP/IP socket: send 13783 bytes to client ... [0m
+[0;31mE (1262714) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1262733) TCP/IP socket: send 13820 bytes to client ... [0m
+[0;31mE (1262794) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1262821) TCP/IP socket: send 13786 bytes to client ... [0m
+[0;31mE (1262874) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1262922) TCP/IP socket: send 13944 bytes to client ... [0m
+[0;31mE (1262994) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1263013) TCP/IP socket: send 13788 bytes to client ... [0m
+[0;31mE (1263074) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1263155) TCP/IP socket: send 13923 bytes to client ... [0m
+[0;31mE (1263234) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1263250) TCP/IP socket: send 13823 bytes to client ... [0m
+[0;31mE (1263314) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1263458) TCP/IP socket: send 13808 bytes to client ... [0m
+[0;31mE (1263514) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1263521) TCP/IP socket: send 13788 bytes to client ... [0m
+[0;31mE (1263594) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1263673) TCP/IP socket: send 13981 bytes to client ... [0m
+[0;31mE (1263754) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1263851) TCP/IP socket: send 13807 bytes to client ... [0m
+[0;31mE (1263914) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1263952) TCP/IP socket: send 13763 bytes to client ... [0m
+[0;31mE (1263994) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1264051) TCP/IP socket: send 13920 bytes to client ... [0m
+[0;31mE (1264113) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1264157) TCP/IP socket: send 14050 bytes to client ... [0m
+[0;31mE (1264233) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1264340) TCP/IP socket: send 13822 bytes to client ... [0m
+[0;31mE (1264393) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1264460) TCP/IP socket: send 13910 bytes to client ... [0m
+[0;31mE (1264513) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1264605) TCP/IP socket: send 14051 bytes to client ... [0m
+[0;31mE (1264673) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1264688) TCP/IP socket: send 13823 bytes to client ... [0m
+[0;31mE (1264753) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1264768) TCP/IP socket: send 13823 bytes to client ... [0m
+[0;31mE (1264833) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1264905) TCP/IP socket: send 13996 bytes to client ... [0m
+[0;31mE (1264953) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1264960) TCP/IP socket: send 13804 bytes to client ... [0m
+[0;31mE (1265033) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1265065) TCP/IP socket: send 14002 bytes to client ... [0m
+[0;31mE (1265113) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1265225) TCP/IP socket: send 13993 bytes to client ... [0m
+[0;31mE (1265273) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1265286) TCP/IP socket: send 13761 bytes to client ... [0m
+[0;31mE (1265353) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1265388) TCP/IP socket: send 13772 bytes to client ... [0m
+[0;31mE (1265433) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1265441) TCP/IP socket: send 13985 bytes to client ... [0m
+[0;31mE (1265513) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1265523) TCP/IP socket: send 13815 bytes to client ... [0m
+[0;31mE (1265593) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1265612) TCP/IP socket: send 13818 bytes to client ... [0m
+[0;31mE (1265673) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1265809) TCP/IP socket: send 13810 bytes to client ... [0m
+[0;31mE (1265873) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1265883) TCP/IP socket: send 13803 bytes to client ... [0m
+[0;31mE (1265953) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1265977) TCP/IP socket: send 13987 bytes to client ... [0m
+[0;31mE (1266033) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1266043) TCP/IP socket: send 13962 bytes to client ... [0m
+[0;31mE (1266113) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1266160) TCP/IP socket: send 13793 bytes to client ... [0m
+[0;31mE (1266233) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1266248) TCP/IP socket: send 13761 bytes to client ... [0m
+[0;31mE (1266313) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1266325) TCP/IP socket: send 13781 bytes to client ... [0m
+[0;31mE (1266393) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1266566) TCP/IP socket: send 13793 bytes to client ... [0m
+[0;31mE (1266632) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1266688) TCP/IP socket: send 13806 bytes to client ... [0m
+[0;31mE (1266752) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1266774) TCP/IP socket: send 13934 bytes to client ... [0m
+[0;31mE (1266832) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1266839) TCP/IP socket: send 13773 bytes to client ... [0m
+[0;31mE (1266912) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1266930) TCP/IP socket: send 13766 bytes to client ... [0m
+[0;31mE (1266992) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1267023) TCP/IP socket: send 13894 bytes to client ... [0m
+[0;31mE (1267072) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1267103) TCP/IP socket: send 14011 bytes to client ... [0m
+[0;31mE (1267152) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1267170) TCP/IP socket: send 13840 bytes to client ... [0m
+[0;31mE (1267232) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1267246) TCP/IP socket: send 13751 bytes to client ... [0m
+[0;31mE (1267312) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1267383) TCP/IP socket: send 13830 bytes to client ... [0m
+[0;31mE (1267432) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1267456) TCP/IP socket: send 13783 bytes to client ... [0m
+[0;31mE (1267512) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1267579) TCP/IP socket: send 13761 bytes to client ... [0m
+[0;31mE (1267632) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1267717) TCP/IP socket: send 13739 bytes to client ... [0m
+[0;31mE (1267792) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1267800) TCP/IP socket: send 13936 bytes to client ... [0m
+[0;31mE (1267872) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1267877) TCP/IP socket: send 13896 bytes to client ... [0m
+[0;31mE (1267952) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1267987) TCP/IP socket: send 13709 bytes to client ... [0m
+[0;31mE (1268032) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1268068) TCP/IP socket: send 13775 bytes to client ... [0m
+[0;31mE (1268112) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1268122) TCP/IP socket: send 13856 bytes to client ... [0m
+[0;31mE (1268192) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1268255) TCP/IP socket: send 14131 bytes to client ... [0m
+[0;31mE (1268312) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1268390) TCP/IP socket: send 14568 bytes to client ... [0m
+[0;31mE (1268432) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1268440) TCP/IP socket: send 13766 bytes to client ... [0m
+[0;31mE (1268512) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1268570) TCP/IP socket: send 14051 bytes to client ... [0m
+[0;31mE (1268632) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1268643) TCP/IP socket: send 13777 bytes to client ... [0m
+[0;31mE (1268712) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1268721) TCP/IP socket: send 13874 bytes to client ... [0m
+[0;31mE (1268792) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1268814) TCP/IP socket: send 13795 bytes to client ... [0m
+[0;31mE (1268872) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1268917) TCP/IP socket: send 13752 bytes to client ... [0m
+[0;31mE (1268992) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1268999) TCP/IP socket: send 13729 bytes to client ... [0m
+[0;31mE (1269071) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1269117) TCP/IP socket: send 13957 bytes to client ... [0m
+[0;31mE (1269191) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1269248) TCP/IP socket: send 13745 bytes to client ... [0m
+[0;31mE (1269311) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1269322) TCP/IP socket: send 13978 bytes to client ... [0m
+[0;31mE (1269391) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1269397) TCP/IP socket: send 13797 bytes to client ... [0m
+[0;31mE (1269471) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1269574) TCP/IP socket: send 13796 bytes to client ... [0m
+[0;31mE (1269631) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1269639) TCP/IP socket: send 13899 bytes to client ... [0m
+[0;31mE (1269711) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1269769) TCP/IP socket: send 13796 bytes to client ... [0m
+[0;31mE (1269831) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1269880) TCP/IP socket: send 14054 bytes to client ... [0m
+[0;31mE (1269951) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1269973) TCP/IP socket: send 14021 bytes to client ... [0m
+[0;31mE (1270031) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1270069) TCP/IP socket: send 13930 bytes to client ... [0m
+[0;31mE (1270111) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1270216) TCP/IP socket: send 13996 bytes to client ... [0m
+[0;31mE (1270271) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1270298) TCP/IP socket: send 13842 bytes to client ... [0m
+[0;31mE (1270351) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1270357) TCP/IP socket: send 13956 bytes to client ... [0m
+[0;31mE (1270431) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1270437) TCP/IP socket: send 13805 bytes to client ... [0m
+[0;31mE (1270511) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1270524) TCP/IP socket: send 13749 bytes to client ... [0m
+[0;31mE (1270591) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1270604) TCP/IP socket: send 13827 bytes to client ... [0m
+[0;31mE (1270671) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1270682) TCP/IP socket: send 13947 bytes to client ... [0m
+[0;31mE (1270751) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1270818) TCP/IP socket: send 14027 bytes to client ... [0m
+[0;31mE (1270871) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1270915) TCP/IP socket: send 13941 bytes to client ... [0m
+[0;31mE (1270991) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1271019) TCP/IP socket: send 13825 bytes to client ... [0m
+[0;31mE (1271071) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1271145) TCP/IP socket: send 13951 bytes to client ... [0m
+[0;31mE (1271191) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1271229) TCP/IP socket: send 13777 bytes to client ... [0m
+[0;31mE (1271271) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1271349) TCP/IP socket: send 14122 bytes to client ... [0m
+[0;31mE (1271391) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1271446) TCP/IP socket: send 13783 bytes to client ... [0m
+[0;31mE (1271511) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1271522) TCP/IP socket: send 13800 bytes to client ... [0m
+[0;31mE (1271590) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1271614) TCP/IP socket: send 14014 bytes to client ... [0m
+[0;31mE (1271670) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1271795) TCP/IP socket: send 13940 bytes to client ... [0m
+[0;31mE (1271870) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1271888) TCP/IP socket: send 13975 bytes to client ... [0m
+[0;31mE (1271950) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1271957) TCP/IP socket: send 13810 bytes to client ... [0m
+[0;31mE (1272030) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1272041) TCP/IP socket: send 13797 bytes to client ... [0m
+[0;31mE (1272110) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1272236) TCP/IP socket: send 13814 bytes to client ... [0m
+[0;31mE (1272310) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1272320) TCP/IP socket: send 13958 bytes to client ... [0m
+[0;31mE (1272390) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1272450) TCP/IP socket: send 13951 bytes to client ... [0m
+[0;31mE (1272510) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1272536) TCP/IP socket: send 13986 bytes to client ... [0m
+[0;31mE (1272590) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1272599) TCP/IP socket: send 13875 bytes to client ... [0m
+[0;31mE (1272670) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1272676) TCP/IP socket: send 13745 bytes to client ... [0m
+[0;31mE (1272750) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1272760) TCP/IP socket: send 13807 bytes to client ... [0m
+[0;31mE (1272830) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1272835) TCP/IP socket: send 13779 bytes to client ... [0m
+[0;31mE (1272910) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1272920) TCP/IP socket: send 14077 bytes to client ... [0m
+[0;31mE (1272990) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1273012) TCP/IP socket: send 13756 bytes to client ... [0m
+[0;31mE (1273070) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1273079) TCP/IP socket: send 13786 bytes to client ... [0m
+[0;31mE (1273150) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1273273) TCP/IP socket: send 13772 bytes to client ... [0m
+[0;31mE (1273350) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1273391) TCP/IP socket: send 13810 bytes to client ... [0m
+[0;31mE (1273470) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1273478) TCP/IP socket: send 14518 bytes to client ... [0m
+[0;31mE (1273550) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1273592) TCP/IP socket: send 13750 bytes to client ... [0m
+[0;31mE (1273670) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1273682) TCP/IP socket: send 13818 bytes to client ... [0m
+[0;31mE (1273750) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1273782) TCP/IP socket: send 13775 bytes to client ... [0m
+[0;31mE (1273830) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1273861) TCP/IP socket: send 13954 bytes to client ... [0m
+[0;31mE (1273910) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1274019) TCP/IP socket: send 13736 bytes to client ... [0m
+[0;31mE (1274070) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1274090) TCP/IP socket: send 13745 bytes to client ... [0m
+[0;31mE (1274149) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1274193) TCP/IP socket: send 13915 bytes to client ... [0m
+[0;31mE (1274269) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1274279) TCP/IP socket: send 13847 bytes to client ... [0m
+[0;31mE (1274349) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1274363) TCP/IP socket: send 13854 bytes to client ... [0m
+[0;31mE (1274429) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1274472) TCP/IP socket: send 13949 bytes to client ... [0m
+[0;31mE (1274549) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1274557) TCP/IP socket: send 13981 bytes to client ... [0m
+[0;31mE (1274629) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1274652) TCP/IP socket: send 13810 bytes to client ... [0m
+[0;31mE (1274709) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1274718) TCP/IP socket: send 13760 bytes to client ... [0m
+[0;31mE (1274789) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1274809) TCP/IP socket: send 13739 bytes to client ... [0m
+[0;31mE (1274869) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1274874) TCP/IP socket: send 13931 bytes to client ... [0m
+[0;31mE (1274949) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1274955) TCP/IP socket: send 14088 bytes to client ... [0m
+[0;31mE (1275029) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1275106) TCP/IP socket: send 13789 bytes to client ... [0m
+[0;31mE (1275149) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1275172) TCP/IP socket: send 13981 bytes to client ... [0m
+[0;31mE (1275229) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1275239) TCP/IP socket: send 13820 bytes to client ... [0m
+[0;31mE (1275309) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1275337) TCP/IP socket: send 13794 bytes to client ... [0m
+[0;31mE (1275389) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1275397) TCP/IP socket: send 13881 bytes to client ... [0m
+[0;31mE (1275469) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1275502) TCP/IP socket: send 14063 bytes to client ... [0m
+[0;31mE (1275549) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1275619) TCP/IP socket: send 13840 bytes to client ... [0m
+[0;31mE (1275669) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1275674) TCP/IP socket: send 13949 bytes to client ... [0m
+[0;31mE (1275749) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1275773) TCP/IP socket: send 14051 bytes to client ... [0m
+[0;31mE (1275829) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1275836) TCP/IP socket: send 13817 bytes to client ... [0m
+[0;31mE (1275909) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1275932) TCP/IP socket: send 13930 bytes to client ... [0m
+[0;31mE (1275989) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1276055) TCP/IP socket: send 14153 bytes to client ... [0m
+[0;31mE (1276109) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1276126) TCP/IP socket: send 13798 bytes to client ... [0m
+[0;31mE (1276189) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1276217) TCP/IP socket: send 13948 bytes to client ... [0m
+[0;31mE (1276269) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1276300) TCP/IP socket: send 14082 bytes to client ... [0m
+[0;31mE (1276349) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1276357) TCP/IP socket: send 13791 bytes to client ... [0m
+[0;31mE (1276429) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1276435) TCP/IP socket: send 13798 bytes to client ... [0m
+[0;31mE (1276509) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1276562) TCP/IP socket: send 13796 bytes to client ... [0m
+[0;31mE (1276629) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1276666) TCP/IP socket: send 13702 bytes to client ... [0m
+[0;31mE (1276708) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1276839) TCP/IP socket: send 14267 bytes to client ... [0m
+[0;31mE (1276908) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1277274) TCP/IP socket: send 13912 bytes to client ... [0m
+[0;31mE (1277348) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1277614) TCP/IP socket: send 13773 bytes to client ... [0m
+[0;31mE (1277668) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1277677) TCP/IP socket: send 13789 bytes to client ... [0m
+[0;31mE (1277748) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1277836) TCP/IP socket: send 14480 bytes to client ... [0m
+[0;31mE (1277908) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1278060) TCP/IP socket: send 13876 bytes to client ... [0m
+[0;31mE (1278108) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1278233) TCP/IP socket: send 13806 bytes to client ... [0m
+[0;31mE (1278308) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1278448) TCP/IP socket: send 13758 bytes to client ... [0m
+[0;31mE (1278508) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1278648) TCP/IP socket: send 13778 bytes to client ... [0m
+[0;31mE (1278708) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1278718) TCP/IP socket: send 13805 bytes to client ... [0m
+[0;31mE (1278788) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1278843) TCP/IP socket: send 13749 bytes to client ... [0m
+[0;31mE (1278907) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1279108) TCP/IP socket: send 13248 bytes to client ... [0m
+[0;31mE (1279187) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1279200) TCP/IP socket: send 12581 bytes to client ... [0m
+[0;31mE (1279267) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1279292) TCP/IP socket: send 12730 bytes to client ... [0m
+[0;31mE (1279347) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1279360) TCP/IP socket: send 13134 bytes to client ... [0m
+[0;31mE (1279427) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1279432) TCP/IP socket: send 13219 bytes to client ... [0m
+[0;31mE (1279507) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1279558) TCP/IP socket: send 13423 bytes to client ... [0m
+[0;31mE (1279627) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1279669) TCP/IP socket: send 13669 bytes to client ... [0m
+[0;31mE (1279747) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1279773) TCP/IP socket: send 13703 bytes to client ... [0m
+[0;31mE (1279827) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1279867) TCP/IP socket: send 13680 bytes to client ... [0m
+[0;31mE (1279947) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1280125) TCP/IP socket: send 13715 bytes to client ... [0m
+[0;31mE (1280187) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1280242) TCP/IP socket: send 13855 bytes to client ... [0m
+[0;31mE (1280307) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1280338) TCP/IP socket: send 13834 bytes to client ... [0m
+[0;31mE (1280387) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1280456) TCP/IP socket: send 14282 bytes to client ... [0m
+[0;31mE (1280507) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1280515) TCP/IP socket: send 13790 bytes to client ... [0m
+[0;31mE (1280587) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1280723) TCP/IP socket: send 13974 bytes to client ... [0m
+[0;31mE (1280787) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1280797) TCP/IP socket: send 13932 bytes to client ... [0m
+[0;31mE (1280867) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1280952) TCP/IP socket: send 13731 bytes to client ... [0m
+[0;31mE (1281027) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1281044) TCP/IP socket: send 13790 bytes to client ... [0m
+[0;31mE (1281107) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1281154) TCP/IP socket: send 13895 bytes to client ... [0m
+[0;31mE (1281227) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1281239) TCP/IP socket: send 13712 bytes to client ... [0m
+[0;31mE (1281307) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1281355) TCP/IP socket: send 14134 bytes to client ... [0m
+[0;31mE (1281427) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1281506) TCP/IP socket: send 13780 bytes to client ... [0m
+[0;31mE (1281586) TCP/IP socket: JPEG compression ok[0m
+I (1281787) wifi:<ba-del>idx
+[0;32mI (1283011) TCP/IP socket: send 13900 bytes to client ... [0m
+[0;31mE (1283066) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1283133) TCP/IP socket: send 13777 bytes to client ... [0m
+[0;31mE (1283186) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1283303) TCP/IP socket: send 13785 bytes to client ... [0m
+[0;31mE (1283346) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1284466) TCP/IP socket: send 13965 bytes to client ... [0m
+[0;31mE (1284545) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1284555) TCP/IP socket: send 13811 bytes to client ... [0m
+[0;31mE (1284625) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1284648) TCP/IP socket: send 13794 bytes to client ... [0m
+[0;31mE (1284705) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1284717) TCP/IP socket: send 13797 bytes to client ... [0m
+[0;31mE (1284785) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1284791) TCP/IP socket: send 13933 bytes to client ... [0m
+[0;31mE (1284865) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1284942) TCP/IP socket: send 13800 bytes to client ... [0m
+[0;31mE (1284985) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1285053) TCP/IP socket: send 14035 bytes to client ... [0m
+[0;31mE (1285105) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1285145) TCP/IP socket: send 13992 bytes to client ... [0m
+[0;31mE (1285225) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1285239) TCP/IP socket: send 13755 bytes to client ... [0m
+[0;31mE (1285305) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1285311) TCP/IP socket: send 13888 bytes to client ... [0m
+[0;31mE (1285385) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1285454) TCP/IP socket: send 14039 bytes to client ... [0m
+[0;31mE (1285505) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1285531) TCP/IP socket: send 14084 bytes to client ... [0m
+[0;31mE (1285585) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1285593) TCP/IP socket: send 13809 bytes to client ... [0m
+[0;31mE (1285665) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1285683) TCP/IP socket: send 13759 bytes to client ... [0m
+[0;31mE (1285745) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1285764) TCP/IP socket: send 13835 bytes to client ... [0m
+[0;31mE (1285825) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1285984) TCP/IP socket: send 13951 bytes to client ... [0m
+[0;31mE (1286025) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1286150) TCP/IP socket: send 13965 bytes to client ... [0m
+[0;31mE (1286225) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1286292) TCP/IP socket: send 13941 bytes to client ... [0m
+[0;31mE (1286345) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1286579) TCP/IP socket: send 13805 bytes to client ... [0m
+[0;31mE (1286624) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1286738) TCP/IP socket: send 13950 bytes to client ... [0m
+[0;31mE (1286784) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1286881) TCP/IP socket: send 13779 bytes to client ... [0m
+[0;31mE (1286944) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1287030) TCP/IP socket: send 13975 bytes to client ... [0m
+I (1287032) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:4077, winSize:64
+[0;31mE (1287104) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1287312) TCP/IP socket: send 13777 bytes to client ... [0m
+[0;31mE (1287384) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1287490) TCP/IP socket: send 13887 bytes to client ... [0m
+[0;31mE (1287544) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1287708) TCP/IP socket: send 13920 bytes to client ... [0m
+[0;31mE (1287784) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1288068) TCP/IP socket: send 13746 bytes to client ... [0m
+[0;31mE (1288144) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1288224) TCP/IP socket: send 13804 bytes to client ... [0m
+[0;31mE (1288304) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1288411) TCP/IP socket: send 13796 bytes to client ... [0m
+[0;31mE (1288464) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1288519) TCP/IP socket: send 14082 bytes to client ... [0m
+[0;31mE (1288584) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1288604) TCP/IP socket: send 13889 bytes to client ... [0m
+[0;31mE (1288664) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1288678) TCP/IP socket: send 14054 bytes to client ... [0m
+[0;31mE (1288744) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1288753) TCP/IP socket: send 13855 bytes to client ... [0m
+[0;31mE (1288824) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1288833) TCP/IP socket: send 13867 bytes to client ... [0m
+[0;31mE (1288904) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1288916) TCP/IP socket: send 13895 bytes to client ... [0m
+[0;31mE (1288984) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1289020) TCP/IP socket: send 13898 bytes to client ... [0m
+[0;31mE (1289063) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1289085) TCP/IP socket: send 13779 bytes to client ... [0m
+[0;31mE (1289143) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1289160) TCP/IP socket: send 13742 bytes to client ... [0m
+[0;31mE (1289223) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1289281) TCP/IP socket: send 13721 bytes to client ... [0m
+[0;31mE (1289343) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1289378) TCP/IP socket: send 13755 bytes to client ... [0m
+[0;31mE (1289423) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1289454) TCP/IP socket: send 13758 bytes to client ... [0m
+[0;31mE (1289503) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1289509) TCP/IP socket: send 13852 bytes to client ... [0m
+[0;31mE (1289583) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1289589) TCP/IP socket: send 13909 bytes to client ... [0m
+[0;31mE (1289663) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1289741) TCP/IP socket: send 13788 bytes to client ... [0m
+[0;31mE (1289783) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1289803) TCP/IP socket: send 13759 bytes to client ... [0m
+[0;31mE (1289863) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1289880) TCP/IP socket: send 13802 bytes to client ... [0m
+[0;31mE (1289943) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1290038) TCP/IP socket: send 13808 bytes to client ... [0m
+[0;31mE (1290103) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1290159) TCP/IP socket: send 13891 bytes to client ... [0m
+[0;31mE (1290223) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1290250) TCP/IP socket: send 13978 bytes to client ... [0m
+[0;31mE (1290303) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1290310) TCP/IP socket: send 14064 bytes to client ... [0m
+[0;31mE (1290383) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1291594) TCP/IP socket: send 13732 bytes to client ... [0m
+[0;31mE (1291662) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1291902) TCP/IP socket: send 14017 bytes to client ... [0m
+[0;31mE (1291982) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1292124) TCP/IP socket: send 13794 bytes to client ... [0m
+[0;31mE (1292182) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1292226) TCP/IP socket: send 13804 bytes to client ... [0m
+[0;31mE (1292302) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1292341) TCP/IP socket: send 13756 bytes to client ... [0m
+[0;31mE (1292382) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1292438) TCP/IP socket: send 13732 bytes to client ... [0m
+[0;31mE (1292502) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1292525) TCP/IP socket: send 13736 bytes to client ... [0m
+[0;31mE (1292582) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1292644) TCP/IP socket: send 13980 bytes to client ... [0m
+[0;31mE (1292702) TCP/IP socket: JPEG compression ok[0m
+[0;31mE (1292775) TCP/IP socket: Error occurred during sending: errno 104[0m
+[0;32mI (1348633) TCP/IP socket: Socket accepted ... [0m
+[0;31mE (1348633) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1348639) TCP/IP socket: send 13778 bytes to client ... [0m
+[0;31mE (1348680) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1348694) TCP/IP socket: send 14015 bytes to client ... [0m
+[0;31mE (1348760) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1348769) TCP/IP socket: send 13770 bytes to client ... [0m
+[0;31mE (1348840) TCP/IP socket: JPEG compression ok[0m
+[0;31mE (1348893) TCP/IP socket: Error occurred during sending: errno 104[0m
+I (1402144) wifi:<ba-del>idx
+I (1407060) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1910, winSize:64
+[0;32mI (1425531) TCP/IP socket: Socket accepted ... [0m
+[0;31mE (1425532) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1425546) TCP/IP socket: send 13755 bytes to client ... [0m
+[0;31mE (1425609) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1425620) TCP/IP socket: send 13339 bytes to client ... [0m
+[0;31mE (1425689) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1425696) TCP/IP socket: send 13369 bytes to client ... [0m
+[0;31mE (1425769) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1425775) TCP/IP socket: send 13383 bytes to client ... [0m
+[0;31mE (1425849) TCP/IP socket: JPEG compression ok[0m
+[0;31mE (1425852) TCP/IP socket: Error occurred during sending: errno 104[0m
+I (1454496) wifi:<ba-del>idx
+I (1458011) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:2720, winSize:64
+[0;32mI (1502487) TCP/IP socket: Socket accepted ... [0m
+[0;31mE (1502487) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1502496) TCP/IP socket: send 13582 bytes to client ... [0m
+[0;31mE (1502538) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1502548) TCP/IP socket: send 14192 bytes to client ... [0m
+[0;31mE (1502618) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1502773) TCP/IP socket: send 14146 bytes to client ... [0m
+[0;31mE (1502818) TCP/IP socket: JPEG compression ok[0m
+[0;31mE (1502916) TCP/IP socket: Error occurred during sending: errno 104[0m
+I (1645476) wifi:<ba-del>idx
+I (1645477) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1431, winSize:64
+[0;32mI (1647092) TCP/IP socket: Socket accepted ... [0m
+[0;31mE (1647093) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1647153) TCP/IP socket: send 14548 bytes to client ... [0m
+[0;31mE (1647200) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1647225) TCP/IP socket: send 14382 bytes to client ... [0m
+[0;31mE (1647280) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1647332) TCP/IP socket: send 14755 bytes to client ... [0m
+[0;31mE (1647400) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1647407) TCP/IP socket: send 14777 bytes to client ... [0m
+[0;31mE (1647480) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1647496) TCP/IP socket: send 14722 bytes to client ... [0m
+[0;31mE (1647560) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1647567) TCP/IP socket: send 14256 bytes to client ... [0m
+[0;31mE (1647640) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1647646) TCP/IP socket: send 14011 bytes to client ... [0m
+[0;31mE (1647720) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1647729) TCP/IP socket: send 14002 bytes to client ... [0m
+[0;31mE (1647800) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1647855) TCP/IP socket: send 14394 bytes to client ... [0m
+[0;31mE (1647920) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1647944) TCP/IP socket: send 14669 bytes to client ... [0m
+[0;31mE (1648000) TCP/IP socket: JPEG compression ok[0m
+I (1648034) wifi:<ba-del>idx
+I (1648037) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1578, winSize:64
+[0;32mI (1648038) TCP/IP socket: send 14845 bytes to client ... [0m
+[0;31mE (1648080) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1648087) TCP/IP socket: send 14681 bytes to client ... [0m
+[0;31mE (1648160) TCP/IP socket: JPEG compression ok[0m
+[0;31mE (1648165) TCP/IP socket: Error occurred during sending: errno 104[0m
+[0;32mI (1683672) TCP/IP socket: Socket accepted ... [0m
+[0;31mE (1683673) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1683682) TCP/IP socket: send 12297 bytes to client ... [0m
+[0;31mE (1683746) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1683785) TCP/IP socket: send 14815 bytes to client ... [0m
+[0;31mE (1683866) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1683899) TCP/IP socket: send 14710 bytes to client ... [0m
+[0;31mE (1683945) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1683973) TCP/IP socket: send 14941 bytes to client ... [0m
+[0;31mE (1684025) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1684053) TCP/IP socket: send 15076 bytes to client ... [0m
+[0;31mE (1684105) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1684132) TCP/IP socket: send 14765 bytes to client ... [0m
+[0;31mE (1684185) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1684240) TCP/IP socket: send 14749 bytes to client ... [0m
+[0;31mE (1684305) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1684311) TCP/IP socket: send 14728 bytes to client ... [0m
+[0;31mE (1684385) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1684393) TCP/IP socket: send 14735 bytes to client ... [0m
+[0;31mE (1684465) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1684476) TCP/IP socket: send 14865 bytes to client ... [0m
+[0;31mE (1684545) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1684573) TCP/IP socket: send 15013 bytes to client ... [0m
+[0;31mE (1684625) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (1684631) TCP/IP socket: send 14835 bytes to client ... [0m
+[0;31mE (1684705) TCP/IP socket: JPEG compression ok[0m
+[0;31mE (1684711) TCP/IP socket: Error occurred during sending: errno 104[0m
+[0;31mE (1727613) TCP/IP socket: Unable to accept connection: errno 23[0m
+[0;31mE (1727614) TCP/IP socket: Unable to create socket: errno 23[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7332
+load:0x40078000,len:16496
+ho 0 tail 12 room 4
+load:0x40080400,len:4280
+entry 0x4008066c
+[0;32mI (28) boot: ESP-IDF v5.0.4 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time 10:34:36[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v1.0[0m
+[0;32mI (35) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=28acch (166604) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=00048af4 vaddr=3ffb0000 size=04240h ( 16960) load[0m
+[0;32mI (156) esp_image: segment 2: paddr=0004cd3c vaddr=40080000 size=032dch ( 13020) load[0m
+[0;32mI (161) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=916a0h (595616) map[0m
+[0;32mI (329) esp_image: segment 4: paddr=000e16c8 vaddr=400832dc size=19204h (102916) load[0m
+[0;32mI (377) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (377) boot: Disabling RNG early entropy source...[0m
+[0;32mI (388) cpu_start: Multicore app[0m
+[0;32mI (388) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (389) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (391) esp_psram: Speed: 80MHz[0m
+[0;32mI (394) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (402) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (411) cpu_start: Pro cpu up.[0m
+[0;32mI (415) cpu_start: Starting app cpu, entry point is 0x400816f4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (933) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (940) cpu_start: Pro cpu start user code[0m
+[0;32mI (940) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (940) cpu_start: Application information:[0m
+[0;32mI (943) cpu_start: Project name:     camera_example[0m
+[0;32mI (949) cpu_start: App version:      e1e4c7c-dirty[0m
+[0;32mI (955) cpu_start: Compile time:     Nov 23 2023 11:12:50[0m
+[0;32mI (961) cpu_start: ELF file SHA256:  9c1ef270e5d9c687...[0m
+[0;32mI (967) cpu_start: ESP-IDF:          v5.0.4[0m
+[0;32mI (971) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (976) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (981) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (986) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (993) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (999) heap_init: At 3FFBA0B0 len 00025F50 (151 KiB): DRAM[0m
+[0;32mI (1005) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1012) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1018) heap_init: At 4009C4E0 len 00003B20 (14 KiB): IRAM[0m
+[0;32mI (1025) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1033) spi_flash: detected chip: generic[0m
+[0;32mI (1037) spi_flash: flash io: qio[0m
+[0;32mI (1041) app_start: Starting scheduler on CPU0[0m
+[[0;32mI (1046) app_start: Starting scheduler on CPU1[0m
+0;32mI (1046) main_task: Started on CPU0[0m
+[0;32mI (1056) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1064) main_task: Calling app_main()[0m
+[0;32mI (1068) esp32-cam Webserver: ESP32 CAM Web Server .......
+[0m
+I (1105) wifi:wifi driver task: 3ffca0fc, prio:23, stack:6656, core=0
+[0;32mI (1105) system_api: Base MAC address is not set[0m
+[0;32mI (1105) system_api: read default base MAC address from EFUSE[0m
+I (1126) wifi:wifi firmware version: e2d0ad8
+I (1126) wifi:wifi certification version: v7.0
+I (1126) wifi:config NVS flash: enabled
+I (1126) wifi:config nano formating: disabled
+I (1131) wifi:Init data frame dynamic rx buffer num: 32
+I (1135) wifi:Init management frame dynamic rx buffer num: 32
+I (1141) wifi:Init management short buffer num: 32
+I (1146) wifi:Init static tx buffer num: 16
+I (1150) wifi:Init tx cache buffer num: 32
+I (1153) wifi:Init static rx buffer size: 1600
+I (1157) wifi:Init static rx buffer num: 10
+I (1161) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1166) wifi_init: rx ba win: 6[0m
+[0;32mI (1169) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1173) wifi_init: udp mbox: 6[0m
+[0;32mI (1177) wifi_init: tcp mbox: 6[0m
+[0;32mI (1181) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1185) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1189) wifi_init: tcp mss: 1440[0m
+[0;32mI (1193) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1198) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1207) phy_init: phy_version 4771,450c73b,Aug 16 2023,11:03:10[0m
+I (1276) wifi:mode : softAP (30:c6:f7:04:f9:d9)
+I (1278) wifi:Total power save buffer number: 8
+I (1278) wifi:Init max length of beacon: 752/752
+I (1279) wifi:Init max length of beacon: 752/752
+[0;32mI (1283) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1292) cam_hal: cam init ok[0m
+[0;32mI (1295) sccb: pin_sda 26 pin_scl 27[0m
+[0;32mI (1299) sccb: sccb_i2c_port=0[0m
+[0;32mI (1304) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1343) camera: Detected camera at address=0x30[0m
+[0;32mI (1346) camera: Detected OV2640 camera[0m
+[0;32mI (1346) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1431) cam_hal: buffer_size: 32768, half_buffer_size: 4096, node_buffer_size: 2048, node_cnt: 16, total_cnt: 15[0m
+[0;32mI (1432) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (1438) cam_hal: cam config ok[0m
+[0;32mI (1442) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (1530) esp32-cam Webserver: ESP32 CAM Web Server is up and running
+[0m
+[0;32mI (1530) main_task: Returned from app_main()[0m
+[0;32mI (1530) TCP/IP socket: Socket created[0m
+[0;32mI (1535) TCP/IP socket: Socket binded[0m
+[0;32mI (1540) TCP/IP socket: Socket listening ...[0m
+I (1672) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1
+I (1673) wifi:station: 28:d0:ea:5f:dc:3c join, AID=1, bgn, 40U
+I (1823) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:28, winSize:64
+[0;32mI (3749) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.254.2[0m
+[0;32mI (3749) wifi: SoftAP client connected with IP: 192.168.254.2.[0m
+I (4301) wifi:<ba-add>idx:3 (ifx:1, 28:d0:ea:5f:dc:3c), tid:6, ssn:2, winSize:64
+[0;32mI (15534) TCP/IP socket: Socket accepted ... [0m
+[0;31mE (15534) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (15704) TCP/IP socket: send 13744 bytes to client ... [0m
+[0;31mE (15773) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (15874) TCP/IP socket: send 15486 bytes to client ... [0m
+[0;31mE (15933) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (15999) TCP/IP socket: send 15611 bytes to client ... [0m
+[0;31mE (16053) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (16178) TCP/IP socket: send 15645 bytes to client ... [0m
+[0;31mE (16253) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (16328) TCP/IP socket: send 15687 bytes to client ... [0m
+[0;31mE (16373) TCP/IP socket: JPEG compression ok[0m
+I (16589) wifi:<ba-del>idx
+I (16590) wifi:<ba-del>idx
+[0;32mI (17978) TCP/IP socket: send 15687 bytes to client ... [0m
+[0;31mE (18052) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (18134) TCP/IP socket: send 15496 bytes to client ... [0m
+[0;31mE (18212) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (18367) TCP/IP socket: send 15575 bytes to client ... [0m
+[0;31mE (18412) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (18643) TCP/IP socket: send 15639 bytes to client ... [0m
+I (18647) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:476, winSize:64
+[0;31mE (18692) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (18854) TCP/IP socket: send 15467 bytes to client ... [0m
+[0;31mE (18932) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (18986) TCP/IP socket: send 15715 bytes to client ... [0m
+[0;31mE (19052) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (19072) TCP/IP socket: send 15499 bytes to client ... [0m
+[0;31mE (19132) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (19268) TCP/IP socket: send 15696 bytes to client ... [0m
+[0;31mE (19332) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (19554) TCP/IP socket: send 15577 bytes to client ... [0m
+[0;31mE (19612) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (19640) TCP/IP socket: send 15465 bytes to client ... [0m
+[0;31mE (19691) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (19713) TCP/IP socket: send 15815 bytes to client ... [0m
+[0;31mE (19771) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (19832) TCP/IP socket: send 15975 bytes to client ... [0m
+[0;31mE (19891) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (19902) TCP/IP socket: send 15454 bytes to client ... [0m
+[0;31mE (19971) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (20008) TCP/IP socket: send 15468 bytes to client ... [0m
+[0;31mE (20051) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (20073) TCP/IP socket: send 15641 bytes to client ... [0m
+[0;31mE (20131) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (20137) TCP/IP socket: send 15685 bytes to client ... [0m
+[0;31mE (20211) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (20223) TCP/IP socket: send 15429 bytes to client ... [0m
+[0;31mE (20291) TCP/IP socket: JPEG compression ok[0m
+[0;31mE (20291) TCP/IP socket: Error occurred during sending: errno 104[0m
+I (34630) wifi:<ba-del>idx
+I (36813) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:808, winSize:64
+[0;32mI (52447) TCP/IP socket: Socket accepted ... [0m
+[0;31mE (52447) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (52454) TCP/IP socket: send 15498 bytes to client ... [0m
+[0;31mE (52518) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (52536) TCP/IP socket: send 15721 bytes to client ... [0m
+[0;31mE (52598) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (52609) TCP/IP socket: send 15781 bytes to client ... [0m
+[0;31mE (52678) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (52699) TCP/IP socket: send 15515 bytes to client ... [0m
+[0;31mE (52758) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (52771) TCP/IP socket: send 15481 bytes to client ... [0m
+[0;31mE (52838) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (52845) TCP/IP socket: send 15472 bytes to client ... [0m
+[0;31mE (52918) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (52933) TCP/IP socket: send 15674 bytes to client ... [0m
+[0;31mE (52998) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (53017) TCP/IP socket: send 15579 bytes to client ... [0m
+[0;31mE (53078) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (53083) TCP/IP socket: send 15499 bytes to client ... [0m
+[0;31mE (53158) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (53164) TCP/IP socket: send 15515 bytes to client ... [0m
+[0;31mE (53238) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (53248) TCP/IP socket: send 15505 bytes to client ... [0m
+[0;31mE (53318) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (53324) TCP/IP socket: send 15646 bytes to client ... [0m
+[0;31mE (53398) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (53405) TCP/IP socket: send 15511 bytes to client ... [0m
+[0;31mE (53478) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (53483) TCP/IP socket: send 15564 bytes to client ... [0m
+[0;31mE (53558) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (53563) TCP/IP socket: send 15520 bytes to client ... [0m
+[0;31mE (53638) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (53661) TCP/IP socket: send 15642 bytes to client ... [0m
+[0;31mE (53718) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (53726) TCP/IP socket: send 15757 bytes to client ... [0m
+[0;31mE (53798) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (53808) TCP/IP socket: send 15547 bytes to client ... [0m
+[0;31mE (53878) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (53946) TCP/IP socket: send 15519 bytes to client ... [0m
+[0;31mE (53998) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (54004) TCP/IP socket: send 15572 bytes to client ... [0m
+[0;31mE (54078) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (54144) TCP/IP socket: send 15590 bytes to client ... [0m
+[0;31mE (54198) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (54205) TCP/IP socket: send 15558 bytes to client ... [0m
+[0;31mE (54278) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (54283) TCP/IP socket: send 15567 bytes to client ... [0m
+[0;31mE (54358) TCP/IP socket: JPEG compression ok[0m
+[0;31mE (54367) TCP/IP socket: Error occurred during sending: errno 104[0m
+I (76477) wifi:<ba-del>idx
+I (76484) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1532, winSize:64
+[0;32mI (97054) TCP/IP socket: Socket accepted ... [0m
+[0;31mE (97055) TCP/IP socket: JPEG compression ok[0m
+[0;31mE (97073) TCP/IP socket: Error occurred during sending: errno 104[0m
+
+Brownout detector was triggered
+
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7332
+load:0x40078000,len:16496
+ho 0 tail 12 room 4
+load:0x40080400,len:4280
+entry 0x4008066c
+[0;32mI (29) boot: ESP-IDF v5.0.4 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 10:34:36[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v1.0[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=28acch (166604) map[0m
+[0;32mI (152) esp_image: segment 1: paddr=00048af4 vaddr=3ffb0000 size=04240h ( 16960) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=0004cd3c vaddr=40080000 size=032dch ( 13020) load[0m
+[0;32mI (162) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=916a0h (595616) map[0m
+[0;32mI (330) esp_image: segment 4: paddr=000e16c8 vaddr=400832dc size=19204h (102916) load[0m
+[0;32mI (378) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (378) boot: Disabling RNG early entropy source...[0m
+[0;32mI (389) cpu_start: Multicore app[0m
+[0;32mI (390) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (390) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (392) esp_psram: Speed: 80MHz[0m
+[0;32mI (395) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (403) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (412) cpu_start: Pro cpu up.[0m
+[0;32mI (416) cpu_start: Starting app cpu, entry point is 0x400816f4[0m
+[0;32mI (408) cpu_start: App cpu up.[0m
+[0;32mI (934) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (942) cpu_start: Pro cpu start user code[0m
+[0;32mI (942) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (942) cpu_start: Application information:[0m
+[0;32mI (945) cpu_start: Project name:     camera_example[0m
+[0;32mI (950) cpu_start: App version:      e1e4c7c-dirty[0m
+[0;32mI (956) cpu_start: Compile time:     Nov 23 2023 11:12:50[0m
+[0;32mI (962) cpu_start: ELF file SHA256:  9c1ef270e5d9c687...[0m
+[0;32mI (968) cpu_start: ESP-IDF:          v5.0.4[0m
+[0;32mI (973) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (977) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (982) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (987) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (994) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1000) heap_init: At 3FFBA0B0 len 00025F50 (151 KiB): DRAM[0m
+[0;32mI (1006) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1013) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1019) heap_init: At 4009C4E0 len 00003B20 (14 KiB): IRAM[0m
+[0;32mI (1026) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1034) spi_flash: detected chip: generic[0m
+[0;32mI (1038) spi_flash: flash io: qio[0m
+[0;32mI (1043) app_start: Starting scheduler on CPU0[0m
+[[0;32mI (1047) app_start: Starting scheduler on CPU1[0m
+0;32mI (1047) main_task: Started on CPU0[0m
+[0;32mI (1057) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1065) main_task: Calling app_main()[0m
+[0;32mI (1069) esp32-cam Webserver: ESP32 CAM Web Server .......
+[0m
+I (1106) wifi:wifi driver task: 3ffca0fc, prio:23, stack:6656, core=0
+[0;32mI (1106) system_api: Base MAC address is not set[0m
+[0;32mI (1106) system_api: read default base MAC address from EFUSE[0m
+I (1127) wifi:wifi firmware version: e2d0ad8
+I (1127) wifi:wifi certification version: v7.0
+I (1127) wifi:config NVS flash: enabled
+I (1127) wifi:config nano formating: disabled
+I (1132) wifi:Init data frame dynamic rx buffer num: 32
+I (1136) wifi:Init management frame dynamic rx buffer num: 32
+I (1142) wifi:Init management short buffer num: 32
+I (1147) wifi:Init static tx buffer num: 16
+I (1151) wifi:Init tx cache buffer num: 32
+I (1154) wifi:Init static rx buffer size: 1600
+I (1158) wifi:Init static rx buffer num: 10
+I (1162) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1167) wifi_init: rx ba win: 6[0m
+[0;32mI (1170) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1174) wifi_init: udp mbox: 6[0m
+[0;32mI (1178) wifi_init: tcp mbox: 6[0m
+[0;32mI (1182) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1186) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1190) wifi_init: tcp mss: 1440[0m
+[0;32mI (1194) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1199) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1208) phy_init: phy_version 4771,450c73b,Aug 16 2023,11:03:10[0m
+I (1277) wifi:mode : softAP (30:c6:f7:04:f9:d9)
+I (1279) wifi:Total power save buffer number: 8
+I (1279) wifi:Init max length of beacon: 752/752
+I (1280) wifi:Init max length of beacon: 752/752
+[0;32mI (1284) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1293) cam_hal: cam init ok[0m
+[0;32mI (1296) sccb: pin_sda 26 pin_scl 27[0m
+[0;32mI (1300) sccb: sccb_i2c_port=0[0m
+[0;32mI (1304) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1343) camera: Detected camera at address=0x30[0m
+[0;32mI (1346) camera: Detected OV2640 camera[0m
+[0;32mI (1346) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1432) cam_hal: buffer_size: 32768, half_buffer_size: 4096, node_buffer_size: 2048, node_cnt: 16, total_cnt: 15[0m
+[0;32mI (1432) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (1439) cam_hal: cam config ok[0m
+[0;32mI (1442) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (1530) esp32-cam Webserver: ESP32 CAM Web Server is up and running
+[0m
+[0;32mI (1530) main_task: Returned from app_main()[0m
+[0;32mI (1530) TCP/IP socket: Socket created[0m
+[0;32mI (1535) TCP/IP socket: Socket binded[0m
+[0;32mI (1540) TCP/IP socket: Socket listening ...[0m
+I (1909) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1
+I (1910) wifi:station: 28:d0:ea:5f:dc:3c join, AID=1, bgn, 40U
+I (2121) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:10, winSize:64
+[0;32mI (3965) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.254.2[0m
+[0;32mI (3965) wifi: SoftAP client connected with IP: 192.168.254.2.[0m
+I (4119) wifi:<ba-add>idx:3 (ifx:1, 28:d0:ea:5f:dc:3c), tid:6, ssn:2, winSize:64
+[0;32mI (38572) TCP/IP socket: Socket accepted ... [0m
+[0;31mE (38573) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (38580) TCP/IP socket: send 13189 bytes to client ... [0m
+[0;31mE (38644) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (38688) TCP/IP socket: send 29217 bytes to client ... [0m
+[0;31mE (38764) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (38780) TCP/IP socket: send 29061 bytes to client ... [0m
+[0;31mE (38844) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (38860) TCP/IP socket: send 29213 bytes to client ... [0m
+[0;31mE (38924) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (38945) TCP/IP socket: send 29141 bytes to client ... [0m
+[0;31mE (39004) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (39033) TCP/IP socket: send 29460 bytes to client ... [0m
+[0;31mE (39084) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (39123) TCP/IP socket: send 28717 bytes to client ... [0m
+[0;31mE (39164) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (39185) TCP/IP socket: send 25839 bytes to client ... [0m
+[0;31mE (39244) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (39262) TCP/IP socket: send 24022 bytes to client ... [0m
+[0;31mE (39323) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (39333) TCP/IP socket: send 22509 bytes to client ... [0m
+[0;31mE (39403) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (39415) TCP/IP socket: send 23398 bytes to client ... [0m
+[0;31mE (39483) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (39609) TCP/IP socket: send 24326 bytes to client ... [0m
+[0;31mE (39683) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (39819) TCP/IP socket: send 26205 bytes to client ... [0m
+[0;31mE (39883) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (40008) TCP/IP socket: send 27432 bytes to client ... [0m
+[0;31mE (40083) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (40182) TCP/IP socket: send 28725 bytes to client ... [0m
+[0;31mE (40243) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (40288) TCP/IP socket: send 29298 bytes to client ... [0m
+[0;31mE (40363) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (42067) TCP/IP socket: send 29418 bytes to client ... [0m
+[0;31mE (42122) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (42159) TCP/IP socket: send 29572 bytes to client ... [0m
+[0;31mE (42202) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (42241) TCP/IP socket: send 29591 bytes to client ... [0m
+[0;31mE (42282) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (42367) TCP/IP socket: send 29869 bytes to client ... [0m
+[0;31mE (42442) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (42463) TCP/IP socket: send 29534 bytes to client ... [0m
+[0;31mE (42522) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (42558) TCP/IP socket: send 29621 bytes to client ... [0m
+[0;31mE (42602) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (42645) TCP/IP socket: send 29552 bytes to client ... [0m
+[0;31mE (42722) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (42769) TCP/IP socket: send 29647 bytes to client ... [0m
+[0;31mE (42842) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (42880) TCP/IP socket: send 29562 bytes to client ... [0m
+[0;31mE (42922) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (42981) TCP/IP socket: send 29527 bytes to client ... [0m
+[0;31mE (43042) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (43082) TCP/IP socket: send 29473 bytes to client ... [0m
+[0;31mE (43162) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (43189) TCP/IP socket: send 29558 bytes to client ... [0m
+[0;31mE (43242) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (43281) TCP/IP socket: send 29592 bytes to client ... [0m
+[0;31mE (43322) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (43357) TCP/IP socket: send 29551 bytes to client ... [0m
+[0;31mE (43402) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (43421) TCP/IP socket: send 30013 bytes to client ... [0m
+[0;31mE (43482) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (43499) TCP/IP socket: send 30136 bytes to client ... [0m
+[0;31mE (43562) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (43611) TCP/IP socket: send 29618 bytes to client ... [0m
+[0;31mE (43682) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (43716) TCP/IP socket: send 29930 bytes to client ... [0m
+[0;31mE (43762) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (43787) TCP/IP socket: send 29560 bytes to client ... [0m
+[0;31mE (43842) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (43875) TCP/IP socket: send 31299 bytes to client ... [0m
+[0;31mE (43922) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (43944) TCP/IP socket: send 29654 bytes to client ... [0m
+[0;31mE (44002) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (44025) TCP/IP socket: send 30041 bytes to client ... [0m
+[0;31mE (44082) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (44099) TCP/IP socket: send 29579 bytes to client ... [0m
+[0;31mE (44162) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (44184) TCP/IP socket: send 29542 bytes to client ... [0m
+[0;31mE (44242) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (44258) TCP/IP socket: send 31988 bytes to client ... [0m
+[0;31mE (44322) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (44360) TCP/IP socket: send 30013 bytes to client ... [0m
+[0;31mE (44402) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (44428) TCP/IP socket: send 29908 bytes to client ... [0m
+[0;31mE (44481) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (44515) TCP/IP socket: send 29562 bytes to client ... [0m
+[0;31mE (44561) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (44590) TCP/IP socket: send 29496 bytes to client ... [0m
+[0;31mE (44641) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (44662) TCP/IP socket: send 29555 bytes to client ... [0m
+[0;31mE (44721) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (44734) TCP/IP socket: send 30032 bytes to client ... [0m
+[0;31mE (44801) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (44819) TCP/IP socket: send 29534 bytes to client ... [0m
+[0;31mE (44881) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (44925) TCP/IP socket: send 29490 bytes to client ... [0m
+[0;31mE (45001) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (45023) TCP/IP socket: send 29564 bytes to client ... [0m
+[0;31mE (45081) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (45114) TCP/IP socket: send 29541 bytes to client ... [0m
+[0;31mE (45162) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (45210) TCP/IP socket: send 31815 bytes to client ... [0m
+[0;31mE (45281) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (45330) TCP/IP socket: send 29645 bytes to client ... [0m
+[0;31mE (45401) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (45414) TCP/IP socket: send 29534 bytes to client ... [0m
+[0;31mE (45481) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (45511) TCP/IP socket: send 29577 bytes to client ... [0m
+[0;31mE (45561) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (45581) TCP/IP socket: send 29532 bytes to client ... [0m
+[0;31mE (45641) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (45662) TCP/IP socket: send 29814 bytes to client ... [0m
+[0;31mE (45721) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (45751) TCP/IP socket: send 29428 bytes to client ... [0m
+[0;31mE (45801) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (45849) TCP/IP socket: send 29568 bytes to client ... [0m
+[0;31mE (45921) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (45946) TCP/IP socket: send 29581 bytes to client ... [0m
+[0;31mE (46001) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (46035) TCP/IP socket: send 29537 bytes to client ... [0m
+[0;31mE (46081) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (46096) TCP/IP socket: send 29550 bytes to client ... [0m
+[0;31mE (46161) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (46176) TCP/IP socket: send 29956 bytes to client ... [0m
+[0;31mE (46241) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (46270) TCP/IP socket: send 29835 bytes to client ... [0m
+[0;31mE (46321) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (46359) TCP/IP socket: send 29507 bytes to client ... [0m
+[0;31mE (46401) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (46439) TCP/IP socket: send 31891 bytes to client ... [0m
+[0;31mE (46481) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (46555) TCP/IP socket: send 30380 bytes to client ... [0m
+[0;31mE (46601) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (46653) TCP/IP socket: send 29991 bytes to client ... [0m
+[0;31mE (46721) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (46743) TCP/IP socket: send 29561 bytes to client ... [0m
+[0;31mE (46800) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (46814) TCP/IP socket: send 29645 bytes to client ... [0m
+[0;31mE (46881) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (46910) TCP/IP socket: send 30089 bytes to client ... [0m
+[0;31mE (46961) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (47012) TCP/IP socket: send 29815 bytes to client ... [0m
+[0;31mE (47080) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (47110) TCP/IP socket: send 30109 bytes to client ... [0m
+[0;31mE (47160) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (47176) TCP/IP socket: send 29556 bytes to client ... [0m
+[0;31mE (47240) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (47267) TCP/IP socket: send 29551 bytes to client ... [0m
+[0;31mE (47320) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (47371) TCP/IP socket: send 29628 bytes to client ... [0m
+[0;31mE (47440) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (47460) TCP/IP socket: send 29603 bytes to client ... [0m
+[0;31mE (47520) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (47558) TCP/IP socket: send 29534 bytes to client ... [0m
+[0;31mE (47600) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (47619) TCP/IP socket: send 30029 bytes to client ... [0m
+[0;31mE (47680) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (47709) TCP/IP socket: send 29999 bytes to client ... [0m
+[0;31mE (47760) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (47813) TCP/IP socket: send 29584 bytes to client ... [0m
+[0;31mE (47880) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (47898) TCP/IP socket: send 29695 bytes to client ... [0m
+[0;31mE (47960) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (47975) TCP/IP socket: send 29722 bytes to client ... [0m
+[0;31mE (48040) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (48087) TCP/IP socket: send 29532 bytes to client ... [0m
+[0;31mE (48160) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (48189) TCP/IP socket: send 29546 bytes to client ... [0m
+[0;31mE (48240) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (48295) TCP/IP socket: send 29507 bytes to client ... [0m
+[0;31mE (48360) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (48426) TCP/IP socket: send 29562 bytes to client ... [0m
+[0;31mE (48480) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (48499) TCP/IP socket: send 29519 bytes to client ... [0m
+[0;31mE (48560) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (48611) TCP/IP socket: send 29560 bytes to client ... [0m
+[0;31mE (48680) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (48704) TCP/IP socket: send 29568 bytes to client ... [0m
+[0;31mE (48760) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (48784) TCP/IP socket: send 29510 bytes to client ... [0m
+[0;31mE (48840) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (48864) TCP/IP socket: send 29498 bytes to client ... [0m
+[0;31mE (48920) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (48935) TCP/IP socket: send 30148 bytes to client ... [0m
+[0;31mE (49000) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (49029) TCP/IP socket: send 29552 bytes to client ... [0m
+[0;31mE (49080) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (49099) TCP/IP socket: send 29559 bytes to client ... [0m
+[0;31mE (49160) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (49174) TCP/IP socket: send 29540 bytes to client ... [0m
+[0;31mE (49240) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (49263) TCP/IP socket: send 29929 bytes to client ... [0m
+[0;31mE (49320) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (49343) TCP/IP socket: send 29853 bytes to client ... [0m
+[0;31mE (49399) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (49428) TCP/IP socket: send 29459 bytes to client ... [0m
+[0;31mE (49479) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (49506) TCP/IP socket: send 29414 bytes to client ... [0m
+[0;31mE (49559) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (49583) TCP/IP socket: send 29422 bytes to client ... [0m
+[0;31mE (49639) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (49675) TCP/IP socket: send 29963 bytes to client ... [0m
+[0;31mE (49719) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (49746) TCP/IP socket: send 29467 bytes to client ... [0m
+[0;31mE (49799) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (49825) TCP/IP socket: send 29447 bytes to client ... [0m
+[0;31mE (49879) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (49902) TCP/IP socket: send 29489 bytes to client ... [0m
+[0;31mE (49959) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (49991) TCP/IP socket: send 29871 bytes to client ... [0m
+[0;31mE (50039) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (50054) TCP/IP socket: send 30053 bytes to client ... [0m
+[0;31mE (50119) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (50166) TCP/IP socket: send 29537 bytes to client ... [0m
+[0;31mE (50239) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (50458) TCP/IP socket: send 29950 bytes to client ... [0m
+[0;31mE (50519) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (50574) TCP/IP socket: send 29527 bytes to client ... [0m
+[0;31mE (50639) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (50710) TCP/IP socket: send 29358 bytes to client ... [0m
+[0;31mE (50759) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (50864) TCP/IP socket: send 29928 bytes to client ... [0m
+[0;31mE (50919) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (51092) TCP/IP socket: send 29431 bytes to client ... [0m
+[0;31mE (51159) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (51299) TCP/IP socket: send 30002 bytes to client ... [0m
+[0;31mE (51359) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (51392) TCP/IP socket: send 29486 bytes to client ... [0m
+[0;31mE (51439) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (51454) TCP/IP socket: send 29506 bytes to client ... [0m
+[0;31mE (51519) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (51554) TCP/IP socket: send 29438 bytes to client ... [0m
+[0;31mE (51599) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (51656) TCP/IP socket: send 29952 bytes to client ... [0m
+[0;31mE (51719) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (51735) TCP/IP socket: send 29540 bytes to client ... [0m
+[0;31mE (51799) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (51826) TCP/IP socket: send 29932 bytes to client ... [0m
+[0;31mE (51879) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (51912) TCP/IP socket: send 29756 bytes to client ... [0m
+[0;31mE (51958) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (51983) TCP/IP socket: send 29361 bytes to client ... [0m
+[0;31mE (52038) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (52087) TCP/IP socket: send 29363 bytes to client ... [0m
+[0;31mE (52159) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (52176) TCP/IP socket: send 29737 bytes to client ... [0m
+[0;31mE (52238) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (52266) TCP/IP socket: send 29454 bytes to client ... [0m
+[0;31mE (52318) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (52344) TCP/IP socket: send 29569 bytes to client ... [0m
+[0;31mE (52398) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (52411) TCP/IP socket: send 29939 bytes to client ... [0m
+[0;31mE (52478) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (52502) TCP/IP socket: send 29554 bytes to client ... [0m
+[0;31mE (52558) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (52595) TCP/IP socket: send 29556 bytes to client ... [0m
+[0;31mE (52638) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (52657) TCP/IP socket: send 29525 bytes to client ... [0m
+[0;31mE (52718) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (52750) TCP/IP socket: send 29881 bytes to client ... [0m
+[0;31mE (52798) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (52811) TCP/IP socket: send 30099 bytes to client ... [0m
+[0;31mE (52878) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (52897) TCP/IP socket: send 29498 bytes to client ... [0m
+[0;31mE (52958) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (52986) TCP/IP socket: send 29600 bytes to client ... [0m
+[0;31mE (53038) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (53093) TCP/IP socket: send 29480 bytes to client ... [0m
+[0;31mE (53158) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (53195) TCP/IP socket: send 29440 bytes to client ... [0m
+[0;31mE (53238) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (53262) TCP/IP socket: send 31804 bytes to client ... [0m
+[0;31mE (53318) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (53332) TCP/IP socket: send 29789 bytes to client ... [0m
+[0;31mE (53398) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (53417) TCP/IP socket: send 29425 bytes to client ... [0m
+[0;31mE (53478) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (53506) TCP/IP socket: send 29761 bytes to client ... [0m
+[0;31mE (53558) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (53576) TCP/IP socket: send 29373 bytes to client ... [0m
+[0;31mE (53638) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (53729) TCP/IP socket: send 29906 bytes to client ... [0m
+[0;31mE (53798) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (53848) TCP/IP socket: send 29570 bytes to client ... [0m
+[0;31mE (53918) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (53932) TCP/IP socket: send 29498 bytes to client ... [0m
+[0;31mE (53998) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (54014) TCP/IP socket: send 29374 bytes to client ... [0m
+[0;31mE (54078) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (54114) TCP/IP socket: send 29440 bytes to client ... [0m
+[0;31mE (54158) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (54173) TCP/IP socket: send 29964 bytes to client ... [0m
+[0;31mE (54238) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (54252) TCP/IP socket: send 29936 bytes to client ... [0m
+[0;31mE (54317) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (54363) TCP/IP socket: send 29523 bytes to client ... [0m
+[0;31mE (54438) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (54463) TCP/IP socket: send 30028 bytes to client ... [0m
+[0;31mE (54517) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (54536) TCP/IP socket: send 29365 bytes to client ... [0m
+[0;31mE (54597) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (54625) TCP/IP socket: send 29393 bytes to client ... [0m
+[0;31mE (54677) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (54705) TCP/IP socket: send 29250 bytes to client ... [0m
+[0;31mE (54758) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (54780) TCP/IP socket: send 29685 bytes to client ... [0m
+[0;31mE (54837) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (54881) TCP/IP socket: send 29418 bytes to client ... [0m
+[0;31mE (54957) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (54972) TCP/IP socket: send 30048 bytes to client ... [0m
+[0;31mE (55037) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (55061) TCP/IP socket: send 29555 bytes to client ... [0m
+[0;31mE (55117) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (55151) TCP/IP socket: send 29602 bytes to client ... [0m
+[0;31mE (55197) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (55214) TCP/IP socket: send 29570 bytes to client ... [0m
+[0;31mE (55277) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (55308) TCP/IP socket: send 29926 bytes to client ... [0m
+[0;31mE (55357) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (55379) TCP/IP socket: send 29929 bytes to client ... [0m
+[0;31mE (55437) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (55450) TCP/IP socket: send 29507 bytes to client ... [0m
+[0;31mE (55517) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (55544) TCP/IP socket: send 29500 bytes to client ... [0m
+[0;31mE (55597) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (55652) TCP/IP socket: send 29400 bytes to client ... [0m
+[0;31mE (55717) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (55754) TCP/IP socket: send 29523 bytes to client ... [0m
+[0;31mE (55797) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (55849) TCP/IP socket: send 29935 bytes to client ... [0m
+[0;31mE (55917) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (55969) TCP/IP socket: send 29637 bytes to client ... [0m
+[0;31mE (56037) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (56077) TCP/IP socket: send 29504 bytes to client ... [0m
+[0;31mE (56157) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (56182) TCP/IP socket: send 29386 bytes to client ... [0m
+[0;31mE (56237) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (56279) TCP/IP socket: send 29426 bytes to client ... [0m
+[0;31mE (56357) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (56385) TCP/IP socket: send 29509 bytes to client ... [0m
+[0;31mE (56437) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (56493) TCP/IP socket: send 29467 bytes to client ... [0m
+[0;31mE (56557) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (56606) TCP/IP socket: send 29551 bytes to client ... [0m
+[0;31mE (56677) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (56710) TCP/IP socket: send 29412 bytes to client ... [0m
+[0;31mE (56757) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (56780) TCP/IP socket: send 29470 bytes to client ... [0m
+[0;31mE (56836) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (56851) TCP/IP socket: send 29457 bytes to client ... [0m
+[0;31mE (56917) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (56931) TCP/IP socket: send 29870 bytes to client ... [0m
+[0;31mE (56996) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (57027) TCP/IP socket: send 29570 bytes to client ... [0m
+[0;31mE (57076) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (57100) TCP/IP socket: send 29574 bytes to client ... [0m
+[0;31mE (57156) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (57187) TCP/IP socket: send 29404 bytes to client ... [0m
+[0;31mE (57236) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (57263) TCP/IP socket: send 29404 bytes to client ... [0m
+[0;31mE (57316) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (57341) TCP/IP socket: send 30125 bytes to client ... [0m
+[0;31mE (57396) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (57437) TCP/IP socket: send 29387 bytes to client ... [0m
+[0;31mE (57516) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (57539) TCP/IP socket: send 30039 bytes to client ... [0m
+[0;31mE (57596) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (57620) TCP/IP socket: send 29516 bytes to client ... [0m
+[0;31mE (57676) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (57702) TCP/IP socket: send 29478 bytes to client ... [0m
+[0;31mE (57756) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (57772) TCP/IP socket: send 29461 bytes to client ... [0m
+[0;31mE (57836) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (57869) TCP/IP socket: send 29879 bytes to client ... [0m
+[0;31mE (57916) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (57929) TCP/IP socket: send 30083 bytes to client ... [0m
+[0;31mE (57996) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (58009) TCP/IP socket: send 29400 bytes to client ... [0m
+[0;31mE (58076) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (58099) TCP/IP socket: send 29507 bytes to client ... [0m
+[0;31mE (58156) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (58181) TCP/IP socket: send 29402 bytes to client ... [0m
+[0;31mE (58236) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (58249) TCP/IP socket: send 29914 bytes to client ... [0m
+[0;31mE (58316) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (58335) TCP/IP socket: send 29516 bytes to client ... [0m
+[0;31mE (58396) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (58418) TCP/IP socket: send 29476 bytes to client ... [0m
+[0;31mE (58476) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (58519) TCP/IP socket: send 29539 bytes to client ... [0m
+[0;31mE (58596) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (58639) TCP/IP socket: send 29556 bytes to client ... [0m
+[0;31mE (58716) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (58761) TCP/IP socket: send 29542 bytes to client ... [0m
+[0;31mE (58836) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (58851) TCP/IP socket: send 30166 bytes to client ... [0m
+[0;31mE (58916) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (58938) TCP/IP socket: send 29504 bytes to client ... [0m
+[0;31mE (58996) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (59031) TCP/IP socket: send 29504 bytes to client ... [0m
+[0;31mE (59076) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (59096) TCP/IP socket: send 29741 bytes to client ... [0m
+[0;31mE (59156) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (59172) TCP/IP socket: send 30007 bytes to client ... [0m
+[0;31mE (59236) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (59263) TCP/IP socket: send 29492 bytes to client ... [0m
+[0;31mE (59315) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (59358) TCP/IP socket: send 29498 bytes to client ... [0m
+[0;31mE (59435) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (59460) TCP/IP socket: send 29406 bytes to client ... [0m
+[0;31mE (59515) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (59544) TCP/IP socket: send 29481 bytes to client ... [0m
+[0;31mE (59595) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (59610) TCP/IP socket: send 29494 bytes to client ... [0m
+[0;31mE (59675) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (59690) TCP/IP socket: send 29826 bytes to client ... [0m
+[0;31mE (59755) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (59785) TCP/IP socket: send 29436 bytes to client ... [0m
+[0;31mE (59835) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (59870) TCP/IP socket: send 29407 bytes to client ... [0m
+[0;31mE (59915) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (59946) TCP/IP socket: send 29519 bytes to client ... [0m
+[0;31mE (59995) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (60011) TCP/IP socket: send 29166 bytes to client ... [0m
+[0;31mE (60075) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (60104) TCP/IP socket: send 29052 bytes to client ... [0m
+[0;31mE (60155) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (60171) TCP/IP socket: send 27408 bytes to client ... [0m
+[0;31mE (60235) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (60258) TCP/IP socket: send 24790 bytes to client ... [0m
+[0;31mE (60315) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (60338) TCP/IP socket: send 23626 bytes to client ... [0m
+[0;31mE (60395) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (60426) TCP/IP socket: send 22511 bytes to client ... [0m
+[0;31mE (60475) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (60483) TCP/IP socket: send 21717 bytes to client ... [0m
+[0;31mE (60555) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (60567) TCP/IP socket: send 20618 bytes to client ... [0m
+[0;31mE (60635) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (60644) TCP/IP socket: send 19303 bytes to client ... [0m
+[0;31mE (60715) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (60735) TCP/IP socket: send 19943 bytes to client ... [0m
+[0;31mE (60795) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (60804) TCP/IP socket: send 19712 bytes to client ... [0m
+[0;31mE (60875) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (60887) TCP/IP socket: send 20912 bytes to client ... [0m
+[0;31mE (60955) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (60979) TCP/IP socket: send 25142 bytes to client ... [0m
+[0;31mE (61035) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (61076) TCP/IP socket: send 24943 bytes to client ... [0m
+[0;31mE (61155) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (61187) TCP/IP socket: send 29638 bytes to client ... [0m
+[0;31mE (61235) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (61281) TCP/IP socket: send 31076 bytes to client ... [0m
+[0;31mE (61355) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (61380) TCP/IP socket: send 29851 bytes to client ... [0m
+[0;31mE (61435) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (61451) TCP/IP socket: send 29192 bytes to client ... [0m
+[0;31mE (61515) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (61554) TCP/IP socket: send 31345 bytes to client ... [0m
+[0;31mE (61635) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (61657) TCP/IP socket: send 31181 bytes to client ... [0m
+[0;31mE (61715) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (61728) TCP/IP socket: send 30473 bytes to client ... [0m
+[0;31mE (61795) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (61814) TCP/IP socket: send 29781 bytes to client ... [0m
+[0;31mE (61875) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (61915) TCP/IP socket: send 31038 bytes to client ... [0m
+[0;31mE (61994) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (62024) TCP/IP socket: send 32423 bytes to client ... [0m
+[0;31mE (62074) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (62101) TCP/IP socket: send 31212 bytes to client ... [0m
+[0;31mE (62154) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (62179) TCP/IP socket: send 31063 bytes to client ... [0m
+[0;31mE (62234) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (62252) TCP/IP socket: send 31699 bytes to client ... [0m
+[0;31mE (62315) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (62345) TCP/IP socket: send 31260 bytes to client ... [0m
+[0;31mE (62395) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (62412) TCP/IP socket: send 31131 bytes to client ... [0m
+[0;31mE (62474) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (62487) TCP/IP socket: send 31142 bytes to client ... [0m
+[0;31mE (62554) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (62572) TCP/IP socket: send 31501 bytes to client ... [0m
+[0;31mE (62634) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (62694) TCP/IP socket: send 31505 bytes to client ... [0m
+[0;31mE (62754) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (62774) TCP/IP socket: send 31697 bytes to client ... [0m
+[0;31mE (62834) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (62852) TCP/IP socket: send 31506 bytes to client ... [0m
+[0;31mE (62914) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (62927) TCP/IP socket: send 31070 bytes to client ... [0m
+[0;31mE (62994) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (63026) TCP/IP socket: send 30909 bytes to client ... [0m
+[0;31mE (63074) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (63090) TCP/IP socket: send 31037 bytes to client ... [0m
+[0;31mE (63154) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (63167) TCP/IP socket: send 29300 bytes to client ... [0m
+[0;31mE (63234) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (63254) TCP/IP socket: send 27437 bytes to client ... [0m
+[0;31mE (63314) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (63347) TCP/IP socket: send 27043 bytes to client ... [0m
+[0;31mE (63394) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (63408) TCP/IP socket: send 27098 bytes to client ... [0m
+[0;31mE (63474) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (63488) TCP/IP socket: send 28366 bytes to client ... [0m
+[0;31mE (63554) TCP/IP socket: JPEG compression ok[0m
+[0;31mE (63558) TCP/IP socket: Error occurred during sending: errno 104[0m
+[0;32mI (194161) TCP/IP socket: Socket accepted ... [0m
+[0;31mE (194162) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (194301) TCP/IP socket: send 31047 bytes to client ... [0m
+[0;31mE (194381) TCP/IP socket: JPEG compression ok[0m
+[0;31mE (194382) TCP/IP socket: Error occurred during sending: errno 104[0m
+[0;32mI (206519) TCP/IP socket: Socket accepted ... [0m
+[0;31mE (206520) TCP/IP socket: JPEG compression ok[0m
+[0;31mE (206540) TCP/IP socket: Error occurred during sending: errno 104[0m
+[0;32mI (246654) TCP/IP socket: Socket accepted ... [0m
+[0;31mE (246654) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (246698) TCP/IP socket: send 30177 bytes to client ... [0m
+[0;31mE (246760) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (246866) TCP/IP socket: send 27270 bytes to client ... [0m
+[0;31mE (246920) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (246939) TCP/IP socket: send 25432 bytes to client ... [0m
+[0;31mE (247000) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (247071) TCP/IP socket: send 24213 bytes to client ... [0m
+[0;31mE (247120) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (247307) TCP/IP socket: send 23087 bytes to client ... [0m
+[0;31mE (247360) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (247486) TCP/IP socket: send 20852 bytes to client ... [0m
+[0;31mE (247560) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (247679) TCP/IP socket: send 20600 bytes to client ... [0m
+[0;31mE (247720) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (247728) TCP/IP socket: send 21522 bytes to client ... [0m
+[0;31mE (247800) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (247885) TCP/IP socket: send 23253 bytes to client ... [0m
+[0;31mE (247960) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (248084) TCP/IP socket: send 25790 bytes to client ... [0m
+[0;31mE (248160) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (248192) TCP/IP socket: send 25865 bytes to client ... [0m
+[0;31mE (248240) TCP/IP socket: JPEG compression ok[0m
+[0;31mE (248277) TCP/IP socket: Error occurred during sending: errno 104[0m
+[0;32mI (261183) TCP/IP socket: Socket accepted ... [0m
+[0;31mE (261184) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (261233) TCP/IP socket: send 25712 bytes to client ... [0m
+[0;31mE (261275) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (261345) TCP/IP socket: send 31791 bytes to client ... [0m
+[0;31mE (261395) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (261424) TCP/IP socket: send 29813 bytes to client ... [0m
+[0;31mE (261475) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (261504) TCP/IP socket: send 29656 bytes to client ... [0m
+[0;31mE (261555) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (261624) TCP/IP socket: send 30874 bytes to client ... [0m
+[0;31mE (261674) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (261708) TCP/IP socket: send 30577 bytes to client ... [0m
+[0;31mE (261754) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (261805) TCP/IP socket: send 27483 bytes to client ... [0m
+[0;31mE (261874) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (261948) TCP/IP socket: send 26172 bytes to client ... [0m
+[0;31mE (261995) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (262027) TCP/IP socket: send 27216 bytes to client ... [0m
+[0;31mE (262074) TCP/IP socket: JPEG compression ok[0m
+[0;31mE (262084) TCP/IP socket: Error occurred during sending: errno 104[0m
+I (299428) wifi:<ba-del>idx
+I (299429) wifi:<ba-del>idx
+I (304733) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1701, winSize:64
+I (364534) wifi:<ba-del>idx
+I (364535) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:2447, winSize:64
+[0;32mI (489098) TCP/IP socket: Socket accepted ... [0m
+[0;31mE (489099) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (489127) TCP/IP socket: send 29141 bytes to client ... [0m
+[0;31mE (489184) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (489201) TCP/IP socket: send 29941 bytes to client ... [0m
+[0;31mE (489263) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (489275) TCP/IP socket: send 28224 bytes to client ... [0m
+[0;31mE (489344) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (489360) TCP/IP socket: send 28661 bytes to client ... [0m
+[0;31mE (489423) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (489445) TCP/IP socket: send 29255 bytes to client ... [0m
+[0;31mE (489504) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (489533) TCP/IP socket: send 29794 bytes to client ... [0m
+[0;31mE (489583) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (489651) TCP/IP socket: send 31037 bytes to client ... [0m
+[0;31mE (489703) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (489744) TCP/IP socket: send 32496 bytes to client ... [0m
+[0;31mE (489823) TCP/IP socket: JPEG compression ok[0m
+[0;31mE (489870) TCP/IP socket: Error occurred during sending: errno 104[0m
+[0;32mI (538915) TCP/IP socket: Socket accepted ... [0m
+[0;31mE (538915) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (538941) TCP/IP socket: send 32579 bytes to client ... [0m
+[0;31mE (539004) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (539027) TCP/IP socket: send 29779 bytes to client ... [0m
+[0;31mE (539084) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (539100) TCP/IP socket: send 26932 bytes to client ... [0m
+[0;31mE (539163) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (539189) TCP/IP socket: send 27517 bytes to client ... [0m
+[0;31mE (539244) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (539259) TCP/IP socket: send 27996 bytes to client ... [0m
+[0;31mE (539324) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (539410) TCP/IP socket: send 28890 bytes to client ... [0m
+[0;31mE (539483) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (539533) TCP/IP socket: send 27863 bytes to client ... [0m
+[0;31mE (539603) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (540008) TCP/IP socket: send 27971 bytes to client ... [0m
+[0;31mE (540083) TCP/IP socket: JPEG compression ok[0m
+[0;31mE (540456) TCP/IP socket: Error occurred during sending: errno 104[0m
+[0;32mI (560490) TCP/IP socket: Socket accepted ... [0m
+[0;31mE (560490) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (560625) TCP/IP socket: send 34343 bytes to client ... [0m
+[0;31mE (560675) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (560711) TCP/IP socket: send 28599 bytes to client ... [0m
+[0;31mE (560755) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (560779) TCP/IP socket: send 27148 bytes to client ... [0m
+[0;31mE (560835) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (560900) TCP/IP socket: send 28687 bytes to client ... [0m
+[0;31mE (560955) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (561014) TCP/IP socket: send 30026 bytes to client ... [0m
+[0;31mE (561075) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (561185) TCP/IP socket: send 26356 bytes to client ... [0m
+[0;31mE (561235) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (561247) TCP/IP socket: send 27784 bytes to client ... [0m
+[0;31mE (561315) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (561344) TCP/IP socket: send 28563 bytes to client ... [0m
+[0;31mE (561395) TCP/IP socket: JPEG compression ok[0m
+[0;31mE (561395) TCP/IP socket: Error occurred during sending: errno 104[0m
+I (783499) wifi:<ba-del>idx
+[0;32mI (787674) TCP/IP socket: Socket accepted ... [0m
+[0;31mE (787675) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (787722) TCP/IP socket: send 29892 bytes to client ... [0m
+[0;31mE (787784) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (787844) TCP/IP socket: send 27465 bytes to client ... [0m
+[0;31mE (787904) TCP/IP socket: JPEG compression ok[0m
+I (787935) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3442, winSize:64
+[0;32mI (787948) TCP/IP socket: send 27264 bytes to client ... [0m
+[0;31mE (788024) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (788042) TCP/IP socket: send 26659 bytes to client ... [0m
+[0;31mE (788104) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (788150) TCP/IP socket: send 27195 bytes to client ... [0m
+[0;31mE (788224) TCP/IP socket: JPEG compression ok[0m
+[0;32mI (788250) TCP/IP socket: send 28156 bytes to client ... [0m
+[0;31mE (788304) TCP/IP socket: JPEG compression ok[0m
+[0;31mE (788368) TCP/IP socket: Error occurred during sending: errno 104[0m
+I (924542) wifi:<ba-del>idx
+I (932378) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1292, winSize:64
+I (982020) wifi:<ba-del>idx
+I (982023) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1871, winSize:64
+I (1001964) wifi:<ba-del>idx
+I (1001988) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:2072, winSize:64
+I (1050299) wifi:<ba-del>idx
+I (1050313) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:2584, winSize:64
+I (1075479) wifi:<ba-del>idx
+I (1081575) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:2943, winSize:64
+I (1092290) wifi:<ba-del>idx
+I (1095801) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3045, winSize:64
+I (1101280) wifi:<ba-del>idx
+I (1101281) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3063, winSize:64
+I (1112599) wifi:<ba-del>idx
+I (1114612) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3283, winSize:64
+I (1123299) wifi:<ba-del>idx
+I (1123301) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3315, winSize:64
+I (1126611) wifi:<ba-del>idx
+I (1135292) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3375, winSize:64
+I (1281998) wifi:station: 28:d0:ea:5f:dc:3c leave, AID = 1, bss_flags is 134243, bss:0x3ffbbb08
+I (1281999) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1
+I (1282003) wifi:<ba-del>idx
+I (59615280) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1
+I (59615281) wifi:station: 28:d0:ea:5f:dc:3c join, AID=1, bgn, 40U
+[0;32mI (59615385) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.254.2[0m
+[0;32mI (59615385) wifi: SoftAP client connected with IP: 192.168.254.2.[0m
+I (59615531) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:16, winSize:64
+I (59806172) wifi:<ba-del>idx
+I (59806177) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:2026, winSize:64
+
+Brownout detector was triggered
+
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7332
+load:0x40078000,len:16496
+ho 0 tail 12 room 4
+load:0x40080400,len:4280
+entry 0x4008066c
+[0;32mI (29) boot: ESP-IDF v5.0.4 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 10:34:36[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v1.0[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=28acch (166604) map[0m

@@ -1,0 +1,129 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7332
+load:0x40078000,len:16496
+ho 0 tail 12 room 4
+load:0x40080400,len:4280
+entry 0x4008066c
+[0;32mI (28) boot: ESP-IDF v5.0.4 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time 10:34:36[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v1.0[0m
+[0;32mI (35) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=28acch (166604) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=00048af4 vaddr=3ffb0000 size=04240h ( 16960) load[0m
+[0;32mI (157) esp_image: segment 2: paddr=0004cd3c vaddr=40080000 size=032dch ( 13020) load[0m
+[0;32mI (161) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=91690h (595600) map[0m
+[0;32mI (329) esp_image: segment 4: paddr=000e16b8 vaddr=400832dc size=19204h (102916) load[0m
+[0;32mI (377) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (377) boot: Disabling RNG early entropy source...[0m
+[0;32mI (389) cpu_start: Multicore app[0m
+[0;32mI (389) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (390) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (391) esp_psram: Speed: 80MHz[0m
+[0;32mI (395) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (402) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (411) cpu_start: Pro cpu up.[0m
+[0;32mI (415) cpu_start: Starting app cpu, entry point is 0x400816f4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (933) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (941) cpu_start: Pro cpu start user code[0m
+[0;32mI (941) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (941) cpu_start: Application information:[0m
+[0;32mI (944) cpu_start: Project name:     camera_example[0m
+[0;32mI (949) cpu_start: App version:      e1e4c7c-dirty[0m
+[0;32mI (955) cpu_start: Compile time:     Nov 23 2023 11:12:50[0m
+[0;32mI (961) cpu_start: ELF file SHA256:  2368aae0a477d167...[0m
+[0;32mI (967) cpu_start: ESP-IDF:          v5.0.4[0m
+[0;32mI (972) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (977) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (981) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (986) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (993) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (999) heap_init: At 3FFBA0B0 len 00025F50 (151 KiB): DRAM[0m
+[0;32mI (1006) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1012) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1019) heap_init: At 4009C4E0 len 00003B20 (14 KiB): IRAM[0m
+[0;32mI (1025) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1033) spi_flash: detected chip: generic[0m
+[0;32mI (1037) spi_flash: flash io: qio[0m
+[0;32mI (1042) app_start: Starting scheduler on CPU0[0m
+[[0;32mI (1046) app_start: Starting scheduler on CPU1[0m
+0;32mI (1046) main_task: Started on CPU0[0m
+[0;32mI (1056) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1064) main_task: Calling app_main()[0m
+[0;32mI (1068) esp32-cam Webserver: ESP32 CAM Web Server .......
+[0m
+I (1105) wifi:wifi driver task: 3ffca0fc, prio:23, stack:6656, core=0
+[0;32mI (1105) system_api: Base MAC address is not set[0m
+[0;32mI (1105) system_api: read default base MAC address from EFUSE[0m
+I (1126) wifi:wifi firmware version: e2d0ad8
+I (1126) wifi:wifi certification version: v7.0
+I (1126) wifi:config NVS flash: enabled
+I (1126) wifi:config nano formating: disabled
+I (1131) wifi:Init data frame dynamic rx buffer num: 32
+I (1135) wifi:Init management frame dynamic rx buffer num: 32
+I (1141) wifi:Init management short buffer num: 32
+I (1146) wifi:Init static tx buffer num: 16
+I (1150) wifi:Init tx cache buffer num: 32
+I (1153) wifi:Init static rx buffer size: 1600
+I (1157) wifi:Init static rx buffer num: 10
+I (1161) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1166) wifi_init: rx ba win: 6[0m
+[0;32mI (1169) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1173) wifi_init: udp mbox: 6[0m
+[0;32mI (1177) wifi_init: tcp mbox: 6[0m
+[0;32mI (1181) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1185) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1189) wifi_init: tcp mss: 1440[0m
+[0;32mI (1193) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1198) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1207) phy_init: phy_version 4771,450c73b,Aug 16 2023,11:03:10[0m
+I (1276) wifi:mode : softAP (30:c6:f7:04:f9:d9)
+I (1278) wifi:Total power save buffer number: 8
+I (1278) wifi:Init max length of beacon: 752/752
+I (1279) wifi:Init max length of beacon: 752/752
+[0;32mI (1283) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1292) cam_hal: cam init ok[0m
+[0;32mI (1295) sccb: pin_sda 26 pin_scl 27[0m
+[0;32mI (1300) sccb: sccb_i2c_port=0[0m
+[0;32mI (1304) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1343) camera: Detected camera at address=0x30[0m
+[0;32mI (1346) camera: Detected OV2640 camera[0m
+[0;32mI (1346) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1431) cam_hal: buffer_size: 32768, half_buffer_size: 4096, node_buffer_size: 2048, node_cnt: 16, total_cnt: 15[0m
+[0;32mI (1432) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (1438) cam_hal: cam config ok[0m
+[0;32mI (1442) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (1530) esp32-cam Webserver: ESP32 CAM Web Server is up and running
+[0m
+[0;32mI (1530) main_task: Returned from app_main()[0m
+[0;32mI (1530) TCP/IP socket: Socket created[0m
+[0;32mI (1535) TCP/IP socket: Socket binded[0m
+[0;32mI (1540) TCP/IP socket: Socket listening ...[0m
+I (17350) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1
+I (17350) wifi:station: 28:d0:ea:5f:dc:3c join, AID=1, bgn, 40U
+[0;32mI (17392) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.254.2[0m
+[0;32mI (17392) wifi: SoftAP client connected with IP: 192.168.254.2.[0m
+I (17512) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:21, winSize:64
+[0;32mI (27843) TCP/IP socket: Socket accepted ... [0m
+[0;31mE (27843) TCP/IP socket: JPEG compression ok[0m
+[0;31mE (27887) TCP/IP socket: Error occurred during sending: errno 0[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+waiting for download

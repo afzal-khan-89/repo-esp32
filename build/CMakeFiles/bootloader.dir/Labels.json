@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}

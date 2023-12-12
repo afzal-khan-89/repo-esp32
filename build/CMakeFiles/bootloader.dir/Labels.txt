@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/bootloader
+/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/bootloader.rule
+/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/bootloader-complete.rule
+/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
