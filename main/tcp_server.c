@@ -58,7 +58,7 @@ static void tcp_server_task(void *pvParameters);
 #define ESP_AP_PASS				"pass1234" 		//password for ESP32 access point
 #define GATEWAY_MAX_RETRY		10 				//Number of times ESP32 will attempt to reconnect to router
 #define ESP_AP_MAX_CONNECT		2				//Maximum stations that can connect to ESP32
-#define PORT 					8080
+#define PORT 					63912
 
 /* FreeRTOS event group to signal when we are connected & ready to make a request */
 static EventGroupHandle_t wifi_event_group;
@@ -234,6 +234,9 @@ int listen_error;
 
 
 esp_err_t send_video_data(int video_client){
+
+    char rx_buffer[]="hello ... ";
+
     int tcp_error = -1 ;
     camera_fb_t * fb = NULL;
     esp_err_t res = ESP_OK;
@@ -251,44 +254,57 @@ esp_err_t send_video_data(int video_client){
     // }
 
     while(true){
-        fb = esp_camera_fb_get();
-        if (!fb) {
-            ESP_LOGE(TAG, "Camera capture failed");
-            res = ESP_FAIL;
-            break;
+
+        int len = recv(video_client, rx_buffer, sizeof(rx_buffer) - 1, 0);
+        if (len < 0) {
+            ESP_LOGE(TAG, "Error occurred during receiving: errno %d", errno);
+        } else if (len == 0) {
+            ESP_LOGW(TAG, "Connection closed");
         }
-        if(fb->format != PIXFORMAT_JPEG){
-            bool jpeg_converted = frame2jpg(fb, 80, &_jpg_buf, &_jpg_buf_len);
-            if(!jpeg_converted){
-                ESP_LOGE(TAG, "JPEG compression failed");
-                esp_camera_fb_return(fb);
-                res = ESP_FAIL;
-            }
-        } else {
-            _jpg_buf_len = fb->len;
-            _jpg_buf = fb->buf;
-            ESP_LOGE(TAG, "JPEG compression ok");
+        else{
+            ESP_LOGI(TAG, "Received  %s ...", rx_buffer);
         }
-        if(res == ESP_OK){
-            //res = httpd_resp_send_chunk(req, (const char *)_jpg_buf, _jpg_buf_len);
-            tcp_error = send(video_client, _jpg_buf, _jpg_buf_len, 0);
-            if (tcp_error < 0) 
-            {
-                ESP_LOGE(TAG, "Error occurred during sending: errno %d", errno);
-            }
-            else ESP_LOGI(TAG, "send %d bytes to client ... ", _jpg_buf_len);
-        }
-        if(fb->format != PIXFORMAT_JPEG){
-            free(_jpg_buf);
-        }
-        esp_camera_fb_return(fb);
-        if(res != ESP_OK || tcp_error < 0){
-            break;
-        }
-        int64_t fr_end = esp_timer_get_time();
-        int64_t frame_time = fr_end - last_frame;
-        last_frame = fr_end;
-        frame_time /= 1000;
+        vTaskDelay(10000/portTICK_PERIOD_MS);
+
+
+        // fb = esp_camera_fb_get();
+        // if (!fb) {
+        //     ESP_LOGE(TAG, "Camera capture failed");
+        //     res = ESP_FAIL;
+        //     break;
+        // }
+        // if(fb->format != PIXFORMAT_JPEG){
+        //     bool jpeg_converted = frame2jpg(fb, 80, &_jpg_buf, &_jpg_buf_len);
+        //     if(!jpeg_converted){
+        //         ESP_LOGE(TAG, "JPEG compression failed");
+        //         esp_camera_fb_return(fb);
+        //         res = ESP_FAIL;
+        //     }
+        // } else {
+        //     _jpg_buf_len = fb->len;
+        //     _jpg_buf = fb->buf;
+        //     ESP_LOGE(TAG, "JPEG compression ok");
+        // }
+        // if(res == ESP_OK){
+        //     //res = httpd_resp_send_chunk(req, (const char *)_jpg_buf, _jpg_buf_len);
+        //     tcp_error = send(video_client, _jpg_buf, _jpg_buf_len, 0);
+        //     if (tcp_error < 0) 
+        //     {
+        //         ESP_LOGE(TAG, "Error occurred during sending: errno %d", errno);
+        //     }
+        //     else ESP_LOGI(TAG, "send %d bytes to client ... ", _jpg_buf_len);
+        // }
+        // if(fb->format != PIXFORMAT_JPEG){
+        //     free(_jpg_buf);
+        // }
+        // esp_camera_fb_return(fb);
+        // if(res != ESP_OK || tcp_error < 0){
+        //     break;
+        // }
+        // int64_t fr_end = esp_timer_get_time();
+        // int64_t frame_time = fr_end - last_frame;
+        // last_frame = fr_end;
+        // frame_time /= 1000;
         // ESP_LOGI(TAG, "MJPG: %uKB %ums (%.1ffps)",
         //     (uint32_t)(_jpg_buf_len/1024),
         //     (uint32_t)frame_time, 1000.0 / (uint32_t)frame_time);

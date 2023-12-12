@@ -17,6 +17,8 @@
 #include "code_wifi.h"
 
 #include "tcp_server.h"
+#include "test_mdns.h"
+
 
 static const char *TAG = "esp32-cam Webserver";
 
@@ -178,7 +180,8 @@ void app_main()
     //setup_server();
 
     TcpServer_Init();
-
+    test_mdns_start();
+    
     ESP_LOGI(TAG, "ESP32 CAM Web Server is up and running\n");
 
 }
