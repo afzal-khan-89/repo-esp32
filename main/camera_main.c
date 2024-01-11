@@ -20,6 +20,8 @@
 #include "test_mdns.h"
 
 
+#include "driver/gpio.h"
+
 static const char *TAG = "esp32-cam Webserver";
 
 #define PART_BOUNDARY "123456789000000000000987654321"
@@ -31,35 +33,69 @@ static const char* _STREAM_PART = "Content-Type: image/jpeg\r\nContent-Length: %
 
 static esp_err_t init_camera(void)
 {
-    camera_config_t camera_config = {
-        .pin_pwdn  = CAM_PIN_PWDN,
-        .pin_reset = CAM_PIN_RESET,
-        .pin_xclk = CAM_PIN_XCLK,
-        .pin_sccb_sda = CAM_PIN_SIOD,
-        .pin_sccb_scl = CAM_PIN_SIOC,
+    // camera_config_t camera_config = {
+    //     .pin_pwdn  = CAM_PIN_PWDN,
+    //     .pin_reset = CAM_PIN_RESET,
+    //     .pin_xclk = CAM_PIN_XCLK,
+    //     .pin_sccb_sda = CAM_PIN_SIOD,
+    //     .pin_sccb_scl = CAM_PIN_SIOC,
 
-        .pin_d7 = CAM_PIN_D7,
-        .pin_d6 = CAM_PIN_D6,
-        .pin_d5 = CAM_PIN_D5,
-        .pin_d4 = CAM_PIN_D4,
-        .pin_d3 = CAM_PIN_D3,
-        .pin_d2 = CAM_PIN_D2,
-        .pin_d1 = CAM_PIN_D1,
-        .pin_d0 = CAM_PIN_D0,
-        .pin_vsync = CAM_PIN_VSYNC,
-        .pin_href = CAM_PIN_HREF,
-        .pin_pclk = CAM_PIN_PCLK,
+    //     .pin_d7 = CAM_PIN_D7,
+    //     .pin_d6 = CAM_PIN_D6,
+    //     .pin_d5 = CAM_PIN_D5,
+    //     .pin_d4 = CAM_PIN_D4,
+    //     .pin_d3 = CAM_PIN_D3,
+    //     .pin_d2 = CAM_PIN_D2,
+    //     .pin_d1 = CAM_PIN_D1,
+    //     .pin_d0 = CAM_PIN_D0,
+    //     .pin_vsync = CAM_PIN_VSYNC,
+    //     .pin_href = CAM_PIN_HREF,
+    //     .pin_pclk = CAM_PIN_PCLK,
+
+    //     .xclk_freq_hz = CONFIG_XCLK_FREQ,
+    //     .ledc_timer = LEDC_TIMER_0,
+    //     .ledc_channel = LEDC_CHANNEL_0,
+
+    //     .pixel_format = PIXFORMAT_GRAYSCALE ,//PIXFORMAT_YUV422, //PIXFORMAT_JPEG,
+    //     .frame_size = FRAMESIZE_VGA, //FRAMESIZE_QVGA, //
+        
+
+    //     .jpeg_quality = 10,
+    //     .fb_count = 12,
+    //     .grab_mode = CAMERA_GRAB_WHEN_EMPTY
+    // };
+
+    camera_config_t camera_config = {
+        .pin_pwdn  = PWDN_GPIO_NUM,
+        .pin_reset = RESET_GPIO_NUM,
+        .pin_xclk = XCLK_GPIO_NUM,
+        .pin_sccb_sda = SIOD_GPIO_NUM,
+        .pin_sccb_scl = SIOC_GPIO_NUM,
+
+        .pin_d7 = Y9_GPIO_NUM,
+        .pin_d6 = Y8_GPIO_NUM,
+        .pin_d5 = Y7_GPIO_NUM,
+        .pin_d4 = Y6_GPIO_NUM,
+        .pin_d3 = Y5_GPIO_NUM,
+        .pin_d2 = Y4_GPIO_NUM,
+        .pin_d1 = Y3_GPIO_NUM,
+        .pin_d0 = Y2_GPIO_NUM,
+        .pin_vsync = VSYNC_GPIO_NUM,
+        .pin_href = HREF_GPIO_NUM,
+        .pin_pclk = PCLK_GPIO_NUM,
 
         .xclk_freq_hz = CONFIG_XCLK_FREQ,
         .ledc_timer = LEDC_TIMER_0,
         .ledc_channel = LEDC_CHANNEL_0,
 
-        .pixel_format = PIXFORMAT_JPEG,
-        .frame_size = FRAMESIZE_VGA,
+        .pixel_format = PIXFORMAT_GRAYSCALE , //PIXFORMAT_YUV422, //PIXFORMAT_GRAYSCALE ,//PIXFORMAT_YUV422, //PIXFORMAT_JPEG,
+        .frame_size = FRAMESIZE_VGA, //FRAMESIZE_QVGA, //
+        
 
-        .jpeg_quality = 10,
-        .fb_count = 1,
-        .grab_mode = CAMERA_GRAB_WHEN_EMPTY};//CAMERA_GRAB_LATEST. Sets when buffers should be filled
+        .jpeg_quality = 8,
+        .fb_count = 24,
+        .grab_mode = CAMERA_GRAB_WHEN_EMPTY
+    };
     esp_err_t err = esp_camera_init(&camera_config);
     if (err != ESP_OK)
     {
@@ -177,10 +213,10 @@ void app_main()
         printf("err: %s\n", esp_err_to_name(err));
         return;
     }
-    //setup_server();
+    setup_server();
 
-    TcpServer_Init();
-    test_mdns_start();
+   // TcpServer_Init();
+  //  test_mdns_start();
     
     ESP_LOGI(TAG, "ESP32 CAM Web Server is up and running\n");
 

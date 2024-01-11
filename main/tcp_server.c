@@ -257,54 +257,57 @@ esp_err_t send_video_data(int video_client){
 
         int len = recv(video_client, rx_buffer, sizeof(rx_buffer) - 1, 0);
         if (len < 0) {
+            
             ESP_LOGE(TAG, "Error occurred during receiving: errno %d", errno);
+
         } else if (len == 0) {
             ESP_LOGW(TAG, "Connection closed");
+            break;
         }
         else{
             ESP_LOGI(TAG, "Received  %s ...", rx_buffer);
         }
-        vTaskDelay(10000/portTICK_PERIOD_MS);
+        vTaskDelay(100/portTICK_PERIOD_MS);
 
 
-        // fb = esp_camera_fb_get();
-        // if (!fb) {
-        //     ESP_LOGE(TAG, "Camera capture failed");
-        //     res = ESP_FAIL;
-        //     break;
-        // }
-        // if(fb->format != PIXFORMAT_JPEG){
-        //     bool jpeg_converted = frame2jpg(fb, 80, &_jpg_buf, &_jpg_buf_len);
-        //     if(!jpeg_converted){
-        //         ESP_LOGE(TAG, "JPEG compression failed");
-        //         esp_camera_fb_return(fb);
-        //         res = ESP_FAIL;
-        //     }
-        // } else {
-        //     _jpg_buf_len = fb->len;
-        //     _jpg_buf = fb->buf;
-        //     ESP_LOGE(TAG, "JPEG compression ok");
-        // }
-        // if(res == ESP_OK){
-        //     //res = httpd_resp_send_chunk(req, (const char *)_jpg_buf, _jpg_buf_len);
-        //     tcp_error = send(video_client, _jpg_buf, _jpg_buf_len, 0);
-        //     if (tcp_error < 0) 
-        //     {
-        //         ESP_LOGE(TAG, "Error occurred during sending: errno %d", errno);
-        //     }
-        //     else ESP_LOGI(TAG, "send %d bytes to client ... ", _jpg_buf_len);
-        // }
-        // if(fb->format != PIXFORMAT_JPEG){
-        //     free(_jpg_buf);
-        // }
-        // esp_camera_fb_return(fb);
-        // if(res != ESP_OK || tcp_error < 0){
-        //     break;
-        // }
-        // int64_t fr_end = esp_timer_get_time();
-        // int64_t frame_time = fr_end - last_frame;
-        // last_frame = fr_end;
-        // frame_time /= 1000;
+        fb = esp_camera_fb_get();
+        if (!fb) {
+            ESP_LOGE(TAG, "Camera capture failed");
+            res = ESP_FAIL;
+            break;
+        }
+        if(fb->format != PIXFORMAT_JPEG){
+            bool jpeg_converted = frame2jpg(fb, 80, &_jpg_buf, &_jpg_buf_len);
+            if(!jpeg_converted){
+                ESP_LOGE(TAG, "JPEG compression failed");
+                esp_camera_fb_return(fb);
+                res = ESP_FAIL;
+            }
+        } else {
+            _jpg_buf_len = fb->len;
+            _jpg_buf = fb->buf;
+            ESP_LOGE(TAG, "JPEG compression ok");
+        }
+        if(res == ESP_OK){
+            //res = httpd_resp_send_chunk(req, (const char *)_jpg_buf, _jpg_buf_len);
+            tcp_error = send(video_client, _jpg_buf, _jpg_buf_len, 0);
+            if (tcp_error < 0) 
+            {
+                ESP_LOGE(TAG, "Error occurred during sending: errno %d", errno);
+            }
+            else ESP_LOGI(TAG, "send %d bytes to client ... ", _jpg_buf_len);
+        }
+        if(fb->format != PIXFORMAT_JPEG){
+            free(_jpg_buf);
+        }
+        esp_camera_fb_return(fb);
+        if(res != ESP_OK || tcp_error < 0){
+            break;
+        }
+        int64_t fr_end = esp_timer_get_time();
+        int64_t frame_time = fr_end - last_frame;
+        last_frame = fr_end;
+        frame_time /= 1000;
         // ESP_LOGI(TAG, "MJPG: %uKB %ums (%.1ffps)",
         //     (uint32_t)(_jpg_buf_len/1024),
         //     (uint32_t)frame_time, 1000.0 / (uint32_t)frame_time);
@@ -388,38 +391,38 @@ static void tcp_server_task(void *pvParameters)
         		break;
         	}
         	ESP_LOGI(TAG, "Socket accepted ... ");
+            send_video_data(client_socket);
+            // while(1)
+            // {
+            //     // bytes_received = recv(client_socket, rx_buffer, sizeof(rx_buffer) - 1, 0);
+            //     // if (bytes_received < 0)
+			// 	// {
+			// 	// 	ESP_LOGI(TAG, "Waiting for data...");
+			// 	// 	vTaskDelay(100 / portTICK_PERIOD_MS);
+			// 	// }
+            //     // else if (bytes_received == 0)
+			// 	// {
+			// 	// 	ESP_LOGI(TAG, "Connection closed...");
+			// 	// 	break;
+			// 	// }
+            //     // else
+            //     // {
+            //     //     ESP_LOGI(TAG, "Received : %s", rx_buffer);
 
-            while(1)
-            {
-                // bytes_received = recv(client_socket, rx_buffer, sizeof(rx_buffer) - 1, 0);
-                // if (bytes_received < 0)
-				// {
-				// 	ESP_LOGI(TAG, "Waiting for data...");
-				// 	vTaskDelay(100 / portTICK_PERIOD_MS);
-				// }
-                // else if (bytes_received == 0)
-				// {
-				// 	ESP_LOGI(TAG, "Connection closed...");
-				// 	break;
-				// }
-                // else
-                // {
-                //     ESP_LOGI(TAG, "Received : %s", rx_buffer);
-
-                //     memcpy(tx_buff, "hello client", 12);
-                //     int err = send(client_socket, tx_buff, sizeof(tx_buff), 0);
-                //     if (err < 0) 
-                //     {
-                //         ESP_LOGE(TAG, "Error occurred during sending: errno %d", errno);
-                //         break;
-                //     }
-                //     ESP_LOGI(TAG, "successfully sent to client ... ");
-                //     bzero(rx_buffer, sizeof(rx_buffer));
-                //     bzero(tx_buff, sizeof(tx_buff));
-                // }
-                send_video_data(client_socket);
-                break;
-            }
+            //     //     memcpy(tx_buff, "hello client", 12);
+            //     //     int err = send(client_socket, tx_buff, sizeof(tx_buff), 0);
+            //     //     if (err < 0) 
+            //     //     {
+            //     //         ESP_LOGE(TAG, "Error occurred during sending: errno %d", errno);
+            //     //         break;
+            //     //     }
+            //     //     ESP_LOGI(TAG, "successfully sent to client ... ");
+            //     //     bzero(rx_buffer, sizeof(rx_buffer));
+            //     //     bzero(tx_buff, sizeof(tx_buff));
+            //     // }
+            //     send_video_data(client_socket);
+            //     break;
+            // }
         }
     }
     vTaskDelete(NULL);

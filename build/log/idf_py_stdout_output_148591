@@ -1,0 +1,1330 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x17e8
+load:0x403c9700,len:0xd90
+load:0x403cc700,len:0x3018
+entry 0x403c9930
+[0;32mI (25) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time 11:23:40[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.1[0m
+[0;32mI (31) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (46) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00020020 vaddr=3c090020 size=263c0h (156608) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=000463e8 vaddr=3fc9a400 size=05788h ( 22408) load[0m
+[0;32mI (130) esp_image: segment 2: paddr=0004bb78 vaddr=40374000 size=044a0h ( 17568) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=8e5f4h (583156) map[0m
+[0;32mI (228) esp_image: segment 4: paddr=000de61c vaddr=403784a0 size=11f0ch ( 73484) load[0m
+[0;32mI (252) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (252) boot: Disabling RNG early entropy source...[0m
+[0;32mI (264) cpu_start: Multicore app[0m
+[0;32mI (264) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (264) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (267) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (273) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (278) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (283) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (288) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (294) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (300) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (306) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (312) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (317) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (322) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (327) esp_psram: Speed: 80MHz[0m
+[0;32mI (331) cpu_start: Pro cpu up.[0m
+[0;32mI (334) cpu_start: Starting app cpu, entry point is 0x403756c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (793) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (802) cpu_start: Pro cpu start user code[0m
+[0;32mI (802) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (802) cpu_start: Application information:[0m
+[0;32mI (805) cpu_start: Project name:     camera_example[0m
+[0;32mI (811) cpu_start: App version:      00ba589-dirty[0m
+[0;32mI (816) cpu_start: Compile time:     Jan 11 2024 11:26:08[0m
+[0;32mI (822) cpu_start: ELF file SHA256:  07f08a10dec264d7...[0m
+[0;32mI (828) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (834) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (838) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (843) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (848) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (855) heap_init: At 3FCA5740 len 00043FD0 (271 KiB): DRAM[0m
+[0;32mI (861) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (868) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (874) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (881) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (889) spi_flash: detected chip: gd[0m
+[0;32mI (892) spi_flash: flash io: qio[0m
+[0;33mW (896) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (910) app_start: Starting scheduler on CPU0[0m
+[0;32mI (914) app_start: Starting scheduler on CPU1[0m
+[0;32mI (914) main_task: Started on CPU0[0m
+[0;32mI (924) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (932) main_task: Calling app_main()[0m
+[0;32mI (936) esp32-cam Webserver: ESP32 CAM Web Server .......
+[0m
+[0;32mI (953) pp: pp rom version: e7ae62f[0m
+[0;32mI (953) net80211: net80211 rom version: e7ae62f[0m
+I (955) wifi:wifi driver task: 3fcb78b4, prio:23, stack:6656, core=0
+[0;32mI (958) system_api: Base MAC address is not set[0m
+[0;32mI (963) system_api: read default base MAC address from EFUSE[0m
+I (974) wifi:wifi firmware version: e2d0ad8
+I (974) wifi:wifi certification version: v7.0
+I (978) wifi:config NVS flash: enabled
+I (981) wifi:config nano formating: disabled
+I (985) wifi:Init data frame dynamic rx buffer num: 32
+I (990) wifi:Init management frame dynamic rx buffer num: 32
+I (995) wifi:Init management short buffer num: 32
+I (1000) wifi:Init static tx buffer num: 16
+I (1004) wifi:Init tx cache buffer num: 32
+I (1007) wifi:Init static tx FG buffer num: 2
+I (1012) wifi:Init static rx buffer size: 1600
+I (1016) wifi:Init static rx buffer num: 10
+I (1020) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1024) wifi_init: rx ba win: 6[0m
+[0;32mI (1027) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1031) wifi_init: udp mbox: 6[0m
+[0;32mI (1035) wifi_init: tcp mbox: 6[0m
+[0;32mI (1039) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1043) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1048) wifi_init: tcp mss: 1440[0m
+[0;32mI (1052) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1056) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1064) phy_init: phy_version 610,2bff4c8,Jul 27 2023,20:22:14[0m
+I (1100) wifi:mode : softAP (34:85:18:ac:92:79)
+I (1103) wifi:Total power save buffer number: 8
+I (1103) wifi:Init max length of beacon: 752/752
+I (1104) wifi:Init max length of beacon: 752/752
+[0;32mI (1108) s3 ll_cam: DMA Channel=4[0m
+[0;32mI (1111) cam_hal: cam init ok[0m
+[0;32mI (1114) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (1119) sccb: sccb_i2c_port=1[0m
+[0;32mI (1133) camera: Detected camera at address=0x30[0m
+[0;32mI (1136) camera: Detected OV2640 camera[0m
+[0;32mI (1136) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1217) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 60[0m
+[0;32mI (1218) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (1224) cam_hal: cam config ok[0m
+[0;32mI (1227) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (1313) esp32-cam Webserver: web server initialized .... [0m
+[0;32mI (1313) esp32-cam Webserver: ESP32 CAM Web Server is up and running
+[0m
+[0;32mI (1316) main_task: Returned from app_main()[0m
+[0;33mW (1319) cam_hal: NO-SOI[0m
+[0;33mW (1324) cam_hal: NO-SOI[0m
+[0;33mW (1347) cam_hal: NO-SOI[0m
+[0;33mW (1353) cam_hal: NO-SOI[0m
+[0;33mW (1363) cam_hal: NO-SOI[0m
+[0;33mW (1379) cam_hal: NO-SOI[0m
+[0;33mW (1390) cam_hal: NO-SOI[0m
+[0;33mW (1403) cam_hal: NO-SOI[0m
+[0;33mW (1425) cam_hal: NO-SOI[0m
+[0;33mW (1436) cam_hal: NO-SOI[0m
+[0;33mW (1439) cam_hal: NO-SOI[0m
+[0;33mW (1479) cam_hal: NO-SOI[0m
+[0;33mW (1506) cam_hal: NO-SOI[0m
+[0;33mW (1515) cam_hal: NO-SOI[0m
+[0;33mW (1518) cam_hal: NO-SOI[0m
+[0;33mW (1523) cam_hal: NO-SOI[0m
+[0;33mW (1531) cam_hal: NO-SOI[0m
+[0;33mW (1553) cam_hal: NO-SOI[0m
+[0;33mW (1560) cam_hal: NO-SOI[0m
+[0;33mW (1589) cam_hal: NO-SOI[0m
+[0;33mW (1596) cam_hal: NO-SOI[0m
+[0;33mW (1605) cam_hal: NO-SOI[0m
+[0;33mW (1620) cam_hal: NO-SOI[0m
+[0;33mW (1630) cam_hal: NO-SOI[0m
+[0;33mW (1637) cam_hal: NO-SOI[0m
+[0;33mW (1646) cam_hal: NO-SOI[0m
+[0;33mW (1674) cam_hal: NO-SOI[0m
+[0;33mW (1687) cam_hal: NO-SOI[0m
+[0;33mW (1704) cam_hal: NO-SOI[0m
+[0;33mW (1712) cam_hal: NO-SOI[0m
+[0;33mW (1730) cam_hal: NO-SOI[0m
+[0;33mW (1741) cam_hal: NO-SOI[0m
+[0;33mW (1750) cam_hal: NO-SOI[0m
+[0;33mW (1753) cam_hal: NO-SOI[0m
+[0;33mW (1765) cam_hal: NO-SOI[0m
+[0;33mW (1789) cam_hal: NO-SOI[0m
+[0;33mW (1796) cam_hal: NO-SOI[0m
+[0;33mW (1800) cam_hal: NO-SOI[0m
+[0;33mW (1809) cam_hal: NO-SOI[0m
+[0;33mW (1827) cam_hal: NO-SOI[0m
+[0;33mW (1833) cam_hal: NO-SOI[0m
+[0;33mW (1840) cam_hal: NO-SOI[0m
+[0;33mW (1844) cam_hal: NO-SOI[0m
+[0;33mW (1861) cam_hal: NO-SOI[0m
+[0;33mW (1864) cam_hal: NO-SOI[0m
+[0;33mW (1870) cam_hal: NO-SOI[0m
+[0;33mW (1876) cam_hal: NO-SOI[0m
+[0;33mW (1881) cam_hal: NO-SOI[0m
+[0;33mW (1908) cam_hal: NO-SOI[0m
+[0;33mW (1914) cam_hal: NO-SOI[0m
+[0;33mW (1919) cam_hal: NO-SOI[0m
+[0;33mW (1927) cam_hal: NO-SOI[0m
+[0;33mW (1948) cam_hal: NO-SOI[0m
+[0;33mW (1960) cam_hal: NO-SOI[0m
+[0;33mW (1988) cam_hal: NO-SOI[0m
+[0;33mW (1993) cam_hal: NO-SOI[0m
+[0;33mW (2002) cam_hal: NO-SOI[0m
+[0;33mW (2029) cam_hal: NO-SOI[0m
+[0;33mW (2048) cam_hal: NO-SOI[0m
+[0;33mW (2080) cam_hal: NO-SOI[0m
+[0;33mW (2125) cam_hal: NO-SOI[0m
+[0;33mW (2130) cam_hal: NO-SOI[0m
+[0;33mW (2167) cam_hal: NO-SOI[0m
+[0;33mW (2187) cam_hal: NO-SOI[0m
+[0;33mW (2196) cam_hal: NO-SOI[0m
+[0;33mW (2205) cam_hal: NO-SOI[0m
+[0;33mW (2219) cam_hal: NO-SOI[0m
+[0;33mW (2241) cam_hal: NO-SOI[0m
+[0;33mW (2246) cam_hal: NO-SOI[0m
+[0;33mW (2250) cam_hal: NO-SOI[0m
+[0;33mW (2270) cam_hal: NO-SOI[0m
+[0;33mW (2283) cam_hal: NO-SOI[0m
+[0;33mW (2299) cam_hal: NO-SOI[0m
+[0;33mW (2305) cam_hal: NO-SOI[0m
+[0;33mW (2313) cam_hal: NO-SOI[0m
+[0;33mW (2329) cam_hal: NO-SOI[0m
+[0;33mW (2351) cam_hal: NO-SOI[0m
+[0;33mW (2363) cam_hal: NO-SOI[0m
+[0;33mW (2382) cam_hal: NO-SOI[0m
+[0;33mW (2391) cam_hal: NO-SOI[0m
+[0;33mW (2399) cam_hal: NO-SOI[0m
+[0;33mW (2403) cam_hal: NO-SOI[0m
+[0;33mW (2419) cam_hal: NO-SOI[0m
+[0;33mW (2422) cam_hal: NO-SOI[0m
+[0;33mW (2425) cam_hal: NO-SOI[0m
+[0;33mW (2431) cam_hal: NO-SOI[0m
+[0;33mW (2447) cam_hal: NO-SOI[0m
+[0;33mW (2469) cam_hal: NO-SOI[0m
+[0;33mW (2481) cam_hal: NO-SOI[0m
+[0;33mW (2488) cam_hal: NO-SOI[0m
+[0;33mW (2506) cam_hal: NO-SOI[0m
+[0;33mW (2510) cam_hal: NO-SOI[0m
+[0;33mW (2516) cam_hal: NO-SOI[0m
+[0;33mW (2521) cam_hal: NO-SOI[0m
+[0;33mW (2549) cam_hal: NO-SOI[0m
+[0;33mW (2565) cam_hal: NO-SOI[0m
+[0;33mW (2570) cam_hal: NO-SOI[0m
+[0;33mW (2595) cam_hal: NO-SOI[0m
+[0;33mW (2600) cam_hal: NO-SOI[0m
+[0;33mW (2618) cam_hal: NO-SOI[0m
+[0;33mW (2621) cam_hal: NO-SOI[0m
+[0;33mW (2628) cam_hal: NO-SOI[0m
+[0;33mW (2638) cam_hal: NO-SOI[0m
+[0;33mW (2642) cam_hal: NO-SOI[0m
+[0;33mW (2668) cam_hal: NO-SOI[0m
+[0;33mW (2676) cam_hal: NO-SOI[0m
+[0;33mW (2680) cam_hal: NO-SOI[0m
+[0;33mW (2703) cam_hal: NO-SOI[0m
+[0;33mW (2708) cam_hal: NO-SOI[0m
+[0;33mW (2717) cam_hal: NO-SOI[0m
+[0;33mW (2740) cam_hal: NO-SOI[0m
+[0;33mW (2743) cam_hal: NO-SOI[0m
+[0;33mW (2746) cam_hal: NO-SOI[0m
+[0;33mW (2751) cam_hal: NO-SOI[0m
+[0;33mW (2762) cam_hal: NO-SOI[0m
+[0;33mW (2770) cam_hal: NO-SOI[0m
+[0;33mW (2783) cam_hal: NO-SOI[0m
+[0;33mW (2786) cam_hal: NO-SOI[0m
+[0;33mW (2791) cam_hal: NO-SOI[0m
+[0;33mW (2801) cam_hal: NO-SOI[0m
+[0;33mW (2817) cam_hal: NO-SOI[0m
+[0;33mW (2825) cam_hal: NO-SOI[0m
+[0;33mW (2828) cam_hal: NO-SOI[0m
+[0;33mW (2832) cam_hal: NO-SOI[0m
+[0;33mW (2843) cam_hal: NO-SOI[0m
+[0;33mW (2863) cam_hal: NO-SOI[0m
+[0;33mW (2869) cam_hal: NO-SOI[0m
+[0;33mW (2880) cam_hal: NO-SOI[0m
+[0;33mW (2899) cam_hal: NO-SOI[0m
+[0;33mW (2907) cam_hal: NO-SOI[0m
+[0;33mW (2912) cam_hal: NO-SOI[0m
+[0;33mW (2922) cam_hal: NO-SOI[0m
+[0;33mW (2953) cam_hal: NO-SOI[0m
+[0;33mW (2965) cam_hal: NO-SOI[0m
+[0;33mW (2981) cam_hal: NO-SOI[0m
+[0;33mW (3003) cam_hal: NO-SOI[0m
+[0;33mW (3008) cam_hal: NO-SOI[0m
+[0;33mW (3031) cam_hal: NO-SOI[0m
+[0;33mW (3043) cam_hal: NO-SOI[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x17e8
+load:0x403c9700,len:0xd90
+load:0x403cc700,len:0x3018
+entry 0x403c9930
+[0;32mI (25) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time 11:23:40[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.1[0m
+[0;32mI (31) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (46) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00020020 vaddr=3c090020 size=263c0h (156608) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=000463e8 vaddr=3fc9a400 size=05788h ( 22408) load[0m
+[0;32mI (130) esp_image: segment 2: paddr=0004bb78 vaddr=40374000 size=044a0h ( 17568) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=8e5f4h (583156) map[0m
+[0;32mI (228) esp_image: segment 4: paddr=000de61c vaddr=403784a0 size=11f0ch ( 73484) load[0m
+[0;32mI (252) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (252) boot: Disabling RNG early entropy source...[0m
+[0;32mI (264) cpu_start: Multicore app[0m
+[0;32mI (264) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (264) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (267) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (273) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (278) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (283) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (288) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (294) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (300) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (306) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (312) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (317) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (322) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (327) esp_psram: Speed: 80MHz[0m
+[0;32mI (331) cpu_start: Pro cpu up.[0m
+[0;32mI (334) cpu_start: Starting app cpu, entry point is 0x403756c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (793) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (802) cpu_start: Pro cpu start user code[0m
+[0;32mI (802) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (802) cpu_start: Application information:[0m
+[0;32mI (805) cpu_start: Project name:     camera_example[0m
+[0;32mI (811) cpu_start: App version:      00ba589-dirty[0m
+[0;32mI (816) cpu_start: Compile time:     Jan 11 2024 11:26:08[0m
+[0;32mI (822) cpu_start: ELF file SHA256:  07f08a10dec264d7...[0m
+[0;32mI (828) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (834) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (838) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (843) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (848) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (855) heap_init: At 3FCA5740 len 00043FD0 (271 KiB): DRAM[0m
+[0;32mI (861) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (868) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (874) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (881) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (889) spi_flash: detected chip: gd[0m
+[0;32mI (892) spi_flash: flash io: qio[0m
+[0;33mW (896) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (910) app_start: Starting scheduler on CPU0[0m
+[0;32mI (914) app_start: Starting scheduler on CPU1[0m
+[0;32mI (914) main_task: Started on CPU0[0m
+[0;32mI (924) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (932) main_task: Calling app_main()[0m
+[0;32mI (936) esp32-cam Webserver: ESP32 CAM Web Server .......
+[0m
+[0;32mI (953) pp: pp rom version: e7ae62f[0m
+[0;32mI (953) net80211: net80211 rom version: e7ae62f[0m
+I (955) wifi:wifi driver task: 3fcb78b4, prio:23, stack:6656, core=0
+[0;32mI (958) system_api: Base MAC address is not set[0m
+[0;32mI (963) system_api: read default base MAC address from EFUSE[0m
+I (974) wifi:wifi firmware version: e2d0ad8
+I (974) wifi:wifi certification version: v7.0
+I (978) wifi:config NVS flash: enabled
+I (981) wifi:config nano formating: disabled
+I (985) wifi:Init data frame dynamic rx buffer num: 32
+I (990) wifi:Init management frame dynamic rx buffer num: 32
+I (995) wifi:Init management short buffer num: 32
+I (1000) wifi:Init static tx buffer num: 16
+I (1004) wifi:Init tx cache buffer num: 32
+I (1007) wifi:Init static tx FG buffer num: 2
+I (1012) wifi:Init static rx buffer size: 1600
+I (1016) wifi:Init static rx buffer num: 10
+I (1020) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1024) wifi_init: rx ba win: 6[0m
+[0;32mI (1027) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1031) wifi_init: udp mbox: 6[0m
+[0;32mI (1035) wifi_init: tcp mbox: 6[0m
+[0;32mI (1039) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1043) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1048) wifi_init: tcp mss: 1440[0m
+[0;32mI (1052) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1056) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1064) phy_init: phy_version 610,2bff4c8,Jul 27 2023,20:22:14[0m
+I (1107) wifi:mode : softAP (34:85:18:ac:92:79)
+I (1109) wifi:Total power save buffer number: 8
+I (1109) wifi:Init max length of beacon: 752/752
+I (1110) wifi:Init max length of beacon: 752/752
+[0;32mI (1114) s3 ll_cam: DMA Channel=4[0m
+[0;32mI (1117) cam_hal: cam init ok[0m
+[0;32mI (1121) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (1125) sccb: sccb_i2c_port=1[0m
+[0;32mI (1139) camera: Detected camera at address=0x30[0m
+[0;32mI (1142) camera: Detected OV2640 camera[0m
+[0;32mI (1142) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1223) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 60[0m
+[0;32mI (1223) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (1230) cam_hal: cam config ok[0m
+[0;32mI (1233) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (1319) esp32-cam Webserver: web server initialized .... [0m
+[0;32mI (1320) esp32-cam Webserver: ESP32 CAM Web Server is up and running
+[0m
+[0;32mI (1322) main_task: Returned from app_main()[0m
+[0;33mW (1645) cam_hal: NO-SOI[0m
+[0;33mW (1927) cam_hal: NO-SOI[0m
+[0;33mW (1936) cam_hal: NO-SOI[0m
+[0;33mW (1949) cam_hal: NO-SOI[0m
+[0;33mW (2014) cam_hal: NO-SOI[0m
+[0;33mW (2213) cam_hal: NO-SOI[0m
+[0;33mW (2357) cam_hal: NO-SOI[0m
+[0;33mW (2365) cam_hal: NO-SOI[0m
+[0;33mW (2392) cam_hal: NO-SOI[0m
+[0;33mW (2396) cam_hal: NO-SOI[0m
+[0;33mW (2406) cam_hal: NO-SOI[0m
+[0;33mW (2413) cam_hal: NO-SOI[0m
+[0;33mW (2453) cam_hal: NO-SOI[0m
+[0;33mW (2484) cam_hal: NO-SOI[0m
+[0;33mW (2505) cam_hal: NO-SOI[0m
+[0;33mW (2508) cam_hal: NO-SOI[0m
+[0;33mW (2568) cam_hal: NO-SOI[0m
+[0;33mW (2573) cam_hal: NO-SOI[0m
+[0;33mW (2592) cam_hal: NO-SOI[0m
+[0;33mW (2606) cam_hal: NO-SOI[0m
+[0;33mW (2610) cam_hal: NO-SOI[0m
+[0;33mW (2626) cam_hal: NO-SOI[0m
+[0;33mW (2631) cam_hal: NO-SOI[0m
+[0;33mW (2638) cam_hal: NO-SOI[0m
+
+***ERROR*** A stack overflow in task cam_task has been detected.
+
+
+Backtrace: 0x4037635e:0x3fcd2420 0x4037f499:0x3fcd2440 0x4037f7ee:0x3fcd2460 0x403816a3:0x3fcd24e0 0x4037f8ac:0x3fcd2500 0x4037f8a2:0xa5a5a5a5 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07f08a10dec264d7
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375c71
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x17e8
+load:0x403c9700,len:0xd90
+load:0x403cc700,len:0x3018
+entry 0x403c9930
+[0;32mI (29) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 11:23:40[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v0.1[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (41) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (46) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00020020 vaddr=3c090020 size=263c0h (156608) map[0m
+[0;32mI (130) esp_image: segment 1: paddr=000463e8 vaddr=3fc9a400 size=05788h ( 22408) load[0m
+[0;32mI (135) esp_image: segment 2: paddr=0004bb78 vaddr=40374000 size=044a0h ( 17568) load[0m
+[0;32mI (139) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=8e5f4h (583156) map[0m
+[0;32mI (233) esp_image: segment 4: paddr=000de61c vaddr=403784a0 size=11f0ch ( 73484) load[0m
+[0;32mI (257) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (257) boot: Disabling RNG early entropy source...[0m
+[0;32mI (268) cpu_start: Multicore app[0m
+[0;32mI (268) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (269) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (272) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (277) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (282) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (288) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (293) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (299) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (304) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (310) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (316) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (322) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (327) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (331) esp_psram: Speed: 80MHz[0m
+[0;32mI (335) cpu_start: Pro cpu up.[0m
+[0;32mI (339) cpu_start: Starting app cpu, entry point is 0x403756c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (798) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (807) cpu_start: Pro cpu start user code[0m
+[0;32mI (807) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (807) cpu_start: Application information:[0m
+[0;32mI (810) cpu_start: Project name:     camera_example[0m
+[0;32mI (815) cpu_start: App version:      00ba589-dirty[0m
+[0;32mI (821) cpu_start: Compile time:     Jan 11 2024 11:26:08[0m
+[0;32mI (827) cpu_start: ELF file SHA256:  07f08a10dec264d7...[0m
+[0;32mI (833) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (838) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (843) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (848) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (852) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (860) heap_init: At 3FCA5740 len 00043FD0 (271 KiB): DRAM[0m
+[0;32mI (866) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (873) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (879) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (885) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (893) spi_flash: detected chip: gd[0m
+[0;32mI (897) spi_flash: flash io: qio[0m
+[0;33mW (901) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (914) app_start: Starting scheduler on CPU0[0m
+[0;32mI (919) app_start: Starting scheduler on CPU1[0m
+[0;32mI (919) main_task: Started on CPU0[0m
+[0;32mI (929) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (937) main_task: Calling app_main()[0m
+[0;32mI (941) esp32-cam Webserver: ESP32 CAM Web Server .......
+[0m
+[0;32mI (958) pp: pp rom version: e7ae62f[0m
+[0;32mI (958) net80211: net80211 rom version: e7ae62f[0m
+I (960) wifi:wifi driver task: 3fcb78b4, prio:23, stack:6656, core=0
+[0;32mI (963) system_api: Base MAC address is not set[0m
+[0;32mI (968) system_api: read default base MAC address from EFUSE[0m
+I (979) wifi:wifi firmware version: e2d0ad8
+I (979) wifi:wifi certification version: v7.0
+I (983) wifi:config NVS flash: enabled
+I (986) wifi:config nano formating: disabled
+I (990) wifi:Init data frame dynamic rx buffer num: 32
+I (995) wifi:Init management frame dynamic rx buffer num: 32
+I (1000) wifi:Init management short buffer num: 32
+I (1005) wifi:Init static tx buffer num: 16
+I (1009) wifi:Init tx cache buffer num: 32
+I (1012) wifi:Init static tx FG buffer num: 2
+I (1017) wifi:Init static rx buffer size: 1600
+I (1021) wifi:Init static rx buffer num: 10
+I (1025) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1029) wifi_init: rx ba win: 6[0m
+[0;32mI (1033) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1037) wifi_init: udp mbox: 6[0m
+[0;32mI (1040) wifi_init: tcp mbox: 6[0m
+[0;32mI (1044) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1048) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1053) wifi_init: tcp mss: 1440[0m
+[0;32mI (1057) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1061) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1069) phy_init: phy_version 610,2bff4c8,Jul 27 2023,20:22:14[0m
+I (1106) wifi:mode : softAP (34:85:18:ac:92:79)
+I (1108) wifi:Total power save buffer number: 8
+I (1109) wifi:Init max length of beacon: 752/752
+I (1109) wifi:Init max length of beacon: 752/752
+[0;32mI (1113) s3 ll_cam: DMA Channel=4[0m
+[0;32mI (1116) cam_hal: cam init ok[0m
+[0;32mI (1120) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (1124) sccb: sccb_i2c_port=1[0m
+[0;32mI (1138) camera: Detected camera at address=0x30[0m
+[0;32mI (1141) camera: Detected OV2640 camera[0m
+[0;32mI (1141) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1222) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 60[0m
+[0;32mI (1222) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (1229) cam_hal: cam config ok[0m
+[0;32mI (1232) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (1318) esp32-cam Webserver: web server initialized .... [0m
+[0;32mI (1319) esp32-cam Webserver: ESP32 CAM Web Server is up and running
+[0m
+[0;32mI (1321) main_task: Returned from app_main()[0m
+I (15960) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1
+I (15961) wifi:station: 28:d0:ea:5f:dc:3c join, AID=1, bgn, 40U
+[0;32mI (18093) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.254.2[0m
+[0;32mI (18093) wifi: SoftAP client connected with IP: 192.168.254.2.[0m
+I (18155) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:9, winSize:64
+I (22119) wifi:<ba-del>idx
+I (22149) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:81, winSize:64
+[0;33mW (31235) cam_hal: NO-EOI[0m
+[0;33mW (31244) cam_hal: NO-SOI[0m
+[0;33mW (31258) cam_hal: NO-SOI[0m
+[0;33mW (31271) cam_hal: NO-SOI[0m
+[0;33mW (31298) cam_hal: NO-SOI[0m
+[0;33mW (31309) cam_hal: NO-SOI[0m
+[0;33mW (31315) cam_hal: NO-SOI[0m
+[0;33mW (31352) cam_hal: NO-SOI[0m
+[0;33mW (31356) cam_hal: NO-SOI[0m
+[0;33mW (31395) cam_hal: NO-SOI[0m
+[0;33mW (31418) cam_hal: NO-SOI[0m
+[0;33mW (31426) cam_hal: NO-SOI[0m
+[0;33mW (31435) cam_hal: NO-SOI[0m
+[0;33mW (31459) cam_hal: NO-SOI[0m
+[0;33mW (31465) cam_hal: NO-SOI[0m
+[0;33mW (31475) cam_hal: NO-SOI[0m
+[0;33mW (31496) cam_hal: NO-SOI[0m
+[0;33mW (31555) cam_hal: NO-SOI[0m
+[0;33mW (31562) cam_hal: NO-SOI[0m
+[0;33mW (31573) cam_hal: NO-SOI[0m
+[0;33mW (31591) cam_hal: NO-SOI[0m
+[0;33mW (31599) cam_hal: NO-SOI[0m
+[0;33mW (31603) cam_hal: NO-SOI[0m
+[0;33mW (31619) cam_hal: NO-SOI[0m
+[0;33mW (31625) cam_hal: NO-SOI[0m
+[0;33mW (31635) cam_hal: NO-SOI[0m
+[0;33mW (31659) cam_hal: NO-SOI[0m
+[0;33mW (31667) cam_hal: NO-SOI[0m
+[0;33mW (31673) cam_hal: NO-SOI[0m
+[0;33mW (31679) cam_hal: NO-SOI[0m
+[0;33mW (31716) cam_hal: NO-SOI[0m
+[0;33mW (31724) cam_hal: NO-SOI[0m
+[0;33mW (31761) cam_hal: NO-SOI[0m
+[0;33mW (31775) cam_hal: NO-SOI[0m
+[0;33mW (31796) cam_hal: NO-SOI[0m
+[0;33mW (31813) cam_hal: NO-SOI[0m
+[0;33mW (31831) cam_hal: NO-SOI[0m
+[0;33mW (31835) cam_hal: NO-SOI[0m
+[0;33mW (31839) cam_hal: NO-SOI[0m
+[0;33mW (31854) cam_hal: NO-SOI[0m
+[0;33mW (31872) cam_hal: NO-SOI[0m
+[0;33mW (31883) cam_hal: NO-SOI[0m
+[0;33mW (31912) cam_hal: NO-SOI[0m
+[0;33mW (31940) cam_hal: NO-SOI[0m
+[0;33mW (31952) cam_hal: NO-SOI[0m
+[0;33mW (31975) cam_hal: NO-SOI[0m
+[0;33mW (31982) cam_hal: NO-SOI[0m
+[0;33mW (31993) cam_hal: NO-SOI[0m
+[0;33mW (32021) cam_hal: NO-SOI[0m
+[0;33mW (32042) cam_hal: NO-SOI[0m
+[0;33mW (32072) cam_hal: NO-SOI[0m
+[0;33mW (32078) cam_hal: NO-SOI[0m
+[0;33mW (32112) cam_hal: NO-SOI[0m
+[0;33mW (32134) cam_hal: NO-SOI[0m
+[0;33mW (32141) cam_hal: NO-SOI[0m
+[0;33mW (32155) cam_hal: NO-SOI[0m
+[0;33mW (32160) cam_hal: NO-SOI[0m
+[0;33mW (32179) cam_hal: NO-SOI[0m
+[0;33mW (32184) cam_hal: NO-SOI[0m
+[0;33mW (32191) cam_hal: NO-SOI[0m
+[0;33mW (32202) cam_hal: NO-SOI[0m
+[0;33mW (32237) cam_hal: NO-SOI[0m
+[0;33mW (32254) cam_hal: NO-SOI[0m
+[0;33mW (32260) cam_hal: NO-SOI[0m
+[0;33mW (32309) cam_hal: NO-SOI[0m
+[0;33mW (32314) cam_hal: NO-SOI[0m
+[0;33mW (32336) cam_hal: NO-SOI[0m
+[0;33mW (32354) cam_hal: NO-SOI[0m
+[0;33mW (32373) cam_hal: NO-SOI[0m
+[0;33mW (32385) cam_hal: NO-SOI[0m
+[0;33mW (32389) cam_hal: NO-SOI[0m
+[0;33mW (32395) cam_hal: NO-SOI[0m
+[0;33mW (32415) cam_hal: NO-SOI[0m
+[0;33mW (32436) cam_hal: NO-SOI[0m
+[0;33mW (32441) cam_hal: NO-SOI[0m
+[0;33mW (32480) cam_hal: NO-SOI[0m
+[0;33mW (32519) cam_hal: NO-SOI[0m
+[0;33mW (32535) cam_hal: NO-SOI[0m
+[0;33mW (32540) cam_hal: NO-SOI[0m
+[0;33mW (32554) cam_hal: NO-SOI[0m
+[0;33mW (32558) cam_hal: NO-SOI[0m
+[0;33mW (32580) cam_hal: NO-SOI[0m
+[0;33mW (32585) cam_hal: NO-SOI[0m
+[0;33mW (32590) cam_hal: NO-SOI[0m
+[0;33mW (32597) cam_hal: NO-SOI[0m
+[0;33mW (32635) cam_hal: NO-SOI[0m
+[0;33mW (32640) cam_hal: NO-SOI[0m
+[0;33mW (32665) cam_hal: NO-SOI[0m
+[0;33mW (32675) cam_hal: NO-SOI[0m
+[0;33mW (32703) cam_hal: NO-SOI[0m
+[0;33mW (32711) cam_hal: NO-SOI[0m
+[0;33mW (32720) cam_hal: NO-SOI[0m
+[0;33mW (32738) cam_hal: NO-SOI[0m
+[0;33mW (32755) cam_hal: NO-SOI[0m
+[0;33mW (32782) cam_hal: NO-SOI[0m
+[0;33mW (32821) cam_hal: NO-SOI[0m
+[0;33mW (32834) cam_hal: NO-SOI[0m
+[0;33mW (32838) cam_hal: NO-SOI[0m
+[0;33mW (32863) cam_hal: NO-SOI[0m
+[0;33mW (32875) cam_hal: NO-SOI[0m
+[0;33mW (32879) cam_hal: NO-SOI[0m
+[0;33mW (32895) cam_hal: NO-SOI[0m
+[0;33mW (32905) cam_hal: NO-SOI[0m
+[0;33mW (32915) cam_hal: NO-SOI[0m
+[0;33mW (32944) cam_hal: NO-SOI[0m
+[0;33mW (32950) cam_hal: NO-SOI[0m
+[0;33mW (32974) cam_hal: NO-SOI[0m
+[0;33mW (32982) cam_hal: NO-SOI[0m
+[0;33mW (32992) cam_hal: NO-SOI[0m
+[0;33mW (32998) cam_hal: NO-SOI[0m
+[0;33mW (33033) cam_hal: NO-SOI[0m
+[0;33mW (33059) cam_hal: NO-SOI[0m
+[0;33mW (33098) cam_hal: NO-SOI[0m
+[0;33mW (33112) cam_hal: NO-SOI[0m
+[0;33mW (33135) cam_hal: NO-SOI[0m
+[0;33mW (33149) cam_hal: NO-SOI[0m
+[0;33mW (33219) cam_hal: NO-SOI[0m
+[0;33mW (33233) cam_hal: NO-SOI[0m
+[0;33mW (33237) cam_hal: NO-SOI[0m
+[0;33mW (33254) cam_hal: NO-SOI[0m
+[0;33mW (33257) cam_hal: NO-SOI[0m
+[0;33mW (33278) cam_hal: NO-SOI[0m
+[0;33mW (33300) cam_hal: NO-SOI[0m
+[0;33mW (33314) cam_hal: NO-SOI[0m
+[0;33mW (33350) cam_hal: NO-SOI[0m
+[0;33mW (33353) cam_hal: NO-SOI[0m
+[0;33mW (33358) cam_hal: NO-SOI[0m
+[0;33mW (33394) cam_hal: NO-SOI[0m
+[0;33mW (33427) cam_hal: NO-SOI[0m
+[0;33mW (33430) cam_hal: NO-SOI[0m
+[0;33mW (33627) cam_hal: NO-SOI[0m
+[0;33mW (33671) cam_hal: NO-SOI[0m
+[0;33mW (33707) cam_hal: NO-SOI[0m
+[0;33mW (33711) cam_hal: NO-SOI[0m
+[0;33mW (33750) cam_hal: NO-SOI[0m
+[0;33mW (33756) cam_hal: NO-SOI[0m
+[0;33mW (33790) cam_hal: NO-SOI[0m
+[0;33mW (33819) cam_hal: NO-SOI[0m
+[0;33mW (33832) cam_hal: NO-SOI[0m
+[0;33mW (33842) cam_hal: NO-SOI[0m
+[0;33mW (33857) cam_hal: NO-SOI[0m
+[0;33mW (33870) cam_hal: NO-SOI[0m
+[0;33mW (33910) cam_hal: NO-SOI[0m
+[0;33mW (33943) cam_hal: NO-SOI[0m
+[0;33mW (33950) cam_hal: NO-SOI[0m
+[0;33mW (33991) cam_hal: NO-SOI[0m
+[0;33mW (34027) cam_hal: NO-SOI[0m
+[0;33mW (34065) cam_hal: NO-SOI[0m
+[0;33mW (34074) cam_hal: NO-SOI[0m
+[0;33mW (34092) cam_hal: NO-SOI[0m
+[0;33mW (34097) cam_hal: NO-SOI[0m
+[0;33mW (34105) cam_hal: NO-SOI[0m
+[0;33mW (34111) cam_hal: NO-SOI[0m
+[0;33mW (34153) cam_hal: NO-SOI[0m
+[0;33mW (34194) cam_hal: NO-SOI[0m
+[0;33mW (34234) cam_hal: NO-SOI[0m
+[0;33mW (34266) cam_hal: NO-SOI[0m
+[0;33mW (34271) cam_hal: NO-SOI[0m
+[0;33mW (34308) cam_hal: NO-SOI[0m
+[0;33mW (34376) cam_hal: NO-SOI[0m
+[0;33mW (34393) cam_hal: NO-SOI[0m
+[0;33mW (34401) cam_hal: NO-SOI[0m
+[0;33mW (34430) cam_hal: NO-SOI[0m
+[0;33mW (34435) cam_hal: NO-SOI[0m
+[0;33mW (34464) cam_hal: NO-SOI[0m
+[0;33mW (34473) cam_hal: NO-SOI[0m
+[0;33mW (34477) cam_hal: NO-SOI[0m
+[0;33mW (34515) cam_hal: NO-SOI[0m
+[0;33mW (34533) cam_hal: NO-SOI[0m
+[0;33mW (34558) cam_hal: NO-SOI[0m
+[0;33mW (34590) cam_hal: NO-SOI[0m
+[0;33mW (34598) cam_hal: NO-SOI[0m
+[0;33mW (34613) cam_hal: NO-SOI[0m
+[0;33mW (34626) cam_hal: NO-SOI[0m
+[0;33mW (34631) cam_hal: NO-SOI[0m
+[0;33mW (34654) cam_hal: NO-SOI[0m
+[0;33mW (34674) cam_hal: NO-SOI[0m
+[0;33mW (34678) cam_hal: NO-SOI[0m
+[0;33mW (34739) cam_hal: NO-SOI[0m
+[0;33mW (34746) cam_hal: NO-SOI[0m
+[0;33mW (34791) cam_hal: NO-SOI[0m
+[0;33mW (34795) cam_hal: NO-SOI[0m
+[0;33mW (34823) cam_hal: NO-SOI[0m
+[0;33mW (34833) cam_hal: NO-SOI[0m
+[0;33mW (34838) cam_hal: NO-SOI[0m
+[0;33mW (34860) cam_hal: NO-SOI[0m
+[0;33mW (34871) cam_hal: NO-SOI[0m
+[0;33mW (34901) cam_hal: NO-SOI[0m
+[0;33mW (34910) cam_hal: NO-SOI[0m
+[0;33mW (34917) cam_hal: NO-SOI[0m
+[0;33mW (34950) cam_hal: NO-SOI[0m
+[0;33mW (34957) cam_hal: NO-SOI[0m
+[0;33mW (34983) cam_hal: NO-SOI[0m
+[0;33mW (34986) cam_hal: NO-SOI[0m
+[0;33mW (34994) cam_hal: NO-SOI[0m
+[0;33mW (35039) cam_hal: NO-SOI[0m
+[0;33mW (35064) cam_hal: NO-SOI[0m
+[0;33mW (35073) cam_hal: NO-SOI[0m
+[0;33mW (35104) cam_hal: NO-SOI[0m
+[0;33mW (35110) cam_hal: NO-SOI[0m
+[0;33mW (35137) cam_hal: NO-SOI[0m
+[0;33mW (35145) cam_hal: NO-SOI[0m
+
+***ERROR*** A stack overflow in task cam_task has been detected.
+
+
+Backtrace: 0x4037635e:0x3fcd2910 0x4037f499:0x3fcd2930 0x4037f7ee:0x3fcd2950 0x403816a3:0x3fcd29d0 0x4037f8ac:0x3fcd29f0 0x4037f8a2:0x00000000 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07f08a10dec264d7
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375c71
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x17e8
+load:0x403c9700,len:0xd90
+load:0x403cc700,len:0x3018
+entry 0x403c9930
+[0;32mI (29) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 11:23:40[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v0.1[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (41) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (46) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00020020 vaddr=3c090020 size=263c0h (156608) map[0m
+[0;32mI (130) esp_image: segment 1: paddr=000463e8 vaddr=3fc9a400 size=05788h ( 22408) load[0m
+[0;32mI (135) esp_image: segment 2: paddr=0004bb78 vaddr=40374000 size=044a0h ( 17568) load[0m
+[0;32mI (139) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=8e5f4h (583156) map[0m
+[0;32mI (233) esp_image: segment 4: paddr=000de61c vaddr=403784a0 size=11f0ch ( 73484) load[0m
+[0;32mI (257) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (257) boot: Disabling RNG early entropy source...[0m
+[0;32mI (268) cpu_start: Multicore app[0m
+[0;32mI (268) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (269) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (272) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (277) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (282) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (288) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (293) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (299) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (304) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (310) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (316) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (322) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (327) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (331) esp_psram: Speed: 80MHz[0m
+[0;32mI (335) cpu_start: Pro cpu up.[0m
+[0;32mI (339) cpu_start: Starting app cpu, entry point is 0x403756c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (798) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (807) cpu_start: Pro cpu start user code[0m
+[0;32mI (807) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (807) cpu_start: Application information:[0m
+[0;32mI (810) cpu_start: Project name:     camera_example[0m
+[0;32mI (815) cpu_start: App version:      00ba589-dirty[0m
+[0;32mI (821) cpu_start: Compile time:     Jan 11 2024 11:26:08[0m
+[0;32mI (827) cpu_start: ELF file SHA256:  07f08a10dec264d7...[0m
+[0;32mI (833) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (838) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (843) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (848) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (852) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (860) heap_init: At 3FCA5740 len 00043FD0 (271 KiB): DRAM[0m
+[0;32mI (866) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (873) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (879) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (885) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (893) spi_flash: detected chip: gd[0m
+[0;32mI (897) spi_flash: flash io: qio[0m
+[0;33mW (901) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (914) app_start: Starting scheduler on CPU0[0m
+[0;32mI (919) app_start: Starting scheduler on CPU1[0m
+[0;32mI (919) main_task: Started on CPU0[0m
+[0;32mI (929) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (937) main_task: Calling app_main()[0m
+[0;32mI (941) esp32-cam Webserver: ESP32 CAM Web Server .......
+[0m
+[0;32mI (958) pp: pp rom version: e7ae62f[0m
+[0;32mI (958) net80211: net80211 rom version: e7ae62f[0m
+I (960) wifi:wifi driver task: 3fcb78b4, prio:23, stack:6656, core=0
+[0;32mI (963) system_api: Base MAC address is not set[0m
+[0;32mI (968) system_api: read default base MAC address from EFUSE[0m
+I (979) wifi:wifi firmware version: e2d0ad8
+I (979) wifi:wifi certification version: v7.0
+I (983) wifi:config NVS flash: enabled
+I (986) wifi:config nano formating: disabled
+I (990) wifi:Init data frame dynamic rx buffer num: 32
+I (995) wifi:Init management frame dynamic rx buffer num: 32
+I (1000) wifi:Init management short buffer num: 32
+I (1005) wifi:Init static tx buffer num: 16
+I (1009) wifi:Init tx cache buffer num: 32
+I (1012) wifi:Init static tx FG buffer num: 2
+I (1017) wifi:Init static rx buffer size: 1600
+I (1021) wifi:Init static rx buffer num: 10
+I (1025) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1029) wifi_init: rx ba win: 6[0m
+[0;32mI (1033) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1037) wifi_init: udp mbox: 6[0m
+[0;32mI (1040) wifi_init: tcp mbox: 6[0m
+[0;32mI (1044) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1048) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1053) wifi_init: tcp mss: 1440[0m
+[0;32mI (1057) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1061) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1069) phy_init: phy_version 610,2bff4c8,Jul 27 2023,20:22:14[0m
+I (1104) wifi:mode : softAP (34:85:18:ac:92:79)
+I (1107) wifi:Total power save buffer number: 8
+I (1107) wifi:Init max length of beacon: 752/752
+I (1108) wifi:Init max length of beacon: 752/752
+[0;32mI (1112) s3 ll_cam: DMA Channel=4[0m
+[0;32mI (1115) cam_hal: cam init ok[0m
+[0;32mI (1119) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (1123) sccb: sccb_i2c_port=1[0m
+[0;32mI (1137) camera: Detected camera at address=0x30[0m
+[0;32mI (1140) camera: Detected OV2640 camera[0m
+[0;32mI (1140) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1221) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 60[0m
+[0;32mI (1221) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (1228) cam_hal: cam config ok[0m
+[0;32mI (1231) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (1317) esp32-cam Webserver: web server initialized .... [0m
+[0;32mI (1318) esp32-cam Webserver: ESP32 CAM Web Server is up and running
+[0m
+[0;32mI (1320) main_task: Returned from app_main()[0m
+[0;33mW (1327) cam_hal: NO-SOI[0m
+[0;33mW (1333) cam_hal: NO-SOI[0m
+[0;33mW (1353) cam_hal: NO-SOI[0m
+[0;33mW (1367) cam_hal: NO-SOI[0m
+[0;33mW (1386) cam_hal: NO-SOI[0m
+[0;33mW (1403) cam_hal: NO-SOI[0m
+[0;33mW (1431) cam_hal: NO-SOI[0m
+[0;33mW (1434) cam_hal: NO-SOI[0m
+[0;33mW (1444) cam_hal: NO-SOI[0m
+[0;33mW (1471) cam_hal: NO-SOI[0m
+[0;33mW (1489) cam_hal: NO-SOI[0m
+[0;33mW (1508) cam_hal: NO-SOI[0m
+[0;33mW (1562) cam_hal: NO-SOI[0m
+[0;33mW (1592) cam_hal: NO-SOI[0m
+[0;33mW (1597) cam_hal: NO-SOI[0m
+[0;33mW (1602) cam_hal: NO-SOI[0m
+[0;33mW (1628) cam_hal: NO-SOI[0m
+[0;33mW (1638) cam_hal: NO-SOI[0m
+[0;33mW (1646) cam_hal: NO-SOI[0m
+[0;33mW (1651) cam_hal: NO-SOI[0m
+[0;33mW (1670) cam_hal: NO-SOI[0m
+[0;33mW (1716) cam_hal: NO-SOI[0m
+[0;33mW (1725) cam_hal: NO-SOI[0m
+[0;33mW (1763) cam_hal: NO-SOI[0m
+[0;33mW (1796) cam_hal: NO-SOI[0m
+[0;33mW (1802) cam_hal: NO-SOI[0m
+[0;33mW (1829) cam_hal: NO-SOI[0m
+[0;33mW (1836) cam_hal: NO-SOI[0m
+[0;33mW (1840) cam_hal: NO-SOI[0m
+[0;33mW (1843) cam_hal: NO-SOI[0m
+[0;33mW (1851) cam_hal: NO-SOI[0m
+[0;33mW (1881) cam_hal: NO-SOI[0m
+[0;33mW (1886) cam_hal: NO-SOI[0m
+[0;33mW (1893) cam_hal: NO-SOI[0m
+[0;33mW (1915) cam_hal: NO-SOI[0m
+[0;33mW (1918) cam_hal: NO-SOI[0m
+[0;33mW (1924) cam_hal: NO-SOI[0m
+[0;33mW (1928) cam_hal: NO-SOI[0m
+[0;33mW (1946) cam_hal: NO-SOI[0m
+[0;33mW (1970) cam_hal: NO-SOI[0m
+[0;33mW (1987) cam_hal: NO-SOI[0m
+[0;33mW (1993) cam_hal: NO-SOI[0m
+[0;33mW (2005) cam_hal: NO-SOI[0m
+[0;33mW (2014) cam_hal: NO-SOI[0m
+[0;33mW (2042) cam_hal: NO-SOI[0m
+[0;33mW (2054) cam_hal: NO-SOI[0m
+[0;33mW (2070) cam_hal: NO-SOI[0m
+[0;33mW (2089) cam_hal: NO-SOI[0m
+[0;33mW (2108) cam_hal: NO-SOI[0m
+[0;33mW (2122) cam_hal: NO-SOI[0m
+[0;33mW (2198) cam_hal: NO-SOI[0m
+[0;33mW (2202) cam_hal: NO-SOI[0m
+[0;33mW (2227) cam_hal: NO-SOI[0m
+[0;33mW (2232) cam_hal: NO-SOI[0m
+[0;33mW (2236) cam_hal: NO-SOI[0m
+[0;33mW (2245) cam_hal: NO-SOI[0m
+[0;33mW (2266) cam_hal: NO-SOI[0m
+[0;33mW (2282) cam_hal: NO-SOI[0m
+[0;33mW (2291) cam_hal: NO-SOI[0m
+[0;33mW (2309) cam_hal: NO-SOI[0m
+[0;33mW (2316) cam_hal: NO-SOI[0m
+[0;33mW (2325) cam_hal: NO-SOI[0m
+[0;33mW (2351) cam_hal: NO-SOI[0m
+[0;33mW (2362) cam_hal: NO-SOI[0m
+[0;33mW (2393) cam_hal: NO-SOI[0m
+[0;33mW (2405) cam_hal: NO-SOI[0m
+[0;33mW (2431) cam_hal: NO-SOI[0m
+[0;33mW (2434) cam_hal: NO-SOI[0m
+[0;33mW (2438) cam_hal: NO-SOI[0m
+[0;33mW (2471) cam_hal: NO-SOI[0m
+[0;33mW (2485) cam_hal: NO-SOI[0m
+[0;33mW (2490) cam_hal: NO-SOI[0m
+[0;33mW (2506) cam_hal: NO-SOI[0m
+[0;33mW (2513) cam_hal: NO-SOI[0m
+[0;33mW (2532) cam_hal: NO-SOI[0m
+[0;33mW (2570) cam_hal: NO-SOI[0m
+[0;33mW (2591) cam_hal: NO-SOI[0m
+[0;33mW (2608) cam_hal: NO-SOI[0m
+[0;33mW (2632) cam_hal: NO-SOI[0m
+[0;33mW (2645) cam_hal: NO-SOI[0m
+[0;33mW (2667) cam_hal: NO-SOI[0m
+[0;33mW (2682) cam_hal: NO-SOI[0m
+[0;33mW (2711) cam_hal: NO-SOI[0m
+[0;33mW (2729) cam_hal: NO-SOI[0m
+[0;33mW (2745) cam_hal: NO-SOI[0m
+[0;33mW (2749) cam_hal: NO-SOI[0m
+[0;33mW (2766) cam_hal: NO-SOI[0m
+[0;33mW (2786) cam_hal: NO-SOI[0m
+[0;33mW (2801) cam_hal: NO-SOI[0m
+[0;33mW (2813) cam_hal: NO-SOI[0m
+[0;33mW (2845) cam_hal: NO-SOI[0m
+[0;33mW (2874) cam_hal: NO-SOI[0m
+[0;33mW (2878) cam_hal: NO-SOI[0m
+[0;33mW (2883) cam_hal: NO-SOI[0m
+[0;33mW (2888) cam_hal: NO-SOI[0m
+[0;33mW (2909) cam_hal: NO-SOI[0m
+[0;33mW (2929) cam_hal: NO-SOI[0m
+[0;33mW (2951) cam_hal: NO-SOI[0m
+[0;33mW (2968) cam_hal: NO-SOI[0m
+[0;33mW (2986) cam_hal: NO-SOI[0m
+[0;33mW (2999) cam_hal: NO-SOI[0m
+[0;33mW (3026) cam_hal: NO-SOI[0m
+[0;33mW (3045) cam_hal: NO-SOI[0m
+[0;33mW (3071) cam_hal: NO-SOI[0m
+[0;33mW (3077) cam_hal: NO-SOI[0m
+[0;33mW (3088) cam_hal: NO-SOI[0m
+[0;33mW (3125) cam_hal: NO-SOI[0m
+[0;33mW (3129) cam_hal: NO-SOI[0m
+[0;33mW (3154) cam_hal: NO-SOI[0m
+[0;33mW (3166) cam_hal: NO-SOI[0m
+[0;33mW (3170) cam_hal: NO-SOI[0m
+[0;33mW (3191) cam_hal: NO-SOI[0m
+[0;33mW (3194) cam_hal: NO-SOI[0m
+[0;33mW (3198) cam_hal: NO-SOI[0m
+[0;33mW (3202) cam_hal: NO-SOI[0m
+[0;33mW (3208) cam_hal: NO-SOI[0m
+[0;33mW (3223) cam_hal: NO-SOI[0m
+[0;33mW (3231) cam_hal: NO-SOI[0m
+[0;33mW (3234) cam_hal: NO-SOI[0m
+[0;33mW (3243) cam_hal: NO-SOI[0m
+[0;33mW (3249) cam_hal: NO-SOI[0m
+[0;33mW (3267) cam_hal: NO-SOI[0m
+[0;33mW (3287) cam_hal: NO-SOI[0m
+[0;33mW (3307) cam_hal: NO-SOI[0m
+[0;33mW (3328) cam_hal: NO-SOI[0m
+I (3329) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1
+I (3330) wifi:station: 28:d0:ea:5f:dc:3c join, AID=1, bgn, 40U
+[0;33mW (3344) cam_hal: NO-SOI[0m
+[0;33mW (3352) cam_hal: NO-SOI[0m
+[0;33mW (3370) cam_hal: NO-SOI[0m
+[0;33mW (3391) cam_hal: NO-SOI[0m
+[0;33mW (3405) cam_hal: NO-SOI[0m
+[0;33mW (3426) cam_hal: NO-SOI[0m
+[0;33mW (3432) cam_hal: NO-SOI[0m
+[0;33mW (3451) cam_hal: NO-SOI[0m
+[0;33mW (3464) cam_hal: NO-SOI[0m
+[0;33mW (3488) cam_hal: NO-SOI[0m
+[0;33mW (3503) cam_hal: NO-SOI[0m
+[0;33mW (3509) cam_hal: NO-SOI[0m
+[0;33mW (3533) cam_hal: NO-SOI[0m
+[0;33mW (3553) cam_hal: NO-SOI[0m
+[0;33mW (3564) cam_hal: NO-SOI[0m
+[0;33mW (3608) cam_hal: NO-SOI[0m
+[0;33mW (3637) cam_hal: NO-SOI[0m
+[0;33mW (3648) cam_hal: NO-SOI[0m
+[0;33mW (3675) cam_hal: NO-SOI[0m
+[0;33mW (3685) cam_hal: NO-SOI[0m
+[0;33mW (3706) cam_hal: NO-SOI[0m
+[0;33mW (3711) cam_hal: NO-SOI[0m
+[0;33mW (3714) cam_hal: NO-SOI[0m
+[0;33mW (3725) cam_hal: NO-SOI[0m
+[0;33mW (3750) cam_hal: NO-SOI[0m
+[0;33mW (3764) cam_hal: NO-SOI[0m
+[0;33mW (3768) cam_hal: NO-SOI[0m
+[0;33mW (3803) cam_hal: NO-SOI[0m
+[0;33mW (3829) cam_hal: NO-SOI[0m
+[0;33mW (3837) cam_hal: NO-SOI[0m
+[0;33mW (3844) cam_hal: NO-SOI[0m
+[0;33mW (3851) cam_hal: NO-SOI[0m
+[0;33mW (3865) cam_hal: NO-SOI[0m
+[0;33mW (3870) cam_hal: NO-SOI[0m
+[0;33mW (3876) cam_hal: NO-SOI[0m
+[0;33mW (3882) cam_hal: NO-SOI[0m
+[0;33mW (3911) cam_hal: NO-SOI[0m
+[0;33mW (3925) cam_hal: NO-SOI[0m
+[0;33mW (3945) cam_hal: NO-SOI[0m
+
+***ERROR*** A stack overflow in task cam_task has been detected.
+
+
+Backtrace: 0x4037635e:0x3fcd2910 0x4037f499:0x3fcd2930 0x4037f7ee:0x3fcd2950 0x403816a3:0x3fcd29d0 0x4037f8ac:0x3fcd29f0 0x4037f8a2:0x00000000 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07f08a10dec264d7
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375c71
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x17e8
+load:0x403c9700,len:0xd90
+load:0x403cc700,len:0x3018
+entry 0x403c9930
+[0;32mI (29) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 11:23:40[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v0.1[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (41) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (46) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00020020 vaddr=3c090020 size=263c0h (156608) map[0m
+[0;32mI (130) esp_image: segment 1: paddr=000463e8 vaddr=3fc9a400 size=05788h ( 22408) load[0m
+[0;32mI (135) esp_image: segment 2: paddr=0004bb78 vaddr=40374000 size=044a0h ( 17568) load[0m
+[0;32mI (139) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=8e5f4h (583156) map[0m
+[0;32mI (233) esp_image: segment 4: paddr=000de61c vaddr=403784a0 size=11f0ch ( 73484) load[0m
+[0;32mI (257) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (257) boot: Disabling RNG early entropy source...[0m
+[0;32mI (268) cpu_start: Multicore app[0m
+[0;32mI (268) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (269) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (272) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (277) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (282) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (288) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (293) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (299) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (304) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (310) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (316) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (322) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (327) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (331) esp_psram: Speed: 80MHz[0m
+[0;32mI (335) cpu_start: Pro cpu up.[0m
+[0;32mI (339) cpu_start: Starting app cpu, entry point is 0x403756c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (798) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (807) cpu_start: Pro cpu start user code[0m
+[0;32mI (807) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (807) cpu_start: Application information:[0m
+[0;32mI (810) cpu_start: Project name:     camera_example[0m
+[0;32mI (815) cpu_start: App version:      00ba589-dirty[0m
+[0;32mI (821) cpu_start: Compile time:     Jan 11 2024 11:26:08[0m
+[0;32mI (827) cpu_start: ELF file SHA256:  07f08a10dec264d7...[0m
+[0;32mI (833) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (838) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (843) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (848) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (852) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (860) heap_init: At 3FCA5740 len 00043FD0 (271 KiB): DRAM[0m
+[0;32mI (866) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (873) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (879) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (885) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (893) spi_flash: detected chip: gd[0m
+[0;32mI (897) spi_flash: flash io: qio[0m
+[0;33mW (901) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (914) app_start: Starting scheduler on CPU0[0m
+[0;32mI (919) app_start: Starting scheduler on CPU1[0m
+[0;32mI (919) main_task: Started on CPU0[0m
+[0;32mI (929) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (937) main_task: Calling app_main()[0m
+[0;32mI (941) esp32-cam Webserver: ESP32 CAM Web Server .......
+[0m
+[0;32mI (958) pp: pp rom version: e7ae62f[0m
+[0;32mI (958) net80211: net80211 rom version: e7ae62f[0m
+I (960) wifi:wifi driver task: 3fcb78b4, prio:23, stack:6656, core=0
+[0;32mI (963) system_api: Base MAC address is not set[0m
+[0;32mI (968) system_api: read default base MAC address from EFUSE[0m
+I (979) wifi:wifi firmware version: e2d0ad8
+I (979) wifi:wifi certification version: v7.0
+I (983) wifi:config NVS flash: enabled
+I (986) wifi:config nano formating: disabled
+I (990) wifi:Init data frame dynamic rx buffer num: 32
+I (995) wifi:Init management frame dynamic rx buffer num: 32
+I (1000) wifi:Init management short buffer num: 32
+I (1005) wifi:Init static tx buffer num: 16
+I (1009) wifi:Init tx cache buffer num: 32
+I (1012) wifi:Init static tx FG buffer num: 2
+I (1017) wifi:Init static rx buffer size: 1600
+I (1021) wifi:Init static rx buffer num: 10
+I (1025) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1029) wifi_init: rx ba win: 6[0m
+[0;32mI (1033) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1037) wifi_init: udp mbox: 6[0m
+[0;32mI (1040) wifi_init: tcp mbox: 6[0m
+[0;32mI (1044) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1048) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1053) wifi_init: tcp mss: 1440[0m
+[0;32mI (1057) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1061) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1069) phy_init: phy_version 610,2bff4c8,Jul 27 2023,20:22:14[0m
+I (1105) wifi:mode : softAP (34:85:18:ac:92:79)
+I (1107) wifi:Total power save buffer number: 8
+I (1108) wifi:Init max length of beacon: 752/752
+I (1108) wifi:Init max length of beacon: 752/752
+[0;32mI (1112) s3 ll_cam: DMA Channel=4[0m
+[0;32mI (1115) cam_hal: cam init ok[0m
+[0;32mI (1119) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (1123) sccb: sccb_i2c_port=1[0m
+[0;32mI (1137) camera: Detected camera at address=0x30[0m
+[0;32mI (1140) camera: Detected OV2640 camera[0m
+[0;32mI (1140) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1221) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 60[0m
+[0;32mI (1221) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (1228) cam_hal: cam config ok[0m
+[0;32mI (1231) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (1319) esp32-cam Webserver: web server initialized .... [0m
+[0;32mI (1319) esp32-cam Webserver: ESP32 CAM Web Server is up and running
+[0m
+[0;32mI (1322) main_task: Returned from app_main()[0m
+[0;33mW (1328) cam_hal: NO-SOI[0m
+[0;33mW (1330) cam_hal: NO-SOI[0m
+[0;33mW (1333) cam_hal: NO-SOI[0m
+[0;33mW (1336) cam_hal: NO-SOI[0m
+I (16652) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1
+I (16653) wifi:station: 28:d0:ea:5f:dc:3c join, AID=1, bgn, 40U
+[0;32mI (16749) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.254.2[0m
+[0;32mI (16749) wifi: SoftAP client connected with IP: 192.168.254.2.[0m
+I (17169) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:20, winSize:64
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x17e8
+load:0x403c9700,len:0xd90
+load:0x403cc700,len:0x3018
+entry 0x403c9930
+[0;32mI (25) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time 11:23:40[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.1[0m
+[0;32mI (31) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (46) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00020020 vaddr=3c090020 size=263c0h (156608) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=000463e8 vaddr=3fc9a400 size=05788h ( 22408) load[0m
+[0;32mI (130) esp_image: segment 2: paddr=0004bb78 vaddr=40374000 size=044a0h ( 17568) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=8e5f4h (583156) map[0m
+[0;32mI (228) esp_image: segment 4: paddr=000de61c vaddr=403784a0 size=11f0ch ( 73484) load[0m
+[0;32mI (252) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (252) boot: Disabling RNG early entropy source...[0m
+[0;32mI (264) cpu_start: Multicore app[0m
+[0;32mI (264) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (264) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (267) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (273) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (278) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (283) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (288) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (294) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (300) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (305) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (312) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (317) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (322) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (327) esp_psram: Speed: 80MHz[0m
+[0;32mI (331) cpu_start: Pro cpu up.[0m
+[0;32mI (334) cpu_start: Starting app cpu, entry point is 0x403756c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (793) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (802) cpu_start: Pro cpu start user code[0m
+[0;32mI (802) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (802) cpu_start: Application information:[0m
+[0;32mI (805) cpu_start: Project name:     camera_example[0m
+[0;32mI (811) cpu_start: App version:      00ba589-dirty[0m
+[0;32mI (816) cpu_start: Compile time:     Jan 11 2024 11:26:08[0m
+[0;32mI (822) cpu_start: ELF file SHA256:  07f08a10dec264d7...[0m
+[0;32mI (828) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (834) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (838) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (843) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (848) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (855) heap_init: At 3FCA5740 len 00043FD0 (271 KiB): DRAM[0m
+[0;32mI (861) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (868) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (874) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (881) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (888) spi_flash: detected chip: gd[0m
+[0;32mI (892) spi_flash: flash io: qio[0m
+[0;33mW (896) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (910) app_start: Starting scheduler on CPU0[0m
+[0;32mI (914) app_start: Starting scheduler on CPU1[0m
+[0;32mI (914) main_task: Started on CPU0[0m
+[0;32mI (924) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (932) main_task: Calling app_main()[0m
+[0;32mI (936) esp32-cam Webserver: ESP32 CAM Web Server .......
+[0m
+[0;32mI (953) pp: pp rom version: e7ae62f[0m
+[0;32mI (953) net80211: net80211 rom version: e7ae62f[0m
+I (955) wifi:wifi driver task: 3fcb78b4, prio:23, stack:6656, core=0
+[0;32mI (958) system_api: Base MAC address is not set[0m
+[0;32mI (963) system_api: read default base MAC address from EFUSE[0m
+I (974) wifi:wifi firmware version: e2d0ad8
+I (974) wifi:wifi certification version: v7.0
+I (978) wifi:config NVS flash: enabled
+I (981) wifi:config nano formating: disabled
+I (985) wifi:Init data frame dynamic rx buffer num: 32
+I (990) wifi:Init management frame dynamic rx buffer num: 32
+I (995) wifi:Init management short buffer num: 32
+I (1000) wifi:Init static tx buffer num: 16
+I (1004) wifi:Init tx cache buffer num: 32
+I (1007) wifi:Init static tx FG buffer num: 2
+I (1012) wifi:Init static rx buffer size: 1600
+I (1016) wifi:Init static rx buffer num: 10
+I (1020) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1024) wifi_init: rx ba win: 6[0m
+[0;32mI (1027) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1031) wifi_init: udp mbox: 6[0m
+[0;32mI (1035) wifi_init: tcp mbox: 6[0m
+[0;32mI (1039) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1043) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1048) wifi_init: tcp mss: 1440[0m
+[0;32mI (1052) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1056) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1064) phy_init: phy_version 610,2bff4c8,Jul 27 2023,20:22:14[0m
+I (1099) wifi:mode : softAP (34:85:18:ac:92:79)
+I (1102) wifi:Total power save buffer number: 8
+I (1102) wifi:Init max length of beacon: 752/752
+I (1103) wifi:Init max length of beacon: 752/752
+[0;32mI (1107) s3 ll_cam: DMA Channel=4[0m
+[0;32mI (1110) cam_hal: cam init ok[0m
+[0;32mI (1113) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (1117) sccb: sccb_i2c_port=1[0m
+[0;32mI (1132) camera: Detected camera at address=0x30[0m
+[0;32mI (1135) camera: Detected OV2640 camera[0m
+[0;32mI (1135) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1215) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 60[0m
+[0;32mI (1215) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (1222) cam_hal: cam config ok[0m
+[0;32mI (1225) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (1311) esp32-cam Webserver: web server initialized .... [0m
+[0;32mI (1311) esp32-cam Webserver: ESP32 CAM Web Server is up and running
+[0m
+[0;32mI (1313) main_task: Returned from app_main()[0m
