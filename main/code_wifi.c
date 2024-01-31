@@ -170,7 +170,7 @@ void wifi_init(void) {
 
     
     WIFI_INIT();
-    AP_INIT_IP("esp32_AP","pass1234","192.168.254.1","192.168.254.1","255.255.255.0"); //AP_INIT("attila","pass1234");
+    AP_INIT_IP("keo_cam","pass1234","192.168.254.1","192.168.254.1","255.255.255.0"); //AP_INIT("attila","pass1234");
     WIFI_START(WIFI_MODE_AP); // WIFI_MODE_APSTA | WIFI_MODE_STA | WIFI_MODE_AP
     
 }

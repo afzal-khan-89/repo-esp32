@@ -1,0 +1,43 @@
+[1/31] Building C object esp-idf/mCamera-esp32/CMakeFiles/__idf_mCamera-esp32.dir/driver/sensor.c.obj
+[2/31] Performing build step for 'bootloader'
+[1/1] cd /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/bootloader/esp-idf/esptool_py && /home/afzal-khan/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/afzal-khan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x10000 bootloader 0x0 /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/bootloader/bootloader.bin
+Bootloader binary size 0x55f0 bytes. 0xaa10 bytes (66%) free.
+[3/31] No install step for 'bootloader'
+[4/31] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/camera_main.c.obj
+In file included from /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/main/camera_main.c:12:
+/home/afzal-khan/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:6:2: warning: #warning esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead [-Wcpp]
+    6 | #warning esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead
+      |  ^~~~~~~
+[5/31] Building C object esp-idf/mCamera-esp32/CMakeFiles/__idf_mCamera-esp32.dir/sensors/ov7670.c.obj
+[6/31] Building C object esp-idf/mCamera-esp32/CMakeFiles/__idf_mCamera-esp32.dir/conversions/to_bmp.c.obj
+[7/31] Building C object esp-idf/mCamera-esp32/CMakeFiles/__idf_mCamera-esp32.dir/driver/sccb.c.obj
+[8/31] Linking C static library esp-idf/main/libmain.a
+[9/31] Completed 'bootloader'
+[10/31] Building C object esp-idf/mCamera-esp32/CMakeFiles/__idf_mCamera-esp32.dir/driver/esp_camera.c.obj
+[11/31] Building C object esp-idf/mCamera-esp32/CMakeFiles/__idf_mCamera-esp32.dir/sensors/ov2640.c.obj
+[12/31] Building C object esp-idf/mCamera-esp32/CMakeFiles/__idf_mCamera-esp32.dir/sensors/ov7725.c.obj
+[13/31] Building C object esp-idf/mCamera-esp32/CMakeFiles/__idf_mCamera-esp32.dir/driver/cam_hal.c.obj
+[14/31] Building C object esp-idf/mCamera-esp32/CMakeFiles/__idf_mCamera-esp32.dir/sensors/gc0308.c.obj
+[15/31] Building C object esp-idf/mCamera-esp32/CMakeFiles/__idf_mCamera-esp32.dir/sensors/nt99141.c.obj
+[16/31] Building CXX object esp-idf/mCamera-esp32/CMakeFiles/__idf_mCamera-esp32.dir/conversions/to_jpg.cpp.obj
+[17/31] Building C object esp-idf/mCamera-esp32/CMakeFiles/__idf_mCamera-esp32.dir/sensors/gc2145.c.obj
+[18/31] Building C object esp-idf/mCamera-esp32/CMakeFiles/__idf_mCamera-esp32.dir/sensors/gc032a.c.obj
+[19/31] Building C object esp-idf/mCamera-esp32/CMakeFiles/__idf_mCamera-esp32.dir/sensors/bf20a6.c.obj
+[20/31] Building C object esp-idf/mCamera-esp32/CMakeFiles/__idf_mCamera-esp32.dir/sensors/bf3005.c.obj
+[21/31] Building C object esp-idf/mCamera-esp32/CMakeFiles/__idf_mCamera-esp32.dir/sensors/ov5640.c.obj
+[22/31] Building C object esp-idf/mCamera-esp32/CMakeFiles/__idf_mCamera-esp32.dir/sensors/sc101iot.c.obj
+[23/31] Building C object esp-idf/mCamera-esp32/CMakeFiles/__idf_mCamera-esp32.dir/sensors/ov3660.c.obj
+[24/31] Building C object esp-idf/mCamera-esp32/CMakeFiles/__idf_mCamera-esp32.dir/sensors/sc031gs.c.obj
+[25/31] Building C object esp-idf/mCamera-esp32/CMakeFiles/__idf_mCamera-esp32.dir/sensors/sc030iot.c.obj
+[26/31] Building C object esp-idf/mCamera-esp32/CMakeFiles/__idf_mCamera-esp32.dir/target/esp32s3/ll_cam.c.obj
+[27/31] Linking C static library esp-idf/mCamera-esp32/libmCamera-esp32.a
+[28/31] Generating ld/sections.ld
+[29/31] Linking CXX executable keo-teton.elf
+[30/31] Generating binary image from built executable
+esptool.py v4.6.2
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/keo-teton.bin
+[31/31] cd /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/esp-idf/esptool_py && /home/afzal-khan/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/afzal-khan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x10000 partition --type app /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/partition_table/partition-table.bin /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/keo-teton.bin
+keo-teton.bin binary size 0xd7d10 bytes. Smallest app partition is 0x100000 bytes. 0x282f0 bytes (16%) free.

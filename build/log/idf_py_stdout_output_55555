@@ -1,0 +1,1394 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x17e8
+load:0x403c9700,len:0xd90
+load:0x403cc700,len:0x3018
+entry 0x403c9930
+[0;32mI (25) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time 13:58:12[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.1[0m
+[0;32mI (31) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (46) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00020020 vaddr=3c0a0020 size=26880h (157824) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=000468a8 vaddr=3fc9a400 size=057b8h ( 22456) load[0m
+[0;32mI (130) esp_image: segment 2: paddr=0004c068 vaddr=40374000 size=03fb0h ( 16304) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=95f3ch (614204) map[0m
+[0;32mI (233) esp_image: segment 4: paddr=000e5f64 vaddr=40377fb0 size=123fch ( 74748) load[0m
+[0;32mI (257) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (257) boot: Disabling RNG early entropy source...[0m
+[0;32mI (269) cpu_start: Multicore app[0m
+[0;32mI (269) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (269) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (272) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (278) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (283) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (288) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (293) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (299) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (305) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (311) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (317) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (323) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (327) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (332) esp_psram: Speed: 80MHz[0m
+[0;32mI (336) cpu_start: Pro cpu up.[0m
+[0;32mI (339) cpu_start: Starting app cpu, entry point is 0x403756c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (798) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (807) cpu_start: Pro cpu start user code[0m
+[0;32mI (807) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (807) cpu_start: Application information:[0m
+[0;32mI (810) cpu_start: Project name:     keo-teton[0m
+[0;32mI (815) cpu_start: App version:      ed1cb40-dirty[0m
+[0;32mI (821) cpu_start: Compile time:     Jan 26 2024 12:01:45[0m
+[0;32mI (827) cpu_start: ELF file SHA256:  9b2b3d5d0c44965e...[0m
+[0;32mI (833) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (838) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (843) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (848) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (853) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (860) heap_init: At 3FCA5F08 len 00043808 (270 KiB): DRAM[0m
+[0;32mI (866) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (873) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (879) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (885) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (893) spi_flash: detected chip: gd[0m
+[0;32mI (897) spi_flash: flash io: qio[0m
+[0;33mW (901) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (915) app_start: Starting scheduler on CPU0[0m
+[0;32mI (919) app_start: Starting scheduler on CPU1[0m
+[0;32mI (919) main_task: Started on CPU0[0m
+[0;32mI (929) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (937) main_task: Calling app_main()[0m
+[0;32mI (941) esp32-cam Webserver: ESP32 CAM Web Server .......
+[0m
+[0;32mI (959) pp: pp rom version: e7ae62f[0m
+[0;32mI (959) net80211: net80211 rom version: e7ae62f[0m
+I (961) wifi:wifi driver task: 3fcb7ff8, prio:23, stack:6656, core=0
+[0;32mI (964) system_api: Base MAC address is not set[0m
+[0;32mI (969) system_api: read default base MAC address from EFUSE[0m
+I (979) wifi:wifi firmware version: e2d0ad8
+I (980) wifi:wifi certification version: v7.0
+I (983) wifi:config NVS flash: enabled
+I (986) wifi:config nano formating: disabled
+I (990) wifi:Init data frame dynamic rx buffer num: 32
+I (995) wifi:Init management frame dynamic rx buffer num: 32
+I (1001) wifi:Init management short buffer num: 32
+I (1005) wifi:Init static tx buffer num: 16
+I (1009) wifi:Init tx cache buffer num: 32
+I (1013) wifi:Init static tx FG buffer num: 2
+I (1017) wifi:Init static rx buffer size: 1600
+I (1021) wifi:Init static rx buffer num: 10
+I (1025) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1029) wifi_init: rx ba win: 6[0m
+[0;32mI (1033) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1037) wifi_init: udp mbox: 6[0m
+[0;32mI (1041) wifi_init: tcp mbox: 6[0m
+[0;32mI (1045) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1049) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1053) wifi_init: tcp mss: 1440[0m
+[0;32mI (1057) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1062) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1070) phy_init: phy_version 610,2bff4c8,Jul 27 2023,20:22:14[0m
+I (1107) wifi:mode : softAP (34:85:18:ac:8b:a5)
+I (1110) wifi:Total power save buffer number: 8
+I (1110) wifi:Init max length of beacon: 752/752
+I (1110) wifi:Init max length of beacon: 752/752
+[0;32mI (1115) s3 ll_cam: DMA Channel=4[0m
+[0;32mI (1118) cam_hal: cam init ok[0m
+[0;32mI (1121) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (1125) sccb: sccb_i2c_port=1[0m
+[0;32mI (1139) camera: Detected camera at address=0x30[0m
+[0;32mI (1142) camera: Detected OV2640 camera[0m
+[0;32mI (1142) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1223) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 4[0m
+[0;32mI (1223) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 16, dma_buffer_size: 30720[0m
+[0;32mI (1231) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 20[0m
+[0;32mI (1242) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1249) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1255) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1262) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1268) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1275) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1281) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1288) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1294) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1301) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1307) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1314) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1320) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1327) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1333) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1340) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1346) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1353) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1359) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1366) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1372) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1379) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1385) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1392) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1399) cam_hal: cam config ok[0m
+[0;32mI (1402) ov2640: Set PLL: clk_2x: 1, clk_div: 7, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1481) esp32-cam Webserver: web server initialized .... [0m
+[0;32mI (1482) TCP/IP socket: Socket created[0m
+[0;32mI (1483) TCP/IP socket: Socket binded[0m
+[0;32mI (1485) TCP/IP socket: Socket listening ...[0m
+[0;32mI (1493) esp32-cam Webserver: ESP32 CAM Web Server is up and running
+[0m
+[0;32mI (1497) main_task: Returned from app_main()[0m
+I (17856) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1
+I (17857) wifi:station: 28:d0:ea:5f:dc:3c join, AID=1, bgn, 40U
+[0;32mI (17891) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.254.2[0m
+[0;32mI (17892) wifi: SoftAP client connected with IP: 192.168.254.2.[0m
+I (18889) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:21, winSize:64
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;33mW (54101) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (54101) httpd_uri: httpd_uri: uri handler execution failed[0m
+I (60348) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1
+I (60348) wifi:station: 4e:3f:8a:f4:d8:f2 join, AID=2, bgn, 20
+[0;32mI (60637) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.254.4[0m
+[0;32mI (60637) wifi: SoftAP client connected with IP: 192.168.254.4.[0m
+I (61194) wifi:<ba-add>idx:3 (ifx:1, 4e:3f:8a:f4:d8:f2), tid:0, ssn:26, winSize:64
+[0;33mW (62115) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (62115) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (65107) TCP/IP socket: Socket accepted ... [0m
+[0;32mI (65223) TCP/IP socket: send 16330 bytes to client ... [0m
+[0;32mI (66247) TCP/IP socket: send 16442 bytes to client ... [0m
+[0;32mI (66910) TCP/IP socket: send 16234 bytes to client ... [0m
+[0;32mI (67149) TCP/IP socket: send 16609 bytes to client ... [0m
+[0;32mI (67264) TCP/IP socket: send 16321 bytes to client ... [0m
+[0;32mI (67366) TCP/IP socket: send 16320 bytes to client ... [0m
+[0;32mI (67509) TCP/IP socket: send 16282 bytes to client ... [0m
+[0;32mI (67631) TCP/IP socket: send 16170 bytes to client ... [0m
+[0;32mI (67746) TCP/IP socket: send 16244 bytes to client ... [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (68036) TCP/IP socket: send 16339 bytes to client ... [0m
+[0;32mI (68132) TCP/IP socket: send 16477 bytes to client ... [0m
+[0;32mI (68235) TCP/IP socket: send 16575 bytes to client ... [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (68350) TCP/IP socket: send 16684 bytes to client ... [0m
+[0;32mI (68521) TCP/IP socket: send 16292 bytes to client ... [0m
+[0;32mI (71915) TCP/IP socket: send 15734 bytes to client ... [0m
+[0;32mI (72285) TCP/IP socket: send 15713 bytes to client ... [0m
+[0;32mI (72635) TCP/IP socket: send 15904 bytes to client ... [0m
+[0;32mI (73474) TCP/IP socket: send 15913 bytes to client ... [0m
+[0;32mI (74066) TCP/IP socket: send 15970 bytes to client ... [0m
+[0;32mI (74379) TCP/IP socket: send 16154 bytes to client ... [0m
+[0;32mI (74690) TCP/IP socket: send 16575 bytes to client ... [0m
+[0;32mI (74970) TCP/IP socket: send 16473 bytes to client ... [0m
+[0;32mI (75121) TCP/IP socket: send 14790 bytes to client ... [0m
+[0;32mI (75408) TCP/IP socket: send 14885 bytes to client ... [0m
+[0;32mI (75643) TCP/IP socket: send 17169 bytes to client ... [0m
+[0;32mI (76070) TCP/IP socket: send 18429 bytes to client ... [0m
+[0;32mI (76335) TCP/IP socket: send 18828 bytes to client ... [0m
+[0;32mI (76668) TCP/IP socket: send 19052 bytes to client ... [0m
+[0;32mI (76898) TCP/IP socket: send 19064 bytes to client ... [0m
+[0;32mI (77109) TCP/IP socket: send 19495 bytes to client ... [0m
+[0;32mI (77243) TCP/IP socket: send 19478 bytes to client ... [0m
+[0;32mI (77410) TCP/IP socket: send 20261 bytes to client ... [0m
+[0;32mI (77544) TCP/IP socket: send 20039 bytes to client ... [0m
+[0;32mI (77664) TCP/IP socket: send 20120 bytes to client ... [0m
+[0;32mI (77765) TCP/IP socket: send 20007 bytes to client ... [0m
+[0;32mI (77875) TCP/IP socket: send 20173 bytes to client ... [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (77984) TCP/IP socket: send 20160 bytes to client ... [0m
+[0;32mI (78104) TCP/IP socket: send 20555 bytes to client ... [0m
+[0;32mI (78225) TCP/IP socket: send 20438 bytes to client ... [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (78378) TCP/IP socket: send 20327 bytes to client ... [0m
+[0;32mI (78484) TCP/IP socket: send 20381 bytes to client ... [0m
+[0;32mI (78626) TCP/IP socket: send 20347 bytes to client ... [0m
+[0;32mI (78746) TCP/IP socket: send 20495 bytes to client ... [0m
+[0;32mI (78858) TCP/IP socket: send 20403 bytes to client ... [0m
+[0;32mI (78992) TCP/IP socket: send 20518 bytes to client ... [0m
+[0;32mI (79148) TCP/IP socket: send 20391 bytes to client ... [0m
+[0;32mI (79287) TCP/IP socket: send 20359 bytes to client ... [0m
+[0;32mI (79459) TCP/IP socket: send 20664 bytes to client ... [0m
+[0;32mI (79564) TCP/IP socket: send 20452 bytes to client ... [0m
+[0;32mI (79740) TCP/IP socket: send 20795 bytes to client ... [0m
+[0;32mI (80007) TCP/IP socket: send 20662 bytes to client ... [0m
+[0;32mI (80118) TCP/IP socket: send 20401 bytes to client ... [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (80239) TCP/IP socket: send 20414 bytes to client ... [0m
+[0;32mI (80363) TCP/IP socket: send 20513 bytes to client ... [0m
+[0;32mI (80478) TCP/IP socket: send 20518 bytes to client ... [0m
+[0;32mI (80584) TCP/IP socket: send 20289 bytes to client ... [0m
+[0;32mI (80695) TCP/IP socket: send 20105 bytes to client ... [0m
+[0;32mI (80798) TCP/IP socket: send 20266 bytes to client ... [0m
+[0;32mI (80922) TCP/IP socket: send 20117 bytes to client ... [0m
+[0;32mI (81050) TCP/IP socket: send 20294 bytes to client ... [0m
+[0;32mI (81195) TCP/IP socket: send 20364 bytes to client ... [0m
+[0;32mI (81337) TCP/IP socket: send 20410 bytes to client ... [0m
+[0;32mI (81451) TCP/IP socket: send 20370 bytes to client ... [0m
+[0;32mI (81559) TCP/IP socket: send 20405 bytes to client ... [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (81664) TCP/IP socket: send 20165 bytes to client ... [0m
+[0;32mI (81816) TCP/IP socket: send 20124 bytes to client ... [0m
+[0;32mI (81920) TCP/IP socket: send 20333 bytes to client ... [0m
+[0;32mI (82023) TCP/IP socket: send 20138 bytes to client ... [0m
+[0;32mI (82129) TCP/IP socket: send 20673 bytes to client ... [0m
+[0;32mI (82267) TCP/IP socket: send 20362 bytes to client ... [0m
+[0;32mI (82400) TCP/IP socket: send 20165 bytes to client ... [0m
+[0;32mI (82525) TCP/IP socket: send 20185 bytes to client ... [0m
+[0;32mI (82632) TCP/IP socket: send 20436 bytes to client ... [0m
+[0;32mI (83143) TCP/IP socket: send 20305 bytes to client ... [0m
+[0;32mI (83798) TCP/IP socket: send 20318 bytes to client ... [0m
+[0;32mI (83911) TCP/IP socket: send 20265 bytes to client ... [0m
+[0;32mI (84417) TCP/IP socket: send 20294 bytes to client ... [0m
+[0;32mI (84558) TCP/IP socket: send 20253 bytes to client ... [0m
+[0;32mI (84921) TCP/IP socket: send 20522 bytes to client ... [0m
+[0;32mI (85026) TCP/IP socket: send 20448 bytes to client ... [0m
+[0;32mI (85246) TCP/IP socket: send 19745 bytes to client ... [0m
+[0;32mI (85343) TCP/IP socket: send 17596 bytes to client ... [0m
+[0;32mI (85434) TCP/IP socket: send 14707 bytes to client ... [0m
+[0;32mI (85537) TCP/IP socket: send 12445 bytes to client ... [0m
+[0;32mI (85841) TCP/IP socket: send 11265 bytes to client ... [0m
+[0;32mI (86419) TCP/IP socket: send 11958 bytes to client ... [0m
+[0;32mI (86519) TCP/IP socket: send 11603 bytes to client ... [0m
+[0;32mI (86615) TCP/IP socket: send 13292 bytes to client ... [0m
+[0;32mI (86728) TCP/IP socket: send 12534 bytes to client ... [0m
+[0;32mI (86826) TCP/IP socket: send 16717 bytes to client ... [0m
+[0;32mI (86921) TCP/IP socket: send 16135 bytes to client ... [0m
+[0;32mI (87221) TCP/IP socket: send 14808 bytes to client ... [0m
+[0;32mI (87336) TCP/IP socket: send 13926 bytes to client ... [0m
+[0;32mI (87431) TCP/IP socket: send 13820 bytes to client ... [0m
+[0;32mI (87584) TCP/IP socket: send 13482 bytes to client ... [0m
+[0;32mI (87684) TCP/IP socket: send 13571 bytes to client ... [0m
+[0;32mI (87787) TCP/IP socket: send 12733 bytes to client ... [0m
+[0;32mI (87882) TCP/IP socket: send 9471 bytes to client ... [0m
+[0;32mI (87988) TCP/IP socket: send 9151 bytes to client ... [0m
+[0;32mI (88091) TCP/IP socket: send 6464 bytes to client ... [0m
+[0;32mI (88187) TCP/IP socket: send 7752 bytes to client ... [0m
+[0;32mI (88291) TCP/IP socket: send 7918 bytes to client ... [0m
+[0;32mI (88398) TCP/IP socket: send 8459 bytes to client ... [0m
+[0;32mI (88507) TCP/IP socket: send 12162 bytes to client ... [0m
+[0;32mI (88610) TCP/IP socket: send 11960 bytes to client ... [0m
+[0;32mI (88706) TCP/IP socket: send 12003 bytes to client ... [0m
+[0;32mI (88813) TCP/IP socket: send 10120 bytes to client ... [0m
+[0;32mI (88908) TCP/IP socket: send 10228 bytes to client ... [0m
+[0;32mI (89020) TCP/IP socket: send 8911 bytes to client ... [0m
+[0;32mI (89113) TCP/IP socket: send 8293 bytes to client ... [0m
+[0;32mI (89214) TCP/IP socket: send 8975 bytes to client ... [0m
+[0;32mI (89294) TCP/IP socket: send 6183 bytes to client ... [0m
+[0;32mI (89376) TCP/IP socket: send 6202 bytes to client ... [0m
+[0;32mI (89459) TCP/IP socket: send 6519 bytes to client ... [0m
+[0;32mI (89534) TCP/IP socket: send 4393 bytes to client ... [0m
+[0;32mI (89633) TCP/IP socket: send 6642 bytes to client ... [0m
+[0;32mI (89714) TCP/IP socket: send 6976 bytes to client ... [0m
+[0;32mI (89797) TCP/IP socket: send 7325 bytes to client ... [0m
+[0;32mI (89881) TCP/IP socket: send 7530 bytes to client ... [0m
+[0;32mI (89967) TCP/IP socket: send 6585 bytes to client ... [0m
+[0;32mI (90083) TCP/IP socket: send 7078 bytes to client ... [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (90165) TCP/IP socket: send 6186 bytes to client ... [0m
+[0;32mI (90244) TCP/IP socket: send 5811 bytes to client ... [0m
+[0;32mI (90345) TCP/IP socket: send 8610 bytes to client ... [0m
+[0;32mI (90452) TCP/IP socket: send 9204 bytes to client ... [0m
+[0;32mI (90566) TCP/IP socket: send 9514 bytes to client ... [0m
+[0;32mI (90726) TCP/IP socket: send 9864 bytes to client ... [0m
+[0;32mI (91111) TCP/IP socket: send 10966 bytes to client ... [0m
+[0;32mI (91209) TCP/IP socket: send 11143 bytes to client ... [0m
+[0;32mI (91316) TCP/IP socket: send 10972 bytes to client ... [0m
+[0;32mI (91403) TCP/IP socket: send 11143 bytes to client ... [0m
+[0;32mI (91527) TCP/IP socket: send 11372 bytes to client ... [0m
+[0;32mI (91694) TCP/IP socket: send 11248 bytes to client ... [0m
+[0;32mI (91849) TCP/IP socket: send 11307 bytes to client ... [0m
+[0;32mI (92003) TCP/IP socket: send 11385 bytes to client ... [0m
+[0;32mI (92171) TCP/IP socket: send 11367 bytes to client ... [0m
+[0;32mI (92347) TCP/IP socket: send 11770 bytes to client ... [0m
+[0;32mI (92503) TCP/IP socket: send 12499 bytes to client ... [0m
+[0;32mI (92705) TCP/IP socket: send 12007 bytes to client ... [0m
+[0;32mI (92814) TCP/IP socket: send 12045 bytes to client ... [0m
+[0;32mI (92977) TCP/IP socket: send 12128 bytes to client ... [0m
+[0;32mI (93165) TCP/IP socket: send 12030 bytes to client ... [0m
+[0;32mI (93318) TCP/IP socket: send 11829 bytes to client ... [0m
+[0;32mI (93473) TCP/IP socket: send 11648 bytes to client ... [0m
+[0;32mI (93628) TCP/IP socket: send 11472 bytes to client ... [0m
+[0;32mI (93783) TCP/IP socket: send 11338 bytes to client ... [0m
+[0;32mI (93932) TCP/IP socket: send 11126 bytes to client ... [0m
+[0;32mI (94090) TCP/IP socket: send 11179 bytes to client ... [0m
+[0;32mI (94256) TCP/IP socket: send 11199 bytes to client ... [0m
+[0;32mI (94412) TCP/IP socket: send 11235 bytes to client ... [0m
+[0;32mI (94574) TCP/IP socket: send 11326 bytes to client ... [0m
+[0;32mI (94757) TCP/IP socket: send 11253 bytes to client ... [0m
+[0;32mI (94904) TCP/IP socket: send 11337 bytes to client ... [0m
+[0;32mI (95067) TCP/IP socket: send 11328 bytes to client ... [0m
+[0;32mI (95219) TCP/IP socket: send 11278 bytes to client ... [0m
+[0;32mI (95386) TCP/IP socket: send 11402 bytes to client ... [0m
+[0;32mI (95539) TCP/IP socket: send 11425 bytes to client ... [0m
+[0;32mI (95724) TCP/IP socket: send 11404 bytes to client ... [0m
+[0;32mI (95876) TCP/IP socket: send 11428 bytes to client ... [0m
+[0;32mI (96082) TCP/IP socket: send 11333 bytes to client ... [0m
+[0;32mI (96190) TCP/IP socket: send 11283 bytes to client ... [0m
+[0;32mI (96753) TCP/IP socket: send 11323 bytes to client ... [0m
+[0;32mI (97163) TCP/IP socket: send 11244 bytes to client ... [0m
+[0;32mI (97354) TCP/IP socket: send 11279 bytes to client ... [0m
+[0;32mI (97667) TCP/IP socket: send 11288 bytes to client ... [0m
+[0;32mI (97952) TCP/IP socket: send 11428 bytes to client ... [0m
+[0;32mI (98091) TCP/IP socket: send 11422 bytes to client ... [0m
+[0;32mI (98181) TCP/IP socket: send 11427 bytes to client ... [0m
+[0;32mI (98304) TCP/IP socket: send 11414 bytes to client ... [0m
+[0;32mI (98439) TCP/IP socket: send 11369 bytes to client ... [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (98541) TCP/IP socket: send 11445 bytes to client ... [0m
+[0;32mI (98642) TCP/IP socket: send 11423 bytes to client ... [0m
+[0;32mI (98753) TCP/IP socket: send 11510 bytes to client ... [0m
+[0;32mI (98849) TCP/IP socket: send 11494 bytes to client ... [0m
+[0;32mI (98950) TCP/IP socket: send 11410 bytes to client ... [0m
+[0;32mI (99077) TCP/IP socket: send 11420 bytes to client ... [0m
+[0;32mI (99180) TCP/IP socket: send 11426 bytes to client ... [0m
+[0;32mI (99271) TCP/IP socket: send 11382 bytes to client ... [0m
+[0;32mI (99474) TCP/IP socket: send 11535 bytes to client ... [0m
+[0;32mI (99572) TCP/IP socket: send 11466 bytes to client ... [0m
+[0;32mI (99733) TCP/IP socket: send 11420 bytes to client ... [0m
+[0;32mI (99880) TCP/IP socket: send 11573 bytes to client ... [0m
+[0;32mI (100074) TCP/IP socket: send 11431 bytes to client ... [0m
+[0;32mI (100223) TCP/IP socket: send 11500 bytes to client ... [0m
+[0;32mI (100353) TCP/IP socket: send 11471 bytes to client ... [0m
+[0;32mI (100529) TCP/IP socket: send 11478 bytes to client ... [0m
+[0;32mI (100736) TCP/IP socket: send 11500 bytes to client ... [0m
+[0;32mI (100837) TCP/IP socket: send 11474 bytes to client ... [0m
+[0;32mI (101001) TCP/IP socket: send 11481 bytes to client ... [0m
+[0;32mI (101155) TCP/IP socket: send 11434 bytes to client ... [0m
+[0;32mI (101322) TCP/IP socket: send 11542 bytes to client ... [0m
+[0;32mI (101474) TCP/IP socket: send 11435 bytes to client ... [0m
+[0;32mI (101642) TCP/IP socket: send 11450 bytes to client ... [0m
+[0;32mI (101812) TCP/IP socket: send 11595 bytes to client ... [0m
+[0;32mI (101959) TCP/IP socket: send 11420 bytes to client ... [0m
+[0;32mI (102121) TCP/IP socket: send 11472 bytes to client ... [0m
+[0;32mI (102279) TCP/IP socket: send 11405 bytes to client ... [0m
+[0;32mI (102435) TCP/IP socket: send 11443 bytes to client ... [0m
+[0;32mI (102601) TCP/IP socket: send 11557 bytes to client ... [0m
+[0;32mI (102758) TCP/IP socket: send 11474 bytes to client ... [0m
+[0;32mI (102935) TCP/IP socket: send 11517 bytes to client ... [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (103401) TCP/IP socket: send 11514 bytes to client ... [0m
+[0;32mI (103564) TCP/IP socket: send 11618 bytes to client ... [0m
+[0;32mI (103729) TCP/IP socket: send 11559 bytes to client ... [0m
+[0;32mI (103886) TCP/IP socket: send 11464 bytes to client ... [0m
+[0;32mI (104070) TCP/IP socket: send 11585 bytes to client ... [0m
+[0;32mI (104219) TCP/IP socket: send 11543 bytes to client ... [0m
+[0;32mI (104372) TCP/IP socket: send 11603 bytes to client ... [0m
+[0;32mI (104543) TCP/IP socket: send 11587 bytes to client ... [0m
+[0;32mI (104693) TCP/IP socket: send 11534 bytes to client ... [0m
+[0;32mI (104880) TCP/IP socket: send 11493 bytes to client ... [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (105354) TCP/IP socket: send 11477 bytes to client ... [0m
+[0;32mI (105500) TCP/IP socket: send 11474 bytes to client ... [0m
+[0;32mI (105649) TCP/IP socket: send 11466 bytes to client ... [0m
+[0;32mI (105832) TCP/IP socket: send 11596 bytes to client ... [0m
+[0;32mI (106008) TCP/IP socket: send 11504 bytes to client ... [0m
+[0;32mI (106163) TCP/IP socket: send 11525 bytes to client ... [0m
+[0;32mI (106319) TCP/IP socket: send 11586 bytes to client ... [0m
+[0;32mI (106468) TCP/IP socket: send 11506 bytes to client ... [0m
+[0;32mI (106687) TCP/IP socket: send 11541 bytes to client ... [0m
+[0;32mI (106794) TCP/IP socket: send 11494 bytes to client ... [0m
+[0;32mI (106945) TCP/IP socket: send 11562 bytes to client ... [0m
+[0;32mI (107106) TCP/IP socket: send 11678 bytes to client ... [0m
+[0;32mI (107253) TCP/IP socket: send 11502 bytes to client ... [0m
+[0;32mI (107465) TCP/IP socket: send 11590 bytes to client ... [0m
+[0;32mI (107597) TCP/IP socket: send 11639 bytes to client ... [0m
+[0;32mI (107765) TCP/IP socket: send 11547 bytes to client ... [0m
+[0;32mI (107960) TCP/IP socket: send 11553 bytes to client ... [0m
+[0;32mI (108060) TCP/IP socket: send 11550 bytes to client ... [0m
+[0;32mI (108216) TCP/IP socket: send 11539 bytes to client ... [0m
+[0;32mI (108382) TCP/IP socket: send 11540 bytes to client ... [0m
+[0;32mI (108541) TCP/IP socket: send 11572 bytes to client ... [0m
+[0;32mI (108721) TCP/IP socket: send 11575 bytes to client ... [0m
+[0;32mI (108891) TCP/IP socket: send 11581 bytes to client ... [0m
+[0;32mI (109030) TCP/IP socket: send 11628 bytes to client ... [0m
+[0;32mI (109232) TCP/IP socket: send 11560 bytes to client ... [0m
+[0;32mI (109350) TCP/IP socket: send 11549 bytes to client ... [0m
+[0;32mI (109500) TCP/IP socket: send 11503 bytes to client ... [0m
+[0;32mI (109667) TCP/IP socket: send 11551 bytes to client ... [0m
+[0;32mI (109826) TCP/IP socket: send 11526 bytes to client ... [0m
+[0;32mI (110003) TCP/IP socket: send 11554 bytes to client ... [0m
+[0;32mI (110155) TCP/IP socket: send 11484 bytes to client ... [0m
+[0;32mI (110311) TCP/IP socket: send 11541 bytes to client ... [0m
+[0;32mI (110527) TCP/IP socket: send 11557 bytes to client ... [0m
+[0;32mI (110639) TCP/IP socket: send 11585 bytes to client ... [0m
+[0;32mI (110795) TCP/IP socket: send 11520 bytes to client ... [0m
+[0;32mI (110952) TCP/IP socket: send 11603 bytes to client ... [0m
+[0;32mI (111131) TCP/IP socket: send 11498 bytes to client ... [0m
+[0;32mI (111267) TCP/IP socket: send 11549 bytes to client ... [0m
+[0;32mI (111447) TCP/IP socket: send 11530 bytes to client ... [0m
+[0;32mI (111596) TCP/IP socket: send 11574 bytes to client ... [0m
+[0;32mI (111806) TCP/IP socket: send 11505 bytes to client ... [0m
+[0;32mI (111914) TCP/IP socket: send 11555 bytes to client ... [0m
+[0;32mI (112067) TCP/IP socket: send 11515 bytes to client ... [0m
+[0;32mI (112232) TCP/IP socket: send 11558 bytes to client ... [0m
+[0;32mI (112423) TCP/IP socket: send 11700 bytes to client ... [0m
+[0;32mI (112578) TCP/IP socket: send 11631 bytes to client ... [0m
+[0;32mI (112730) TCP/IP socket: send 11700 bytes to client ... [0m
+[0;32mI (112876) TCP/IP socket: send 11640 bytes to client ... [0m
+[0;32mI (113032) TCP/IP socket: send 11561 bytes to client ... [0m
+[0;32mI (113197) TCP/IP socket: send 11599 bytes to client ... [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (113432) TCP/IP socket: send 11580 bytes to client ... [0m
+[0;32mI (113854) TCP/IP socket: send 11583 bytes to client ... [0m
+[0;32mI (114005) TCP/IP socket: send 11641 bytes to client ... [0m
+[0;32mI (114152) TCP/IP socket: send 11591 bytes to client ... [0m
+[0;32mI (114322) TCP/IP socket: send 11658 bytes to client ... [0m
+[0;32mI (114479) TCP/IP socket: send 11592 bytes to client ... [0m
+[0;32mI (114676) TCP/IP socket: send 11635 bytes to client ... [0m
+[0;32mI (114836) TCP/IP socket: send 11612 bytes to client ... [0m
+[0;32mI (114992) TCP/IP socket: send 11708 bytes to client ... [0m
+[0;32mI (115126) TCP/IP socket: send 11638 bytes to client ... [0m
+[0;32mI (115280) TCP/IP socket: send 11565 bytes to client ... [0m
+[0;32mI (115435) TCP/IP socket: send 11625 bytes to client ... [0m
+[0;32mI (115601) TCP/IP socket: send 11582 bytes to client ... [0m
+[0;32mI (115760) TCP/IP socket: send 11723 bytes to client ... [0m
+[0;32mI (115942) TCP/IP socket: send 11607 bytes to client ... [0m
+[0;32mI (116078) TCP/IP socket: send 11625 bytes to client ... [0m
+[0;32mI (116267) TCP/IP socket: send 11666 bytes to client ... [0m
+[0;32mI (116416) TCP/IP socket: send 11774 bytes to client ... [0m
+[0;32mI (116576) TCP/IP socket: send 11636 bytes to client ... [0m
+[0;32mI (116727) TCP/IP socket: send 11637 bytes to client ... [0m
+[0;32mI (116900) TCP/IP socket: send 11620 bytes to client ... [0m
+[0;32mI (117043) TCP/IP socket: send 11565 bytes to client ... [0m
+[0;32mI (117201) TCP/IP socket: send 11558 bytes to client ... [0m
+[0;32mI (117395) TCP/IP socket: send 11709 bytes to client ... [0m
+[0;32mI (117542) TCP/IP socket: send 11659 bytes to client ... [0m
+[0;32mI (117689) TCP/IP socket: send 11560 bytes to client ... [0m
+[0;32mI (117862) TCP/IP socket: send 11555 bytes to client ... [0m
+[0;32mI (118002) TCP/IP socket: send 11748 bytes to client ... [0m
+[0;32mI (118201) TCP/IP socket: send 11584 bytes to client ... [0m
+[0;32mI (118324) TCP/IP socket: send 11593 bytes to client ... [0m
+[0;32mI (118521) TCP/IP socket: send 11588 bytes to client ... [0m
+[0;32mI (118655) TCP/IP socket: send 11669 bytes to client ... [0m
+[0;32mI (118862) TCP/IP socket: send 11606 bytes to client ... [0m
+[0;32mI (118974) TCP/IP socket: send 11601 bytes to client ... [0m
+[0;32mI (119139) TCP/IP socket: send 11641 bytes to client ... [0m
+[0;32mI (119289) TCP/IP socket: send 11618 bytes to client ... [0m
+[0;32mI (119457) TCP/IP socket: send 11680 bytes to client ... [0m
+[0;32mI (119636) TCP/IP socket: send 11733 bytes to client ... [0m
+[0;32mI (119802) TCP/IP socket: send 11634 bytes to client ... [0m
+[0;32mI (119943) TCP/IP socket: send 11705 bytes to client ... [0m
+[0;32mI (120096) TCP/IP socket: send 11655 bytes to client ... [0m
+[0;32mI (120252) TCP/IP socket: send 11558 bytes to client ... [0m
+[0;32mI (120432) TCP/IP socket: send 11672 bytes to client ... [0m
+[0;32mI (120575) TCP/IP socket: send 11682 bytes to client ... [0m
+[0;32mI (120736) TCP/IP socket: send 11587 bytes to client ... [0m
+[0;32mI (120910) TCP/IP socket: send 11655 bytes to client ... [0m
+[0;32mI (121073) TCP/IP socket: send 11628 bytes to client ... [0m
+[0;32mI (121226) TCP/IP socket: send 11584 bytes to client ... [0m
+[0;32mI (121388) TCP/IP socket: send 11612 bytes to client ... [0m
+[0;32mI (121544) TCP/IP socket: send 11714 bytes to client ... [0m
+[0;32mI (121699) TCP/IP socket: send 11691 bytes to client ... [0m
+[0;32mI (121856) TCP/IP socket: send 11653 bytes to client ... [0m
+[0;32mI (122017) TCP/IP socket: send 11685 bytes to client ... [0m
+[0;32mI (122193) TCP/IP socket: send 11616 bytes to client ... [0m
+[0;32mI (122355) TCP/IP socket: send 11649 bytes to client ... [0m
+[0;32mI (122527) TCP/IP socket: send 11655 bytes to client ... [0m
+[0;32mI (122663) TCP/IP socket: send 11699 bytes to client ... [0m
+[0;32mI (122818) TCP/IP socket: send 11702 bytes to client ... [0m
+[0;32mI (122979) TCP/IP socket: send 11638 bytes to client ... [0m
+[0;32mI (123160) TCP/IP socket: send 11748 bytes to client ... [0m
+[0;32mI (123324) TCP/IP socket: send 11705 bytes to client ... [0m
+[0;32mI (123476) TCP/IP socket: send 11666 bytes to client ... [0m
+[0;32mI (123627) TCP/IP socket: send 11681 bytes to client ... [0m
+[0;32mI (123785) TCP/IP socket: send 11637 bytes to client ... [0m
+[0;32mI (123946) TCP/IP socket: send 11607 bytes to client ... [0m
+[0;32mI (124112) TCP/IP socket: send 11644 bytes to client ... [0m
+[0;32mI (124269) TCP/IP socket: send 11609 bytes to client ... [0m
+[0;32mI (124491) TCP/IP socket: send 11759 bytes to client ... [0m
+[0;32mI (124594) TCP/IP socket: send 11699 bytes to client ... [0m
+[0;32mI (124756) TCP/IP socket: send 11673 bytes to client ... [0m
+[0;32mI (124909) TCP/IP socket: send 11579 bytes to client ... [0m
+[0;32mI (125069) TCP/IP socket: send 11642 bytes to client ... [0m
+[0;32mI (125233) TCP/IP socket: send 11752 bytes to client ... [0m
+[0;32mI (125412) TCP/IP socket: send 11708 bytes to client ... [0m
+[0;32mI (125547) TCP/IP socket: send 11615 bytes to client ... [0m
+[0;32mI (125732) TCP/IP socket: send 11642 bytes to client ... [0m
+[0;32mI (125881) TCP/IP socket: send 11667 bytes to client ... [0m
+[0;32mI (126055) TCP/IP socket: send 11599 bytes to client ... [0m
+[0;32mI (126194) TCP/IP socket: send 11669 bytes to client ... [0m
+[0;32mI (126353) TCP/IP socket: send 11687 bytes to client ... [0m
+[0;32mI (126511) TCP/IP socket: send 11621 bytes to client ... [0m
+[0;32mI (126697) TCP/IP socket: send 11624 bytes to client ... [0m
+[0;32mI (126847) TCP/IP socket: send 11623 bytes to client ... [0m
+[0;32mI (127056) TCP/IP socket: send 11664 bytes to client ... [0m
+[0;32mI (127162) TCP/IP socket: send 11667 bytes to client ... [0m
+[0;32mI (127355) TCP/IP socket: send 11679 bytes to client ... [0m
+[0;32mI (127482) TCP/IP socket: send 11619 bytes to client ... [0m
+[0;32mI (127665) TCP/IP socket: send 11603 bytes to client ... [0m
+[0;32mI (127822) TCP/IP socket: send 11669 bytes to client ... [0m
+[0;32mI (127977) TCP/IP socket: send 11743 bytes to client ... [0m
+[0;32mI (128131) TCP/IP socket: send 11651 bytes to client ... [0m
+[0;32mI (128296) TCP/IP socket: send 11636 bytes to client ... [0m
+[0;32mI (128444) TCP/IP socket: send 11622 bytes to client ... [0m
+[0;32mI (128612) TCP/IP socket: send 11612 bytes to client ... [0m
+[0;32mI (128760) TCP/IP socket: send 11604 bytes to client ... [0m
+[0;32mI (128954) TCP/IP socket: send 11651 bytes to client ... [0m
+[0;32mI (129083) TCP/IP socket: send 11561 bytes to client ... [0m
+[0;32mI (129269) TCP/IP socket: send 11724 bytes to client ... [0m
+[0;32mI (129414) TCP/IP socket: send 11749 bytes to client ... [0m
+[0;32mI (129575) TCP/IP socket: send 11759 bytes to client ... [0m
+[0;32mI (129725) TCP/IP socket: send 11637 bytes to client ... [0m
+[0;32mI (129890) TCP/IP socket: send 11645 bytes to client ... [0m
+[0;32mI (130142) TCP/IP socket: send 11683 bytes to client ... [0m
+[0;32mI (130238) TCP/IP socket: send 11644 bytes to client ... [0m
+[0;32mI (130379) TCP/IP socket: send 11712 bytes to client ... [0m
+[0;32mI (130536) TCP/IP socket: send 11648 bytes to client ... [0m
+[0;32mI (130697) TCP/IP socket: send 11704 bytes to client ... [0m
+[0;32mI (130907) TCP/IP socket: send 11689 bytes to client ... [0m
+[0;32mI (131012) TCP/IP socket: send 11760 bytes to client ... [0m
+[0;32mI (131169) TCP/IP socket: send 11719 bytes to client ... [0m
+[0;32mI (131330) TCP/IP socket: send 11710 bytes to client ... [0m
+[0;32mI (131511) TCP/IP socket: send 11770 bytes to client ... [0m
+[0;32mI (131655) TCP/IP socket: send 11708 bytes to client ... [0m
+[0;32mI (131833) TCP/IP socket: send 11713 bytes to client ... [0m
+[0;32mI (131975) TCP/IP socket: send 11726 bytes to client ... [0m
+[0;32mI (132163) TCP/IP socket: send 11733 bytes to client ... [0m
+[0;32mI (132297) TCP/IP socket: send 11705 bytes to client ... [0m
+[0;32mI (132458) TCP/IP socket: send 11665 bytes to client ... [0m
+[0;32mI (132630) TCP/IP socket: send 11781 bytes to client ... [0m
+[0;32mI (132795) TCP/IP socket: send 11736 bytes to client ... [0m
+[0;32mI (132941) TCP/IP socket: send 11692 bytes to client ... [0m
+[0;32mI (133105) TCP/IP socket: send 11645 bytes to client ... [0m
+[0;32mI (133263) TCP/IP socket: send 11717 bytes to client ... [0m
+[0;32mI (133415) TCP/IP socket: send 11662 bytes to client ... [0m
+[0;32mI (133574) TCP/IP socket: send 11709 bytes to client ... [0m
+[0;32mI (133777) TCP/IP socket: send 11766 bytes to client ... [0m
+[0;32mI (133899) TCP/IP socket: send 11655 bytes to client ... [0m
+[0;32mI (134087) TCP/IP socket: send 11714 bytes to client ... [0m
+[0;32mI (134228) TCP/IP socket: send 11776 bytes to client ... [0m
+[0;32mI (134384) TCP/IP socket: send 11769 bytes to client ... [0m
+[0;32mI (134536) TCP/IP socket: send 11699 bytes to client ... [0m
+[0;32mI (134697) TCP/IP socket: send 11724 bytes to client ... [0m
+[0;32mI (134860) TCP/IP socket: send 11773 bytes to client ... [0m
+[0;32mI (135043) TCP/IP socket: send 11726 bytes to client ... [0m
+[0;32mI (135210) TCP/IP socket: send 11815 bytes to client ... [0m
+[0;32mI (135353) TCP/IP socket: send 11856 bytes to client ... [0m
+[0;32mI (135500) TCP/IP socket: send 11763 bytes to client ... [0m
+[0;32mI (135662) TCP/IP socket: send 11747 bytes to client ... [0m
+[0;32mI (135822) TCP/IP socket: send 11737 bytes to client ... [0m
+[0;32mI (135987) TCP/IP socket: send 11807 bytes to client ... [0m
+[0;32mI (136172) TCP/IP socket: send 11717 bytes to client ... [0m
+[0;32mI (136323) TCP/IP socket: send 11668 bytes to client ... [0m
+[0;32mI (136497) TCP/IP socket: send 11723 bytes to client ... [0m
+[0;32mI (136643) TCP/IP socket: send 11746 bytes to client ... [0m
+[0;32mI (136790) TCP/IP socket: send 11730 bytes to client ... [0m
+[0;32mI (136949) TCP/IP socket: send 11680 bytes to client ... [0m
+[0;32mI (137111) TCP/IP socket: send 11733 bytes to client ... [0m
+[0;32mI (137291) TCP/IP socket: send 11687 bytes to client ... [0m
+[0;32mI (137434) TCP/IP socket: send 11668 bytes to client ... [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (138682) TCP/IP socket: send 11691 bytes to client ... [0m
+[0;32mI (138786) TCP/IP socket: send 11672 bytes to client ... [0m
+[0;32mI (138896) TCP/IP socket: send 11677 bytes to client ... [0m
+[0;32mI (139003) TCP/IP socket: send 11654 bytes to client ... [0m
+[0;32mI (139141) TCP/IP socket: send 11730 bytes to client ... [0m
+[0;32mI (139231) TCP/IP socket: send 11584 bytes to client ... [0m
+[0;32mI (139347) TCP/IP socket: send 11774 bytes to client ... [0m
+[0;32mI (139469) TCP/IP socket: send 11702 bytes to client ... [0m
+[0;32mI (139565) TCP/IP socket: send 11746 bytes to client ... [0m
+[0;32mI (139690) TCP/IP socket: send 11709 bytes to client ... [0m
+[0;32mI (139807) TCP/IP socket: send 11723 bytes to client ... [0m
+[0;32mI (139914) TCP/IP socket: send 11560 bytes to client ... [0m
+[0;32mI (140014) TCP/IP socket: send 11710 bytes to client ... [0m
+[0;32mI (140131) TCP/IP socket: send 11771 bytes to client ... [0m
+[0;32mI (140221) TCP/IP socket: send 11687 bytes to client ... [0m
+[0;32mI (140326) TCP/IP socket: send 11798 bytes to client ... [0m
+[0;32mI (140485) TCP/IP socket: send 11698 bytes to client ... [0m
+[0;32mI (140648) TCP/IP socket: send 11725 bytes to client ... [0m
+[0;32mI (140800) TCP/IP socket: send 11699 bytes to client ... [0m
+[0;32mI (140987) TCP/IP socket: send 11713 bytes to client ... [0m
+[0;32mI (141178) TCP/IP socket: send 11744 bytes to client ... [0m
+[0;32mI (141367) TCP/IP socket: send 11775 bytes to client ... [0m
+[0;32mI (141466) TCP/IP socket: send 11640 bytes to client ... [0m
+[0;32mI (141605) TCP/IP socket: send 11679 bytes to client ... [0m
+[0;32mI (141760) TCP/IP socket: send 11694 bytes to client ... [0m
+[0;32mI (141958) TCP/IP socket: send 11670 bytes to client ... [0m
+[0;32mI (142089) TCP/IP socket: send 11745 bytes to client ... [0m
+[0;32mI (142275) TCP/IP socket: send 11736 bytes to client ... [0m
+[0;32mI (142418) TCP/IP socket: send 11728 bytes to client ... [0m
+[0;32mI (142602) TCP/IP socket: send 11658 bytes to client ... [0m
+[0;32mI (142793) TCP/IP socket: send 11810 bytes to client ... [0m
+[0;32mI (142893) TCP/IP socket: send 11787 bytes to client ... [0m
+[0;32mI (143047) TCP/IP socket: send 11842 bytes to client ... [0m
+[0;32mI (143210) TCP/IP socket: send 11724 bytes to client ... [0m
+[0;32mI (143386) TCP/IP socket: send 11850 bytes to client ... [0m
+[0;32mI (143546) TCP/IP socket: send 11657 bytes to client ... [0m
+[0;32mI (143706) TCP/IP socket: send 11691 bytes to client ... [0m
+[0;32mI (143852) TCP/IP socket: send 11660 bytes to client ... [0m
+[0;32mI (144011) TCP/IP socket: send 11925 bytes to client ... [0m
+[0;32mI (144178) TCP/IP socket: send 11801 bytes to client ... [0m
+[0;32mI (144335) TCP/IP socket: send 11716 bytes to client ... [0m
+[0;32mI (144517) TCP/IP socket: send 11717 bytes to client ... [0m
+[0;32mI (144662) TCP/IP socket: send 11852 bytes to client ... [0m
+[0;32mI (144826) TCP/IP socket: send 11725 bytes to client ... [0m
+[0;32mI (144981) TCP/IP socket: send 11704 bytes to client ... [0m
+[0;32mI (145140) TCP/IP socket: send 11738 bytes to client ... [0m
+[0;32mI (145297) TCP/IP socket: send 11734 bytes to client ... [0m
+[0;32mI (145454) TCP/IP socket: send 11739 bytes to client ... [0m
+[0;32mI (145648) TCP/IP socket: send 11782 bytes to client ... [0m
+[0;32mI (145808) TCP/IP socket: send 11736 bytes to client ... [0m
+[0;32mI (145948) TCP/IP socket: send 11674 bytes to client ... [0m
+[0;32mI (146160) TCP/IP socket: send 11744 bytes to client ... [0m
+[0;32mI (146257) TCP/IP socket: send 11736 bytes to client ... [0m
+[0;32mI (146423) TCP/IP socket: send 11651 bytes to client ... [0m
+[0;32mI (146621) TCP/IP socket: send 11808 bytes to client ... [0m
+[0;32mI (146770) TCP/IP socket: send 11760 bytes to client ... [0m
+[0;32mI (146916) TCP/IP socket: send 11709 bytes to client ... [0m
+[0;32mI (147084) TCP/IP socket: send 11775 bytes to client ... [0m
+[0;32mI (147226) TCP/IP socket: send 11821 bytes to client ... [0m
+[0;32mI (147391) TCP/IP socket: send 11753 bytes to client ... [0m
+[0;32mI (147546) TCP/IP socket: send 11728 bytes to client ... [0m
+[0;32mI (147711) TCP/IP socket: send 11648 bytes to client ... [0m
+[0;32mI (147866) TCP/IP socket: send 11672 bytes to client ... [0m
+[0;32mI (148053) TCP/IP socket: send 11709 bytes to client ... [0m
+[0;32mI (148208) TCP/IP socket: send 11725 bytes to client ... [0m
+[0;32mI (148358) TCP/IP socket: send 11675 bytes to client ... [0m
+[0;32mI (148522) TCP/IP socket: send 11726 bytes to client ... [0m
+[0;32mI (148671) TCP/IP socket: send 11803 bytes to client ... [0m
+[0;32mI (148864) TCP/IP socket: send 11835 bytes to client ... [0m
+[0;32mI (148990) TCP/IP socket: send 11724 bytes to client ... [0m
+[0;32mI (149148) TCP/IP socket: send 11671 bytes to client ... [0m
+[0;32mI (149376) TCP/IP socket: send 11790 bytes to client ... [0m
+[0;32mI (149505) TCP/IP socket: send 11763 bytes to client ... [0m
+[0;32mI (149649) TCP/IP socket: send 11780 bytes to client ... [0m
+[0;32mI (149795) TCP/IP socket: send 11743 bytes to client ... [0m
+[0;32mI (149957) TCP/IP socket: send 11673 bytes to client ... [0m
+[0;32mI (150119) TCP/IP socket: send 11754 bytes to client ... [0m
+[0;32mI (150296) TCP/IP socket: send 11736 bytes to client ... [0m
+[0;32mI (150456) TCP/IP socket: send 11808 bytes to client ... [0m
+[0;32mI (150616) TCP/IP socket: send 11860 bytes to client ... [0m
+[0;32mI (150766) TCP/IP socket: send 11809 bytes to client ... [0m
+[0;32mI (150924) TCP/IP socket: send 11708 bytes to client ... [0m
+[0;32mI (151136) TCP/IP socket: send 11731 bytes to client ... [0m
+[0;32mI (151240) TCP/IP socket: send 11806 bytes to client ... [0m
+[0;32mI (151430) TCP/IP socket: send 11702 bytes to client ... [0m
+[0;32mI (151594) TCP/IP socket: send 11780 bytes to client ... [0m
+[0;32mI (151738) TCP/IP socket: send 11762 bytes to client ... [0m
+[0;32mI (151895) TCP/IP socket: send 11816 bytes to client ... [0m
+[0;32mI (152049) TCP/IP socket: send 11840 bytes to client ... [0m
+[0;32mI (152199) TCP/IP socket: send 11732 bytes to client ... [0m
+[0;32mI (152365) TCP/IP socket: send 11789 bytes to client ... [0m
+[0;32mI (152554) TCP/IP socket: send 11781 bytes to client ... [0m
+[0;32mI (152682) TCP/IP socket: send 11699 bytes to client ... [0m
+[0;32mI (152859) TCP/IP socket: send 11820 bytes to client ... [0m
+[0;32mI (153030) TCP/IP socket: send 11743 bytes to client ... [0m
+[0;32mI (153179) TCP/IP socket: send 11772 bytes to client ... [0m
+[0;32mI (153330) TCP/IP socket: send 11797 bytes to client ... [0m
+[0;32mI (153487) TCP/IP socket: send 11788 bytes to client ... [0m
+[0;32mI (153650) TCP/IP socket: send 11712 bytes to client ... [0m
+[0;32mI (153815) TCP/IP socket: send 11728 bytes to client ... [0m
+[0;32mI (153988) TCP/IP socket: send 11730 bytes to client ... [0m
+[0;32mI (154152) TCP/IP socket: send 11803 bytes to client ... [0m
+[0;32mI (154300) TCP/IP socket: send 11875 bytes to client ... [0m
+[0;32mI (154452) TCP/IP socket: send 11758 bytes to client ... [0m
+[0;32mI (154615) TCP/IP socket: send 11796 bytes to client ... [0m
+[0;32mI (154772) TCP/IP socket: send 11710 bytes to client ... [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (155469) TCP/IP socket: send 11683 bytes to client ... [0m
+[0;32mI (155584) TCP/IP socket: send 11656 bytes to client ... [0m
+[0;32mI (155730) TCP/IP socket: send 11819 bytes to client ... [0m
+[0;32mI (155839) TCP/IP socket: send 11738 bytes to client ... [0m
+[0;32mI (155942) TCP/IP socket: send 11741 bytes to client ... [0m
+[0;32mI (156054) TCP/IP socket: send 11719 bytes to client ... [0m
+[0;32mI (156224) TCP/IP socket: send 11737 bytes to client ... [0m
+[0;32mI (156450) TCP/IP socket: send 11779 bytes to client ... [0m
+[0;32mI (156554) TCP/IP socket: send 11739 bytes to client ... [0m
+[0;32mI (156704) TCP/IP socket: send 11708 bytes to client ... [0m
+[0;32mI (156867) TCP/IP socket: send 11765 bytes to client ... [0m
+[0;32mI (157019) TCP/IP socket: send 11758 bytes to client ... [0m
+[0;32mI (157180) TCP/IP socket: send 11740 bytes to client ... [0m
+[0;32mI (157337) TCP/IP socket: send 11676 bytes to client ... [0m
+[0;32mI (157531) TCP/IP socket: send 11723 bytes to client ... [0m
+[0;32mI (157727) TCP/IP socket: send 11759 bytes to client ... [0m
+[0;32mI (157840) TCP/IP socket: send 11774 bytes to client ... [0m
+[0;32mI (157988) TCP/IP socket: send 11761 bytes to client ... [0m
+[0;32mI (158144) TCP/IP socket: send 11726 bytes to client ... [0m
+[0;32mI (158305) TCP/IP socket: send 11798 bytes to client ... [0m
+[0;32mI (158466) TCP/IP socket: send 11680 bytes to client ... [0m
+[0;32mI (158644) TCP/IP socket: send 11752 bytes to client ... [0m
+[0;32mI (158854) TCP/IP socket: send 11762 bytes to client ... [0m
+[0;32mI (158968) TCP/IP socket: send 11767 bytes to client ... [0m
+[0;32mI (159112) TCP/IP socket: send 11737 bytes to client ... [0m
+[0;32mI (159280) TCP/IP socket: send 11785 bytes to client ... [0m
+[0;32mI (159523) TCP/IP socket: send 11785 bytes to client ... [0m
+[0;32mI (159666) TCP/IP socket: send 11702 bytes to client ... [0m
+[0;32mI (159775) TCP/IP socket: send 11740 bytes to client ... [0m
+[0;32mI (159921) TCP/IP socket: send 11744 bytes to client ... [0m
+[0;32mI (160091) TCP/IP socket: send 11806 bytes to client ... [0m
+[0;32mI (160245) TCP/IP socket: send 11674 bytes to client ... [0m
+[0;32mI (160399) TCP/IP socket: send 11669 bytes to client ... [0m
+[0;32mI (160554) TCP/IP socket: send 11772 bytes to client ... [0m
+[0;32mI (160713) TCP/IP socket: send 11690 bytes to client ... [0m
+[0;32mI (160912) TCP/IP socket: send 11710 bytes to client ... [0m
+[0;32mI (161055) TCP/IP socket: send 11701 bytes to client ... [0m
+[0;32mI (161206) TCP/IP socket: send 11736 bytes to client ... [0m
+[0;32mI (161366) TCP/IP socket: send 11813 bytes to client ... [0m
+[0;32mI (161610) TCP/IP socket: send 11704 bytes to client ... [0m
+[0;32mI (161717) TCP/IP socket: send 11671 bytes to client ... [0m
+[0;32mI (161842) TCP/IP socket: send 11690 bytes to client ... [0m
+[0;32mI (162000) TCP/IP socket: send 11765 bytes to client ... [0m
+[0;32mI (162163) TCP/IP socket: send 11712 bytes to client ... [0m
+[0;32mI (162335) TCP/IP socket: send 11813 bytes to client ... [0m
+[0;32mI (162487) TCP/IP socket: send 11730 bytes to client ... [0m
+[0;32mI (162651) TCP/IP socket: send 11762 bytes to client ... [0m
+[0;32mI (162878) TCP/IP socket: send 11713 bytes to client ... [0m
+[0;32mI (162992) TCP/IP socket: send 11749 bytes to client ... [0m
+[0;32mI (163174) TCP/IP socket: send 11824 bytes to client ... [0m
+[0;32mI (163308) TCP/IP socket: send 11908 bytes to client ... [0m
+[0;32mI (163467) TCP/IP socket: send 11787 bytes to client ... [0m
+[0;32mI (163618) TCP/IP socket: send 11757 bytes to client ... [0m
+[0;32mI (163784) TCP/IP socket: send 11728 bytes to client ... [0m
+[0;32mI (163931) TCP/IP socket: send 11706 bytes to client ... [0m
+[0;32mI (164122) TCP/IP socket: send 11744 bytes to client ... [0m
+[0;32mI (164272) TCP/IP socket: send 11742 bytes to client ... [0m
+[0;32mI (164430) TCP/IP socket: send 11837 bytes to client ... [0m
+[0;32mI (164590) TCP/IP socket: send 11929 bytes to client ... [0m
+[0;32mI (164745) TCP/IP socket: send 11571 bytes to client ... [0m
+[0;32mI (164894) TCP/IP socket: send 11267 bytes to client ... [0m
+[0;32mI (165049) TCP/IP socket: send 10546 bytes to client ... [0m
+[0;32mI (165209) TCP/IP socket: send 11388 bytes to client ... [0m
+[0;32mI (165376) TCP/IP socket: send 13065 bytes to client ... [0m
+[0;32mI (165537) TCP/IP socket: send 12291 bytes to client ... [0m
+[0;32mI (165715) TCP/IP socket: send 11906 bytes to client ... [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (166176) TCP/IP socket: send 11847 bytes to client ... [0m
+[0;32mI (166376) TCP/IP socket: send 11884 bytes to client ... [0m
+[0;32mI (166524) TCP/IP socket: send 11937 bytes to client ... [0m
+[0;32mI (166694) TCP/IP socket: send 11838 bytes to client ... [0m
+[0;32mI (166845) TCP/IP socket: send 11804 bytes to client ... [0m
+[0;32mI (166991) TCP/IP socket: send 11703 bytes to client ... [0m
+[0;32mI (167147) TCP/IP socket: send 11863 bytes to client ... [0m
+[0;32mI (167300) TCP/IP socket: send 11728 bytes to client ... [0m
+[0;32mI (167462) TCP/IP socket: send 11791 bytes to client ... [0m
+[0;32mI (167626) TCP/IP socket: send 11814 bytes to client ... [0m
+[0;32mI (167817) TCP/IP socket: send 11846 bytes to client ... [0m
+[0;32mI (167946) TCP/IP socket: send 11886 bytes to client ... [0m
+[0;32mI (168101) TCP/IP socket: send 11730 bytes to client ... [0m
+[0;32mI (168283) TCP/IP socket: send 11832 bytes to client ... [0m
+[0;32mI (168442) TCP/IP socket: send 11932 bytes to client ... [0m
+[0;32mI (168583) TCP/IP socket: send 12110 bytes to client ... [0m
+[0;32mI (168743) TCP/IP socket: send 11987 bytes to client ... [0m
+[0;32mI (168908) TCP/IP socket: send 12145 bytes to client ... [0m
+[0;32mI (169105) TCP/IP socket: send 12211 bytes to client ... [0m
+[0;32mI (169229) TCP/IP socket: send 12261 bytes to client ... [0m
+[0;32mI (169402) TCP/IP socket: send 12227 bytes to client ... [0m
+[0;32mI (169553) TCP/IP socket: send 11824 bytes to client ... [0m
+[0;32mI (169714) TCP/IP socket: send 11744 bytes to client ... [0m
+[0;32mI (169872) TCP/IP socket: send 12058 bytes to client ... [0m
+[0;32mI (170042) TCP/IP socket: send 12135 bytes to client ... [0m
+[0;32mI (170190) TCP/IP socket: send 12326 bytes to client ... [0m
+[0;32mI (170373) TCP/IP socket: send 13175 bytes to client ... [0m
+[0;32mI (170534) TCP/IP socket: send 13840 bytes to client ... [0m
+[0;32mI (170691) TCP/IP socket: send 13773 bytes to client ... [0m
+[0;32mI (170839) TCP/IP socket: send 12406 bytes to client ... [0m
+[0;32mI (171002) TCP/IP socket: send 12166 bytes to client ... [0m
+[0;32mI (171150) TCP/IP socket: send 11843 bytes to client ... [0m
+[0;32mI (171339) TCP/IP socket: send 11855 bytes to client ... [0m
+[0;32mI (171491) TCP/IP socket: send 11835 bytes to client ... [0m
+[0;32mI (171698) TCP/IP socket: send 11820 bytes to client ... [0m
+[0;32mI (171808) TCP/IP socket: send 11898 bytes to client ... [0m
+[0;32mI (171959) TCP/IP socket: send 11767 bytes to client ... [0m
+[0;32mI (172127) TCP/IP socket: send 11762 bytes to client ... [0m
+[0;32mI (172287) TCP/IP socket: send 11694 bytes to client ... [0m
+[0;32mI (172443) TCP/IP socket: send 11859 bytes to client ... [0m
+[0;32mI (172602) TCP/IP socket: send 11812 bytes to client ... [0m
+[0;32mI (172776) TCP/IP socket: send 11785 bytes to client ... [0m
+[0;32mI (172933) TCP/IP socket: send 11938 bytes to client ... [0m
+[0;32mI (173088) TCP/IP socket: send 11769 bytes to client ... [0m
+[0;32mI (173257) TCP/IP socket: send 11782 bytes to client ... [0m
+[0;32mI (173402) TCP/IP socket: send 11756 bytes to client ... [0m
+[0;32mI (173561) TCP/IP socket: send 11823 bytes to client ... [0m
+[0;32mI (173718) TCP/IP socket: send 11762 bytes to client ... [0m
+[0;32mI (173908) TCP/IP socket: send 11823 bytes to client ... [0m
+[0;32mI (174058) TCP/IP socket: send 11772 bytes to client ... [0m
+[0;32mI (174257) TCP/IP socket: send 11730 bytes to client ... [0m
+[0;32mI (174362) TCP/IP socket: send 11815 bytes to client ... [0m
+[0;32mI (174522) TCP/IP socket: send 11817 bytes to client ... [0m
+[0;32mI (174682) TCP/IP socket: send 11899 bytes to client ... [0m
+[0;32mI (174847) TCP/IP socket: send 11819 bytes to client ... [0m
+[0;32mI (175025) TCP/IP socket: send 11799 bytes to client ... [0m
+[0;32mI (175163) TCP/IP socket: send 11864 bytes to client ... [0m
+[0;32mI (175339) TCP/IP socket: send 11821 bytes to client ... [0m
+[0;32mI (175488) TCP/IP socket: send 11759 bytes to client ... [0m
+[0;32mI (175652) TCP/IP socket: send 11753 bytes to client ... [0m
+[0;32mI (175812) TCP/IP socket: send 11771 bytes to client ... [0m
+[0;32mI (175966) TCP/IP socket: send 11847 bytes to client ... [0m
+[0;32mI (176126) TCP/IP socket: send 11872 bytes to client ... [0m
+[0;32mI (176286) TCP/IP socket: send 11767 bytes to client ... [0m
+[0;32mI (176462) TCP/IP socket: send 11749 bytes to client ... [0m
+[0;32mI (176620) TCP/IP socket: send 11899 bytes to client ... [0m
+[0;32mI (176770) TCP/IP socket: send 11742 bytes to client ... [0m
+[0;32mI (176930) TCP/IP socket: send 11780 bytes to client ... [0m
+[0;32mI (177089) TCP/IP socket: send 11710 bytes to client ... [0m
+[0;32mI (177251) TCP/IP socket: send 11729 bytes to client ... [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (177848) TCP/IP socket: send 11726 bytes to client ... [0m
+[0;32mI (177999) TCP/IP socket: send 11748 bytes to client ... [0m
+[0;32mI (178115) TCP/IP socket: send 11790 bytes to client ... [0m
+[0;32mI (178214) TCP/IP socket: send 11830 bytes to client ... [0m
+[0;32mI (178378) TCP/IP socket: send 11779 bytes to client ... [0m
+[0;32mI (178568) TCP/IP socket: send 11852 bytes to client ... [0m
+[0;32mI (178711) TCP/IP socket: send 11821 bytes to client ... [0m
+[0;32mI (178889) TCP/IP socket: send 11817 bytes to client ... [0m
+[0;32mI (179029) TCP/IP socket: send 11856 bytes to client ... [0m
+[0;32mI (179180) TCP/IP socket: send 11885 bytes to client ... [0m
+[0;32mI (179355) TCP/IP socket: send 11785 bytes to client ... [0m
+[0;32mI (179532) TCP/IP socket: send 11936 bytes to client ... [0m
+[0;32mI (179662) TCP/IP socket: send 11860 bytes to client ... [0m
+[0;32mI (179818) TCP/IP socket: send 12122 bytes to client ... [0m
+[0;32mI (179995) TCP/IP socket: send 13655 bytes to client ... [0m
+[0;32mI (180169) TCP/IP socket: send 12963 bytes to client ... [0m
+[0;32mI (180314) TCP/IP socket: send 12514 bytes to client ... [0m
+[0;32mI (180506) TCP/IP socket: send 11465 bytes to client ... [0m
+[0;32mI (180614) TCP/IP socket: send 10646 bytes to client ... [0m
+[0;32mI (180776) TCP/IP socket: send 10828 bytes to client ... [0m
+[0;32mI (180979) TCP/IP socket: send 11554 bytes to client ... [0m
+[0;32mI (181141) TCP/IP socket: send 12031 bytes to client ... [0m
+[0;32mI (181282) TCP/IP socket: send 11958 bytes to client ... [0m
+[0;32mI (181440) TCP/IP socket: send 11724 bytes to client ... [0m
+[0;32mI (181586) TCP/IP socket: send 11812 bytes to client ... [0m
+[0;32mI (181792) TCP/IP socket: send 11822 bytes to client ... [0m
+[0;32mI (181908) TCP/IP socket: send 11777 bytes to client ... [0m
+[0;32mI (182101) TCP/IP socket: send 11849 bytes to client ... [0m
+[0;32mI (182264) TCP/IP socket: send 11895 bytes to client ... [0m
+[0;32mI (182394) TCP/IP socket: send 11727 bytes to client ... [0m
+[0;32mI (182558) TCP/IP socket: send 11826 bytes to client ... [0m
+[0;32mI (182758) TCP/IP socket: send 11843 bytes to client ... [0m
+[0;32mI (182862) TCP/IP socket: send 11873 bytes to client ... [0m
+[0;32mI (183070) TCP/IP socket: send 11848 bytes to client ... [0m
+[0;32mI (183184) TCP/IP socket: send 11841 bytes to client ... [0m
+[0;32mI (183355) TCP/IP socket: send 11827 bytes to client ... [0m
+[0;32mI (183525) TCP/IP socket: send 11823 bytes to client ... [0m
+[0;32mI (183676) TCP/IP socket: send 11831 bytes to client ... [0m
+[0;31mE (183842) TCP/IP socket: Error occurred during sending: errno 104[0m
+cam_hal: EV-VSYNC-OVF
+I (665727) wifi:<ba-del>idx
+I (717782) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:2914, winSize:64
+I (749318) wifi:<ba-del>idx
+I (749353) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:2948, winSize:64
+I (753009) wifi:<ba-del>idx
+I (753009) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:2962, winSize:64
+I (756031) wifi:<ba-del>idx
+I (758803) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3051, winSize:64
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (774633) TCP/IP socket: Socket accepted ... [0m
+[0;32mI (774947) TCP/IP socket: send 14698 bytes to client ... [0m
+[0;32mI (775301) TCP/IP socket: send 12720 bytes to client ... [0m
+[0;32mI (775609) TCP/IP socket: send 12488 bytes to client ... [0m
+[0;32mI (775901) TCP/IP socket: send 11791 bytes to client ... [0m
+[0;32mI (776237) TCP/IP socket: send 11750 bytes to client ... [0m
+[0;32mI (776552) TCP/IP socket: send 11803 bytes to client ... [0m
+[0;32mI (776893) TCP/IP socket: send 11742 bytes to client ... [0m
+[0;32mI (777320) TCP/IP socket: send 11893 bytes to client ... [0m
+[0;32mI (777615) TCP/IP socket: send 11884 bytes to client ... [0m
+[0;32mI (777868) TCP/IP socket: send 11882 bytes to client ... [0m
+[0;32mI (778139) TCP/IP socket: send 11857 bytes to client ... [0m
+[0;32mI (778449) TCP/IP socket: send 11796 bytes to client ... [0m
+[0;32mI (778794) TCP/IP socket: send 11801 bytes to client ... [0m
+[0;32mI (779099) TCP/IP socket: send 11781 bytes to client ... [0m
+[0;32mI (779423) TCP/IP socket: send 11910 bytes to client ... [0m
+[0;32mI (779606) TCP/IP socket: send 11769 bytes to client ... [0m
+[0;32mI (779755) TCP/IP socket: send 11786 bytes to client ... [0m
+[0;32mI (779913) TCP/IP socket: send 11712 bytes to client ... [0m
+[0;32mI (780079) TCP/IP socket: send 11698 bytes to client ... [0m
+[0;32mI (780224) TCP/IP socket: send 12447 bytes to client ... [0m
+[0;32mI (780386) TCP/IP socket: send 11605 bytes to client ... [0m
+[0;32mI (780685) TCP/IP socket: send 9989 bytes to client ... [0m
+[0;32mI (781030) TCP/IP socket: send 10131 bytes to client ... [0m
+[0;32mI (781193) TCP/IP socket: send 11843 bytes to client ... [0m
+[0;32mI (781511) TCP/IP socket: send 11709 bytes to client ... [0m
+[0;32mI (781898) TCP/IP socket: send 13202 bytes to client ... [0m
+[0;32mI (782160) TCP/IP socket: send 14334 bytes to client ... [0m
+[0;32mI (782467) TCP/IP socket: send 11442 bytes to client ... [0m
+[0;32mI (782791) TCP/IP socket: send 11401 bytes to client ... [0m
+[0;32mI (783187) TCP/IP socket: send 11796 bytes to client ... [0m
+[0;32mI (783442) TCP/IP socket: send 10538 bytes to client ... [0m
+[0;32mI (783759) TCP/IP socket: send 13605 bytes to client ... [0m
+[0;32mI (784077) TCP/IP socket: send 13488 bytes to client ... [0m
+[0;32mI (784423) TCP/IP socket: send 13675 bytes to client ... [0m
+[0;32mI (784730) TCP/IP socket: send 14114 bytes to client ... [0m
+[0;32mI (785038) TCP/IP socket: send 10947 bytes to client ... [0m
+[0;32mI (785359) TCP/IP socket: send 9035 bytes to client ... [0m
+[0;32mI (785702) TCP/IP socket: send 10903 bytes to client ... [0m
+[0;32mI (786017) TCP/IP socket: send 9118 bytes to client ... [0m
+[0;32mI (786366) TCP/IP socket: send 14063 bytes to client ... [0m
+[0;32mI (786669) TCP/IP socket: send 13555 bytes to client ... [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (787299) TCP/IP socket: send 13715 bytes to client ... [0m
+[0;32mI (787641) TCP/IP socket: send 13718 bytes to client ... [0m
+[0;32mI (787965) TCP/IP socket: send 13749 bytes to client ... [0m
+[0;32mI (788255) TCP/IP socket: send 13416 bytes to client ... [0m
+[0;32mI (788577) TCP/IP socket: send 13366 bytes to client ... [0m
+[0;32mI (788900) TCP/IP socket: send 12864 bytes to client ... [0m
+[0;32mI (789224) TCP/IP socket: send 10176 bytes to client ... [0m
+[0;32mI (789556) TCP/IP socket: send 10721 bytes to client ... [0m
+[0;32mI (789857) TCP/IP socket: send 10759 bytes to client ... [0m
+[0;32mI (790179) TCP/IP socket: send 10496 bytes to client ... [0m
+[0;32mI (790515) TCP/IP socket: send 14640 bytes to client ... [0m
+[0;32mI (790829) TCP/IP socket: send 16645 bytes to client ... [0m
+[0;32mI (791170) TCP/IP socket: send 16803 bytes to client ... [0m
+[0;32mI (791491) TCP/IP socket: send 16244 bytes to client ... [0m
+[0;32mI (791800) TCP/IP socket: send 15577 bytes to client ... [0m
+[0;32mI (792158) TCP/IP socket: send 12556 bytes to client ... [0m
+[0;32mI (792446) TCP/IP socket: send 11117 bytes to client ... [0m
+[0;32mI (792759) TCP/IP socket: send 11656 bytes to client ... [0m
+[0;32mI (793072) TCP/IP socket: send 11740 bytes to client ... [0m
+[0;32mI (793390) TCP/IP socket: send 11322 bytes to client ... [0m
+[0;32mI (793724) TCP/IP socket: send 10632 bytes to client ... [0m
+[0;32mI (794041) TCP/IP socket: send 10851 bytes to client ... [0m
+[0;32mI (794362) TCP/IP socket: send 11224 bytes to client ... [0m
+[0;32mI (794677) TCP/IP socket: send 11223 bytes to client ... [0m
+[0;32mI (795031) TCP/IP socket: send 11194 bytes to client ... [0m
+[0;32mI (795315) TCP/IP socket: send 10613 bytes to client ... [0m
+[0;32mI (795648) TCP/IP socket: send 11011 bytes to client ... [0m
+[0;32mI (795978) TCP/IP socket: send 11771 bytes to client ... [0m
+[0;32mI (796143) TCP/IP socket: send 11844 bytes to client ... [0m
+[0;32mI (796452) TCP/IP socket: send 11691 bytes to client ... [0m
+[0;32mI (796772) TCP/IP socket: send 11515 bytes to client ... [0m
+[0;32mI (797119) TCP/IP socket: send 11607 bytes to client ... [0m
+[0;32mI (797419) TCP/IP socket: send 11662 bytes to client ... [0m
+[0;32mI (797730) TCP/IP socket: send 11636 bytes to client ... [0m
+[0;32mI (798063) TCP/IP socket: send 11624 bytes to client ... [0m
+[0;32mI (798515) TCP/IP socket: send 11630 bytes to client ... [0m
+[0;32mI (798700) TCP/IP socket: send 11649 bytes to client ... [0m
+[0;32mI (799015) TCP/IP socket: send 11222 bytes to client ... [0m
+[0;32mI (799333) TCP/IP socket: send 11925 bytes to client ... [0m
+[0;32mI (799715) TCP/IP socket: send 11101 bytes to client ... [0m
+[0;32mI (800006) TCP/IP socket: send 11020 bytes to client ... [0m
+[0;32mI (800137) TCP/IP socket: send 11338 bytes to client ... [0m
+[0;32mI (800562) TCP/IP socket: send 11460 bytes to client ... [0m
+[0;32mI (800666) TCP/IP socket: send 11570 bytes to client ... [0m
+[0;32mI (800957) TCP/IP socket: send 11687 bytes to client ... [0m
+[0;32mI (801310) TCP/IP socket: send 11463 bytes to client ... [0m
+[0;32mI (801611) TCP/IP socket: send 9860 bytes to client ... [0m
+[0;32mI (801919) TCP/IP socket: send 11023 bytes to client ... [0m
+[0;32mI (802241) TCP/IP socket: send 9505 bytes to client ... [0m
+[0;32mI (802544) TCP/IP socket: send 9602 bytes to client ... [0m
+[0;32mI (802865) TCP/IP socket: send 9677 bytes to client ... [0m
+[0;32mI (803186) TCP/IP socket: send 9534 bytes to client ... [0m
+[0;32mI (803610) TCP/IP socket: send 9957 bytes to client ... [0m
+[0;32mI (803837) TCP/IP socket: send 10360 bytes to client ... [0m
+[0;32mI (804168) TCP/IP socket: send 9993 bytes to client ... [0m
+[0;32mI (804482) TCP/IP socket: send 12677 bytes to client ... [0m
+[0;32mI (804837) TCP/IP socket: send 12400 bytes to client ... [0m
+[0;32mI (804989) TCP/IP socket: send 12165 bytes to client ... [0m
+[0;32mI (805308) TCP/IP socket: send 12169 bytes to client ... [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (806117) TCP/IP socket: send 12370 bytes to client ... [0m
+[0;32mI (806249) TCP/IP socket: send 12237 bytes to client ... [0m
+[0;32mI (806588) TCP/IP socket: send 8835 bytes to client ... [0m
+[0;32mI (806896) TCP/IP socket: send 11363 bytes to client ... [0m
+[0;32mI (807219) TCP/IP socket: send 13629 bytes to client ... [0m
+[0;32mI (807576) TCP/IP socket: send 15760 bytes to client ... [0m
+[0;32mI (807870) TCP/IP socket: send 14017 bytes to client ... [0m
+[0;32mI (808169) TCP/IP socket: send 8689 bytes to client ... [0m
+[0;32mI (808492) TCP/IP socket: send 10822 bytes to client ... [0m
+[0;32mI (808928) TCP/IP socket: send 13040 bytes to client ... [0m
+[0;32mI (809021) TCP/IP socket: send 12911 bytes to client ... [0m
+[0;32mI (809300) TCP/IP socket: send 12935 bytes to client ... [0m
+[0;32mI (809621) TCP/IP socket: send 12934 bytes to client ... [0m
+[0;32mI (809972) TCP/IP socket: send 12890 bytes to client ... [0m
+[0;32mI (810315) TCP/IP socket: send 12906 bytes to client ... [0m
+[0;32mI (810584) TCP/IP socket: send 12987 bytes to client ... [0m
+[0;32mI (810908) TCP/IP socket: send 13360 bytes to client ... [0m
+[0;32mI (811234) TCP/IP socket: send 8781 bytes to client ... [0m
+[0;32mI (811549) TCP/IP socket: send 10180 bytes to client ... [0m
+[0;32mI (811864) TCP/IP socket: send 10150 bytes to client ... [0m
+[0;32mI (812189) TCP/IP socket: send 9603 bytes to client ... [0m
+[0;32mI (812527) TCP/IP socket: send 8884 bytes to client ... [0m
+[0;32mI (812826) TCP/IP socket: send 8584 bytes to client ... [0m
+[0;32mI (813148) TCP/IP socket: send 10193 bytes to client ... [0m
+[0;32mI (813492) TCP/IP socket: send 9406 bytes to client ... [0m
+[0;32mI (813816) TCP/IP socket: send 12359 bytes to client ... [0m
+[0;32mI (814113) TCP/IP socket: send 10616 bytes to client ... [0m
+[0;32mI (814443) TCP/IP socket: send 12246 bytes to client ... [0m
+[0;32mI (814779) TCP/IP socket: send 12269 bytes to client ... [0m
+[0;32mI (815086) TCP/IP socket: send 10514 bytes to client ... [0m
+[0;32mI (815407) TCP/IP socket: send 12034 bytes to client ... [0m
+[0;32mI (815747) TCP/IP socket: send 12143 bytes to client ... [0m
+[0;32mI (816073) TCP/IP socket: send 12158 bytes to client ... [0m
+[0;32mI (816370) TCP/IP socket: send 12222 bytes to client ... [0m
+[0;32mI (816697) TCP/IP socket: send 12216 bytes to client ... [0m
+[0;32mI (817029) TCP/IP socket: send 12218 bytes to client ... [0m
+[0;32mI (817336) TCP/IP socket: send 12113 bytes to client ... [0m
+[0;32mI (817691) TCP/IP socket: send 12070 bytes to client ... [0m
+[0;32mI (818008) TCP/IP socket: send 12123 bytes to client ... [0m
+[0;32mI (818310) TCP/IP socket: send 12294 bytes to client ... [0m
+[0;32mI (818616) TCP/IP socket: send 12038 bytes to client ... [0m
+[0;32mI (818934) TCP/IP socket: send 12015 bytes to client ... [0m
+[0;32mI (819256) TCP/IP socket: send 12023 bytes to client ... [0m
+[0;32mI (819641) TCP/IP socket: send 12092 bytes to client ... [0m
+[0;32mI (819943) TCP/IP socket: send 12157 bytes to client ... [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (820869) TCP/IP socket: send 12069 bytes to client ... [0m
+[0;32mI (821201) TCP/IP socket: send 12104 bytes to client ... [0m
+[0;32mI (821508) TCP/IP socket: send 12213 bytes to client ... [0m
+[0;32mI (821854) TCP/IP socket: send 12126 bytes to client ... [0m
+[0;32mI (822165) TCP/IP socket: send 12077 bytes to client ... [0m
+[0;32mI (822471) TCP/IP socket: send 12091 bytes to client ... [0m
+[0;32mI (822814) TCP/IP socket: send 12045 bytes to client ... [0m
+[0;32mI (823123) TCP/IP socket: send 12075 bytes to client ... [0m
+[0;32mI (823432) TCP/IP socket: send 12090 bytes to client ... [0m
+[0;32mI (823754) TCP/IP socket: send 12055 bytes to client ... [0m
+[0;32mI (824102) TCP/IP socket: send 11981 bytes to client ... [0m
+[0;32mI (824403) TCP/IP socket: send 12102 bytes to client ... [0m
+[0;32mI (824714) TCP/IP socket: send 12148 bytes to client ... [0m
+[0;32mI (825046) TCP/IP socket: send 12107 bytes to client ... [0m
+[0;32mI (825386) TCP/IP socket: send 12122 bytes to client ... [0m
+[0;32mI (825691) TCP/IP socket: send 12138 bytes to client ... [0m
+[0;32mI (826058) TCP/IP socket: send 12035 bytes to client ... [0m
+[0;32mI (826323) TCP/IP socket: send 12137 bytes to client ... [0m
+[0;32mI (826657) TCP/IP socket: send 12087 bytes to client ... [0m
+[0;32mI (827010) TCP/IP socket: send 12107 bytes to client ... [0m
+[0;32mI (827287) TCP/IP socket: send 12081 bytes to client ... [0m
+[0;32mI (827636) TCP/IP socket: send 12133 bytes to client ... [0m
+[0;32mI (827988) TCP/IP socket: send 12072 bytes to client ... [0m
+[0;32mI (828579) TCP/IP socket: send 12092 bytes to client ... [0m
+[0;32mI (828913) TCP/IP socket: send 12016 bytes to client ... [0m
+[0;32mI (829224) TCP/IP socket: send 12008 bytes to client ... [0m
+[0;32mI (829543) TCP/IP socket: send 12084 bytes to client ... [0m
+[0;32mI (829885) TCP/IP socket: send 12028 bytes to client ... [0m
+[0;32mI (830194) TCP/IP socket: send 12112 bytes to client ... [0m
+[0;32mI (830501) TCP/IP socket: send 12059 bytes to client ... [0m
+[0;32mI (830833) TCP/IP socket: send 12077 bytes to client ... [0m
+[0;32mI (831158) TCP/IP socket: send 12073 bytes to client ... [0m
+[0;32mI (831470) TCP/IP socket: send 12044 bytes to client ... [0m
+[0;32mI (831790) TCP/IP socket: send 12217 bytes to client ... [0m
+[0;32mI (832133) TCP/IP socket: send 12053 bytes to client ... [0m
+[0;32mI (832447) TCP/IP socket: send 12028 bytes to client ... [0m
+[0;32mI (832750) TCP/IP socket: send 12005 bytes to client ... [0m
+[0;32mI (833080) TCP/IP socket: send 11969 bytes to client ... [0m
+[0;32mI (833392) TCP/IP socket: send 12117 bytes to client ... [0m
+[0;32mI (833776) TCP/IP socket: send 12171 bytes to client ... [0m
+[0;32mI (834080) TCP/IP socket: send 12172 bytes to client ... [0m
+[0;32mI (834386) TCP/IP socket: send 12054 bytes to client ... [0m
+[0;32mI (834690) TCP/IP socket: send 12059 bytes to client ... [0m
+[0;32mI (835004) TCP/IP socket: send 12026 bytes to client ... [0m
+[0;32mI (835357) TCP/IP socket: send 12015 bytes to client ... [0m
+[0;32mI (835645) TCP/IP socket: send 12053 bytes to client ... [0m
+[0;32mI (835977) TCP/IP socket: send 12093 bytes to client ... [0m
+[0;32mI (836297) TCP/IP socket: send 11997 bytes to client ... [0m
+[0;32mI (836644) TCP/IP socket: send 12106 bytes to client ... [0m
+[0;32mI (836946) TCP/IP socket: send 12093 bytes to client ... [0m
+[0;32mI (837256) TCP/IP socket: send 12061 bytes to client ... [0m
+[0;32mI (837571) TCP/IP socket: send 12092 bytes to client ... [0m
+[0;32mI (837928) TCP/IP socket: send 12108 bytes to client ... [0m
+[0;32mI (838227) TCP/IP socket: send 12113 bytes to client ... [0m
+[0;32mI (838555) TCP/IP socket: send 12097 bytes to client ... [0m
+[0;32mI (839271) TCP/IP socket: send 12054 bytes to client ... [0m
+[0;32mI (839457) TCP/IP socket: send 12014 bytes to client ... [0m
+[0;32mI (839716) TCP/IP socket: send 12030 bytes to client ... [0m
+[0;32mI (839987) TCP/IP socket: send 12064 bytes to client ... [0m
+[0;32mI (840326) TCP/IP socket: send 12077 bytes to client ... [0m
+[0;32mI (840620) TCP/IP socket: send 12006 bytes to client ... [0m
+[0;32mI (840941) TCP/IP socket: send 12118 bytes to client ... [0m
+[0;32mI (841263) TCP/IP socket: send 12070 bytes to client ... [0m
+[0;32mI (841740) TCP/IP socket: send 12016 bytes to client ... [0m
+[0;32mI (841980) TCP/IP socket: send 12172 bytes to client ... [0m
+[0;32mI (842281) TCP/IP socket: send 12155 bytes to client ... [0m
+[0;32mI (842547) TCP/IP socket: send 12044 bytes to client ... [0m
+[0;32mI (842890) TCP/IP socket: send 12095 bytes to client ... [0m
+[0;32mI (843220) TCP/IP socket: send 12011 bytes to client ... [0m
+[0;32mI (843527) TCP/IP socket: send 12218 bytes to client ... [0m
+[0;32mI (843846) TCP/IP socket: send 12108 bytes to client ... [0m
+[0;32mI (844165) TCP/IP socket: send 12071 bytes to client ... [0m
+[0;32mI (844489) TCP/IP socket: send 12162 bytes to client ... [0m
+[0;32mI (844799) TCP/IP socket: send 12066 bytes to client ... [0m
+[0;32mI (845144) TCP/IP socket: send 12059 bytes to client ... [0m
+[0;32mI (845455) TCP/IP socket: send 12132 bytes to client ... [0m
+[0;32mI (845800) TCP/IP socket: send 12042 bytes to client ... [0m
+[0;32mI (845924) TCP/IP socket: send 12084 bytes to client ... [0m
+[0;32mI (846267) TCP/IP socket: send 12148 bytes to client ... [0m
+[0;32mI (846579) TCP/IP socket: send 12177 bytes to client ... [0m
+[0;32mI (846889) TCP/IP socket: send 12033 bytes to client ... [0m
+[0;32mI (847231) TCP/IP socket: send 11999 bytes to client ... [0m
+[0;32mI (847598) TCP/IP socket: send 12157 bytes to client ... [0m
+[0;32mI (847863) TCP/IP socket: send 12087 bytes to client ... [0m
+[0;32mI (848384) TCP/IP socket: send 12086 bytes to client ... [0m
+[0;32mI (848687) TCP/IP socket: send 12149 bytes to client ... [0m
+[0;32mI (848992) TCP/IP socket: send 12145 bytes to client ... [0m
+[0;32mI (849382) TCP/IP socket: send 12058 bytes to client ... [0m
+[0;32mI (849653) TCP/IP socket: send 12021 bytes to client ... [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (850355) TCP/IP socket: send 12114 bytes to client ... [0m
+[0;32mI (850694) TCP/IP socket: send 12045 bytes to client ... [0m
+[0;32mI (850926) TCP/IP socket: send 12070 bytes to client ... [0m
+[0;32mI (851232) TCP/IP socket: send 12058 bytes to client ... [0m
+[0;32mI (851633) TCP/IP socket: send 12090 bytes to client ... [0m
+[0;32mI (851908) TCP/IP socket: send 12047 bytes to client ... [0m
+[0;32mI (852224) TCP/IP socket: send 12036 bytes to client ... [0m
+[0;32mI (852521) TCP/IP socket: send 11967 bytes to client ... [0m
+[0;32mI (852862) TCP/IP socket: send 12042 bytes to client ... [0m
+[0;32mI (853256) TCP/IP socket: send 12021 bytes to client ... [0m
+[0;32mI (853497) TCP/IP socket: send 11992 bytes to client ... [0m
+[0;32mI (853812) TCP/IP socket: send 12113 bytes to client ... [0m
+[0;32mI (854170) TCP/IP socket: send 12094 bytes to client ... [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (854845) TCP/IP socket: send 12002 bytes to client ... [0m
+[0;32mI (855177) TCP/IP socket: send 11971 bytes to client ... [0m
+[0;32mI (855445) TCP/IP socket: send 12127 bytes to client ... [0m
+[0;32mI (855589) TCP/IP socket: send 12111 bytes to client ... [0m
+[0;32mI (855904) TCP/IP socket: send 12025 bytes to client ... [0m
+[0;32mI (856237) TCP/IP socket: send 12036 bytes to client ... [0m
+[0;32mI (856607) TCP/IP socket: send 12019 bytes to client ... [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (858054) TCP/IP socket: send 12079 bytes to client ... [0m
+[0;32mI (858319) TCP/IP socket: send 12024 bytes to client ... [0m
+[0;32mI (858711) TCP/IP socket: send 12041 bytes to client ... [0m
+[0;32mI (858975) TCP/IP socket: send 11978 bytes to client ... [0m
+[0;32mI (859289) TCP/IP socket: send 12070 bytes to client ... [0m
+[0;32mI (859640) TCP/IP socket: send 12075 bytes to client ... [0m
+[0;32mI (859926) TCP/IP socket: send 12028 bytes to client ... [0m
+[0;32mI (860289) TCP/IP socket: send 12022 bytes to client ... [0m
+[0;32mI (860592) TCP/IP socket: send 12007 bytes to client ... [0m
+[0;32mI (860917) TCP/IP socket: send 12099 bytes to client ... [0m
+[0;31mE (861224) TCP/IP socket: Error occurred during sending: errno 104[0m
+cam_hal: EV-EOF-OVF
+cam_hal: EV-VSYNC-OVF
+I (885193) wifi:<ba-del>idx
+I (885195) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:2044, winSize:64
+I (889107) wifi:<ba-del>idx
+cam_hal: EV-VSYNC-OVF
+I (894258) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:2327, winSize:64
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+I (938089) wifi:<ba-del>idx
+I (940571) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3955, winSize:64
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+I (991980) wifi:<ba-del>idx
+I (991981) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1711, winSize:64
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+I (1061799) wifi:<ba-del>idx
+I (1061800) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:56, winSize:64
+cam_hal: EV-VSYNC-OVF
+I (1071546) wifi:<ba-del>idx
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+I (1075663) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:514, winSize:64
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+I (1109441) wifi:<ba-del>idx
+I (1113525) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1620, winSize:64
+I (1116386) wifi:<ba-del>idx
+I (1116387) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1663, winSize:64
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+I (1250041) wifi:<ba-del>idx
+I (1252225) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:2224, winSize:64
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+I (1306841) wifi:<ba-del>idx
+I (1308809) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3970, winSize:64
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+I (1376005) wifi:<ba-del>idx
+I (1378382) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:2403, winSize:64
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+I (1507202) wifi:<ba-del>idx
+I (1507203) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:2604, winSize:64
+I (1509764) wifi:<ba-del>idx
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+I (1518208) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3048, winSize:64
+cam_hal: EV-VSYNC-OVF
+I (1530421) wifi:<ba-del>idx
+I (1530421) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3426, winSize:64
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+I (1549288) wifi:<ba-del>idx
+I (1549290) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:4008, winSize:64
+I (1550088) wifi:<ba-del>idx
+I (1555430) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:53, winSize:64
+I (1562585) wifi:<ba-del>idx
+I (1562587) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:116, winSize:64
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+I (1604882) wifi:<ba-del>idx
+I (1607070) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1362, winSize:64
+cam_hal: EV-VSYNC-OVF
+I (1622071) wifi:<ba-del>idx
+I (1622072) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1670, winSize:64
+[0;33mW (1644635) httpd_txrx: httpd_sock_err: error in send : 11[0m
+[0;33mW (1644635) httpd_uri: httpd_uri: uri handler execution failed[0m
+I (1705610) wifi:<ba-del>idx
+I (1705616) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1845, winSize:64
+I (1729619) wifi:<ba-del>idx
+I (1729621) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1875, winSize:64
+I (1769432) wifi:<ba-del>idx
+I (1769433) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1910, winSize:64
+I (1857074) wifi:<ba-del>idx
+I (1857075) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:2001, winSize:64
+I (2000657) wifi:<ba-del>idx
+I (2000659) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:2127, winSize:64
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+I (2015408) wifi:<ba-del>idx
+I (2033189) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:2947, winSize:64
+cam_hal: EV-VSYNC-OVF
+I (2036567) wifi:<ba-del>idx
+I (2036571) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3286, winSize:64
+I (2040163) wifi:<ba-del>idx
+cam_hal: EV-VSYNC-OVF
+I (2042183) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3789, winSize:64
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+I (2048562) wifi:<ba-del>idx
+I (2048563) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:451, winSize:64
+I (2052040) wifi:station: 4e:3f:8a:f4:d8:f2 leave, AID = 2, bss_flags is 658547, bss:0x3fca979c
+I (2052040) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1
+I (2052044) wifi:<ba-del>idx
+cam_hal: EV-VSYNC-OVF
+I (2056351) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1
+I (2056352) wifi:station: 4e:3f:8a:f4:d8:f2 join, AID=2, bgn, 20
+[0;32mI (2056428) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.254.4[0m
+[0;32mI (2056429) wifi: SoftAP client connected with IP: 192.168.254.4.[0m
+I (2056641) wifi:<ba-add>idx:3 (ifx:1, 4e:3f:8a:f4:d8:f2), tid:0, ssn:15, winSize:64
+I (2057163) wifi:<ba-add>idx:4 (ifx:1, 4e:3f:8a:f4:d8:f2), tid:6, ssn:2, winSize:64
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+I (2085051) wifi:<ba-del>idx
+I (2087187) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:735, winSize:64
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+I (2093099) wifi:<ba-del>idx
+I (2096306) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1903, winSize:64
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+I (2116127) wifi:<ba-del>idx
+I (2116131) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:468, winSize:64
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+I (2130107) wifi:<ba-del>idx
+I (2132254) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:2259, winSize:64
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+I (2143212) wifi:<ba-del>idx
+I (2143213) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3253, winSize:64
+cam_hal: EV-VSYNC-OVF
+I (2146161) wifi:<ba-del>idx
+I (2146165) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3326, winSize:64
+I (2156578) wifi:<ba-del>idx
+I (2156580) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3416, winSize:64
+cam_hal: EV-VSYNC-OVF
+I (2167144) wifi:<ba-del>idx
+I (2167145) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:6, winSize:64
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+I (2189775) wifi:<ba-del>idx
+cam_hal: EV-VSYNC-OVF
+I (2191779) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:2171, winSize:64
+I (2193324) wifi:<ba-del>idx
+I (2195411) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:2424, winSize:64
+I (2214806) wifi:<ba-del>idx
+I (2216970) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:331, winSize:64
+I (2218737) wifi:<ba-del>idx
+cam_hal: EV-VSYNC-OVF
+I (2220880) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:587, winSize:64
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF

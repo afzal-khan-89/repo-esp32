@@ -213,7 +213,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=camera_example
+CMAKE_PROJECT_NAME:STATIC=keo-teton
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-ranlib
@@ -332,15 +332,6 @@ USE_SHARED_MBEDTLS_LIBRARY:BOOL=OFF
 USE_STATIC_MBEDTLS_LIBRARY:BOOL=ON
 
 //Value Computed by CMake
-camera_example_BINARY_DIR:STATIC=/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build
-
-//Value Computed by CMake
-camera_example_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-camera_example_SOURCE_DIR:STATIC=/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton
-
-//Value Computed by CMake
 esp-idf_BINARY_DIR:STATIC=/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/esp-idf
 
 //Value Computed by CMake
@@ -348,6 +339,15 @@ esp-idf_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 esp-idf_SOURCE_DIR:STATIC=/home/afzal-khan/esp/esp-idf
+
+//Value Computed by CMake
+keo-teton_BINARY_DIR:STATIC=/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build
+
+//Value Computed by CMake
+keo-teton_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+keo-teton_SOURCE_DIR:STATIC=/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton
 
 //Value Computed by CMake
 mbed TLS_BINARY_DIR:STATIC=/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/esp-idf/mbedtls/mbedtls

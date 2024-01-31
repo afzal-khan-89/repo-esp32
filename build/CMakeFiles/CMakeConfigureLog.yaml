@@ -9,7 +9,7 @@ events:
       - "CMakeLists.txt:8 (project)"
     message: |
       The target system is: Generic -  - 
-      The host system is: Linux - 6.2.0-39-generic - x86_64
+      The host system is: Linux - 6.5.0-14-generic - x86_64
   -
     kind: "message-v1"
     backtrace:
@@ -80,8 +80,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-7q9lTX"
-      binary: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-7q9lTX"
+      source: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-T5rh7c"
+      binary: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-T5rh7c"
     cmakeVariables:
       CMAKE_C_FLAGS: "-mlongcalls "
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -91,10 +91,10 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-7q9lTX'
+        Change Dir: '/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-T5rh7c'
         
-        Run Build Command(s): /home/afzal-khan/.espressif/tools/ninja/1.10.2/ninja -v cmTC_5bcaa
-        [1/2] /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls     -v -o CMakeFiles/cmTC_5bcaa.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /home/afzal-khan/.espressif/tools/ninja/1.10.2/ninja -v cmTC_fc7c2
+        [1/2] /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls     -v -o CMakeFiles/cmTC_fc7c2.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc
         Target: xtensa-esp32s3-elf
@@ -102,8 +102,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib
         gcc version 11.2.0 (crosstool-NG esp-2022r1) 
-        COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_5bcaa.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_5bcaa.dir/'
-         /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/cc1 -quiet -v -iprefix /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/ /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_5bcaa.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlongcalls -version -o /tmp/cculcu7P.s
+        COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_fc7c2.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_fc7c2.dir/'
+         /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/cc1 -quiet -v -iprefix /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/ /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_fc7c2.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlongcalls -version -o /tmp/ccW3DKsq.s
         GNU C17 (crosstool-NG esp-2022r1) version 11.2.0 (xtensa-esp32s3-elf)
         	compiled by GNU C version 4.9.2, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
         
@@ -124,12 +124,12 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 0e62af0c57bb2c0a24d027a1ea3c8be5
-        COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_5bcaa.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_5bcaa.dir/'
-         /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/as --traditional-format --longcalls -o CMakeFiles/cmTC_5bcaa.dir/CMakeCCompilerABI.c.obj /tmp/cculcu7P.s
+        COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_fc7c2.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_fc7c2.dir/'
+         /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/as --traditional-format --longcalls -o CMakeFiles/cmTC_fc7c2.dir/CMakeCCompilerABI.c.obj /tmp/ccW3DKsq.s
         COMPILER_PATH=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/
         LIBRARY_PATH=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib/
-        COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_5bcaa.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_5bcaa.dir/CMakeCCompilerABI.c.'
-        [2/2] : && /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls -v CMakeFiles/cmTC_5bcaa.dir/CMakeCCompilerABI.c.obj -o cmTC_5bcaa   && :
+        COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_fc7c2.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_fc7c2.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls -v CMakeFiles/cmTC_fc7c2.dir/CMakeCCompilerABI.c.obj -o cmTC_fc7c2   && :
         Using built-in specs.
         COLLECT_GCC=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc
         COLLECT_LTO_WRAPPER=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/lto-wrapper
@@ -140,9 +140,9 @@ events:
         gcc version 11.2.0 (crosstool-NG esp-2022r1) 
         COMPILER_PATH=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/
         LIBRARY_PATH=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib/
-        COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'cmTC_5bcaa' '-dumpdir' 'cmTC_5bcaa.'
-         /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/collect2 -plugin /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/liblto_plugin.so -plugin-opt=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccP1UaEM.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_5bcaa /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib/crt0.o /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crti.o /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtbegin.o -L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0 -L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc -L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib CMakeFiles/cmTC_5bcaa.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtend.o /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtn.o
-        COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'cmTC_5bcaa' '-dumpdir' 'cmTC_5bcaa.'
+        COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'cmTC_fc7c2' '-dumpdir' 'cmTC_fc7c2.'
+         /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/collect2 -plugin /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/liblto_plugin.so -plugin-opt=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cccSqpgM.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_fc7c2 /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib/crt0.o /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crti.o /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtbegin.o -L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0 -L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc -L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib CMakeFiles/cmTC_fc7c2.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtend.o /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtn.o
+        COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'cmTC_fc7c2' '-dumpdir' 'cmTC_fc7c2.'
         
       exitCode: 0
   -
@@ -178,10 +178,10 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(xtensa-esp32s3-elf-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-7q9lTX']
+        ignore line: [Change Dir: '/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-T5rh7c']
         ignore line: []
-        ignore line: [Run Build Command(s): /home/afzal-khan/.espressif/tools/ninja/1.10.2/ninja -v cmTC_5bcaa]
-        ignore line: [[1/2] /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls     -v -o CMakeFiles/cmTC_5bcaa.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /home/afzal-khan/.espressif/tools/ninja/1.10.2/ninja -v cmTC_fc7c2]
+        ignore line: [[1/2] /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls     -v -o CMakeFiles/cmTC_fc7c2.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc]
         ignore line: [Target: xtensa-esp32s3-elf]
@@ -189,8 +189,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 11.2.0 (crosstool-NG esp-2022r1) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_5bcaa.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_5bcaa.dir/']
-        ignore line: [ /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/cc1 -quiet -v -iprefix /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/ /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_5bcaa.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlongcalls -version -o /tmp/cculcu7P.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_fc7c2.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_fc7c2.dir/']
+        ignore line: [ /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/cc1 -quiet -v -iprefix /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/ /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_fc7c2.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlongcalls -version -o /tmp/ccW3DKsq.s]
         ignore line: [GNU C17 (crosstool-NG esp-2022r1) version 11.2.0 (xtensa-esp32s3-elf)]
         ignore line: [	compiled by GNU C version 4.9.2  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
         ignore line: []
@@ -211,12 +211,12 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 0e62af0c57bb2c0a24d027a1ea3c8be5]
-        ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_5bcaa.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_5bcaa.dir/']
-        ignore line: [ /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/as --traditional-format --longcalls -o CMakeFiles/cmTC_5bcaa.dir/CMakeCCompilerABI.c.obj /tmp/cculcu7P.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_fc7c2.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_fc7c2.dir/']
+        ignore line: [ /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/as --traditional-format --longcalls -o CMakeFiles/cmTC_fc7c2.dir/CMakeCCompilerABI.c.obj /tmp/ccW3DKsq.s]
         ignore line: [COMPILER_PATH=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/]
         ignore line: [LIBRARY_PATH=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_5bcaa.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_5bcaa.dir/CMakeCCompilerABI.c.']
-        ignore line: [[2/2] : && /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls -v CMakeFiles/cmTC_5bcaa.dir/CMakeCCompilerABI.c.obj -o cmTC_5bcaa   && :]
+        ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_fc7c2.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_fc7c2.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls -v CMakeFiles/cmTC_fc7c2.dir/CMakeCCompilerABI.c.obj -o cmTC_fc7c2   && :]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc]
         ignore line: [COLLECT_LTO_WRAPPER=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/lto-wrapper]
@@ -227,27 +227,27 @@ events:
         ignore line: [gcc version 11.2.0 (crosstool-NG esp-2022r1) ]
         ignore line: [COMPILER_PATH=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/]
         ignore line: [LIBRARY_PATH=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'cmTC_5bcaa' '-dumpdir' 'cmTC_5bcaa.']
-        link line: [ /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/collect2 -plugin /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/liblto_plugin.so -plugin-opt=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccP1UaEM.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_5bcaa /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib/crt0.o /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crti.o /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtbegin.o -L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0 -L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc -L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib CMakeFiles/cmTC_5bcaa.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtend.o /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'cmTC_fc7c2' '-dumpdir' 'cmTC_fc7c2.']
+        link line: [ /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/collect2 -plugin /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/liblto_plugin.so -plugin-opt=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cccSqpgM.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_fc7c2 /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib/crt0.o /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crti.o /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtbegin.o -L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0 -L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc -L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib CMakeFiles/cmTC_fc7c2.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtend.o /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtn.o]
           arg [/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccP1UaEM.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cccSqpgM.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
           arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_5bcaa] ==> ignore
+          arg [cmTC_fc7c2] ==> ignore
           arg [/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib/crt0.o] ==> obj [/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib/crt0.o]
           arg [/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crti.o] ==> obj [/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crti.o]
           arg [/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtbegin.o] ==> obj [/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtbegin.o]
           arg [-L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0] ==> dir [/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0]
           arg [-L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc] ==> dir [/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc]
           arg [-L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib] ==> dir [/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib]
-          arg [CMakeFiles/cmTC_5bcaa.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [CMakeFiles/cmTC_fc7c2.dir/CMakeCCompilerABI.c.obj] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [-lc] ==> lib [c]
           arg [-lnosys] ==> lib [nosys]
@@ -279,8 +279,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-KewaPP"
-      binary: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-KewaPP"
+      source: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-SC6IAa"
+      binary: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-SC6IAa"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-mlongcalls "
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -290,10 +290,10 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-KewaPP'
+        Change Dir: '/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-SC6IAa'
         
-        Run Build Command(s): /home/afzal-khan/.espressif/tools/ninja/1.10.2/ninja -v cmTC_11d93
-        [1/2] /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-g++   -mlongcalls     -v -o CMakeFiles/cmTC_11d93.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /home/afzal-khan/.espressif/tools/ninja/1.10.2/ninja -v cmTC_6775f
+        [1/2] /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-g++   -mlongcalls     -v -o CMakeFiles/cmTC_6775f.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-g++
         Target: xtensa-esp32s3-elf
@@ -301,8 +301,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib
         gcc version 11.2.0 (crosstool-NG esp-2022r1) 
-        COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_11d93.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_11d93.dir/'
-         /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/cc1plus -quiet -v -iprefix /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_11d93.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlongcalls -version -o /tmp/ccLNSmgN.s
+        COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_6775f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_6775f.dir/'
+         /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/cc1plus -quiet -v -iprefix /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_6775f.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlongcalls -version -o /tmp/ccZkMZtq.s
         GNU C++17 (crosstool-NG esp-2022r1) version 11.2.0 (xtensa-esp32s3-elf)
         	compiled by GNU C version 4.9.2, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
         
@@ -329,12 +329,12 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: c090ff7e9db6453f6c1de8560fda4f24
-        COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_11d93.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_11d93.dir/'
-         /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/as --traditional-format --longcalls -o CMakeFiles/cmTC_11d93.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccLNSmgN.s
+        COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_6775f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_6775f.dir/'
+         /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/as --traditional-format --longcalls -o CMakeFiles/cmTC_6775f.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccZkMZtq.s
         COMPILER_PATH=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/
         LIBRARY_PATH=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib/
-        COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_11d93.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_11d93.dir/CMakeCXXCompilerABI.cpp.'
-        [2/2] : && /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-g++ -mlongcalls -v CMakeFiles/cmTC_11d93.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_11d93   && :
+        COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_6775f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_6775f.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-g++ -mlongcalls -v CMakeFiles/cmTC_6775f.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_6775f   && :
         Using built-in specs.
         COLLECT_GCC=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-g++
         COLLECT_LTO_WRAPPER=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/lto-wrapper
@@ -345,9 +345,9 @@ events:
         gcc version 11.2.0 (crosstool-NG esp-2022r1) 
         COMPILER_PATH=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/
         LIBRARY_PATH=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib/
-        COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'cmTC_11d93' '-dumpdir' 'cmTC_11d93.'
-         /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/collect2 -plugin /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/liblto_plugin.so -plugin-opt=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoW9JIw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_11d93 /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib/crt0.o /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crti.o /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtbegin.o -L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0 -L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc -L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib CMakeFiles/cmTC_11d93.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtend.o /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtn.o
-        COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'cmTC_11d93' '-dumpdir' 'cmTC_11d93.'
+        COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'cmTC_6775f' '-dumpdir' 'cmTC_6775f.'
+         /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/collect2 -plugin /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/liblto_plugin.so -plugin-opt=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccD17LQF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_6775f /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib/crt0.o /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crti.o /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtbegin.o -L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0 -L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc -L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib CMakeFiles/cmTC_6775f.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtend.o /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtn.o
+        COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'cmTC_6775f' '-dumpdir' 'cmTC_6775f.'
         
       exitCode: 0
   -
@@ -389,10 +389,10 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(xtensa-esp32s3-elf-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-KewaPP']
+        ignore line: [Change Dir: '/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-SC6IAa']
         ignore line: []
-        ignore line: [Run Build Command(s): /home/afzal-khan/.espressif/tools/ninja/1.10.2/ninja -v cmTC_11d93]
-        ignore line: [[1/2] /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-g++   -mlongcalls     -v -o CMakeFiles/cmTC_11d93.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /home/afzal-khan/.espressif/tools/ninja/1.10.2/ninja -v cmTC_6775f]
+        ignore line: [[1/2] /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-g++   -mlongcalls     -v -o CMakeFiles/cmTC_6775f.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-g++]
         ignore line: [Target: xtensa-esp32s3-elf]
@@ -400,8 +400,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 11.2.0 (crosstool-NG esp-2022r1) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_11d93.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_11d93.dir/']
-        ignore line: [ /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/cc1plus -quiet -v -iprefix /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_11d93.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlongcalls -version -o /tmp/ccLNSmgN.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_6775f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_6775f.dir/']
+        ignore line: [ /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/cc1plus -quiet -v -iprefix /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_6775f.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlongcalls -version -o /tmp/ccZkMZtq.s]
         ignore line: [GNU C++17 (crosstool-NG esp-2022r1) version 11.2.0 (xtensa-esp32s3-elf)]
         ignore line: [	compiled by GNU C version 4.9.2  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
         ignore line: []
@@ -428,12 +428,12 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: c090ff7e9db6453f6c1de8560fda4f24]
-        ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_11d93.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_11d93.dir/']
-        ignore line: [ /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/as --traditional-format --longcalls -o CMakeFiles/cmTC_11d93.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccLNSmgN.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_6775f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_6775f.dir/']
+        ignore line: [ /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/as --traditional-format --longcalls -o CMakeFiles/cmTC_6775f.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccZkMZtq.s]
         ignore line: [COMPILER_PATH=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/]
         ignore line: [LIBRARY_PATH=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_11d93.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_11d93.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [[2/2] : && /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-g++ -mlongcalls -v CMakeFiles/cmTC_11d93.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_11d93   && :]
+        ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_6775f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_6775f.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-g++ -mlongcalls -v CMakeFiles/cmTC_6775f.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_6775f   && :]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-g++]
         ignore line: [COLLECT_LTO_WRAPPER=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/lto-wrapper]
@@ -444,27 +444,27 @@ events:
         ignore line: [gcc version 11.2.0 (crosstool-NG esp-2022r1) ]
         ignore line: [COMPILER_PATH=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/]
         ignore line: [LIBRARY_PATH=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/:/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'cmTC_11d93' '-dumpdir' 'cmTC_11d93.']
-        link line: [ /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/collect2 -plugin /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/liblto_plugin.so -plugin-opt=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoW9JIw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_11d93 /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib/crt0.o /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crti.o /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtbegin.o -L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0 -L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc -L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib CMakeFiles/cmTC_11d93.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtend.o /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-v' '-o' 'cmTC_6775f' '-dumpdir' 'cmTC_6775f.']
+        link line: [ /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/collect2 -plugin /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/liblto_plugin.so -plugin-opt=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccD17LQF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_6775f /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib/crt0.o /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crti.o /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtbegin.o -L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0 -L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc -L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib CMakeFiles/cmTC_6775f.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtend.o /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtn.o]
           arg [/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../libexec/gcc/xtensa-esp32s3-elf/11.2.0/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccoW9JIw.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccD17LQF.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
           arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_11d93] ==> ignore
+          arg [cmTC_6775f] ==> ignore
           arg [/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib/crt0.o] ==> obj [/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib/crt0.o]
           arg [/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crti.o] ==> obj [/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crti.o]
           arg [/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtbegin.o] ==> obj [/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/crtbegin.o]
           arg [-L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0] ==> dir [/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0]
           arg [-L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc] ==> dir [/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc]
           arg [-L/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib] ==> dir [/home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/lib]
-          arg [CMakeFiles/cmTC_11d93.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [CMakeFiles/cmTC_6775f.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc] ==> lib [gcc]
@@ -497,8 +497,8 @@ events:
     checks:
       - "Looking for sys/types.h"
     directories:
-      source: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-vEGP0c"
-      binary: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-vEGP0c"
+      source: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-ewhPm8"
+      binary: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-ewhPm8"
     cmakeVariables:
       CMAKE_C_FLAGS: "-mlongcalls "
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -508,11 +508,11 @@ events:
       variable: "HAVE_SYS_TYPES_H"
       cached: true
       stdout: |
-        Change Dir: '/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-vEGP0c'
+        Change Dir: '/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-ewhPm8'
         
-        Run Build Command(s): /home/afzal-khan/.espressif/tools/ninja/1.10.2/ninja -v cmTC_dfb5f
-        [1/2] /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls -o CMakeFiles/cmTC_dfb5f.dir/CheckIncludeFile.c.obj -c /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-vEGP0c/CheckIncludeFile.c
-        [2/2] : && /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls  CMakeFiles/cmTC_dfb5f.dir/CheckIncludeFile.c.obj -o cmTC_dfb5f   && :
+        Run Build Command(s): /home/afzal-khan/.espressif/tools/ninja/1.10.2/ninja -v cmTC_c0d92
+        [1/2] /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls -o CMakeFiles/cmTC_c0d92.dir/CheckIncludeFile.c.obj -c /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-ewhPm8/CheckIncludeFile.c
+        [2/2] : && /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls  CMakeFiles/cmTC_c0d92.dir/CheckIncludeFile.c.obj -o cmTC_c0d92   && :
         
       exitCode: 0
   -
@@ -524,8 +524,8 @@ events:
     checks:
       - "Looking for stdint.h"
     directories:
-      source: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-GRYbfe"
-      binary: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-GRYbfe"
+      source: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-iENj9h"
+      binary: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-iENj9h"
     cmakeVariables:
       CMAKE_C_FLAGS: "-mlongcalls "
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -535,11 +535,11 @@ events:
       variable: "HAVE_STDINT_H"
       cached: true
       stdout: |
-        Change Dir: '/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-GRYbfe'
+        Change Dir: '/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-iENj9h'
         
-        Run Build Command(s): /home/afzal-khan/.espressif/tools/ninja/1.10.2/ninja -v cmTC_8c07d
-        [1/2] /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls -o CMakeFiles/cmTC_8c07d.dir/CheckIncludeFile.c.obj -c /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-GRYbfe/CheckIncludeFile.c
-        [2/2] : && /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls  CMakeFiles/cmTC_8c07d.dir/CheckIncludeFile.c.obj -o cmTC_8c07d   && :
+        Run Build Command(s): /home/afzal-khan/.espressif/tools/ninja/1.10.2/ninja -v cmTC_417cc
+        [1/2] /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls -o CMakeFiles/cmTC_417cc.dir/CheckIncludeFile.c.obj -c /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-iENj9h/CheckIncludeFile.c
+        [2/2] : && /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls  CMakeFiles/cmTC_417cc.dir/CheckIncludeFile.c.obj -o cmTC_417cc   && :
         
       exitCode: 0
   -
@@ -551,8 +551,8 @@ events:
     checks:
       - "Looking for stddef.h"
     directories:
-      source: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-rfjOYm"
-      binary: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-rfjOYm"
+      source: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-9rCKIZ"
+      binary: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-9rCKIZ"
     cmakeVariables:
       CMAKE_C_FLAGS: "-mlongcalls "
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -562,11 +562,11 @@ events:
       variable: "HAVE_STDDEF_H"
       cached: true
       stdout: |
-        Change Dir: '/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-rfjOYm'
+        Change Dir: '/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-9rCKIZ'
         
-        Run Build Command(s): /home/afzal-khan/.espressif/tools/ninja/1.10.2/ninja -v cmTC_9864e
-        [1/2] /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls -o CMakeFiles/cmTC_9864e.dir/CheckIncludeFile.c.obj -c /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-rfjOYm/CheckIncludeFile.c
-        [2/2] : && /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls  CMakeFiles/cmTC_9864e.dir/CheckIncludeFile.c.obj -o cmTC_9864e   && :
+        Run Build Command(s): /home/afzal-khan/.espressif/tools/ninja/1.10.2/ninja -v cmTC_d2291
+        [1/2] /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls -o CMakeFiles/cmTC_d2291.dir/CheckIncludeFile.c.obj -c /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-9rCKIZ/CheckIncludeFile.c
+        [2/2] : && /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls  CMakeFiles/cmTC_d2291.dir/CheckIncludeFile.c.obj -o cmTC_d2291   && :
         
       exitCode: 0
   -
@@ -578,8 +578,8 @@ events:
     checks:
       - "Check size of time_t"
     directories:
-      source: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-TaYdZc"
-      binary: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-TaYdZc"
+      source: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-pOJAfa"
+      binary: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-pOJAfa"
     cmakeVariables:
       CMAKE_C_FLAGS: "-mlongcalls "
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -589,11 +589,11 @@ events:
       variable: "HAVE_TIME_T_SIZE"
       cached: true
       stdout: |
-        Change Dir: '/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-TaYdZc'
+        Change Dir: '/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-pOJAfa'
         
-        Run Build Command(s): /home/afzal-khan/.espressif/tools/ninja/1.10.2/ninja -v cmTC_09007
-        [1/2] /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls -o CMakeFiles/cmTC_09007.dir/TIME_T_SIZE.c.obj -c /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-TaYdZc/TIME_T_SIZE.c
-        [2/2] : && /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls  CMakeFiles/cmTC_09007.dir/TIME_T_SIZE.c.obj -o cmTC_09007   && :
+        Run Build Command(s): /home/afzal-khan/.espressif/tools/ninja/1.10.2/ninja -v cmTC_bb845
+        [1/2] /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls -o CMakeFiles/cmTC_bb845.dir/TIME_T_SIZE.c.obj -c /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-pOJAfa/TIME_T_SIZE.c
+        [2/2] : && /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls  CMakeFiles/cmTC_bb845.dir/TIME_T_SIZE.c.obj -o cmTC_bb845   && :
         
       exitCode: 0
   -
@@ -606,8 +606,8 @@ events:
     checks:
       - "Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS"
     directories:
-      source: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-h3dNx1"
-      binary: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-h3dNx1"
+      source: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-4J74n6"
+      binary: "/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-4J74n6"
     cmakeVariables:
       CMAKE_C_FLAGS: "-mlongcalls  -Wall -Wextra -Wwrite-strings -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow"
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -617,11 +617,11 @@ events:
       variable: "C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS"
       cached: true
       stdout: |
-        Change Dir: '/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-h3dNx1'
+        Change Dir: '/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-4J74n6'
         
-        Run Build Command(s): /home/afzal-khan/.espressif/tools/ninja/1.10.2/ninja -v cmTC_a99cd
-        [1/2] /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -DC_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS  -mlongcalls  -Wall -Wextra -Wwrite-strings -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow    -Wformat-signedness -o CMakeFiles/cmTC_a99cd.dir/src.c.obj -c /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-h3dNx1/src.c
-        [2/2] : && /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls  -Wall -Wextra -Wwrite-strings -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow  CMakeFiles/cmTC_a99cd.dir/src.c.obj -o cmTC_a99cd   && :
+        Run Build Command(s): /home/afzal-khan/.espressif/tools/ninja/1.10.2/ninja -v cmTC_26812
+        [1/2] /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -DC_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS  -mlongcalls  -Wall -Wextra -Wwrite-strings -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow    -Wformat-signedness -o CMakeFiles/cmTC_26812.dir/src.c.obj -c /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/CMakeScratch/TryCompile-4J74n6/src.c
+        [2/2] : && /home/afzal-khan/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls  -Wall -Wextra -Wwrite-strings -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow  CMakeFiles/cmTC_26812.dir/src.c.obj -o cmTC_26812   && :
         
       exitCode: 0
 ...

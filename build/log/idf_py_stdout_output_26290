@@ -1,0 +1,7 @@
+[1/4] cd /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/esp-idf/esptool_py && /home/afzal-khan/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/afzal-khan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x10000 partition --type app /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/partition_table/partition-table.bin /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/keo-teton.bin
+keo-teton.bin binary size 0xcedc0 bytes. Smallest app partition is 0x100000 bytes. 0x31240 bytes (19%) free.
+[2/4] Performing build step for 'bootloader'
+[1/1] cd /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/bootloader/esp-idf/esptool_py && /home/afzal-khan/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/afzal-khan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x10000 bootloader 0x0 /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/bootloader/bootloader.bin
+Bootloader binary size 0x55f0 bytes. 0xaa10 bytes (66%) free.
+[3/4] No install step for 'bootloader'
+[4/4] Completed 'bootloader'

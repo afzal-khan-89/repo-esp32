@@ -1,0 +1,74 @@
+[1/5] cd /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/esp-idf/esptool_py && /home/afzal-khan/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/afzal-khan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x10000 partition --type app /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/partition_table/partition-table.bin /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/keo-teton.bin
+keo-teton.bin binary size 0xd85a0 bytes. Smallest app partition is 0x100000 bytes. 0x27a60 bytes (15%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/bootloader/esp-idf/esptool_py && /home/afzal-khan/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/afzal-khan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x10000 bootloader 0x0 /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/bootloader/bootloader.bin
+Bootloader binary size 0x55f0 bytes. 0xaa10 bytes (66%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /home/afzal-khan/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/afzal-khan/esp/esp-idf -D "SERIAL_TOOL=/home/afzal-khan/.espressif/python_env/idf5.0_py3.10_env/bin/python;;/home/afzal-khan/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build -P /home/afzal-khan/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool esp32s3 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x0 bootloader/bootloader.bin 0x20000 keo-teton.bin 0x10000 partition_table/partition-table.bin
+esptool.py v4.6.2
+Serial port /dev/ttyACM0
+Connecting....
+Chip is ESP32-S3 (revision v0.1)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 34:85:18:ac:8b:a4
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00020000 to 0x000f8fff...
+Flash will be erased from 0x00010000 to 0x00010fff...
+Compressed 22000 bytes to 13890...
+Writing at 0x00000000... (100 %)
+Wrote 22000 bytes (13890 compressed) at 0x00000000 in 0.6 seconds (effective 274.6 kbit/s)...
+Hash of data verified.
+Compressed 886176 bytes to 557764...
+Writing at 0x00020000... (2 %)
+Writing at 0x0002a167... (5 %)
+Writing at 0x000355a2... (8 %)
+Writing at 0x0003cfaf... (11 %)
+Writing at 0x00042a5d... (14 %)
+Writing at 0x0004d67e... (17 %)
+Writing at 0x000537fc... (20 %)
+Writing at 0x00059939... (22 %)
+Writing at 0x0005f3bb... (25 %)
+Writing at 0x00066b21... (28 %)
+Writing at 0x0006c69a... (31 %)
+Writing at 0x00072820... (34 %)
+Writing at 0x00077db1... (37 %)
+Writing at 0x0007d7de... (40 %)
+Writing at 0x00083024... (42 %)
+Writing at 0x00088aa0... (45 %)
+Writing at 0x0008e78a... (48 %)
+Writing at 0x00094629... (51 %)
+Writing at 0x000997cd... (54 %)
+Writing at 0x0009e780... (57 %)
+Writing at 0x000a37ce... (60 %)
+Writing at 0x000a8b87... (62 %)
+Writing at 0x000ade18... (65 %)
+Writing at 0x000b320d... (68 %)
+Writing at 0x000b9798... (71 %)
+Writing at 0x000befa1... (74 %)
+Writing at 0x000c4a83... (77 %)
+Writing at 0x000caa58... (80 %)
+Writing at 0x000d0181... (82 %)
+Writing at 0x000d65c9... (85 %)
+Writing at 0x000e0bc0... (88 %)
+Writing at 0x000e6c61... (91 %)
+Writing at 0x000ec96d... (94 %)
+Writing at 0x000f2844... (97 %)
+Writing at 0x000f8132... (100 %)
+Wrote 886176 bytes (557764 compressed) at 0x00020000 in 12.6 seconds (effective 564.3 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 104...
+Writing at 0x00010000... (100 %)
+Wrote 3072 bytes (104 compressed) at 0x00010000 in 0.1 seconds (effective 455.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

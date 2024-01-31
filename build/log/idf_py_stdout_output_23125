@@ -1,0 +1,212 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2a (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x17e8
+load:0x403c9700,len:0xd90
+load:0x403cc700,len:0x3018
+entry 0x403c9930
+[0;32mI (25) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time 13:58:12[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.1[0m
+[0;32mI (31) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (46) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00020020 vaddr=3c090020 size=24178h (147832) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=000441a0 vaddr=3fc9a400 size=05788h ( 22408) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=00049930 vaddr=40374000 size=066e8h ( 26344) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=854d4h (546004) map[0m
+[0;32mI (221) esp_image: segment 4: paddr=000d54fc vaddr=4037a6e8 size=0fcc4h ( 64708) load[0m
+[0;32mI (243) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (244) boot: Disabling RNG early entropy source...[0m
+[0;32mI (255) cpu_start: Multicore app[0m
+[0;32mI (255) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (256) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (259) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (264) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (269) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (275) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (280) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (286) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (291) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (297) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (303) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (309) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (314) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (318) esp_psram: Speed: 80MHz[0m
+[0;32mI (322) cpu_start: Pro cpu up.[0m
+[0;32mI (326) cpu_start: Starting app cpu, entry point is 0x403756c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (785) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (794) cpu_start: Pro cpu start user code[0m
+[0;32mI (794) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (794) cpu_start: Application information:[0m
+[0;32mI (797) cpu_start: Project name:     keo-teton[0m
+[0;32mI (802) cpu_start: App version:      ed1cb40-dirty[0m
+[0;32mI (807) cpu_start: Compile time:     Jan 30 2024 11:01:26[0m
+[0;32mI (813) cpu_start: ELF file SHA256:  4f683043472bf67c...[0m
+[0;32mI (819) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (825) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (829) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (834) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (839) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (846) heap_init: At 3FCA5740 len 00043FD0 (271 KiB): DRAM[0m
+[0;32mI (852) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (859) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (865) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (872) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (879) spi_flash: detected chip: gd[0m
+[0;32mI (883) spi_flash: flash io: qio[0m
+[0;33mW (887) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (901) app_start: Starting scheduler on CPU0[0m
+[0;32mI (905) app_start: Starting scheduler on CPU1[0m
+[0;32mI (905) main_task: Started on CPU0[0m
+[0;32mI (915) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (923) main_task: Calling app_main()[0m
+[0;32mI (927) esp32-cam Webserver: ESP32 CAM Web Server .......
+[0m
+[0;32mI (945) pp: pp rom version: e7ae62f[0m
+[0;32mI (945) net80211: net80211 rom version: e7ae62f[0m
+I (947) wifi:wifi driver task: 3fcb7830, prio:23, stack:6656, core=0
+[0;32mI (950) system_api: Base MAC address is not set[0m
+[0;32mI (955) system_api: read default base MAC address from EFUSE[0m
+I (965) wifi:wifi firmware version: e2d0ad8
+I (966) wifi:wifi certification version: v7.0
+I (969) wifi:config NVS flash: enabled
+I (972) wifi:config nano formating: disabled
+I (977) wifi:Init data frame dynamic rx buffer num: 32
+I (981) wifi:Init management frame dynamic rx buffer num: 32
+I (987) wifi:Init management short buffer num: 32
+I (991) wifi:Init static tx buffer num: 16
+I (995) wifi:Init tx cache buffer num: 32
+I (999) wifi:Init static tx FG buffer num: 2
+I (1003) wifi:Init static rx buffer size: 1600
+I (1007) wifi:Init static rx buffer num: 10
+I (1011) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1015) wifi_init: rx ba win: 6[0m
+[0;32mI (1019) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1023) wifi_init: udp mbox: 6[0m
+[0;32mI (1027) wifi_init: tcp mbox: 6[0m
+[0;32mI (1030) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1035) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1039) wifi_init: tcp mss: 1440[0m
+[0;32mI (1043) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1047) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1055) phy_init: phy_version 610,2bff4c8,Jul 27 2023,20:22:14[0m
+I (1095) wifi:mode : softAP (34:85:18:ac:92:79)
+I (1098) wifi:Total power save buffer number: 8
+I (1098) wifi:Init max length of beacon: 752/752
+I (1098) wifi:Init max length of beacon: 752/752
+[0;32mI (1102) s3 ll_cam: DMA Channel=4[0m
+[0;32mI (1106) cam_hal: cam init ok[0m
+[0;32mI (1109) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (1113) sccb: sccb_i2c_port=1[0m
+[0;32mI (1127) camera: Detected camera at address=0x30[0m
+[0;32mI (1130) camera: Detected OV2640 camera[0m
+[0;32mI (1130) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1211) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 4[0m
+[0;32mI (1211) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 16, dma_buffer_size: 307200[0m
+[0;32mI (1219) cam_hal: buffer_size: 307200, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 80, total_cnt: 20[0m
+[0;32mI (1231) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1237) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C0C0EC0[0m
+[0;32mI (1243) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1249) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C10BEF0[0m
+[0;32mI (1255) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1262) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C156F20[0m
+[0;32mI (1268) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1274) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C1A1F50[0m
+[0;32mI (1280) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1287) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C1ECF80[0m
+[0;32mI (1293) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1299) cam_hal: Frame[5]: Offset: 16, Addr: 0x3C237FB0[0m
+[0;32mI (1305) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1312) cam_hal: Frame[6]: Offset: 16, Addr: 0x3C282FE0[0m
+[0;32mI (1318) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1324) cam_hal: Frame[7]: Offset: 16, Addr: 0x3C2CE010[0m
+[0;32mI (1330) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1337) cam_hal: Frame[8]: Offset: 16, Addr: 0x3C319040[0m
+[0;32mI (1343) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1349) cam_hal: Frame[9]: Offset: 16, Addr: 0x3C364070[0m
+[0;32mI (1355) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1362) cam_hal: Frame[10]: Offset: 16, Addr: 0x3C3AF0A0[0m
+[0;32mI (1368) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1375) cam_hal: Frame[11]: Offset: 16, Addr: 0x3C3FA0D0[0m
+[0;32mI (1381) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1387) cam_hal: Frame[12]: Offset: 16, Addr: 0x3C445100[0m
+[0;32mI (1393) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1400) cam_hal: Frame[13]: Offset: 16, Addr: 0x3C490130[0m
+[0;32mI (1406) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1412) cam_hal: Frame[14]: Offset: 16, Addr: 0x3C4DB160[0m
+[0;32mI (1418) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1425) cam_hal: Frame[15]: Offset: 16, Addr: 0x3C526190[0m
+[0;32mI (1431) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1437) cam_hal: Frame[16]: Offset: 16, Addr: 0x3C5711C0[0m
+[0;32mI (1444) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1450) cam_hal: Frame[17]: Offset: 16, Addr: 0x3C5BC1F0[0m
+[0;32mI (1456) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1463) cam_hal: Frame[18]: Offset: 16, Addr: 0x3C607220[0m
+[0;32mI (1469) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1475) cam_hal: Frame[19]: Offset: 16, Addr: 0x3C652250[0m
+[0;32mI (1481) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1488) cam_hal: Frame[20]: Offset: 16, Addr: 0x3C69D280[0m
+[0;32mI (1494) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1500) cam_hal: Frame[21]: Offset: 16, Addr: 0x3C6E82B0[0m
+[0;32mI (1507) cam_hal: cam config ok[0m
+[0;32mI (1510) ov2640: Set PLL: clk_2x: 1, clk_div: 7, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1588) esp32-cam Webserver: ESP32 CAM Web Server is up and running
+[0m
+[0;32mI (1589) main_task: Returned from app_main()[0m
+[0;32mI (2075) TCP/IP socket: got frame ..[0m
+[0;32mI (2274) TCP/IP socket: got frame ..[0m
+[0;32mI (2476) TCP/IP socket: got frame ..[0m
+[0;32mI (2676) TCP/IP socket: got frame ..[0m
+[0;32mI (2876) TCP/IP socket: got frame ..[0m
+[0;32mI (3076) TCP/IP socket: got frame ..[0m
+[0;32mI (3276) TCP/IP socket: got frame ..[0m
+[0;32mI (3476) TCP/IP socket: got frame ..[0m
+[0;32mI (3676) TCP/IP socket: got frame ..[0m
+[0;32mI (3876) TCP/IP socket: got frame ..[0m
+[0;32mI (4076) TCP/IP socket: got frame ..[0m
+[0;32mI (4276) TCP/IP socket: got frame ..[0m
+[0;32mI (4476) TCP/IP socket: got frame ..[0m
+[0;32mI (4676) TCP/IP socket: got frame ..[0m
+[0;32mI (4876) TCP/IP socket: got frame ..[0m
+[0;32mI (5076) TCP/IP socket: got frame ..[0m
+[0;32mI (5276) TCP/IP socket: got frame ..[0m
+[0;32mI (5476) TCP/IP socket: got frame ..[0m
+[0;32mI (5676) TCP/IP socket: got frame ..[0m
+[0;32mI (5876) TCP/IP socket: got frame ..[0m
+[0;32mI (6076) TCP/IP socket: got frame ..[0m
+[0;32mI (6276) TCP/IP socket: got frame ..[0m
+[0;32mI (6476) TCP/IP socket: got frame ..[0m
+[0;32mI (6676) TCP/IP socket: got frame ..[0m
+[0;32mI (6876) TCP/IP socket: got frame ..[0m
+[0;32mI (7076) TCP/IP socket: got frame ..[0m
+[0;32mI (7276) TCP/IP socket: got frame ..[0m
+[0;32mI (7476) TCP/IP socket: got frame ..[0m
+[0;32mI (7676) TCP/IP socket: got frame ..[0m
+[0;32mI (7876) TCP/IP socket: got frame ..[0m
+[0;32mI (8076) TCP/IP socket: got frame ..[0m
+[0;32mI (8275) TCP/IP socket: got frame ..[0m
+[0;32mI (8475) TCP/IP socket: got frame ..[0m
+[0;32mI (8676) TCP/IP socket: got frame ..[0m
+[0;32mI (8876) TCP/IP socket: got frame ..[0m
+[0;32mI (9075) TCP/IP socket: got frame ..[0m
+[0;32mI (9275) TCP/IP socket: got frame ..[0m
+[0;32mI (9475) TCP/IP socket: got frame ..[0m
+[0;32mI (9675) TCP/IP socket: got frame ..[0m
+[0;32mI (9875) TCP/IP socket: got frame ..[0m
+[0;32mI (10075) TCP/IP socket: got frame ..[0m
+[0;32mI (10275) TCP/IP socket: got frame ..[0m
+[0;32mI (10474) TCP/IP socket: got frame ..[0m
+[0;32mI (10674) TCP/IP socket: got frame ..[0m

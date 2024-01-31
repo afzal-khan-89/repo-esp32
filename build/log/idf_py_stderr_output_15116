@@ -1,0 +1,6 @@
+[0;33m--- idf_monitor on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x403756c4: call_start_cpu1 at /home/afzal-khan/esp/esp-idf/components/esp_system/port/cpu_start.c:143
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is 262fecc27f4a9377a9b672d9def76b2fc60d057ff60d9def035842496d64cc5f[0m
+[0m

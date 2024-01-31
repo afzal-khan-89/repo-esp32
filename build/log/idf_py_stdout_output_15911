@@ -1,0 +1,5 @@
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32s3
+-- Configuring incomplete, errors occurred!
+FAILED: build.ninja 
+/usr/bin/cmake --regenerate-during-build -S/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton -B/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build

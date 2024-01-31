@@ -9,7 +9,7 @@
 /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/flash.dir
 /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/encrypted-flash.dir
 /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/_project_elf_src.dir
-/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/camera_example.elf.dir
+/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/keo-teton.elf.dir
 /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/size.dir
 /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/size-files.dir
 /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/CMakeFiles/size-components.dir

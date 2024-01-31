@@ -1,0 +1,1218 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x17e8
+load:0x403c9700,len:0xd90
+load:0x403cc700,len:0x3018
+entry 0x403c9930
+[0;32mI (25) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time 13:58:12[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.1[0m
+[0;32mI (31) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (46) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00020020 vaddr=3c090020 size=248c0h (149696) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=000448e8 vaddr=3fc9a400 size=057b8h ( 22456) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0004a0a8 vaddr=40374000 size=05f70h ( 24432) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=8e72ch (583468) map[0m
+[0;32mI (227) esp_image: segment 4: paddr=000de754 vaddr=40379f70 size=1043ch ( 66620) load[0m
+[0;32mI (250) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (250) boot: Disabling RNG early entropy source...[0m
+[0;32mI (261) cpu_start: Multicore app[0m
+[0;32mI (262) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (262) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (265) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (270) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (276) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (281) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (286) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (292) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (298) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (303) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (309) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (315) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (320) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (325) esp_psram: Speed: 80MHz[0m
+[0;32mI (328) cpu_start: Pro cpu up.[0m
+[0;32mI (332) cpu_start: Starting app cpu, entry point is 0x403756c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (791) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (800) cpu_start: Pro cpu start user code[0m
+[0;32mI (800) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (800) cpu_start: Application information:[0m
+[0;32mI (803) cpu_start: Project name:     keo-teton[0m
+[0;32mI (808) cpu_start: App version:      ed1cb40-dirty[0m
+[0;32mI (814) cpu_start: Compile time:     Jan 30 2024 11:01:26[0m
+[0;32mI (820) cpu_start: ELF file SHA256:  2c84fba1a319171c...[0m
+[0;32mI (826) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (831) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (836) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (841) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (845) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (853) heap_init: At 3FCA5F00 len 00043810 (270 KiB): DRAM[0m
+[0;32mI (859) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (865) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (872) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (878) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (886) spi_flash: detected chip: gd[0m
+[0;32mI (890) spi_flash: flash io: qio[0m
+[0;33mW (894) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (907) app_start: Starting scheduler on CPU0[0m
+[0;32mI (912) app_start: Starting scheduler on CPU1[0m
+[0;32mI (912) main_task: Started on CPU0[0m
+[0;32mI (922) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (930) main_task: Calling app_main()[0m
+[0;32mI (934) esp32-cam Webserver: ESP32 CAM Web Server .......
+[0m
+[0;32mI (952) pp: pp rom version: e7ae62f[0m
+[0;32mI (952) net80211: net80211 rom version: e7ae62f[0m
+I (954) wifi:wifi driver task: 3fcb7ff0, prio:23, stack:6656, core=0
+[0;32mI (957) system_api: Base MAC address is not set[0m
+[0;32mI (962) system_api: read default base MAC address from EFUSE[0m
+I (972) wifi:wifi firmware version: e2d0ad8
+I (973) wifi:wifi certification version: v7.0
+I (976) wifi:config NVS flash: enabled
+I (979) wifi:config nano formating: disabled
+I (984) wifi:Init data frame dynamic rx buffer num: 32
+I (988) wifi:Init management frame dynamic rx buffer num: 32
+I (994) wifi:Init management short buffer num: 32
+I (998) wifi:Init static tx buffer num: 16
+I (1002) wifi:Init tx cache buffer num: 32
+I (1006) wifi:Init static tx FG buffer num: 2
+I (1010) wifi:Init static rx buffer size: 1600
+I (1014) wifi:Init static rx buffer num: 10
+I (1018) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1022) wifi_init: rx ba win: 6[0m
+[0;32mI (1026) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1030) wifi_init: udp mbox: 6[0m
+[0;32mI (1034) wifi_init: tcp mbox: 6[0m
+[0;32mI (1038) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1042) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1046) wifi_init: tcp mss: 1440[0m
+[0;32mI (1050) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1055) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1063) phy_init: phy_version 610,2bff4c8,Jul 27 2023,20:22:14[0m
+I (1101) wifi:mode : softAP (34:85:18:ac:92:79)
+I (1103) wifi:Total power save buffer number: 8
+I (1103) wifi:Init max length of beacon: 752/752
+I (1104) wifi:Init max length of beacon: 752/752
+[0;32mI (1108) s3 ll_cam: DMA Channel=4[0m
+[0;32mI (1111) cam_hal: cam init ok[0m
+[0;32mI (1115) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (1119) sccb: sccb_i2c_port=1[0m
+[0;32mI (1133) camera: Detected camera at address=0x30[0m
+[0;32mI (1136) camera: Detected OV2640 camera[0m
+[0;32mI (1136) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1217) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 4[0m
+[0;32mI (1217) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 16, dma_buffer_size: 307200[0m
+[0;32mI (1225) cam_hal: buffer_size: 307200, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 80, total_cnt: 20[0m
+[0;32mI (1236) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1243) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C0C0EC0[0m
+[0;32mI (1249) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1255) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C10BEF0[0m
+[0;32mI (1261) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1268) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C156F20[0m
+[0;32mI (1274) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1280) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C1A1F50[0m
+[0;32mI (1286) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1293) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C1ECF80[0m
+[0;32mI (1299) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1305) cam_hal: Frame[5]: Offset: 16, Addr: 0x3C237FB0[0m
+[0;32mI (1311) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1318) cam_hal: Frame[6]: Offset: 16, Addr: 0x3C282FE0[0m
+[0;32mI (1324) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1330) cam_hal: Frame[7]: Offset: 16, Addr: 0x3C2CE010[0m
+[0;32mI (1336) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1343) cam_hal: Frame[8]: Offset: 16, Addr: 0x3C319040[0m
+[0;32mI (1349) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1355) cam_hal: Frame[9]: Offset: 16, Addr: 0x3C364070[0m
+[0;32mI (1361) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1368) cam_hal: Frame[10]: Offset: 16, Addr: 0x3C3AF0A0[0m
+[0;32mI (1374) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1380) cam_hal: Frame[11]: Offset: 16, Addr: 0x3C3FA0D0[0m
+[0;32mI (1386) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1393) cam_hal: Frame[12]: Offset: 16, Addr: 0x3C445100[0m
+[0;32mI (1399) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1406) cam_hal: Frame[13]: Offset: 16, Addr: 0x3C490130[0m
+[0;32mI (1412) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1418) cam_hal: Frame[14]: Offset: 16, Addr: 0x3C4DB160[0m
+[0;32mI (1424) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1431) cam_hal: Frame[15]: Offset: 16, Addr: 0x3C526190[0m
+[0;32mI (1437) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1443) cam_hal: Frame[16]: Offset: 16, Addr: 0x3C5711C0[0m
+[0;32mI (1449) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1456) cam_hal: Frame[17]: Offset: 16, Addr: 0x3C5BC1F0[0m
+[0;32mI (1462) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1468) cam_hal: Frame[18]: Offset: 16, Addr: 0x3C607220[0m
+[0;32mI (1475) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1481) cam_hal: Frame[19]: Offset: 16, Addr: 0x3C652250[0m
+[0;32mI (1487) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1494) cam_hal: Frame[20]: Offset: 16, Addr: 0x3C69D280[0m
+[0;32mI (1500) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1506) cam_hal: Frame[21]: Offset: 16, Addr: 0x3C6E82B0[0m
+[0;32mI (1513) cam_hal: cam config ok[0m
+[0;32mI (1516) ov2640: Set PLL: clk_2x: 1, clk_div: 7, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1595) TCP/IP socket: Socket created[0m
+[0;32mI (1596) TCP/IP socket: Socket binded[0m
+[0;32mI (1596) TCP/IP socket: Socket listening ...[0m
+[0;32mI (1605) esp32-cam Webserver: ESP32 CAM Web Server is up and running
+[0m
+[0;32mI (1605) main_task: Returned from app_main()[0m
+I (100309) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1
+I (100309) wifi:station: 28:d0:ea:5f:dc:3c join, AID=1, bgn, 40U
+[0;32mI (100545) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.254.2[0m
+[0;32mI (100545) wifi: SoftAP client connected with IP: 192.168.254.2.[0m
+I (101437) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:26, winSize:64
+I (101593) wifi:station: 28:d0:ea:5f:dc:3c leave, AID = 1, bss_flags is 134243, bss:0x3fca93e0
+I (101594) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1
+I (101597) wifi:<ba-del>idx
+I (101813) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1
+I (101814) wifi:station: 28:d0:ea:5f:dc:3c join, AID=1, bgn, 40U
+[0;32mI (101950) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.254.2[0m
+[0;32mI (101950) wifi: SoftAP client connected with IP: 192.168.254.2.[0m
+I (102726) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:22, winSize:64
+[0;32mI (113666) TCP/IP socket: Socket accepted ... [0m
+[0;32mI (113789) TCP/IP socket: send 9521 bytes to client ... [0m
+[0;32mI (113903) TCP/IP socket: send 9603 bytes to client ... [0m
+[0;32mI (113994) TCP/IP socket: send 12015 bytes to client ... [0m
+[0;32mI (114136) TCP/IP socket: send 11942 bytes to client ... [0m
+[0;32mI (114239) TCP/IP socket: send 12143 bytes to client ... [0m
+[0;32mI (114528) TCP/IP socket: send 12113 bytes to client ... [0m
+[0;32mI (114650) TCP/IP socket: send 12184 bytes to client ... [0m
+[0;32mI (114767) TCP/IP socket: send 12241 bytes to client ... [0m
+[0;32mI (114864) TCP/IP socket: send 12388 bytes to client ... [0m
+[0;32mI (114982) TCP/IP socket: send 12246 bytes to client ... [0m
+[0;32mI (115085) TCP/IP socket: send 12421 bytes to client ... [0m
+[0;32mI (115263) TCP/IP socket: send 12411 bytes to client ... [0m
+[0;32mI (115424) TCP/IP socket: send 12630 bytes to client ... [0m
+[0;32mI (116181) TCP/IP socket: send 12681 bytes to client ... [0m
+[0;32mI (116346) TCP/IP socket: send 12716 bytes to client ... [0m
+[0;32mI (117317) TCP/IP socket: send 12776 bytes to client ... [0m
+[0;32mI (117542) TCP/IP socket: send 12972 bytes to client ... [0m
+[0;32mI (117658) TCP/IP socket: send 13031 bytes to client ... [0m
+[0;32mI (117956) TCP/IP socket: send 13218 bytes to client ... [0m
+[0;32mI (118082) TCP/IP socket: send 13194 bytes to client ... [0m
+[0;32mI (118179) TCP/IP socket: send 13570 bytes to client ... [0m
+[0;32mI (118304) TCP/IP socket: send 13522 bytes to client ... [0m
+[0;32mI (118453) TCP/IP socket: send 13416 bytes to client ... [0m
+[0;32mI (118806) TCP/IP socket: send 13354 bytes to client ... [0m
+[0;32mI (118907) TCP/IP socket: send 13412 bytes to client ... [0m
+[0;32mI (119156) TCP/IP socket: send 13528 bytes to client ... [0m
+[0;32mI (119501) TCP/IP socket: send 13437 bytes to client ... [0m
+[0;32mI (119601) TCP/IP socket: send 13467 bytes to client ... [0m
+[0;32mI (119867) TCP/IP socket: send 13407 bytes to client ... [0m
+[0;32mI (119994) TCP/IP socket: send 13480 bytes to client ... [0m
+[0;32mI (120094) TCP/IP socket: send 13359 bytes to client ... [0m
+[0;32mI (120208) TCP/IP socket: send 13374 bytes to client ... [0m
+[0;32mI (120443) TCP/IP socket: send 13759 bytes to client ... [0m
+[0;32mI (121112) TCP/IP socket: send 13389 bytes to client ... [0m
+[0;32mI (121231) TCP/IP socket: send 13479 bytes to client ... [0m
+[0;32mI (121458) TCP/IP socket: send 13356 bytes to client ... [0m
+[0;32mI (121924) TCP/IP socket: send 13463 bytes to client ... [0m
+[0;32mI (122293) TCP/IP socket: send 13547 bytes to client ... [0m
+[0;32mI (122733) TCP/IP socket: send 13598 bytes to client ... [0m
+[0;32mI (123105) TCP/IP socket: send 13435 bytes to client ... [0m
+[0;32mI (123276) TCP/IP socket: send 13444 bytes to client ... [0m
+[0;32mI (124128) TCP/IP socket: send 13415 bytes to client ... [0m
+[0;32mI (124378) TCP/IP socket: send 13452 bytes to client ... [0m
+[0;32mI (125099) TCP/IP socket: send 13339 bytes to client ... [0m
+I (125215) wifi:<ba-del>idx
+[0;32mI (125355) TCP/IP socket: send 13344 bytes to client ... [0m
+[0;32mI (125840) TCP/IP socket: send 13420 bytes to client ... [0m
+[0;32mI (126063) TCP/IP socket: send 13388 bytes to client ... [0m
+[0;32mI (126210) TCP/IP socket: send 13429 bytes to client ... [0m
+[0;32mI (126319) TCP/IP socket: send 13395 bytes to client ... [0m
+[0;32mI (126669) TCP/IP socket: send 13415 bytes to client ... [0m
+[0;32mI (126903) TCP/IP socket: send 13446 bytes to client ... [0m
+[0;32mI (127051) TCP/IP socket: send 13453 bytes to client ... [0m
+[0;32mI (127161) TCP/IP socket: send 13400 bytes to client ... [0m
+[0;32mI (127273) TCP/IP socket: send 13438 bytes to client ... [0m
+[0;32mI (127547) TCP/IP socket: send 13513 bytes to client ... [0m
+[0;32mI (127775) TCP/IP socket: send 13528 bytes to client ... [0m
+[0;32mI (127868) TCP/IP socket: send 13441 bytes to client ... [0m
+I (127883) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:871, winSize:64
+[0;32mI (128436) TCP/IP socket: send 13413 bytes to client ... [0m
+[0;32mI (128532) TCP/IP socket: send 13395 bytes to client ... [0m
+[0;32mI (128788) TCP/IP socket: send 13365 bytes to client ... [0m
+[0;32mI (128978) TCP/IP socket: send 13441 bytes to client ... [0m
+[0;32mI (129908) TCP/IP socket: send 13429 bytes to client ... [0m
+[0;32mI (130121) TCP/IP socket: send 13355 bytes to client ... [0m
+[0;32mI (130224) TCP/IP socket: send 13474 bytes to client ... [0m
+[0;32mI (130314) TCP/IP socket: send 13393 bytes to client ... [0m
+[0;32mI (130407) TCP/IP socket: send 13324 bytes to client ... [0m
+[0;32mI (130669) TCP/IP socket: send 13423 bytes to client ... [0m
+[0;31mE (130750) TCP/IP socket: Error occurred during sending: errno 104[0m
+I (145248) wifi:<ba-del>idx
+I (147254) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1096, winSize:64
+[0;32mI (205784) TCP/IP socket: Socket accepted ... [0m
+[0;32mI (205899) TCP/IP socket: send 13512 bytes to client ... [0m
+[0;32mI (206054) TCP/IP socket: send 13494 bytes to client ... [0m
+[0;32mI (206260) TCP/IP socket: send 13402 bytes to client ... [0m
+[0;32mI (206367) TCP/IP socket: send 13516 bytes to client ... [0m
+[0;32mI (206497) TCP/IP socket: send 13464 bytes to client ... [0m
+[0;32mI (206636) TCP/IP socket: send 13360 bytes to client ... [0m
+[0;32mI (206755) TCP/IP socket: send 13433 bytes to client ... [0m
+[0;32mI (206877) TCP/IP socket: send 13315 bytes to client ... [0m
+[0;32mI (206976) TCP/IP socket: send 13434 bytes to client ... [0m
+[0;32mI (207088) TCP/IP socket: send 13395 bytes to client ... [0m
+[0;32mI (207225) TCP/IP socket: send 13352 bytes to client ... [0m
+[0;32mI (207351) TCP/IP socket: send 13450 bytes to client ... [0m
+[0;32mI (207460) TCP/IP socket: send 13371 bytes to client ... [0m
+I (207583) wifi:<ba-del>idx
+[0;32mI (208780) TCP/IP socket: send 13418 bytes to client ... [0m
+[0;32mI (208894) TCP/IP socket: send 13384 bytes to client ... [0m
+[0;32mI (209366) TCP/IP socket: send 13499 bytes to client ... [0m
+[0;32mI (209465) TCP/IP socket: send 13297 bytes to client ... [0m
+[0;32mI (209894) TCP/IP socket: send 13428 bytes to client ... [0m
+I (209932) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:2413, winSize:64
+[0;32mI (210123) TCP/IP socket: send 13432 bytes to client ... [0m
+[0;32mI (210237) TCP/IP socket: send 13321 bytes to client ... [0m
+[0;32mI (210363) TCP/IP socket: send 13363 bytes to client ... [0m
+[0;32mI (210594) TCP/IP socket: send 13438 bytes to client ... [0m
+[0;32mI (210703) TCP/IP socket: send 13461 bytes to client ... [0m
+[0;32mI (210871) TCP/IP socket: send 13438 bytes to client ... [0m
+[0;32mI (210978) TCP/IP socket: send 13515 bytes to client ... [0m
+[0;32mI (211159) TCP/IP socket: send 13385 bytes to client ... [0m
+[0;32mI (211336) TCP/IP socket: send 13484 bytes to client ... [0m
+[0;32mI (211794) TCP/IP socket: send 13679 bytes to client ... [0m
+[0;32mI (211928) TCP/IP socket: send 13443 bytes to client ... [0m
+[0;32mI (212038) TCP/IP socket: send 13475 bytes to client ... [0m
+[0;32mI (212132) TCP/IP socket: send 13355 bytes to client ... [0m
+[0;32mI (212249) TCP/IP socket: send 13386 bytes to client ... [0m
+[0;32mI (212411) TCP/IP socket: send 13429 bytes to client ... [0m
+[0;32mI (212674) TCP/IP socket: send 13371 bytes to client ... [0m
+[0;32mI (212777) TCP/IP socket: send 13451 bytes to client ... [0m
+[0;32mI (212980) TCP/IP socket: send 13328 bytes to client ... [0m
+[0;32mI (213081) TCP/IP socket: send 13414 bytes to client ... [0m
+[0;32mI (213218) TCP/IP socket: send 13365 bytes to client ... [0m
+[0;32mI (213319) TCP/IP socket: send 13534 bytes to client ... [0m
+[0;32mI (213454) TCP/IP socket: send 13391 bytes to client ... [0m
+[0;32mI (213577) TCP/IP socket: send 13266 bytes to client ... [0m
+[0;32mI (213696) TCP/IP socket: send 13435 bytes to client ... [0m
+[0;32mI (213816) TCP/IP socket: send 13428 bytes to client ... [0m
+[0;32mI (214382) TCP/IP socket: send 13434 bytes to client ... [0m
+[0;32mI (214547) TCP/IP socket: send 13457 bytes to client ... [0m
+[0;32mI (214649) TCP/IP socket: send 13391 bytes to client ... [0m
+[0;32mI (214903) TCP/IP socket: send 13377 bytes to client ... [0m
+[0;32mI (215088) TCP/IP socket: send 13422 bytes to client ... [0m
+[0;32mI (215205) TCP/IP socket: send 13510 bytes to client ... [0m
+[0;32mI (215496) TCP/IP socket: send 13656 bytes to client ... [0m
+[0;32mI (215704) TCP/IP socket: send 13454 bytes to client ... [0m
+[0;32mI (216230) TCP/IP socket: send 13454 bytes to client ... [0m
+[0;32mI (216871) TCP/IP socket: send 13370 bytes to client ... [0m
+[0;32mI (216990) TCP/IP socket: send 13295 bytes to client ... [0m
+[0;32mI (217622) TCP/IP socket: send 13598 bytes to client ... [0m
+[0;32mI (217934) TCP/IP socket: send 13372 bytes to client ... [0m
+[0;32mI (218112) TCP/IP socket: send 13399 bytes to client ... [0m
+[0;32mI (218397) TCP/IP socket: send 13410 bytes to client ... [0m
+[0;32mI (218540) TCP/IP socket: send 13392 bytes to client ... [0m
+[0;32mI (218738) TCP/IP socket: send 13362 bytes to client ... [0m
+[0;32mI (218999) TCP/IP socket: send 13493 bytes to client ... [0m
+[0;32mI (219287) TCP/IP socket: send 13418 bytes to client ... [0m
+[0;32mI (219651) TCP/IP socket: send 13412 bytes to client ... [0m
+[0;32mI (219857) TCP/IP socket: send 13492 bytes to client ... [0m
+[0;32mI (220122) TCP/IP socket: send 13302 bytes to client ... [0m
+[0;32mI (220321) TCP/IP socket: send 13336 bytes to client ... [0m
+[0;32mI (220569) TCP/IP socket: send 13435 bytes to client ... [0m
+[0;32mI (220849) TCP/IP socket: send 13404 bytes to client ... [0m
+[0;32mI (221033) TCP/IP socket: send 13420 bytes to client ... [0m
+[0;32mI (221245) TCP/IP socket: send 13322 bytes to client ... [0m
+[0;32mI (221457) TCP/IP socket: send 13349 bytes to client ... [0m
+[0;32mI (221696) TCP/IP socket: send 13299 bytes to client ... [0m
+[0;32mI (221971) TCP/IP socket: send 13473 bytes to client ... [0m
+[0;32mI (222180) TCP/IP socket: send 13410 bytes to client ... [0m
+[0;32mI (222328) TCP/IP socket: send 13393 bytes to client ... [0m
+[0;32mI (222536) TCP/IP socket: send 13383 bytes to client ... [0m
+[0;32mI (222721) TCP/IP socket: send 13356 bytes to client ... [0m
+[0;32mI (222980) TCP/IP socket: send 13352 bytes to client ... [0m
+[0;32mI (223136) TCP/IP socket: send 13572 bytes to client ... [0m
+[0;32mI (223264) TCP/IP socket: send 13470 bytes to client ... [0m
+[0;32mI (223504) TCP/IP socket: send 13488 bytes to client ... [0m
+[0;32mI (223745) TCP/IP socket: send 13570 bytes to client ... [0m
+[0;32mI (224000) TCP/IP socket: send 13510 bytes to client ... [0m
+[0;32mI (224388) TCP/IP socket: send 13447 bytes to client ... [0m
+[0;32mI (224549) TCP/IP socket: send 13646 bytes to client ... [0m
+[0;32mI (224863) TCP/IP socket: send 13600 bytes to client ... [0m
+[0;32mI (225021) TCP/IP socket: send 13413 bytes to client ... [0m
+[0;32mI (225550) TCP/IP socket: send 13460 bytes to client ... [0m
+[0;32mI (226063) TCP/IP socket: send 13608 bytes to client ... [0m
+[0;32mI (226516) TCP/IP socket: send 13492 bytes to client ... [0m
+[0;32mI (226716) TCP/IP socket: send 13647 bytes to client ... [0m
+[0;32mI (226948) TCP/IP socket: send 13578 bytes to client ... [0m
+[0;32mI (227132) TCP/IP socket: send 13653 bytes to client ... [0m
+[0;32mI (227372) TCP/IP socket: send 13370 bytes to client ... [0m
+[0;32mI (227805) TCP/IP socket: send 13510 bytes to client ... [0m
+[0;32mI (228109) TCP/IP socket: send 13435 bytes to client ... [0m
+[0;32mI (228441) TCP/IP socket: send 13627 bytes to client ... [0m
+[0;32mI (228731) TCP/IP socket: send 13484 bytes to client ... [0m
+I (229223) wifi:<ba-del>idx
+[0;31mE (233465) TCP/IP socket: Error occurred during sending: errno 104[0m
+I (248525) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3449, winSize:64
+I (265958) wifi:<ba-del>idx
+I (265962) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3561, winSize:64
+I (269976) wifi:<ba-del>idx
+[0;32mI (274313) TCP/IP socket: Socket accepted ... [0m
+[0;32mI (274579) TCP/IP socket: send 13397 bytes to client ... [0m
+[0;32mI (274793) TCP/IP socket: send 13377 bytes to client ... [0m
+I (274900) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3768, winSize:64
+I (274972) wifi:<ba-del>idx
+[0;32mI (279362) TCP/IP socket: send 13397 bytes to client ... [0m
+[0;32mI (279565) TCP/IP socket: send 13341 bytes to client ... [0m
+I (279629) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3848, winSize:64
+[0;32mI (280021) TCP/IP socket: send 13423 bytes to client ... [0m
+[0;32mI (280764) TCP/IP socket: send 13369 bytes to client ... [0m
+[0;31mE (281078) TCP/IP socket: Error occurred during sending: errno 104[0m
+I (283448) wifi:<ba-del>idx
+I (283449) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:4005, winSize:64
+I (326509) wifi:<ba-del>idx
+[0;32mI (327448) TCP/IP socket: Socket accepted ... [0m
+[0;32mI (327696) TCP/IP socket: send 13468 bytes to client ... [0m
+[0;32mI (327798) TCP/IP socket: send 13408 bytes to client ... [0m
+[0;32mI (328154) TCP/IP socket: send 13413 bytes to client ... [0m
+[0;32mI (328308) TCP/IP socket: send 13352 bytes to client ... [0m
+[0;32mI (328415) TCP/IP socket: send 13292 bytes to client ... [0m
+[0;32mI (328527) TCP/IP socket: send 13422 bytes to client ... [0m
+[0;32mI (328626) TCP/IP socket: send 13350 bytes to client ... [0m
+I (328780) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:760, winSize:64
+[0;32mI (329184) TCP/IP socket: send 13419 bytes to client ... [0m
+[0;32mI (329276) TCP/IP socket: send 13341 bytes to client ... [0m
+[0;32mI (329393) TCP/IP socket: send 13376 bytes to client ... [0m
+[0;32mI (329535) TCP/IP socket: send 13368 bytes to client ... [0m
+[0;32mI (329640) TCP/IP socket: send 13416 bytes to client ... [0m
+[0;32mI (330117) TCP/IP socket: send 13426 bytes to client ... [0m
+[0;32mI (330220) TCP/IP socket: send 13386 bytes to client ... [0m
+[0;32mI (330360) TCP/IP socket: send 13341 bytes to client ... [0m
+[0;32mI (330471) TCP/IP socket: send 13294 bytes to client ... [0m
+[0;32mI (330570) TCP/IP socket: send 13294 bytes to client ... [0m
+[0;32mI (330662) TCP/IP socket: send 13448 bytes to client ... [0m
+[0;32mI (330754) TCP/IP socket: send 13392 bytes to client ... [0m
+[0;32mI (330858) TCP/IP socket: send 13311 bytes to client ... [0m
+[0;32mI (330956) TCP/IP socket: send 13425 bytes to client ... [0m
+[0;32mI (331188) TCP/IP socket: send 13421 bytes to client ... [0m
+[0;32mI (331281) TCP/IP socket: send 13369 bytes to client ... [0m
+[0;32mI (331500) TCP/IP socket: send 13325 bytes to client ... [0m
+[0;32mI (331806) TCP/IP socket: send 13368 bytes to client ... [0m
+[0;32mI (332086) TCP/IP socket: send 13373 bytes to client ... [0m
+[0;32mI (332193) TCP/IP socket: send 13323 bytes to client ... [0m
+[0;32mI (332348) TCP/IP socket: send 13310 bytes to client ... [0m
+[0;32mI (333742) TCP/IP socket: send 13380 bytes to client ... [0m
+[0;32mI (333832) TCP/IP socket: send 13314 bytes to client ... [0m
+[0;32mI (333939) TCP/IP socket: send 13448 bytes to client ... [0m
+[0;32mI (334051) TCP/IP socket: send 13444 bytes to client ... [0m
+[0;32mI (334151) TCP/IP socket: send 13365 bytes to client ... [0m
+[0;32mI (334255) TCP/IP socket: send 13635 bytes to client ... [0m
+[0;32mI (334369) TCP/IP socket: send 13474 bytes to client ... [0m
+[0;32mI (334604) TCP/IP socket: send 13481 bytes to client ... [0m
+[0;32mI (335208) TCP/IP socket: send 13525 bytes to client ... [0m
+[0;32mI (335352) TCP/IP socket: send 13374 bytes to client ... [0m
+[0;32mI (335690) TCP/IP socket: send 13418 bytes to client ... [0m
+[0;32mI (336457) TCP/IP socket: send 13428 bytes to client ... [0m
+[0;32mI (336745) TCP/IP socket: send 13304 bytes to client ... [0m
+[0;32mI (338458) TCP/IP socket: send 13369 bytes to client ... [0m
+[0;32mI (338560) TCP/IP socket: send 13364 bytes to client ... [0m
+[0;32mI (338815) TCP/IP socket: send 13348 bytes to client ... [0m
+[0;32mI (338934) TCP/IP socket: send 13369 bytes to client ... [0m
+[0;32mI (339053) TCP/IP socket: send 13301 bytes to client ... [0m
+[0;32mI (339171) TCP/IP socket: send 13289 bytes to client ... [0m
+[0;32mI (339614) TCP/IP socket: send 13398 bytes to client ... [0m
+[0;32mI (340024) TCP/IP socket: send 13306 bytes to client ... [0m
+[0;32mI (340921) TCP/IP socket: send 13439 bytes to client ... [0m
+[0;32mI (341357) TCP/IP socket: send 13483 bytes to client ... [0m
+[0;32mI (341772) TCP/IP socket: send 13453 bytes to client ... [0m
+[0;32mI (342440) TCP/IP socket: send 13401 bytes to client ... [0m
+[0;32mI (342862) TCP/IP socket: send 13386 bytes to client ... [0m
+[0;32mI (343277) TCP/IP socket: send 13338 bytes to client ... [0m
+[0;32mI (344592) TCP/IP socket: send 13386 bytes to client ... [0m
+I (350638) wifi:<ba-del>idx
+I (350640) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1062, winSize:64
+[0;31mE (352247) TCP/IP socket: Error occurred during sending: errno 104[0m
+I (354075) wifi:<ba-del>idx
+I (359726) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1278, winSize:64
+I (365651) wifi:<ba-del>idx
+I (365653) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1321, winSize:64
+I (384247) wifi:<ba-del>idx
+I (386343) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1643, winSize:64
+I (438836) wifi:<ba-del>idx
+I (441572) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1921, winSize:64
+[0;32mI (462249) TCP/IP socket: Socket accepted ... [0m
+[0;32mI (462363) TCP/IP socket: send 13446 bytes to client ... [0m
+[0;32mI (462456) TCP/IP socket: send 13320 bytes to client ... [0m
+[0;32mI (462568) TCP/IP socket: send 13280 bytes to client ... [0m
+[0;32mI (462683) TCP/IP socket: send 13334 bytes to client ... [0m
+[0;32mI (462805) TCP/IP socket: send 13403 bytes to client ... [0m
+[0;32mI (462939) TCP/IP socket: send 13315 bytes to client ... [0m
+[0;32mI (463045) TCP/IP socket: send 13325 bytes to client ... [0m
+[0;32mI (463203) TCP/IP socket: send 13531 bytes to client ... [0m
+[0;32mI (463308) TCP/IP socket: send 13503 bytes to client ... [0m
+[0;32mI (463451) TCP/IP socket: send 13389 bytes to client ... [0m
+[0;32mI (463556) TCP/IP socket: send 13352 bytes to client ... [0m
+[0;32mI (463690) TCP/IP socket: send 13379 bytes to client ... [0m
+[0;32mI (463793) TCP/IP socket: send 13333 bytes to client ... [0m
+[0;32mI (463937) TCP/IP socket: send 13367 bytes to client ... [0m
+[0;32mI (464038) TCP/IP socket: send 13305 bytes to client ... [0m
+[0;32mI (464143) TCP/IP socket: send 13325 bytes to client ... [0m
+[0;32mI (464335) TCP/IP socket: send 13327 bytes to client ... [0m
+[0;32mI (464474) TCP/IP socket: send 13331 bytes to client ... [0m
+[0;32mI (464683) TCP/IP socket: send 13306 bytes to client ... [0m
+[0;32mI (465026) TCP/IP socket: send 13325 bytes to client ... [0m
+[0;32mI (465129) TCP/IP socket: send 13371 bytes to client ... [0m
+[0;32mI (465328) TCP/IP socket: send 13440 bytes to client ... [0m
+[0;32mI (465462) TCP/IP socket: send 13383 bytes to client ... [0m
+[0;32mI (465605) TCP/IP socket: send 13348 bytes to client ... [0m
+[0;32mI (465707) TCP/IP socket: send 13379 bytes to client ... [0m
+[0;32mI (465847) TCP/IP socket: send 13501 bytes to client ... [0m
+[0;32mI (465949) TCP/IP socket: send 13420 bytes to client ... [0m
+[0;32mI (466040) TCP/IP socket: send 13414 bytes to client ... [0m
+[0;32mI (466145) TCP/IP socket: send 13484 bytes to client ... [0m
+[0;32mI (466248) TCP/IP socket: send 13535 bytes to client ... [0m
+[0;32mI (466356) TCP/IP socket: send 13347 bytes to client ... [0m
+[0;32mI (466450) TCP/IP socket: send 13381 bytes to client ... [0m
+[0;32mI (466562) TCP/IP socket: send 13366 bytes to client ... [0m
+[0;32mI (466666) TCP/IP socket: send 13458 bytes to client ... [0m
+[0;32mI (466766) TCP/IP socket: send 13359 bytes to client ... [0m
+[0;32mI (467130) TCP/IP socket: send 13334 bytes to client ... [0m
+[0;32mI (467299) TCP/IP socket: send 13391 bytes to client ... [0m
+[0;32mI (467419) TCP/IP socket: send 13406 bytes to client ... [0m
+[0;32mI (467646) TCP/IP socket: send 13401 bytes to client ... [0m
+[0;32mI (467773) TCP/IP socket: send 13472 bytes to client ... [0m
+[0;32mI (468066) TCP/IP socket: send 13515 bytes to client ... [0m
+[0;32mI (468740) TCP/IP socket: send 13339 bytes to client ... [0m
+[0;32mI (468849) TCP/IP socket: send 13536 bytes to client ... [0m
+[0;32mI (469109) TCP/IP socket: send 13542 bytes to client ... [0m
+[0;32mI (469435) TCP/IP socket: send 13353 bytes to client ... [0m
+[0;32mI (469949) TCP/IP socket: send 13340 bytes to client ... [0m
+[0;32mI (470084) TCP/IP socket: send 13450 bytes to client ... [0m
+[0;32mI (470208) TCP/IP socket: send 13391 bytes to client ... [0m
+[0;32mI (470371) TCP/IP socket: send 13457 bytes to client ... [0m
+[0;32mI (470938) TCP/IP socket: send 13373 bytes to client ... [0m
+[0;32mI (471035) TCP/IP socket: send 13405 bytes to client ... [0m
+[0;32mI (471386) TCP/IP socket: send 13366 bytes to client ... [0m
+[0;32mI (471628) TCP/IP socket: send 13389 bytes to client ... [0m
+[0;32mI (471724) TCP/IP socket: send 13366 bytes to client ... [0m
+[0;32mI (471821) TCP/IP socket: send 13395 bytes to client ... [0m
+[0;32mI (472182) TCP/IP socket: send 13372 bytes to client ... [0m
+[0;32mI (472454) TCP/IP socket: send 13445 bytes to client ... [0m
+[0;32mI (472809) TCP/IP socket: send 13325 bytes to client ... [0m
+[0;32mI (473225) TCP/IP socket: send 13388 bytes to client ... [0m
+[0;32mI (473321) TCP/IP socket: send 13390 bytes to client ... [0m
+[0;32mI (474443) TCP/IP socket: send 13530 bytes to client ... [0m
+[0;32mI (474630) TCP/IP socket: send 13404 bytes to client ... [0m
+[0;32mI (474907) TCP/IP socket: send 13467 bytes to client ... [0m
+[0;32mI (475045) TCP/IP socket: send 13373 bytes to client ... [0m
+[0;32mI (475183) TCP/IP socket: send 13429 bytes to client ... [0m
+[0;32mI (475289) TCP/IP socket: send 13397 bytes to client ... [0m
+[0;32mI (475599) TCP/IP socket: send 13387 bytes to client ... [0m
+[0;32mI (475710) TCP/IP socket: send 13526 bytes to client ... [0m
+[0;32mI (475921) TCP/IP socket: send 13371 bytes to client ... [0m
+[0;32mI (476023) TCP/IP socket: send 13393 bytes to client ... [0m
+[0;32mI (476371) TCP/IP socket: send 13519 bytes to client ... [0m
+[0;32mI (476600) TCP/IP socket: send 13355 bytes to client ... [0m
+[0;32mI (477298) TCP/IP socket: send 13382 bytes to client ... [0m
+[0;32mI (477436) TCP/IP socket: send 13400 bytes to client ... [0m
+[0;32mI (477983) TCP/IP socket: send 13370 bytes to client ... [0m
+[0;32mI (478244) TCP/IP socket: send 13395 bytes to client ... [0m
+[0;32mI (480997) TCP/IP socket: send 13485 bytes to client ... [0m
+[0;32mI (481125) TCP/IP socket: send 13394 bytes to client ... [0m
+[0;32mI (481260) TCP/IP socket: send 13356 bytes to client ... [0m
+I (481260) wifi:<ba-del>idx
+I (481262) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:2978, winSize:64
+[0;32mI (481648) TCP/IP socket: send 13369 bytes to client ... [0m
+[0;32mI (481999) TCP/IP socket: send 13404 bytes to client ... [0m
+[0;32mI (482279) TCP/IP socket: send 13520 bytes to client ... [0m
+[0;32mI (482532) TCP/IP socket: send 13340 bytes to client ... [0m
+[0;32mI (482943) TCP/IP socket: send 13403 bytes to client ... [0m
+[0;32mI (483169) TCP/IP socket: send 13340 bytes to client ... [0m
+[0;32mI (483581) TCP/IP socket: send 13404 bytes to client ... [0m
+[0;32mI (484316) TCP/IP socket: send 13332 bytes to client ... [0m
+[0;32mI (485638) TCP/IP socket: send 13417 bytes to client ... [0m
+[0;32mI (486344) TCP/IP socket: send 13458 bytes to client ... [0m
+[0;32mI (486527) TCP/IP socket: send 13368 bytes to client ... [0m
+[0;32mI (486676) TCP/IP socket: send 13489 bytes to client ... [0m
+I (486880) wifi:<ba-del>idx
+[0;32mI (488062) TCP/IP socket: send 13381 bytes to client ... [0m
+[0;32mI (489546) TCP/IP socket: send 13376 bytes to client ... [0m
+[0;32mI (489725) TCP/IP socket: send 13403 bytes to client ... [0m
+I (492085) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3068, winSize:64
+[0;32mI (492505) TCP/IP socket: send 13449 bytes to client ... [0m
+[0;31mE (492725) TCP/IP socket: Error occurred during sending: errno 104[0m
+[0;32mI (498165) TCP/IP socket: Socket accepted ... [0m
+[0;32mI (498480) TCP/IP socket: send 13385 bytes to client ... [0m
+[0;32mI (498646) TCP/IP socket: send 13409 bytes to client ... [0m
+[0;32mI (498768) TCP/IP socket: send 13469 bytes to client ... [0m
+[0;32mI (498904) TCP/IP socket: send 13429 bytes to client ... [0m
+[0;32mI (499047) TCP/IP socket: send 13432 bytes to client ... [0m
+I (499156) wifi:<ba-del>idx
+[0;32mI (501440) TCP/IP socket: send 13359 bytes to client ... [0m
+I (501579) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3306, winSize:64
+[0;32mI (501581) TCP/IP socket: send 13409 bytes to client ... [0m
+[0;32mI (503362) TCP/IP socket: send 13394 bytes to client ... [0m
+[0;32mI (503982) TCP/IP socket: send 13411 bytes to client ... [0m
+[0;32mI (504455) TCP/IP socket: send 13478 bytes to client ... [0m
+[0;32mI (504550) TCP/IP socket: send 13341 bytes to client ... [0m
+[0;32mI (505066) TCP/IP socket: send 13405 bytes to client ... [0m
+[0;32mI (505233) TCP/IP socket: send 13430 bytes to client ... [0m
+[0;32mI (505579) TCP/IP socket: send 13366 bytes to client ... [0m
+[0;32mI (505968) TCP/IP socket: send 13423 bytes to client ... [0m
+[0;32mI (506162) TCP/IP socket: send 13415 bytes to client ... [0m
+[0;32mI (506501) TCP/IP socket: send 13372 bytes to client ... [0m
+[0;32mI (506604) TCP/IP socket: send 13379 bytes to client ... [0m
+[0;32mI (506774) TCP/IP socket: send 13364 bytes to client ... [0m
+[0;32mI (506905) TCP/IP socket: send 13432 bytes to client ... [0m
+[0;32mI (507014) TCP/IP socket: send 13781 bytes to client ... [0m
+[0;32mI (507315) TCP/IP socket: send 13481 bytes to client ... [0m
+[0;32mI (508640) TCP/IP socket: send 13587 bytes to client ... [0m
+[0;32mI (509238) TCP/IP socket: send 13533 bytes to client ... [0m
+[0;32mI (509355) TCP/IP socket: send 13389 bytes to client ... [0m
+[0;32mI (509876) TCP/IP socket: send 13471 bytes to client ... [0m
+I (509897) wifi:<ba-del>idx
+I (509901) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3500, winSize:64
+[0;32mI (509981) TCP/IP socket: send 13458 bytes to client ... [0m
+[0;32mI (510375) TCP/IP socket: send 13402 bytes to client ... [0m
+[0;32mI (513165) TCP/IP socket: send 13366 bytes to client ... [0m
+[0;32mI (513617) TCP/IP socket: send 13391 bytes to client ... [0m
+[0;32mI (515429) TCP/IP socket: send 13404 bytes to client ... [0m
+[0;32mI (516917) TCP/IP socket: send 13412 bytes to client ... [0m
+[0;32mI (517048) TCP/IP socket: send 13379 bytes to client ... [0m
+I (517358) wifi:<ba-del>idx
+I (517358) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3588, winSize:64
+[0;32mI (517433) TCP/IP socket: send 13471 bytes to client ... [0m
+[0;32mI (517660) TCP/IP socket: send 13368 bytes to client ... [0m
+[0;32mI (517843) TCP/IP socket: send 13450 bytes to client ... [0m
+[0;32mI (518207) TCP/IP socket: send 13420 bytes to client ... [0m
+[0;32mI (518302) TCP/IP socket: send 13521 bytes to client ... [0m
+[0;32mI (518637) TCP/IP socket: send 13453 bytes to client ... [0m
+[0;32mI (519338) TCP/IP socket: send 13452 bytes to client ... [0m
+[0;32mI (519994) TCP/IP socket: send 13406 bytes to client ... [0m
+[0;32mI (520374) TCP/IP socket: send 13407 bytes to client ... [0m
+[0;32mI (521170) TCP/IP socket: send 13370 bytes to client ... [0m
+[0;32mI (521341) TCP/IP socket: send 13434 bytes to client ... [0m
+[0;32mI (521547) TCP/IP socket: send 13394 bytes to client ... [0m
+[0;32mI (521964) TCP/IP socket: send 13500 bytes to client ... [0m
+I (522219) wifi:<ba-del>idx
+[0;31mE (522503) TCP/IP socket: Error occurred during sending: errno 104[0m
+I (525598) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3675, winSize:64
+[0;32mI (530067) TCP/IP socket: Socket accepted ... [0m
+I (530748) wifi:<ba-del>idx
+I (530772) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3718, winSize:64
+I (531047) wifi:<ba-del>idx
+[0;31mE (539353) TCP/IP socket: Error occurred during sending: errno 104[0m
+[0;32mI (539353) TCP/IP socket: Socket accepted ... [0m
+[0;32mI (539885) TCP/IP socket: send 13464 bytes to client ... [0m
+[0;32mI (541500) TCP/IP socket: send 13406 bytes to client ... [0m
+[0;32mI (542488) TCP/IP socket: send 13414 bytes to client ... [0m
+I (549525) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:3794, winSize:64
+[0;32mI (555226) TCP/IP socket: send 13400 bytes to client ... [0m
+[0;31mE (555305) TCP/IP socket: Error occurred during sending: errno 104[0m
+I (556525) wifi:<ba-del>idx
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x17e8
+load:0x403c9700,len:0xd90
+load:0x403cc700,len:0x3018
+entry 0x403c9930
+[0;32mI (25) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time 13:58:12[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.1[0m
+[0;32mI (31) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (46) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00020020 vaddr=3c090020 size=248c0h (149696) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=000448e8 vaddr=3fc9a400 size=057b8h ( 22456) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0004a0a8 vaddr=40374000 size=05f70h ( 24432) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=8e72ch (583468) map[0m
+[0;32mI (227) esp_image: segment 4: paddr=000de754 vaddr=40379f70 size=1043ch ( 66620) load[0m
+[0;32mI (250) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (250) boot: Disabling RNG early entropy source...[0m
+[0;32mI (261) cpu_start: Multicore app[0m
+[0;32mI (262) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (262) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (265) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (270) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (276) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (281) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (286) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (292) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (298) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (303) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (309) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (315) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (320) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (325) esp_psram: Speed: 80MHz[0m
+[0;32mI (328) cpu_start: Pro cpu up.[0m
+[0;32mI (332) cpu_start: Starting app cpu, entry point is 0x403756c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (791) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (800) cpu_start: Pro cpu start user code[0m
+[0;32mI (800) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (800) cpu_start: Application information:[0m
+[0;32mI (803) cpu_start: Project name:     keo-teton[0m
+[0;32mI (808) cpu_start: App version:      ed1cb40-dirty[0m
+[0;32mI (814) cpu_start: Compile time:     Jan 30 2024 11:01:26[0m
+[0;32mI (820) cpu_start: ELF file SHA256:  2c84fba1a319171c...[0m
+[0;32mI (826) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (831) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (836) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (841) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (845) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (853) heap_init: At 3FCA5F00 len 00043810 (270 KiB): DRAM[0m
+[0;32mI (859) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (865) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (872) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (878) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (886) spi_flash: detected chip: gd[0m
+[0;32mI (890) spi_flash: flash io: qio[0m
+[0;33mW (894) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (907) app_start: Starting scheduler on CPU0[0m
+[0;32mI (912) app_start: Starting scheduler on CPU1[0m
+[0;32mI (912) main_task: Started on CPU0[0m
+[0;32mI (922) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (930) main_task: Calling app_main()[0m
+[0;32mI (934) esp32-cam Webserver: ESP32 CAM Web Server .......
+[0m
+[0;32mI (952) pp: pp rom version: e7ae62f[0m
+[0;32mI (952) net80211: net80211 rom version: e7ae62f[0m
+I (954) wifi:wifi driver task: 3fcb7ff0, prio:23, stack:6656, core=0
+[0;32mI (957) system_api: Base MAC address is not set[0m
+[0;32mI (962) system_api: read default base MAC address from EFUSE[0m
+I (972) wifi:wifi firmware version: e2d0ad8
+I (973) wifi:wifi certification version: v7.0
+I (976) wifi:config NVS flash: enabled
+I (979) wifi:config nano formating: disabled
+I (984) wifi:Init data frame dynamic rx buffer num: 32
+I (988) wifi:Init management frame dynamic rx buffer num: 32
+I (994) wifi:Init management short buffer num: 32
+I (998) wifi:Init static tx buffer num: 16
+I (1002) wifi:Init tx cache buffer num: 32
+I (1006) wifi:Init static tx FG buffer num: 2
+I (1010) wifi:Init static rx buffer size: 1600
+I (1014) wifi:Init static rx buffer num: 10
+I (1018) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1022) wifi_init: rx ba win: 6[0m
+[0;32mI (1026) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1030) wifi_init: udp mbox: 6[0m
+[0;32mI (1034) wifi_init: tcp mbox: 6[0m
+[0;32mI (1038) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1042) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1046) wifi_init: tcp mss: 1440[0m
+[0;32mI (1050) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1055) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1063) phy_init: phy_version 610,2bff4c8,Jul 27 2023,20:22:14[0m
+I (1103) wifi:mode : softAP (34:85:18:ac:92:79)
+I (1106) wifi:Total power save buffer number: 8
+I (1106) wifi:Init max length of beacon: 752/752
+I (1106) wifi:Init max length of beacon: 752/752
+[0;32mI (1110) s3 ll_cam: DMA Channel=4[0m
+[0;32mI (1114) cam_hal: cam init ok[0m
+[0;32mI (1117) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (1121) sccb: sccb_i2c_port=1[0m
+[0;32mI (1135) camera: Detected camera at address=0x30[0m
+[0;32mI (1138) camera: Detected OV2640 camera[0m
+[0;32mI (1138) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1219) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 4[0m
+[0;32mI (1219) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 16, dma_buffer_size: 307200[0m
+[0;32mI (1227) cam_hal: buffer_size: 307200, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 80, total_cnt: 20[0m
+[0;32mI (1239) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1245) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C0C0EC0[0m
+[0;32mI (1251) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1257) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C10BEF0[0m
+[0;32mI (1263) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1270) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C156F20[0m
+[0;32mI (1276) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1282) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C1A1F50[0m
+[0;32mI (1288) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1295) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C1ECF80[0m
+[0;32mI (1301) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1307) cam_hal: Frame[5]: Offset: 16, Addr: 0x3C237FB0[0m
+[0;32mI (1313) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1320) cam_hal: Frame[6]: Offset: 16, Addr: 0x3C282FE0[0m
+[0;32mI (1326) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1332) cam_hal: Frame[7]: Offset: 16, Addr: 0x3C2CE010[0m
+[0;32mI (1338) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1345) cam_hal: Frame[8]: Offset: 16, Addr: 0x3C319040[0m
+[0;32mI (1351) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1357) cam_hal: Frame[9]: Offset: 16, Addr: 0x3C364070[0m
+[0;32mI (1363) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1370) cam_hal: Frame[10]: Offset: 16, Addr: 0x3C3AF0A0[0m
+[0;32mI (1376) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1383) cam_hal: Frame[11]: Offset: 16, Addr: 0x3C3FA0D0[0m
+[0;32mI (1389) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1395) cam_hal: Frame[12]: Offset: 16, Addr: 0x3C445100[0m
+[0;32mI (1401) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1408) cam_hal: Frame[13]: Offset: 16, Addr: 0x3C490130[0m
+[0;32mI (1414) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1420) cam_hal: Frame[14]: Offset: 16, Addr: 0x3C4DB160[0m
+[0;32mI (1426) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1433) cam_hal: Frame[15]: Offset: 16, Addr: 0x3C526190[0m
+[0;32mI (1439) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1445) cam_hal: Frame[16]: Offset: 16, Addr: 0x3C5711C0[0m
+[0;32mI (1452) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1458) cam_hal: Frame[17]: Offset: 16, Addr: 0x3C5BC1F0[0m
+[0;32mI (1464) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1471) cam_hal: Frame[18]: Offset: 16, Addr: 0x3C607220[0m
+[0;32mI (1477) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1483) cam_hal: Frame[19]: Offset: 16, Addr: 0x3C652250[0m
+[0;32mI (1489) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1496) cam_hal: Frame[20]: Offset: 16, Addr: 0x3C69D280[0m
+[0;32mI (1502) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1508) cam_hal: Frame[21]: Offset: 16, Addr: 0x3C6E82B0[0m
+[0;32mI (1515) cam_hal: cam config ok[0m
+[0;32mI (1518) ov2640: Set PLL: clk_2x: 1, clk_div: 7, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1597) TCP/IP socket: Socket created[0m
+[0;32mI (1598) TCP/IP socket: Socket binded[0m
+[0;32mI (1598) TCP/IP socket: Socket listening ...[0m
+[0;32mI (1607) esp32-cam Webserver: ESP32 CAM Web Server is up and running
+[0m
+[0;32mI (1607) main_task: Returned from app_main()[0m
+I (3895) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1
+I (3896) wifi:station: 28:d0:ea:5f:dc:3c join, AID=1, bgn, 40U
+[0;32mI (6012) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.254.2[0m
+[0;32mI (6013) wifi: SoftAP client connected with IP: 192.168.254.2.[0m
+I (6169) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:31, winSize:64
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x17e8
+load:0x403c9700,len:0xd90
+load:0x403cc700,len:0x3018
+entry 0x403c9930
+[0;32mI (25) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time 13:58:12[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.1[0m
+[0;32mI (31) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (46) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00020020 vaddr=3c090020 size=248c0h (149696) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=000448e8 vaddr=3fc9a400 size=057b8h ( 22456) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0004a0a8 vaddr=40374000 size=05f70h ( 24432) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=8e72ch (583468) map[0m
+[0;32mI (227) esp_image: segment 4: paddr=000de754 vaddr=40379f70 size=1043ch ( 66620) load[0m
+[0;32mI (250) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (250) boot: Disabling RNG early entropy source...[0m
+[0;32mI (261) cpu_start: Multicore app[0m
+[0;32mI (262) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (262) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (265) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (270) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (276) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (281) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (286) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (292) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (298) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (303) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (309) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (315) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (320) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (325) esp_psram: Speed: 80MHz[0m
+[0;32mI (328) cpu_start: Pro cpu up.[0m
+[0;32mI (332) cpu_start: Starting app cpu, entry point is 0x403756c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (791) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (800) cpu_start: Pro cpu start user code[0m
+[0;32mI (800) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (800) cpu_start: Application information:[0m
+[0;32mI (803) cpu_start: Project name:     keo-teton[0m
+[0;32mI (808) cpu_start: App version:      ed1cb40-dirty[0m
+[0;32mI (814) cpu_start: Compile time:     Jan 30 2024 11:01:26[0m
+[0;32mI (820) cpu_start: ELF file SHA256:  2c84fba1a319171c...[0m
+[0;32mI (826) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (831) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (836) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (841) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (845) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (853) heap_init: At 3FCA5F00 len 00043810 (270 KiB): DRAM[0m
+[0;32mI (859) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (865) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (872) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (878) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (886) spi_flash: detected chip: gd[0m
+[0;32mI (890) spi_flash: flash io: qio[0m
+[0;33mW (894) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (907) app_start: Starting scheduler on CPU0[0m
+[0;32mI (912) app_start: Starting scheduler on CPU1[0m
+[0;32mI (912) main_task: Started on CPU0[0m
+[0;32mI (922) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (930) main_task: Calling app_main()[0m
+[0;32mI (934) esp32-cam Webserver: ESP32 CAM Web Server .......
+[0m
+[0;32mI (952) pp: pp rom version: e7ae62f[0m
+[0;32mI (952) net80211: net80211 rom version: e7ae62f[0m
+I (954) wifi:wifi driver task: 3fcb7ff0, prio:23, stack:6656, core=0
+[0;32mI (957) system_api: Base MAC address is not set[0m
+[0;32mI (962) system_api: read default base MAC address from EFUSE[0m
+I (972) wifi:wifi firmware version: e2d0ad8
+I (973) wifi:wifi certification version: v7.0
+I (976) wifi:config NVS flash: enabled
+I (979) wifi:config nano formating: disabled
+I (984) wifi:Init data frame dynamic rx buffer num: 32
+I (988) wifi:Init management frame dynamic rx buffer num: 32
+I (994) wifi:Init management short buffer num: 32
+I (998) wifi:Init static tx buffer num: 16
+I (1002) wifi:Init tx cache buffer num: 32
+I (1006) wifi:Init static tx FG buffer num: 2
+I (1010) wifi:Init static rx buffer size: 1600
+I (1014) wifi:Init static rx buffer num: 10
+I (1018) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1022) wifi_init: rx ba win: 6[0m
+[0;32mI (1026) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1030) wifi_init: udp mbox: 6[0m
+[0;32mI (1034) wifi_init: tcp mbox: 6[0m
+[0;32mI (1038) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1042) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1046) wifi_init: tcp mss: 1440[0m
+[0;32mI (1050) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1055) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1063) phy_init: phy_version 610,2bff4c8,Jul 27 2023,20:22:14[0m
+I (1098) wifi:mode : softAP (34:85:18:ac:92:79)
+I (1100) wifi:Total power save buffer number: 8
+I (1101) wifi:Init max length of beacon: 752/752
+I (1101) wifi:Init max length of beacon: 752/752
+[0;32mI (1105) s3 ll_cam: DMA Channel=4[0m
+[0;32mI (1108) cam_hal: cam init ok[0m
+[0;32mI (1112) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (1116) sccb: sccb_i2c_port=1[0m
+[0;32mI (1130) camera: Detected camera at address=0x30[0m
+[0;32mI (1133) camera: Detected OV2640 camera[0m
+[0;32mI (1133) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1214) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 4[0m
+[0;32mI (1214) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 16, dma_buffer_size: 307200[0m
+[0;32mI (1222) cam_hal: buffer_size: 307200, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 80, total_cnt: 20[0m
+[0;32mI (1233) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1240) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C0C0EC0[0m
+[0;32mI (1246) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1252) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C10BEF0[0m
+[0;32mI (1258) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1265) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C156F20[0m
+[0;32mI (1271) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1277) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C1A1F50[0m
+[0;32mI (1283) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1290) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C1ECF80[0m
+[0;32mI (1296) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1302) cam_hal: Frame[5]: Offset: 16, Addr: 0x3C237FB0[0m
+[0;32mI (1308) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1315) cam_hal: Frame[6]: Offset: 16, Addr: 0x3C282FE0[0m
+[0;32mI (1321) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1327) cam_hal: Frame[7]: Offset: 16, Addr: 0x3C2CE010[0m
+[0;32mI (1333) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1340) cam_hal: Frame[8]: Offset: 16, Addr: 0x3C319040[0m
+[0;32mI (1346) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1352) cam_hal: Frame[9]: Offset: 16, Addr: 0x3C364070[0m
+[0;32mI (1358) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1365) cam_hal: Frame[10]: Offset: 16, Addr: 0x3C3AF0A0[0m
+[0;32mI (1371) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1377) cam_hal: Frame[11]: Offset: 16, Addr: 0x3C3FA0D0[0m
+[0;32mI (1383) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1390) cam_hal: Frame[12]: Offset: 16, Addr: 0x3C445100[0m
+[0;32mI (1396) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1402) cam_hal: Frame[13]: Offset: 16, Addr: 0x3C490130[0m
+[0;32mI (1409) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1415) cam_hal: Frame[14]: Offset: 16, Addr: 0x3C4DB160[0m
+[0;32mI (1421) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1428) cam_hal: Frame[15]: Offset: 16, Addr: 0x3C526190[0m
+[0;32mI (1434) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1440) cam_hal: Frame[16]: Offset: 16, Addr: 0x3C5711C0[0m
+[0;32mI (1446) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1453) cam_hal: Frame[17]: Offset: 16, Addr: 0x3C5BC1F0[0m
+[0;32mI (1459) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1465) cam_hal: Frame[18]: Offset: 16, Addr: 0x3C607220[0m
+[0;32mI (1471) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1478) cam_hal: Frame[19]: Offset: 16, Addr: 0x3C652250[0m
+[0;32mI (1484) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1491) cam_hal: Frame[20]: Offset: 16, Addr: 0x3C69D280[0m
+[0;32mI (1497) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1503) cam_hal: Frame[21]: Offset: 16, Addr: 0x3C6E82B0[0m
+[0;32mI (1509) cam_hal: cam config ok[0m
+[0;32mI (1513) ov2640: Set PLL: clk_2x: 1, clk_div: 7, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1592) TCP/IP socket: Socket created[0m
+[0;32mI (1593) TCP/IP socket: Socket binded[0m
+[0;32mI (1593) TCP/IP socket: Socket listening ...[0m
+[0;32mI (1602) esp32-cam Webserver: ESP32 CAM Web Server is up and running
+[0m
+[0;32mI (1602) main_task: Returned from app_main()[0m
+I (2411) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1
+I (2412) wifi:station: 28:d0:ea:5f:dc:3c join, AID=1, bgn, 40U
+[0;32mI (9331) TCP/IP socket: Socket accepted ... [0m
+I (9341) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:43, winSize:64
+[0;32mI (11800) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.254.2[0m
+[0;32mI (11800) wifi: SoftAP client connected with IP: 192.168.254.2.[0m
+[0;32mI (12055) TCP/IP socket: send 7970 bytes to client ... [0m
+[0;32mI (13734) TCP/IP socket: send 6995 bytes to client ... [0m
+[0;31mE (18337) TCP/IP socket: Error occurred during sending: errno 104[0m
+I (23769) wifi:<ba-del>idx
+I (23824) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:103, winSize:64
+I (30563) wifi:<ba-del>idx
+I (30587) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:239, winSize:64
+I (33498) wifi:<ba-del>idx
+[0;32mI (34486) TCP/IP socket: Socket accepted ... [0m
+[0;32mI (34863) TCP/IP socket: send 10309 bytes to client ... [0m
+[0;32mI (35267) TCP/IP socket: send 10537 bytes to client ... [0m
+[0;32mI (35440) TCP/IP socket: send 10752 bytes to client ... [0m
+[0;32mI (36453) TCP/IP socket: send 11556 bytes to client ... [0m
+[0;32mI (36841) TCP/IP socket: send 11229 bytes to client ... [0m
+[0;32mI (37164) TCP/IP socket: send 11549 bytes to client ... [0m
+[0;32mI (38039) TCP/IP socket: send 11488 bytes to client ... [0m
+[0;32mI (39233) TCP/IP socket: send 12015 bytes to client ... [0m
+I (39738) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:369, winSize:64
+[0;32mI (42534) TCP/IP socket: send 12062 bytes to client ... [0m
+[0;32mI (43558) TCP/IP socket: send 12204 bytes to client ... [0m
+[0;32mI (44335) TCP/IP socket: send 12411 bytes to client ... [0m
+[0;32mI (45280) TCP/IP socket: send 12530 bytes to client ... [0m
+I (45347) wifi:<ba-del>idx
+I (45349) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:442, winSize:64
+[0;32mI (45769) TCP/IP socket: send 12394 bytes to client ... [0m
+[0;32mI (48104) TCP/IP socket: send 12791 bytes to client ... [0m
+[0;32mI (48495) TCP/IP socket: send 12612 bytes to client ... [0m
+[0;32mI (49824) TCP/IP socket: send 12862 bytes to client ... [0m
+[0;32mI (53439) TCP/IP socket: send 12912 bytes to client ... [0m
+[0;31mE (57360) TCP/IP socket: Error occurred during sending: errno 104[0m
+I (64116) wifi:<ba-del>idx
+I (66595) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:635, winSize:64
+I (69278) wifi:<ba-del>idx
+I (69302) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:719, winSize:64
+I (69420) wifi:<ba-del>idx
+I (71587) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:823, winSize:64
+I (73694) wifi:<ba-del>idx
+I (76362) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:918, winSize:64
+ �ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2a (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x17e8
+load:0x403c9700,len:0xd90
+load:0x403cc700,len:0x3018
+entry 0x403c9930
+[0;32mI (25) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time 13:58:12[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.1[0m
+[0;32mI (31) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (46) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00020020 vaddr=3c090020 size=248c0h (149696) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=000448e8 vaddr=3fc9a400 size=057b8h ( 22456) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0004a0a8 vaddr=40374000 size=05f70h ( 24432) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=8e72ch (583468) map[0m
+[0;32mI (227) esp_image: segment 4: paddr=000de754 vaddr=40379f70 size=1043ch ( 66620) load[0m
+[0;32mI (250) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (250) boot: Disabling RNG early entropy source...[0m
+[0;32mI (261) cpu_start: Multicore app[0m
+[0;32mI (262) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (262) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (265) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (270) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (276) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (281) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (286) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (292) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (298) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (303) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (309) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (315) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (320) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (325) esp_psram: Speed: 80MHz[0m
+[0;32mI (328) cpu_start: Pro cpu up.[0m
+[0;32mI (332) cpu_start: Starting app cpu, entry point is 0x403756c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (791) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (800) cpu_start: Pro cpu start user code[0m
+[0;32mI (800) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (800) cpu_start: Application information:[0m
+[0;32mI (803) cpu_start: Project name:     keo-teton[0m
+[0;32mI (808) cpu_start: App version:      ed1cb40-dirty[0m
+[0;32mI (814) cpu_start: Compile time:     Jan 30 2024 11:01:26[0m
+[0;32mI (820) cpu_start: ELF file SHA256:  2c84fba1a319171c...[0m
+[0;32mI (826) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (831) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (836) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (841) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (845) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (853) heap_init: At 3FCA5F00 len 00043810 (270 KiB): DRAM[0m
+[0;32mI (859) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (865) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (872) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (878) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (886) spi_flash: detected chip: gd[0m
+[0;32mI (890) spi_flash: flash io: qio[0m
+[0;33mW (894) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (907) app_start: Starting scheduler on CPU0[0m
+[0;32mI (912) app_start: Starting scheduler on CPU1[0m
+[0;32mI (912) main_task: Started on CPU0[0m
+[0;32mI (922) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (930) main_task: Calling app_main()[0m
+[0;32mI (934) esp32-cam Webserver: ESP32 CAM Web Server .......
+[0m
+[0;32mI (952) pp: pp rom version: e7ae62f[0m
+[0;32mI (952) net80211: net80211 rom version: e7ae62f[0m
+I (954) wifi:wifi driver task: 3fcb7ff0, prio:23, stack:6656, core=0
+[0;32mI (957) system_api: Base MAC address is not set[0m
+[0;32mI (962) system_api: read default base MAC address from EFUSE[0m
+I (972) wifi:wifi firmware version: e2d0ad8
+I (973) wifi:wifi certification version: v7.0
+I (976) wifi:config NVS flash: enabled
+I (979) wifi:config nano formating: disabled
+I (984) wifi:Init data frame dynamic rx buffer num: 32
+I (988) wifi:Init management frame dynamic rx buffer num: 32
+I (994) wifi:Init management short buffer num: 32
+I (998) wifi:Init static tx buffer num: 16
+I (1002) wifi:Init tx cache buffer num: 32
+I (1006) wifi:Init static tx FG buffer num: 2
+I (1010) wifi:Init static rx buffer size: 1600
+I (1014) wifi:Init static rx buffer num: 10
+I (1018) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1022) wifi_init: rx ba win: 6[0m
+[0;32mI (1026) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1030) wifi_init: udp mbox: 6[0m
+[0;32mI (1034) wifi_init: tcp mbox: 6[0m
+[0;32mI (1038) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1042) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1046) wifi_init: tcp mss: 1440[0m
+[0;32mI (1050) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1055) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1063) phy_init: phy_version 610,2bff4c8,Jul 27 2023,20:22:14[0m
+I (1104) wifi:mode : softAP (34:85:18:ac:92:79)
+I (1107) wifi:Total power save buffer number: 8
+I (1107) wifi:Init max length of beacon: 752/752
+I (1108) wifi:Init max length of beacon: 752/752
+[0;32mI (1112) s3 ll_cam: DMA Channel=4[0m
+[0;32mI (1115) cam_hal: cam init ok[0m
+[0;32mI (1118) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (1122) sccb: sccb_i2c_port=1[0m
+[0;32mI (1137) camera: Detected camera at address=0x30[0m
+[0;32mI (1140) camera: Detected OV2640 camera[0m
+[0;32mI (1140) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1220) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 4[0m
+[0;32mI (1220) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 16, dma_buffer_size: 307200[0m
+[0;32mI (1228) cam_hal: buffer_size: 307200, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 80, total_cnt: 20[0m
+[0;32mI (1239) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1246) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C0C0EC0[0m
+[0;32mI (1252) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1258) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C10BEF0[0m
+[0;32mI (1264) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1271) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C156F20[0m
+[0;32mI (1277) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1283) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C1A1F50[0m
+[0;32mI (1289) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1296) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C1ECF80[0m
+[0;32mI (1302) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1308) cam_hal: Frame[5]: Offset: 16, Addr: 0x3C237FB0[0m
+[0;32mI (1314) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1321) cam_hal: Frame[6]: Offset: 16, Addr: 0x3C282FE0[0m
+[0;32mI (1327) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1333) cam_hal: Frame[7]: Offset: 16, Addr: 0x3C2CE010[0m
+[0;32mI (1339) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1346) cam_hal: Frame[8]: Offset: 16, Addr: 0x3C319040[0m
+[0;32mI (1352) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1358) cam_hal: Frame[9]: Offset: 16, Addr: 0x3C364070[0m
+[0;32mI (1364) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1371) cam_hal: Frame[10]: Offset: 16, Addr: 0x3C3AF0A0[0m
+[0;32mI (1377) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1383) cam_hal: Frame[11]: Offset: 16, Addr: 0x3C3FA0D0[0m
+[0;32mI (1389) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1396) cam_hal: Frame[12]: Offset: 16, Addr: 0x3C445100[0m
+[0;32mI (1402) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1409) cam_hal: Frame[13]: Offset: 16, Addr: 0x3C490130[0m
+[0;32mI (1415) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1421) cam_hal: Frame[14]: Offset: 16, Addr: 0x3C4DB160[0m
+[0;32mI (1427) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1434) cam_hal: Frame[15]: Offset: 16, Addr: 0x3C526190[0m
+[0;32mI (1440) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1446) cam_hal: Frame[16]: Offset: 16, Addr: 0x3C5711C0[0m
+[0;32mI (1452) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1459) cam_hal: Frame[17]: Offset: 16, Addr: 0x3C5BC1F0[0m
+[0;32mI (1465) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1471) cam_hal: Frame[18]: Offset: 16, Addr: 0x3C607220[0m
+[0;32mI (1478) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1484) cam_hal: Frame[19]: Offset: 16, Addr: 0x3C652250[0m
+[0;32mI (1490) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1497) cam_hal: Frame[20]: Offset: 16, Addr: 0x3C69D280[0m
+[0;32mI (1503) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1509) cam_hal: Frame[21]: Offset: 16, Addr: 0x3C6E82B0[0m
+[0;32mI (1516) cam_hal: cam config ok[0m
+[0;32mI (1519) ov2640: Set PLL: clk_2x: 1, clk_div: 7, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1598) TCP/IP socket: Socket created[0m
+[0;32mI (1598) TCP/IP socket: Socket binded[0m
+[0;32mI (1599) TCP/IP socket: Socket listening ...[0m
+[0;32mI (1608) esp32-cam Webserver: ESP32 CAM Web Server is up and running
+[0m
+[0;32mI (1608) main_task: Returned from app_main()[0m
+I (14168) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1
+I (14168) wifi:station: 28:d0:ea:5f:dc:3c join, AID=1, bgn, 40U
+[0;32mI (14336) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.254.2[0m
+[0;32mI (14337) wifi: SoftAP client connected with IP: 192.168.254.2.[0m
+I (15161) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:12, winSize:64
+[0;32mI (15311) TCP/IP socket: Socket accepted ... [0m
+[0;32mI (15980) TCP/IP socket: send 8651 bytes to client ... [0m
+[0;32mI (16213) TCP/IP socket: send 8685 bytes to client ... [0m
+[0;32mI (16829) TCP/IP socket: send 11841 bytes to client ... [0m
+[0;32mI (17912) TCP/IP socket: send 11832 bytes to client ... [0m
+[0;32mI (18766) TCP/IP socket: send 11945 bytes to client ... [0m
+[0;32mI (20062) TCP/IP socket: send 11890 bytes to client ... [0m
+[0;32mI (22555) TCP/IP socket: send 12071 bytes to client ... [0m
+[0;32mI (25020) TCP/IP socket: send 12142 bytes to client ... [0m
+[0;32mI (26208) TCP/IP socket: send 12161 bytes to client ... [0m
+[0;32mI (29576) TCP/IP socket: send 12099 bytes to client ... [0m
+[0;32mI (38332) TCP/IP socket: send 12248 bytes to client ... [0m
+[0;31mE (39675) TCP/IP socket: Error occurred during sending: errno 104[0m
+I (81639) wifi:<ba-del>idx
+I (84140) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1278, winSize:64
+[0;32mI (85142) TCP/IP socket: Socket accepted ... [0m
+[0;32mI (89069) TCP/IP socket: send 12306 bytes to client ... [0m
+[0;32mI (94447) TCP/IP socket: send 12434 bytes to client ... [0m
+[0;32mI (98796) TCP/IP socket: send 12511 bytes to client ... [0m
+[0;31mE (100361) TCP/IP socket: Error occurred during sending: errno 104[0m
+[0;32mI (105925) TCP/IP socket: Socket accepted ... [0m
+[0;32mI (108590) TCP/IP socket: send 12678 bytes to client ... [0m
+[0;32mI (110359) TCP/IP socket: send 12686 bytes to client ... [0m
+[0;32mI (114164) TCP/IP socket: send 12871 bytes to client ... [0m
+[0;32mI (118502) TCP/IP socket: send 12872 bytes to client ... [0m
+[0;32mI (120296) TCP/IP socket: send 13008 bytes to client ... [0m
+[0;32mI (121571) TCP/IP socket: send 13063 bytes to client ... [0m
+[0;32mI (122542) TCP/IP socket: send 13000 bytes to client ... [0m
+I (124872) wifi:<ba-del>idx
+I (127447) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1529, winSize:64
+I (139201) wifi:<ba-del>idx
+I (142478) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1749, winSize:64
+I (150152) wifi:<ba-del>idx
+I (156663) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1823, winSize:64

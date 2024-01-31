@@ -1,0 +1,721 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x17e8
+load:0x403c9700,len:0xd90
+load:0x403cc700,len:0x3018
+entry 0x403c9930
+[0;32mI (25) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time 13:58:12[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.1[0m
+[0;32mI (31) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (46) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00020020 vaddr=3c0a0020 size=26940h (158016) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=00046968 vaddr=3fc9a400 size=057b8h ( 22456) load[0m
+[0;32mI (130) esp_image: segment 2: paddr=0004c128 vaddr=40374000 size=03ef0h ( 16112) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=96018h (614424) map[0m
+[0;32mI (233) esp_image: segment 4: paddr=000e6040 vaddr=40377ef0 size=124bch ( 74940) load[0m
+[0;32mI (257) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (257) boot: Disabling RNG early entropy source...[0m
+[0;32mI (269) cpu_start: Multicore app[0m
+[0;32mI (269) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (269) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (272) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (278) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (283) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (288) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (293) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (299) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (305) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (311) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (317) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (323) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (327) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (332) esp_psram: Speed: 80MHz[0m
+[0;32mI (336) cpu_start: Pro cpu up.[0m
+[0;32mI (339) cpu_start: Starting app cpu, entry point is 0x403756c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (798) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (807) cpu_start: Pro cpu start user code[0m
+[0;32mI (807) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (807) cpu_start: Application information:[0m
+[0;32mI (810) cpu_start: Project name:     keo-teton[0m
+[0;32mI (815) cpu_start: App version:      ed1cb40-dirty[0m
+[0;32mI (821) cpu_start: Compile time:     Jan 26 2024 12:01:45[0m
+[0;32mI (827) cpu_start: ELF file SHA256:  387665e8f2dfdf7f...[0m
+[0;32mI (833) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (838) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (843) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (848) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (853) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (860) heap_init: At 3FCA5F08 len 00043808 (270 KiB): DRAM[0m
+[0;32mI (866) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (873) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (879) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (885) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (893) spi_flash: detected chip: gd[0m
+[0;32mI (897) spi_flash: flash io: qio[0m
+[0;33mW (901) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (915) app_start: Starting scheduler on CPU0[0m
+[0;32mI (919) app_start: Starting scheduler on CPU1[0m
+[0;32mI (919) main_task: Started on CPU0[0m
+[0;32mI (929) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (937) main_task: Calling app_main()[0m
+[0;32mI (941) esp32-cam Webserver: ESP32 CAM Web Server .......
+[0m
+[0;32mI (959) pp: pp rom version: e7ae62f[0m
+[0;32mI (959) net80211: net80211 rom version: e7ae62f[0m
+I (961) wifi:wifi driver task: 3fcb7ff8, prio:23, stack:6656, core=0
+[0;32mI (964) system_api: Base MAC address is not set[0m
+[0;32mI (969) system_api: read default base MAC address from EFUSE[0m
+I (979) wifi:wifi firmware version: e2d0ad8
+I (980) wifi:wifi certification version: v7.0
+I (983) wifi:config NVS flash: enabled
+I (986) wifi:config nano formating: disabled
+I (991) wifi:Init data frame dynamic rx buffer num: 32
+I (995) wifi:Init management frame dynamic rx buffer num: 32
+I (1001) wifi:Init management short buffer num: 32
+I (1005) wifi:Init static tx buffer num: 16
+I (1009) wifi:Init tx cache buffer num: 32
+I (1013) wifi:Init static tx FG buffer num: 2
+I (1017) wifi:Init static rx buffer size: 1600
+I (1021) wifi:Init static rx buffer num: 10
+I (1025) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1029) wifi_init: rx ba win: 6[0m
+[0;32mI (1033) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1037) wifi_init: udp mbox: 6[0m
+[0;32mI (1041) wifi_init: tcp mbox: 6[0m
+[0;32mI (1045) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1049) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1053) wifi_init: tcp mss: 1440[0m
+[0;32mI (1057) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1062) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1070) phy_init: phy_version 610,2bff4c8,Jul 27 2023,20:22:14[0m
+I (1115) wifi:mode : softAP (34:85:18:ac:8b:a5)
+I (1118) wifi:Total power save buffer number: 8
+I (1118) wifi:Init max length of beacon: 752/752
+I (1118) wifi:Init max length of beacon: 752/752
+[0;32mI (1122) s3 ll_cam: DMA Channel=4[0m
+[0;32mI (1126) cam_hal: cam init ok[0m
+[0;32mI (1129) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (1133) sccb: sccb_i2c_port=1[0m
+[0;32mI (1147) camera: Detected camera at address=0x30[0m
+[0;32mI (1150) camera: Detected OV2640 camera[0m
+[0;32mI (1150) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1231) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 4[0m
+[0;32mI (1231) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 16, dma_buffer_size: 30720[0m
+[0;32mI (1239) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 20[0m
+[0;32mI (1250) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1256) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1263) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1270) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1276) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1283) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1289) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1296) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1302) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1309) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1315) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1322) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1328) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1335) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1341) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1348) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1354) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1361) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1367) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1374) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1380) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1387) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1393) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1400) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1406) cam_hal: cam config ok[0m
+[0;32mI (1410) ov2640: Set PLL: clk_2x: 1, clk_div: 7, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1489) esp32-cam Webserver: web server initialized .... [0m
+[0;32mI (1490) TCP/IP socket: Socket created[0m
+[0;32mI (1491) TCP/IP socket: Socket binded[0m
+[0;32mI (1493) TCP/IP socket: Socket listening ...[0m
+[0;32mI (1501) esp32-cam Webserver: ESP32 CAM Web Server is up and running
+[0m
+[0;32mI (1505) main_task: Returned from app_main()[0m
+cam_hal: EV-VSYNC-OVF
+I (19790) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1
+I (19791) wifi:station: 28:d0:ea:5f:dc:3c join, AID=1, bgn, 40U
+[0;32mI (19884) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.254.2[0m
+[0;32mI (19885) wifi: SoftAP client connected with IP: 192.168.254.2.[0m
+I (19931) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:12, winSize:64
+[0;32mI (21840) TCP/IP socket: Socket accepted ... [0m
+[0;32mI (21841) TCP/IP socket: Received  get data.  ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (26858) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (27030) TCP/IP socket: Received  get datage ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (32147) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (32308) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (32309) TCP/IP socket: Request fail 
+[0m
+[0;32mI (32309) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (32313) TCP/IP socket: Request fail 
+[0m
+[0;32mI (32318) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (37442) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (37614) TCP/IP socket: Received  get datage ...[0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (42729) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (42894) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (42894) TCP/IP socket: Request fail 
+[0m
+[0;32mI (42894) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (42898) TCP/IP socket: Request fail 
+[0m
+[0;32mI (42903) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (48021) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (48184) TCP/IP socket: Received  get datage ...[0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (53317) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (53473) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (53473) TCP/IP socket: Request fail 
+[0m
+[0;32mI (53473) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (53477) TCP/IP socket: Request fail 
+[0m
+[0;32mI (53482) TCP/IP socket: Received  taget data ...[0m
+[0;32mI (58605) TCP/IP socket: 5s elapsed 
+ [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (59088) TCP/IP socket: Received  get datage ...[0m
+[0;32mI (64220) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (64420) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (64421) TCP/IP socket: Request fail 
+[0m
+[0;32mI (64421) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (64425) TCP/IP socket: Request fail 
+[0m
+[0;32mI (64430) TCP/IP socket: Received  taget data ...[0m
+[0;32mI (69514) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (69672) TCP/IP socket: Received  get datage ...[0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (74806) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (74966) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (74966) TCP/IP socket: Request fail 
+[0m
+[0;32mI (74967) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (74971) TCP/IP socket: Request fail 
+[0m
+[0;32mI (74975) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (80169) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (80289) TCP/IP socket: Received  get datage ...[0m
+[0;32mI (85418) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (85593) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (85593) TCP/IP socket: Request fail 
+[0m
+[0;32mI (85594) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (85597) TCP/IP socket: Request fail 
+[0m
+[0;32mI (85602) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (90695) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (90854) TCP/IP socket: Received  get datage ...[0m
+[0;32mI (96005) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (96150) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (96150) TCP/IP socket: Request fail 
+[0m
+[0;32mI (96151) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (96154) TCP/IP socket: Request fail 
+[0m
+[0;32mI (96159) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (101282) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (101442) TCP/IP socket: Received  get datage ...[0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (106577) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (106738) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (106739) TCP/IP socket: Request fail 
+[0m
+[0;32mI (106739) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (106743) TCP/IP socket: Request fail 
+[0m
+[0;32mI (106748) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (111872) TCP/IP socket: 5s elapsed 
+ [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (112360) TCP/IP socket: Received  get datage ...[0m
+[0;32mI (117488) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (117647) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (117648) TCP/IP socket: Request fail 
+[0m
+[0;32mI (117648) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (117652) TCP/IP socket: Request fail 
+[0m
+[0;32mI (117657) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (122784) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (122952) TCP/IP socket: Received  get datage ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (128086) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (128247) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (128247) TCP/IP socket: Request fail 
+[0m
+[0;32mI (128247) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (128251) TCP/IP socket: Request fail 
+[0m
+[0;32mI (128256) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (133382) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (133532) TCP/IP socket: Received  get datage ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (138986) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (139156) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (139157) TCP/IP socket: Request fail 
+[0m
+[0;32mI (139157) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (139161) TCP/IP socket: Request fail 
+[0m
+[0;32mI (139166) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (144281) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (144438) TCP/IP socket: Received  get datage ...[0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (149734) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (149895) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (149896) TCP/IP socket: Request fail 
+[0m
+[0;32mI (149896) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (149900) TCP/IP socket: Request fail 
+[0m
+[0;32mI (149905) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (155131) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (155265) TCP/IP socket: Received  get datage ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (160374) TCP/IP socket: 5s elapsed 
+ [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (160810) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (160810) TCP/IP socket: Request fail 
+[0m
+[0;32mI (160810) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (160814) TCP/IP socket: Request fail 
+[0m
+[0;32mI (160819) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (165954) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (166118) TCP/IP socket: Received  get datage ...[0m
+[0;32mI (171239) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (171420) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (171420) TCP/IP socket: Request fail 
+[0m
+[0;32mI (171421) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (171425) TCP/IP socket: Request fail 
+[0m
+[0;32mI (171430) TCP/IP socket: Received  taget data ...[0m
+[0;32mI (176549) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (176697) TCP/IP socket: Received  get datage ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (181841) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (181993) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (181994) TCP/IP socket: Request fail 
+[0m
+[0;32mI (181994) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (181998) TCP/IP socket: Request fail 
+[0m
+[0;32mI (182003) TCP/IP socket: Received  taget data ...[0m
+[0;32mI (187138) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (187312) TCP/IP socket: Received  get datage ...[0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (192433) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (192596) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (192597) TCP/IP socket: Request fail 
+[0m
+[0;32mI (192597) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (192601) TCP/IP socket: Request fail 
+[0m
+[0;32mI (192606) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (197730) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (197903) TCP/IP socket: Received  get datage ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (203025) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (203187) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (203188) TCP/IP socket: Request fail 
+[0m
+[0;32mI (203188) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (203192) TCP/IP socket: Request fail 
+[0m
+[0;32mI (203197) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (208335) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (208500) TCP/IP socket: Received  get datage ...[0m
+[0;32mI (213637) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (213794) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (213794) TCP/IP socket: Request fail 
+[0m
+[0;32mI (213795) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (213799) TCP/IP socket: Request fail 
+[0m
+[0;32mI (213804) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (219248) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (219410) TCP/IP socket: Received  get datage ...[0m
+[0;32mI (224576) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (224705) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (224706) TCP/IP socket: Request fail 
+[0m
+[0;32mI (224706) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (224710) TCP/IP socket: Request fail 
+[0m
+[0;32mI (224715) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (229858) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (230026) TCP/IP socket: Received  get datage ...[0m
+[0;32mI (235098) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (235195) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (235196) TCP/IP socket: Request fail 
+[0m
+[0;32mI (235197) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (235200) TCP/IP socket: Request fail 
+[0m
+[0;32mI (235205) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (240282) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (240457) TCP/IP socket: Received  get datage ...[0m
+[0;32mI (245587) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (245752) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (245753) TCP/IP socket: Request fail 
+[0m
+[0;32mI (245753) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (245757) TCP/IP socket: Request fail 
+[0m
+[0;32mI (245762) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (250881) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (251041) TCP/IP socket: Received  get datage ...[0m
+[0;32mI (256191) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (256342) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (256342) TCP/IP socket: Request fail 
+[0m
+[0;32mI (256342) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (256347) TCP/IP socket: Request fail 
+[0m
+[0;32mI (256351) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (261488) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (261647) TCP/IP socket: Received  get datage ...[0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (266790) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (266949) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (266950) TCP/IP socket: Request fail 
+[0m
+[0;32mI (266950) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (266954) TCP/IP socket: Request fail 
+[0m
+[0;32mI (266959) TCP/IP socket: Received  taget data ...[0m
+[0;32mI (272087) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (272246) TCP/IP socket: Received  get datage ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (277249) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (277396) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (277397) TCP/IP socket: Request fail 
+[0m
+[0;32mI (277397) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (277401) TCP/IP socket: Request fail 
+[0m
+[0;32mI (277406) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (282523) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (282683) TCP/IP socket: Received  get datage ...[0m
+[0;32mI (287832) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (287983) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (287983) TCP/IP socket: Request fail 
+[0m
+[0;32mI (287984) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (287988) TCP/IP socket: Request fail 
+[0m
+[0;32mI (287992) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (293121) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (293286) TCP/IP socket: Received  get datage ...[0m
+[0;32mI (298420) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (298599) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (298600) TCP/IP socket: Request fail 
+[0m
+[0;32mI (298600) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (298604) TCP/IP socket: Request fail 
+[0m
+[0;32mI (298609) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (303718) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (303876) TCP/IP socket: Received  get datage ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (309021) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (309183) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (309184) TCP/IP socket: Request fail 
+[0m
+[0;32mI (309185) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (309188) TCP/IP socket: Request fail 
+[0m
+[0;32mI (309193) TCP/IP socket: Received  taget data ...[0m
+[0;32mI (314316) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (314482) TCP/IP socket: Received  get datage ...[0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (319603) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (319692) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (319693) TCP/IP socket: Request fail 
+[0m
+[0;32mI (319693) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (319697) TCP/IP socket: Request fail 
+[0m
+[0;32mI (319702) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (324765) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (324919) TCP/IP socket: Received  get datage ...[0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (330056) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (330222) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (330222) TCP/IP socket: Request fail 
+[0m
+[0;32mI (330223) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (330227) TCP/IP socket: Request fail 
+[0m
+[0;32mI (330231) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (335310) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (335406) TCP/IP socket: Received  get datage ...[0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (340502) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (340666) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (340667) TCP/IP socket: Request fail 
+[0m
+[0;32mI (340667) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (340671) TCP/IP socket: Request fail 
+[0m
+[0;32mI (340676) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (345790) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (345956) TCP/IP socket: Received  get datage ...[0m
+[0;32mI (351149) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (351357) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (351357) TCP/IP socket: Request fail 
+[0m
+[0;32mI (351357) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (351362) TCP/IP socket: Request fail 
+[0m
+[0;32mI (351366) TCP/IP socket: Received  taget data ...[0m
+[0;32mI (356410) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (356569) TCP/IP socket: Received  get datage ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (361691) TCP/IP socket: 5s elapsed 
+ [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (362189) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (362190) TCP/IP socket: Request fail 
+[0m
+[0;32mI (362190) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (362194) TCP/IP socket: Request fail 
+[0m
+[0;32mI (362199) TCP/IP socket: Received  taget data ...[0m
+[0;32mI (367307) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (367467) TCP/IP socket: Received  get datage ...[0m
+[0;32mI (372614) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (372770) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (372771) TCP/IP socket: Request fail 
+[0m
+[0;32mI (372771) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (372775) TCP/IP socket: Request fail 
+[0m
+[0;32mI (372780) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (377901) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (378072) TCP/IP socket: Received  get datage ...[0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (383201) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (383367) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (383367) TCP/IP socket: Request fail 
+[0m
+[0;32mI (383368) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (383372) TCP/IP socket: Request fail 
+[0m
+[0;32mI (383377) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (388506) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (388674) TCP/IP socket: Received  get datage ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (393811) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (393969) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (393969) TCP/IP socket: Request fail 
+[0m
+[0;32mI (393969) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (393974) TCP/IP socket: Request fail 
+[0m
+[0;32mI (393979) TCP/IP socket: Received  taget data ...[0m
+[0;32mI (399116) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (399271) TCP/IP socket: Received  get datage ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (404421) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (404585) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (404586) TCP/IP socket: Request fail 
+[0m
+[0;32mI (404586) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (404590) TCP/IP socket: Request fail 
+[0m
+[0;32mI (404595) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (409714) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (409889) TCP/IP socket: Received  get datage ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (415008) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (415177) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (415178) TCP/IP socket: Request fail 
+[0m
+[0;32mI (415178) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (415182) TCP/IP socket: Request fail 
+[0m
+[0;32mI (415187) TCP/IP socket: Received  taget data ...[0m
+[0;32mI (420376) TCP/IP socket: 5s elapsed 
+ [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (420553) TCP/IP socket: Received  get datage ...[0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (425740) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (425949) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (425949) TCP/IP socket: Request fail 
+[0m
+[0;32mI (425950) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (425954) TCP/IP socket: Request fail 
+[0m
+[0;32mI (425959) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (431112) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (431288) TCP/IP socket: Received  get datage ...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (436412) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (436577) TCP/IP socket: Received  t dataget  ...[0m
+[0;33mW (436578) TCP/IP socket: Request fail 
+[0m
+[0;32mI (436578) TCP/IP socket: Received  dataget da ...[0m
+[0;33mW (436582) TCP/IP socket: Request fail 
+[0m
+[0;32mI (436586) TCP/IP socket: Received  taget data ...[0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF

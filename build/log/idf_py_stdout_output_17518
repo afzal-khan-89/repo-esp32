@@ -1,0 +1,71 @@
+[1/5] cd /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/esp-idf/esptool_py && /home/afzal-khan/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/afzal-khan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x10000 partition --type app /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/partition_table/partition-table.bin /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/keo-teton.bin
+keo-teton.bin binary size 0xc72a0 bytes. Smallest app partition is 0x100000 bytes. 0x38d60 bytes (22%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/bootloader/esp-idf/esptool_py && /home/afzal-khan/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/afzal-khan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x10000 bootloader 0x0 /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/bootloader/bootloader.bin
+Bootloader binary size 0x55f0 bytes. 0xaa10 bytes (66%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /home/afzal-khan/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/afzal-khan/esp/esp-idf -D "SERIAL_TOOL=/home/afzal-khan/.espressif/python_env/idf5.0_py3.10_env/bin/python;;/home/afzal-khan/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build -P /home/afzal-khan/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool esp32s3 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x0 bootloader/bootloader.bin 0x20000 keo-teton.bin 0x10000 partition_table/partition-table.bin
+esptool.py v4.6.2
+Serial port /dev/ttyACM0
+Connecting....
+Chip is ESP32-S3 (revision v0.1)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 34:85:18:ac:92:78
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00020000 to 0x000e7fff...
+Flash will be erased from 0x00010000 to 0x00010fff...
+Compressed 22000 bytes to 13890...
+Writing at 0x00000000... (100 %)
+Wrote 22000 bytes (13890 compressed) at 0x00000000 in 0.7 seconds (effective 244.5 kbit/s)...
+Hash of data verified.
+Compressed 815776 bytes to 514323...
+Writing at 0x00020000... (3 %)
+Writing at 0x00029fcf... (6 %)
+Writing at 0x00034f68... (9 %)
+Writing at 0x0003bbe3... (12 %)
+Writing at 0x00042698... (15 %)
+Writing at 0x0004c189... (18 %)
+Writing at 0x00051e30... (21 %)
+Writing at 0x00057ff6... (25 %)
+Writing at 0x0005db23... (28 %)
+Writing at 0x000651f2... (31 %)
+Writing at 0x0006b205... (34 %)
+Writing at 0x000708db... (37 %)
+Writing at 0x000761da... (40 %)
+Writing at 0x0007bb71... (43 %)
+Writing at 0x00081480... (46 %)
+Writing at 0x0008737e... (50 %)
+Writing at 0x0008ca6d... (53 %)
+Writing at 0x0009193a... (56 %)
+Writing at 0x00096ac8... (59 %)
+Writing at 0x0009bb66... (62 %)
+Writing at 0x000a0e47... (65 %)
+Writing at 0x000a62bd... (68 %)
+Writing at 0x000ac043... (71 %)
+Writing at 0x000b176a... (75 %)
+Writing at 0x000b71d7... (78 %)
+Writing at 0x000bd11d... (81 %)
+Writing at 0x000c294b... (84 %)
+Writing at 0x000cb42a... (87 %)
+Writing at 0x000d3679... (90 %)
+Writing at 0x000d939b... (93 %)
+Writing at 0x000df049... (96 %)
+Writing at 0x000e48cd... (100 %)
+Wrote 815776 bytes (514323 compressed) at 0x00020000 in 11.6 seconds (effective 563.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 104...
+Writing at 0x00010000... (100 %)
+Wrote 3072 bytes (104 compressed) at 0x00010000 in 0.1 seconds (effective 389.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

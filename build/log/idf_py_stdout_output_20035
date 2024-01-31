@@ -1,0 +1,219 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2a (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x17e8
+load:0x403c9700,len:0xd90
+load:0x403cc700,len:0x3018
+entry 0x403c9930
+[0;32mI (25) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time 13:58:12[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.1[0m
+[0;32mI (31) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (46) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00020020 vaddr=3c090020 size=24658h (149080) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=00044680 vaddr=3fc9a400 size=05788h ( 22408) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=00049e10 vaddr=40374000 size=06208h ( 25096) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=8710ch (553228) map[0m
+[0;32mI (223) esp_image: segment 4: paddr=000d7134 vaddr=4037a208 size=101a4h ( 65956) load[0m
+[0;32mI (245) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (245) boot: Disabling RNG early entropy source...[0m
+[0;32mI (257) cpu_start: Multicore app[0m
+[0;32mI (257) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (257) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (260) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (266) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (271) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (276) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (281) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (287) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (293) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (298) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (305) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (310) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (315) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (320) esp_psram: Speed: 80MHz[0m
+[0;32mI (324) cpu_start: Pro cpu up.[0m
+[0;32mI (327) cpu_start: Starting app cpu, entry point is 0x403756c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (786) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (795) cpu_start: Pro cpu start user code[0m
+[0;32mI (795) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (795) cpu_start: Application information:[0m
+[0;32mI (798) cpu_start: Project name:     keo-teton[0m
+[0;32mI (803) cpu_start: App version:      ed1cb40-dirty[0m
+[0;32mI (809) cpu_start: Compile time:     Jan 30 2024 11:01:26[0m
+[0;32mI (815) cpu_start: ELF file SHA256:  86e7a650f3d57ce4...[0m
+[0;32mI (821) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (826) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (831) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (836) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (841) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (848) heap_init: At 3FCA5758 len 00043FB8 (271 KiB): DRAM[0m
+[0;32mI (854) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (861) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (867) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (873) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (881) spi_flash: detected chip: gd[0m
+[0;32mI (885) spi_flash: flash io: qio[0m
+[0;33mW (889) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (902) app_start: Starting scheduler on CPU0[0m
+[0;32mI (907) app_start: Starting scheduler on CPU1[0m
+[0;32mI (907) main_task: Started on CPU0[0m
+[0;32mI (917) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (925) main_task: Calling app_main()[0m
+[0;32mI (929) esp32-cam Webserver: ESP32 CAM Web Server .......
+[0m
+[0;32mI (947) pp: pp rom version: e7ae62f[0m
+[0;32mI (947) net80211: net80211 rom version: e7ae62f[0m
+I (949) wifi:wifi driver task: 3fcb7848, prio:23, stack:6656, core=0
+[0;32mI (952) system_api: Base MAC address is not set[0m
+[0;32mI (957) system_api: read default base MAC address from EFUSE[0m
+I (967) wifi:wifi firmware version: e2d0ad8
+I (968) wifi:wifi certification version: v7.0
+I (971) wifi:config NVS flash: enabled
+I (974) wifi:config nano formating: disabled
+I (979) wifi:Init data frame dynamic rx buffer num: 32
+I (983) wifi:Init management frame dynamic rx buffer num: 32
+I (989) wifi:Init management short buffer num: 32
+I (993) wifi:Init static tx buffer num: 16
+I (997) wifi:Init tx cache buffer num: 32
+I (1001) wifi:Init static tx FG buffer num: 2
+I (1005) wifi:Init static rx buffer size: 1600
+I (1009) wifi:Init static rx buffer num: 10
+I (1013) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1017) wifi_init: rx ba win: 6[0m
+[0;32mI (1021) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1025) wifi_init: udp mbox: 6[0m
+[0;32mI (1029) wifi_init: tcp mbox: 6[0m
+[0;32mI (1032) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1037) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1041) wifi_init: tcp mss: 1440[0m
+[0;32mI (1045) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1050) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1058) phy_init: phy_version 610,2bff4c8,Jul 27 2023,20:22:14[0m
+I (1113) wifi:mode : softAP (34:85:18:ac:92:79)
+I (1115) wifi:Total power save buffer number: 8
+I (1116) wifi:Init max length of beacon: 752/752
+I (1116) wifi:Init max length of beacon: 752/752
+[0;32mI (1120) s3 ll_cam: DMA Channel=4[0m
+[0;32mI (1123) cam_hal: cam init ok[0m
+[0;32mI (1127) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (1131) sccb: sccb_i2c_port=1[0m
+[0;32mI (1145) camera: Detected camera at address=0x30[0m
+[0;32mI (1148) camera: Detected OV2640 camera[0m
+[0;32mI (1148) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1229) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 4[0m
+[0;32mI (1229) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 16, dma_buffer_size: 307200[0m
+[0;32mI (1237) cam_hal: buffer_size: 307200, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 80, total_cnt: 20[0m
+[0;32mI (1249) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1255) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C0C0EC0[0m
+[0;32mI (1261) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1267) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C10BEF0[0m
+[0;32mI (1273) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1280) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C156F20[0m
+[0;32mI (1286) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1292) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C1A1F50[0m
+[0;32mI (1298) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1305) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C1ECF80[0m
+[0;32mI (1311) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1317) cam_hal: Frame[5]: Offset: 16, Addr: 0x3C237FB0[0m
+[0;32mI (1323) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1330) cam_hal: Frame[6]: Offset: 16, Addr: 0x3C282FE0[0m
+[0;32mI (1336) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1342) cam_hal: Frame[7]: Offset: 16, Addr: 0x3C2CE010[0m
+[0;32mI (1348) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1355) cam_hal: Frame[8]: Offset: 16, Addr: 0x3C319040[0m
+[0;32mI (1361) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1367) cam_hal: Frame[9]: Offset: 16, Addr: 0x3C364070[0m
+[0;32mI (1373) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1380) cam_hal: Frame[10]: Offset: 16, Addr: 0x3C3AF0A0[0m
+[0;32mI (1386) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1393) cam_hal: Frame[11]: Offset: 16, Addr: 0x3C3FA0D0[0m
+[0;32mI (1399) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1405) cam_hal: Frame[12]: Offset: 16, Addr: 0x3C445100[0m
+[0;32mI (1411) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1418) cam_hal: Frame[13]: Offset: 16, Addr: 0x3C490130[0m
+[0;32mI (1424) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1430) cam_hal: Frame[14]: Offset: 16, Addr: 0x3C4DB160[0m
+[0;32mI (1436) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1443) cam_hal: Frame[15]: Offset: 16, Addr: 0x3C526190[0m
+[0;32mI (1449) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1455) cam_hal: Frame[16]: Offset: 16, Addr: 0x3C5711C0[0m
+[0;32mI (1462) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1468) cam_hal: Frame[17]: Offset: 16, Addr: 0x3C5BC1F0[0m
+[0;32mI (1474) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1481) cam_hal: Frame[18]: Offset: 16, Addr: 0x3C607220[0m
+[0;32mI (1487) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1493) cam_hal: Frame[19]: Offset: 16, Addr: 0x3C652250[0m
+[0;32mI (1499) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1506) cam_hal: Frame[20]: Offset: 16, Addr: 0x3C69D280[0m
+[0;32mI (1512) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1518) cam_hal: Frame[21]: Offset: 16, Addr: 0x3C6E82B0[0m
+[0;32mI (1525) cam_hal: cam config ok[0m
+[0;32mI (1528) ov2640: Set PLL: clk_2x: 1, clk_div: 7, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1606) esp32-cam Webserver: ESP32 CAM Web Server is up and running
+[0m
+[0;32mI (1607) TCP/IP socket: Socket created[0m
+[0;32mI (1607) TCP/IP socket: Socket binded[0m
+[0;32mI (1611) TCP/IP socket: Socket listening ...[0m
+[0;32mI (1616) main_task: Returned from app_main()[0m
+I (20252) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1
+I (20253) wifi:station: 28:d0:ea:5f:dc:3c join, AID=1, bgn, 40U
+[0;32mI (20398) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.254.2[0m
+[0;32mI (20398) wifi: SoftAP client connected with IP: 192.168.254.2.[0m
+I (65318) wifi:station: 28:d0:ea:5f:dc:3c leave, AID = 1, bss_flags is 134243, bss:0x3fca8c38
+I (65319) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1
+I (68468) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1
+I (68469) wifi:station: 28:d0:ea:5f:dc:3c join, AID=1, bgn, 40U
+[0;32mI (68638) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.254.2[0m
+[0;32mI (68638) wifi: SoftAP client connected with IP: 192.168.254.2.[0m
+[0;32mI (70595) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.254.2[0m
+[0;32mI (70596) wifi: SoftAP client connected with IP: 192.168.254.2.[0m
+I (70783) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:25, winSize:64
+I (71103) wifi:<ba-add>idx:3 (ifx:1, 28:d0:ea:5f:dc:3c), tid:6, ssn:5, winSize:64
+I (77997) wifi:<ba-del>idx
+I (78004) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:314, winSize:64
+[0;32mI (80340) TCP/IP socket: Socket accepted ... [0m
+[0;32mI (80469) TCP/IP socket: send 9255 bytes to client ... [0m
+[0;32mI (80726) TCP/IP socket: send 9328 bytes to client ... [0m
+[0;32mI (81029) TCP/IP socket: send 12019 bytes to client ... [0m
+[0;32mI (81253) TCP/IP socket: send 12018 bytes to client ... [0m
+[0;32mI (81508) TCP/IP socket: send 12154 bytes to client ... [0m
+[0;32mI (81769) TCP/IP socket: send 12184 bytes to client ... [0m
+[0;32mI (82186) TCP/IP socket: send 12371 bytes to client ... [0m
+[0;32mI (82489) TCP/IP socket: send 12303 bytes to client ... [0m
+[0;32mI (82820) TCP/IP socket: send 12534 bytes to client ... [0m
+[0;32mI (83131) TCP/IP socket: send 12507 bytes to client ... [0m
+[0;32mI (83441) TCP/IP socket: send 12695 bytes to client ... [0m
+[0;32mI (83630) TCP/IP socket: send 12599 bytes to client ... [0m
+[0;32mI (83992) TCP/IP socket: send 12695 bytes to client ... [0m
+[0;32mI (84371) TCP/IP socket: send 12756 bytes to client ... [0m
+[0;32mI (84800) TCP/IP socket: send 12879 bytes to client ... [0m
+[0;32mI (85264) TCP/IP socket: send 12860 bytes to client ... [0m
+[0;32mI (85728) TCP/IP socket: send 13070 bytes to client ... [0m
+[0;32mI (86187) TCP/IP socket: send 13021 bytes to client ... [0m
+[0;31mE (86765) TCP/IP socket: Error occurred during sending: errno 104[0m
+I (104313) wifi:<ba-del>idx
+I (110250) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1002, winSize:64
+I (113599) wifi:<ba-del>idx
+I (113603) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1050, winSize:64
+I (122912) wifi:<ba-del>idx
+I (133034) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1321, winSize:64
+I (155048) wifi:<ba-del>idx
+I (157745) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:1903, winSize:64
+I (177404) wifi:<ba-del>idx
+I (177420) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:2104, winSize:64
+I (247211) wifi:<ba-del>idx
+I (250262) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:2800, winSize:64

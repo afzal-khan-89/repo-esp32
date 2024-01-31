@@ -1,0 +1,359 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x17e8
+load:0x403c9700,len:0xd90
+load:0x403cc700,len:0x3018
+entry 0x403c9930
+[0;32mI (25) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time 13:58:12[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.1[0m
+[0;32mI (31) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (46) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00020020 vaddr=3c090020 size=24178h (147832) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=000441a0 vaddr=3fc9a400 size=05788h ( 22408) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=00049930 vaddr=40374000 size=066e8h ( 26344) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=854d4h (546004) map[0m
+[0;32mI (221) esp_image: segment 4: paddr=000d54fc vaddr=4037a6e8 size=0fcc4h ( 64708) load[0m
+[0;32mI (243) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (244) boot: Disabling RNG early entropy source...[0m
+[0;32mI (255) cpu_start: Multicore app[0m
+[0;32mI (255) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (256) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (259) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (264) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (269) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (275) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (280) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (286) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (291) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (297) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (303) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (309) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (314) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (318) esp_psram: Speed: 80MHz[0m
+[0;32mI (322) cpu_start: Pro cpu up.[0m
+[0;32mI (326) cpu_start: Starting app cpu, entry point is 0x403756c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (785) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (794) cpu_start: Pro cpu start user code[0m
+[0;32mI (794) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (794) cpu_start: Application information:[0m
+[0;32mI (797) cpu_start: Project name:     keo-teton[0m
+[0;32mI (802) cpu_start: App version:      ed1cb40-dirty[0m
+[0;32mI (807) cpu_start: Compile time:     Jan 30 2024 11:01:26[0m
+[0;32mI (813) cpu_start: ELF file SHA256:  94c955345d228731...[0m
+[0;32mI (819) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (825) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (829) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (834) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (839) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (846) heap_init: At 3FCA5740 len 00043FD0 (271 KiB): DRAM[0m
+[0;32mI (852) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (859) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (865) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (872) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (879) spi_flash: detected chip: gd[0m
+[0;32mI (883) spi_flash: flash io: qio[0m
+[0;33mW (887) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (901) app_start: Starting scheduler on CPU0[0m
+[0;32mI (905) app_start: Starting scheduler on CPU1[0m
+[0;32mI (905) main_task: Started on CPU0[0m
+[0;32mI (915) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (923) main_task: Calling app_main()[0m
+[0;32mI (927) esp32-cam Webserver: ESP32 CAM Web Server .......
+[0m
+[0;32mI (945) pp: pp rom version: e7ae62f[0m
+[0;32mI (945) net80211: net80211 rom version: e7ae62f[0m
+I (947) wifi:wifi driver task: 3fcb7830, prio:23, stack:6656, core=0
+[0;32mI (950) system_api: Base MAC address is not set[0m
+[0;32mI (955) system_api: read default base MAC address from EFUSE[0m
+I (965) wifi:wifi firmware version: e2d0ad8
+I (966) wifi:wifi certification version: v7.0
+I (969) wifi:config NVS flash: enabled
+I (972) wifi:config nano formating: disabled
+I (977) wifi:Init data frame dynamic rx buffer num: 32
+I (981) wifi:Init management frame dynamic rx buffer num: 32
+I (987) wifi:Init management short buffer num: 32
+I (991) wifi:Init static tx buffer num: 16
+I (995) wifi:Init tx cache buffer num: 32
+I (999) wifi:Init static tx FG buffer num: 2
+I (1003) wifi:Init static rx buffer size: 1600
+I (1007) wifi:Init static rx buffer num: 10
+I (1011) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1015) wifi_init: rx ba win: 6[0m
+[0;32mI (1019) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1023) wifi_init: udp mbox: 6[0m
+[0;32mI (1027) wifi_init: tcp mbox: 6[0m
+[0;32mI (1030) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1035) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1039) wifi_init: tcp mss: 1440[0m
+[0;32mI (1043) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1047) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1055) phy_init: phy_version 610,2bff4c8,Jul 27 2023,20:22:14[0m
+I (1099) wifi:mode : softAP (34:85:18:ac:92:79)
+I (1102) wifi:Total power save buffer number: 8
+I (1102) wifi:Init max length of beacon: 752/752
+I (1102) wifi:Init max length of beacon: 752/752
+[0;32mI (1106) s3 ll_cam: DMA Channel=4[0m
+[0;32mI (1110) cam_hal: cam init ok[0m
+[0;32mI (1113) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (1117) sccb: sccb_i2c_port=1[0m
+[0;32mI (1131) camera: Detected camera at address=0x30[0m
+[0;32mI (1134) camera: Detected OV2640 camera[0m
+[0;32mI (1134) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1215) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 4[0m
+[0;32mI (1216) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 16, dma_buffer_size: 30720[0m
+[0;32mI (1223) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 20[0m
+[0;32mI (1234) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1241) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1247) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1254) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1260) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1267) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1273) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1280) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1286) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1293) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1299) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1306) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1312) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1319) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1325) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1332) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1338) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1345) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1352) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1358) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1365) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1371) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1378) cam_hal: cam config ok[0m
+[0;32mI (1381) ov2640: Set PLL: clk_2x: 1, clk_div: 7, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1459) esp32-cam Webserver: ESP32 CAM Web Server is up and running
+[0m
+[0;32mI (1460) main_task: Returned from app_main()[0m
+[0;32mI (1937) TCP/IP socket: got frame ..[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (2418) TCP/IP socket: got frame ..[0m
+[0;32mI (2588) TCP/IP socket: got frame ..[0m
+[0;32mI (2758) TCP/IP socket: got frame ..[0m
+[0;32mI (2930) TCP/IP socket: got frame ..[0m
+[0;32mI (3103) TCP/IP socket: got frame ..[0m
+[0;32mI (3276) TCP/IP socket: got frame ..[0m
+[0;32mI (3448) TCP/IP socket: got frame ..[0m
+[0;32mI (3620) TCP/IP socket: got frame ..[0m
+[0;32mI (3792) TCP/IP socket: got frame ..[0m
+[0;32mI (3963) TCP/IP socket: got frame ..[0m
+[0;32mI (4134) TCP/IP socket: got frame ..[0m
+[0;32mI (4306) TCP/IP socket: got frame ..[0m
+[0;32mI (4476) TCP/IP socket: got frame ..[0m
+[0;32mI (4647) TCP/IP socket: got frame ..[0m
+[0;32mI (4818) TCP/IP socket: got frame ..[0m
+[0;32mI (4989) TCP/IP socket: got frame ..[0m
+[0;32mI (5160) TCP/IP socket: got frame ..[0m
+[0;32mI (5332) TCP/IP socket: got frame ..[0m
+[0;32mI (5507) TCP/IP socket: got frame ..[0m
+[0;32mI (5681) TCP/IP socket: got frame ..[0m
+[0;32mI (5853) TCP/IP socket: got frame ..[0m
+[0;32mI (6025) TCP/IP socket: got frame ..[0m
+[0;32mI (6196) TCP/IP socket: got frame ..[0m
+[0;32mI (6369) TCP/IP socket: got frame ..[0m
+[0;32mI (6540) TCP/IP socket: got frame ..[0m
+[0;32mI (6711) TCP/IP socket: got frame ..[0m
+[0;32mI (6882) TCP/IP socket: got frame ..[0m
+[0;32mI (7053) TCP/IP socket: got frame ..[0m
+[0;32mI (7224) TCP/IP socket: got frame ..[0m
+[0;32mI (7395) TCP/IP socket: got frame ..[0m
+[0;32mI (7566) TCP/IP socket: got frame ..[0m
+[0;32mI (7737) TCP/IP socket: got frame ..[0m
+[0;32mI (7910) TCP/IP socket: got frame ..[0m
+[0;32mI (8084) TCP/IP socket: got frame ..[0m
+[0;32mI (8257) TCP/IP socket: got frame ..[0m
+[0;32mI (8431) TCP/IP socket: got frame ..[0m
+[0;32mI (8602) TCP/IP socket: got frame ..[0m
+[0;32mI (8774) TCP/IP socket: got frame ..[0m
+[0;32mI (8945) TCP/IP socket: got frame ..[0m
+[0;32mI (9116) TCP/IP socket: got frame ..[0m
+[0;32mI (9287) TCP/IP socket: got frame ..[0m
+[0;32mI (9458) TCP/IP socket: got frame ..[0m
+[0;32mI (9628) TCP/IP socket: got frame ..[0m
+[0;32mI (9800) TCP/IP socket: got frame ..[0m
+[0;32mI (9971) TCP/IP socket: got frame ..[0m
+[0;32mI (10142) TCP/IP socket: got frame ..[0m
+[0;32mI (10313) TCP/IP socket: got frame ..[0m
+[0;32mI (10484) TCP/IP socket: got frame ..[0m
+[0;32mI (10657) TCP/IP socket: got frame ..[0m
+[0;32mI (10830) TCP/IP socket: got frame ..[0m
+[0;32mI (11001) TCP/IP socket: got frame ..[0m
+[0;32mI (11173) TCP/IP socket: got frame ..[0m
+[0;32mI (11343) TCP/IP socket: got frame ..[0m
+[0;32mI (11514) TCP/IP socket: got frame ..[0m
+[0;32mI (11684) TCP/IP socket: got frame ..[0m
+[0;32mI (11856) TCP/IP socket: got frame ..[0m
+[0;32mI (12026) TCP/IP socket: got frame ..[0m
+[0;32mI (12197) TCP/IP socket: got frame ..[0m
+[0;32mI (12368) TCP/IP socket: got frame ..[0m
+[0;32mI (12539) TCP/IP socket: got frame ..[0m
+[0;32mI (12710) TCP/IP socket: got frame ..[0m
+[0;32mI (12881) TCP/IP socket: got frame ..[0m
+[0;32mI (13054) TCP/IP socket: got frame ..[0m
+[0;32mI (13227) TCP/IP socket: got frame ..[0m
+[0;32mI (13400) TCP/IP socket: got frame ..[0m
+[0;32mI (13570) TCP/IP socket: got frame ..[0m
+[0;32mI (13741) TCP/IP socket: got frame ..[0m
+[0;32mI (13911) TCP/IP socket: got frame ..[0m
+[0;32mI (14082) TCP/IP socket: got frame ..[0m
+[0;32mI (14252) TCP/IP socket: got frame ..[0m
+[0;32mI (14422) TCP/IP socket: got frame ..[0m
+[0;32mI (14592) TCP/IP socket: got frame ..[0m
+[0;32mI (14762) TCP/IP socket: got frame ..[0m
+[0;32mI (14932) TCP/IP socket: got frame ..[0m
+[0;32mI (15102) TCP/IP socket: got frame ..[0m
+[0;32mI (15274) TCP/IP socket: got frame ..[0m
+[0;32mI (15444) TCP/IP socket: got frame ..[0m
+[0;32mI (15617) TCP/IP socket: got frame ..[0m
+[0;32mI (15790) TCP/IP socket: got frame ..[0m
+[0;32mI (15961) TCP/IP socket: got frame ..[0m
+[0;32mI (16131) TCP/IP socket: got frame ..[0m
+[0;32mI (16303) TCP/IP socket: got frame ..[0m
+[0;32mI (16474) TCP/IP socket: got frame ..[0m
+[0;32mI (16644) TCP/IP socket: got frame ..[0m
+[0;32mI (16814) TCP/IP socket: got frame ..[0m
+[0;32mI (16984) TCP/IP socket: got frame ..[0m
+[0;32mI (17154) TCP/IP socket: got frame ..[0m
+[0;32mI (17325) TCP/IP socket: got frame ..[0m
+[0;32mI (17496) TCP/IP socket: got frame ..[0m
+[0;32mI (17668) TCP/IP socket: got frame ..[0m
+[0;32mI (17838) TCP/IP socket: got frame ..[0m
+[0;32mI (18012) TCP/IP socket: got frame ..[0m
+[0;32mI (18186) TCP/IP socket: got frame ..[0m
+[0;32mI (18358) TCP/IP socket: got frame ..[0m
+[0;32mI (18529) TCP/IP socket: got frame ..[0m
+[0;32mI (18699) TCP/IP socket: got frame ..[0m
+[0;32mI (18869) TCP/IP socket: got frame ..[0m
+[0;32mI (19040) TCP/IP socket: got frame ..[0m
+[0;32mI (19210) TCP/IP socket: got frame ..[0m
+[0;32mI (19381) TCP/IP socket: got frame ..[0m
+[0;32mI (19551) TCP/IP socket: got frame ..[0m
+[0;32mI (19722) TCP/IP socket: got frame ..[0m
+[0;32mI (19894) TCP/IP socket: got frame ..[0m
+[0;32mI (20066) TCP/IP socket: got frame ..[0m
+[0;32mI (20237) TCP/IP socket: got frame ..[0m
+[0;32mI (20408) TCP/IP socket: got frame ..[0m
+[0;32mI (20582) TCP/IP socket: got frame ..[0m
+[0;32mI (20754) TCP/IP socket: got frame ..[0m
+[0;32mI (20927) TCP/IP socket: got frame ..[0m
+[0;32mI (21097) TCP/IP socket: got frame ..[0m
+[0;32mI (21267) TCP/IP socket: got frame ..[0m
+[0;32mI (21438) TCP/IP socket: got frame ..[0m
+[0;32mI (21608) TCP/IP socket: got frame ..[0m
+[0;32mI (21779) TCP/IP socket: got frame ..[0m
+[0;32mI (21949) TCP/IP socket: got frame ..[0m
+[0;32mI (22120) TCP/IP socket: got frame ..[0m
+[0;32mI (22291) TCP/IP socket: got frame ..[0m
+[0;32mI (22463) TCP/IP socket: got frame ..[0m
+[0;32mI (22634) TCP/IP socket: got frame ..[0m
+[0;32mI (22805) TCP/IP socket: got frame ..[0m
+[0;32mI (22978) TCP/IP socket: got frame ..[0m
+[0;32mI (23151) TCP/IP socket: got frame ..[0m
+[0;32mI (23323) TCP/IP socket: got frame ..[0m
+[0;32mI (23493) TCP/IP socket: got frame ..[0m
+[0;32mI (23664) TCP/IP socket: got frame ..[0m
+[0;32mI (23834) TCP/IP socket: got frame ..[0m
+[0;32mI (24004) TCP/IP socket: got frame ..[0m
+[0;32mI (24175) TCP/IP socket: got frame ..[0m
+[0;32mI (24346) TCP/IP socket: got frame ..[0m
+[0;32mI (24516) TCP/IP socket: got frame ..[0m
+[0;32mI (24687) TCP/IP socket: got frame ..[0m
+[0;32mI (24859) TCP/IP socket: got frame ..[0m
+[0;32mI (25030) TCP/IP socket: got frame ..[0m
+[0;32mI (25200) TCP/IP socket: got frame ..[0m
+[0;32mI (25372) TCP/IP socket: got frame ..[0m
+[0;32mI (25545) TCP/IP socket: got frame ..[0m
+[0;32mI (25718) TCP/IP socket: got frame ..[0m
+[0;32mI (25890) TCP/IP socket: got frame ..[0m
+[0;32mI (26060) TCP/IP socket: got frame ..[0m
+[0;32mI (26230) TCP/IP socket: got frame ..[0m
+[0;32mI (26400) TCP/IP socket: got frame ..[0m
+[0;32mI (26571) TCP/IP socket: got frame ..[0m
+[0;32mI (26742) TCP/IP socket: got frame ..[0m
+[0;32mI (26912) TCP/IP socket: got frame ..[0m
+[0;32mI (27083) TCP/IP socket: got frame ..[0m
+[0;32mI (27254) TCP/IP socket: got frame ..[0m
+[0;32mI (27425) TCP/IP socket: got frame ..[0m
+[0;32mI (27595) TCP/IP socket: got frame ..[0m
+[0;32mI (27767) TCP/IP socket: got frame ..[0m
+[0;32mI (27939) TCP/IP socket: got frame ..[0m
+[0;32mI (28109) TCP/IP socket: got frame ..[0m
+[0;32mI (28282) TCP/IP socket: got frame ..[0m
+[0;32mI (28453) TCP/IP socket: got frame ..[0m
+[0;32mI (28623) TCP/IP socket: got frame ..[0m
+[0;32mI (28794) TCP/IP socket: got frame ..[0m
+[0;32mI (28964) TCP/IP socket: got frame ..[0m
+[0;32mI (29135) TCP/IP socket: got frame ..[0m
+[0;32mI (29306) TCP/IP socket: got frame ..[0m
+[0;32mI (29477) TCP/IP socket: got frame ..[0m
+[0;32mI (29647) TCP/IP socket: got frame ..[0m
+[0;32mI (29819) TCP/IP socket: got frame ..[0m
+[0;32mI (29989) TCP/IP socket: got frame ..[0m
+[0;32mI (30161) TCP/IP socket: got frame ..[0m
+[0;32mI (30332) TCP/IP socket: got frame ..[0m
+[0;32mI (30505) TCP/IP socket: got frame ..[0m
+[0;32mI (30677) TCP/IP socket: got frame ..[0m
+[0;32mI (30849) TCP/IP socket: got frame ..[0m
+[0;32mI (31020) TCP/IP socket: got frame ..[0m
+[0;32mI (31190) TCP/IP socket: got frame ..[0m
+[0;32mI (31360) TCP/IP socket: got frame ..[0m
+[0;32mI (31531) TCP/IP socket: got frame ..[0m
+[0;32mI (31702) TCP/IP socket: got frame ..[0m
+[0;32mI (31873) TCP/IP socket: got frame ..[0m
+[0;32mI (32043) TCP/IP socket: got frame ..[0m
+[0;32mI (32215) TCP/IP socket: got frame ..[0m
+[0;32mI (32386) TCP/IP socket: got frame ..[0m
+[0;32mI (32556) TCP/IP socket: got frame ..[0m
+[0;32mI (32728) TCP/IP socket: got frame ..[0m
+[0;32mI (32898) TCP/IP socket: got frame ..[0m
+[0;32mI (33072) TCP/IP socket: got frame ..[0m
+[0;32mI (33245) TCP/IP socket: got frame ..[0m
+[0;32mI (33416) TCP/IP socket: got frame ..[0m
+[0;32mI (33587) TCP/IP socket: got frame ..[0m
+[0;32mI (33757) TCP/IP socket: got frame ..[0m
+[0;32mI (33928) TCP/IP socket: got frame ..[0m
+[0;32mI (34099) TCP/IP socket: got frame ..[0m
+[0;32mI (34270) TCP/IP socket: got frame ..[0m
+[0;32mI (34440) TCP/IP socket: got frame ..[0m
+[0;32mI (34611) TCP/IP socket: got frame ..[0m
+[0;32mI (34782) TCP/IP socket: got frame ..[0m
+[0;32mI (34952) TCP/IP socket: got frame ..[0m
+[0;32mI (35124) TCP/IP socket: got frame ..[0m
+[0;32mI (35295) TCP/IP socket: got frame ..[0m
+[0;32mI (35468) TCP/IP socket: got frame ..[0m
+[0;32mI (35640) TCP/IP socket: got frame ..[0m
+[0;32mI (35811) TCP/IP socket: got frame ..[0m
+[0;32mI (35982) TCP/IP socket: got frame ..[0m
+[0;32mI (36153) TCP/IP socket: got frame ..[0m
+[0;32mI (36324) TCP/IP socket: got frame ..[0m
+[0;32mI (36495) TCP/IP socket: got frame ..[0m
+[0;32mI (36666) TCP/IP socket: got frame ..[0m
+[0;32mI (36837) TCP/IP socket: got frame ..[0m
+[0;32mI (37008) TCP/IP socket: got frame ..[0m
+[0;32mI (37179) TCP/IP socket: got frame ..[0m
+[0;32mI (37350) TCP/IP socket: got frame ..[0m
+[0;32mI (37521) TCP/IP socket: got frame ..[0m
+[0;32mI (37692) TCP/IP socket: got frame ..[0m
+[0;32mI (37863) TCP/IP socket: got frame ..[0m
+[0;32mI (38035) TCP/IP socket: got frame ..[0m
+[0;32mI (38208) TCP/IP socket: got frame ..[0m
+[0;32mI (38379) TCP/IP socket: got frame ..[0m

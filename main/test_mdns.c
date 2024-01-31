@@ -38,16 +38,16 @@ void start_mdns_service()
     //set hostname
     mdns_hostname_set("teton-esp32");
     //set default instance
-    mdns_instance_name_set("Jhon's ESP32 Thing");
+    mdns_instance_name_set("keo-teton");
 
         //add our services
-    mdns_service_add(NULL, "_http", "_tcp", 80, NULL, 0);
-    mdns_service_add(NULL, "_camera", "_tcp", 8080, NULL, 0);
-    mdns_service_add(NULL, "_testbonjour", "_tcp", 63912, NULL, 0);
+   // mdns_service_add(NULL, "_http", "_tcp", 80, NULL, 0);
+    mdns_service_add(NULL, "_keo-cam", "_tcp", 6969, NULL, 0);
+   // mdns_service_add(NULL, "_testbonjour", "_tcp", 63912, NULL, 0);
 
     //NOTE: services must be added before their properties can be set
     //use custom instance for the web server
-    mdns_service_instance_name_set("_http", "_tcp", "Jhon's ESP32 Web Server");
+    mdns_service_instance_name_set("_keo-cam", "_tcp", "teton-cam-service");
 
     mdns_txt_item_t serviceTxtData[3] = {
         {"board","{esp32}"},
@@ -357,7 +357,7 @@ void test_mdns_start(void)
 #endif // CONFIG_MDNS_ADD_CUSTOM_NETIF
 
     //initialise_button();
-    xTaskCreate(&mdns_example_task, "mdns_example_task", 2048, NULL, 5, NULL);
+    xTaskCreate(&mdns_example_task, "mdns_example_task", 2048, NULL, 4, NULL);
 }
 
 /** Generate host name based on sdkconfig, optionally adding a portion of MAC address to it.

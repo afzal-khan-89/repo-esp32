@@ -1,0 +1,301 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x17e8
+load:0x403c9700,len:0xd90
+load:0x403cc700,len:0x3018
+entry 0x403c9930
+[0;32mI (25) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time 13:58:12[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.1[0m
+[0;32mI (31) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (46) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00020020 vaddr=3c030020 size=0f39ch ( 62364) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=0002f3c4 vaddr=3fc95500 size=00c54h (  3156) load[0m
+[0;32mI (112) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=2ac88h (175240) map[0m
+[0;32mI (145) esp_image: segment 3: paddr=0005acb0 vaddr=3fc96154 size=0302ch ( 12332) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0005dce4 vaddr=40374000 size=11478h ( 70776) load[0m
+[0;32mI (172) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (172) boot: Disabling RNG early entropy source...[0m
+[0;32mI (184) cpu_start: Multicore app[0m
+[0;32mI (184) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (184) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (187) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (193) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (198) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (203) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (208) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (214) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (220) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (225) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (232) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (237) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (242) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (247) esp_psram: Speed: 80MHz[0m
+[0;32mI (251) cpu_start: Pro cpu up.[0m
+[0;32mI (254) cpu_start: Starting app cpu, entry point is 0x403755c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (713) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (722) cpu_start: Pro cpu start user code[0m
+[0;32mI (722) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (722) cpu_start: Application information:[0m
+[0;32mI (725) cpu_start: Project name:     keo-teton[0m
+[0;32mI (730) cpu_start: App version:      ed1cb40-dirty[0m
+[0;32mI (736) cpu_start: Compile time:     Jan 30 2024 11:01:26[0m
+[0;32mI (742) cpu_start: ELF file SHA256:  d7edc59a745d6ced...[0m
+[0;32mI (748) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (753) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (758) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (763) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (768) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (775) heap_init: At 3FC9BBC0 len 0004DB50 (310 KiB): DRAM[0m
+[0;32mI (781) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (788) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (794) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (800) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (808) spi_flash: detected chip: gd[0m
+[0;32mI (812) spi_flash: flash io: qio[0m
+[0;33mW (816) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (829) app_start: Starting scheduler on CPU0[0m
+[0;32mI (834) app_start: Starting scheduler on CPU1[0m
+[0;32mI (834) main_task: Started on CPU0[0m
+[0;32mI (844) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (852) main_task: Calling app_main()[0m
+[0;32mI (856) esp32-cam Webserver: ESP32 CAM Web Server .......
+[0m
+[0;32mI (873) s3 ll_cam: DMA Channel=4[0m
+[0;32mI (873) cam_hal: cam init ok[0m
+[0;32mI (873) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (874) sccb: sccb_i2c_port=1[0m
+[0;32mI (888) camera: Detected camera at address=0x30[0m
+[0;32mI (891) camera: Detected OV2640 camera[0m
+[0;32mI (891) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (972) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 4[0m
+[0;32mI (972) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 16, dma_buffer_size: 307200[0m
+[0;32mI (980) cam_hal: buffer_size: 307200, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 80, total_cnt: 20[0m
+[0;32mI (991) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (997) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C040CB0[0m
+[0;32mI (1003) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1010) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C08BCE0[0m
+[0;32mI (1016) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1022) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C0D6D10[0m
+[0;32mI (1028) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1035) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C121D40[0m
+[0;32mI (1041) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1047) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C16CD70[0m
+[0;32mI (1053) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1060) cam_hal: Frame[5]: Offset: 16, Addr: 0x3C1B7DA0[0m
+[0;32mI (1066) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1072) cam_hal: Frame[6]: Offset: 16, Addr: 0x3C202DD0[0m
+[0;32mI (1078) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1085) cam_hal: Frame[7]: Offset: 16, Addr: 0x3C24DE00[0m
+[0;32mI (1091) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1097) cam_hal: Frame[8]: Offset: 16, Addr: 0x3C298E30[0m
+[0;32mI (1103) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1110) cam_hal: Frame[9]: Offset: 16, Addr: 0x3C2E3E60[0m
+[0;32mI (1116) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1122) cam_hal: Frame[10]: Offset: 16, Addr: 0x3C32EE90[0m
+[0;32mI (1128) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1135) cam_hal: Frame[11]: Offset: 16, Addr: 0x3C379EC0[0m
+[0;32mI (1141) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1147) cam_hal: Frame[12]: Offset: 16, Addr: 0x3C3C4EF0[0m
+[0;32mI (1153) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1160) cam_hal: Frame[13]: Offset: 16, Addr: 0x3C40FF20[0m
+[0;32mI (1166) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1172) cam_hal: Frame[14]: Offset: 16, Addr: 0x3C45AF50[0m
+[0;32mI (1178) cam_hal: Allocating 307216 Byte frame buffer in PSRAM[0m
+[0;32mI (1185) cam_hal: Frame[15]: Offset: 16, Addr: 0x3C4A5F80[0m
+[0;32mI (1191) cam_hal: cam config ok[0m
+[0;32mI (1195) ov2640: Set PLL: clk_2x: 1, clk_div: 7, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1272) esp32-cam Webserver: ESP32 CAM Web Server is up and running
+[0m
+[0;32mI (1273) main_task: Returned from app_main()[0m
+[0;32mI (6286) TCP/IP socket: 5s elapsed .got 23 frames  [0m
+[0;32mI (11684) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (17082) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (22480) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (27877) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (33275) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (38673) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (44071) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (49469) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (54867) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (60264) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (65662) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (71060) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (76458) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (81856) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (87254) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (92651) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (98049) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (103447) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (108846) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (114242) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (119641) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (125038) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (130436) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (135833) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (141232) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (146630) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (152028) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (157425) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (162824) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (168221) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (173619) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (179017) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (184415) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (189813) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (195211) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (200608) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (206006) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (211404) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (216802) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (222200) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (227598) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (232995) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (238393) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (243791) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (249189) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (254587) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (259985) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (265382) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (270780) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (276178) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (281576) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (286974) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (292372) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (297769) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (303167) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (308565) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (313963) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (319361) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (324759) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (330156) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (335554) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (340952) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (346350) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (351748) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (357146) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (362543) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (367941) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (373339) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (378737) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (384135) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (389533) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (394930) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (400328) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (405726) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (411124) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (416522) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (421920) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (427318) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (432715) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (438113) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (443511) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (448909) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (454307) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (459704) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (465103) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (470500) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (475898) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (481296) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (486694) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (492092) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (497490) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (502887) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (508285) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (513683) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (519081) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (524479) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (529877) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (535274) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (540672) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (546070) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (551468) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (556866) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (562264) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (567661) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (573059) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (578457) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (583855) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (589253) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (594651) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (600048) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (605446) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (610844) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (616242) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (621640) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (627038) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (632435) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (637833) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (643231) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (648629) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (654027) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (659425) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (664822) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (670220) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (675618) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (681016) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (686414) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (691812) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (697209) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (702607) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (708005) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (713403) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (718801) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (724199) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (729596) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (734995) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (740392) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (745790) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (751188) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (756586) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (761984) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (767382) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (772779) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (778177) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (783575) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (788973) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (794371) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (799769) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (805166) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (810564) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (815962) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (821360) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (826758) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (832156) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (837553) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (842951) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (848349) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (853747) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (859145) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (864543) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (869940) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (875338) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (880736) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (886134) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (891532) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (896930) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (902327) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (907725) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (913123) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (918521) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (923919) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (929317) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (934714) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (940112) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (945510) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (950908) TCP/IP socket: 5s elapsed .got 27 frames  [0m
+[0;32mI (956306) TCP/IP socket: 5s elapsed .got 27 frames  [0m

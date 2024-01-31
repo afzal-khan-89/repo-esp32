@@ -1,0 +1,130 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2a (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x17e8
+load:0x403c9700,len:0xd90
+load:0x403cc700,len:0x3018
+entry 0x403c9930
+[0;32mI (25) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time 13:58:12[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.1[0m
+[0;32mI (31) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (46) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00020020 vaddr=3c030020 size=0f39ch ( 62364) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=0002f3c4 vaddr=3fc95500 size=00c54h (  3156) load[0m
+[0;32mI (112) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=2ac8ch (175244) map[0m
+[0;32mI (145) esp_image: segment 3: paddr=0005acb4 vaddr=3fc96154 size=03030h ( 12336) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=0005dcec vaddr=40374000 size=11478h ( 70776) load[0m
+[0;32mI (172) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (172) boot: Disabling RNG early entropy source...[0m
+[0;32mI (184) cpu_start: Multicore app[0m
+[0;32mI (184) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (184) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (187) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (193) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (198) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (203) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (208) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (214) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (220) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (225) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (232) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (237) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (242) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (247) esp_psram: Speed: 80MHz[0m
+[0;32mI (251) cpu_start: Pro cpu up.[0m
+[0;32mI (254) cpu_start: Starting app cpu, entry point is 0x403755c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (713) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (722) cpu_start: Pro cpu start user code[0m
+[0;32mI (722) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (722) cpu_start: Application information:[0m
+[0;32mI (725) cpu_start: Project name:     keo-teton[0m
+[0;32mI (730) cpu_start: App version:      ed1cb40-dirty[0m
+[0;32mI (736) cpu_start: Compile time:     Jan 30 2024 11:01:26[0m
+[0;32mI (742) cpu_start: ELF file SHA256:  daadf95a1fcb509f...[0m
+[0;32mI (748) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (753) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (758) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (763) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (768) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (775) heap_init: At 3FC9BBC8 len 0004DB48 (310 KiB): DRAM[0m
+[0;32mI (781) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (788) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (794) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (800) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (808) spi_flash: detected chip: gd[0m
+[0;32mI (812) spi_flash: flash io: qio[0m
+[0;33mW (816) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (829) app_start: Starting scheduler on CPU0[0m
+[0;32mI (834) app_start: Starting scheduler on CPU1[0m
+[0;32mI (834) main_task: Started on CPU0[0m
+[0;32mI (844) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (852) main_task: Calling app_main()[0m
+[0;32mI (856) esp32-cam Webserver: ESP32 CAM Web Server .......
+[0m
+[0;32mI (873) s3 ll_cam: DMA Channel=4[0m
+[0;32mI (873) cam_hal: cam init ok[0m
+[0;32mI (873) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (874) sccb: sccb_i2c_port=1[0m
+[0;32mI (888) camera: Detected camera at address=0x30[0m
+[0;32mI (891) camera: Detected OV2640 camera[0m
+[0;32mI (891) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (972) s3 ll_cam: node_size: 3200, nodes_per_line: 1, lines_per_node: 2[0m
+[0;32mI (972) s3 ll_cam: dma_half_buffer_min:  3200, dma_half_buffer: 16000, lines_per_half_buffer: 10, dma_buffer_size: 32000[0m
+[0;32mI (980) cam_hal: buffer_size: 32000, half_buffer_size: 16000, node_buffer_size: 3200, node_cnt: 10, total_cnt: 60[0m
+[0;32mI (991) cam_hal: Allocating 480000 Byte frame buffer in PSRAM[0m
+[0;32mI (997) cam_hal: Allocating 480000 Byte frame buffer in PSRAM[0m
+[0;32mI (1003) cam_hal: Allocating 480000 Byte frame buffer in PSRAM[0m
+[0;32mI (1010) cam_hal: Allocating 480000 Byte frame buffer in PSRAM[0m
+[0;32mI (1016) cam_hal: Allocating 480000 Byte frame buffer in PSRAM[0m
+[0;32mI (1023) cam_hal: Allocating 480000 Byte frame buffer in PSRAM[0m
+[0;32mI (1029) cam_hal: Allocating 480000 Byte frame buffer in PSRAM[0m
+[0;32mI (1036) cam_hal: Allocating 480000 Byte frame buffer in PSRAM[0m
+[0;32mI (1042) cam_hal: Allocating 480000 Byte frame buffer in PSRAM[0m
+[0;32mI (1049) cam_hal: Allocating 480000 Byte frame buffer in PSRAM[0m
+[0;32mI (1055) cam_hal: Allocating 480000 Byte frame buffer in PSRAM[0m
+[0;32mI (1062) cam_hal: Allocating 480000 Byte frame buffer in PSRAM[0m
+[0;32mI (1068) cam_hal: Allocating 480000 Byte frame buffer in PSRAM[0m
+[0;32mI (1075) cam_hal: Allocating 480000 Byte frame buffer in PSRAM[0m
+[0;32mI (1081) cam_hal: Allocating 480000 Byte frame buffer in PSRAM[0m
+[0;32mI (1088) cam_hal: Allocating 480000 Byte frame buffer in PSRAM[0m
+[0;32mI (1095) cam_hal: cam config ok[0m
+[0;32mI (1098) ov2640: Set PLL: clk_2x: 1, clk_div: 7, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1176) esp32-cam Webserver: ESP32 CAM Web Server is up and running
+[0m
+[0;32mI (1177) main_task: Returned from app_main()[0m
+[0;32mI (6283) TCP/IP socket: 5s elapsed .got 18 frames  [0m
+[0;32mI (11739) TCP/IP socket: 5s elapsed .got 21 frames  [0m
+[0;32mI (17195) TCP/IP socket: 5s elapsed .got 21 frames  [0m
+[0;32mI (22652) TCP/IP socket: 5s elapsed .got 21 frames  [0m
+[0;32mI (28110) TCP/IP socket: 5s elapsed .got 21 frames  [0m
+[0;32mI (33568) TCP/IP socket: 5s elapsed .got 21 frames  [0m
+[0;32mI (39027) TCP/IP socket: 5s elapsed .got 21 frames  [0m
+[0;32mI (44484) TCP/IP socket: 5s elapsed .got 21 frames  [0m
+[0;32mI (49942) TCP/IP socket: 5s elapsed .got 21 frames  [0m
+[0;32mI (55400) TCP/IP socket: 5s elapsed .got 21 frames  [0m
+[0;32mI (60858) TCP/IP socket: 5s elapsed .got 21 frames  [0m
+[0;32mI (66316) TCP/IP socket: 5s elapsed .got 21 frames  [0m
+[0;32mI (71774) TCP/IP socket: 5s elapsed .got 21 frames  [0m
+[0;32mI (77230) TCP/IP socket: 5s elapsed .got 21 frames  [0m
+[0;32mI (82689) TCP/IP socket: 5s elapsed .got 21 frames  [0m
+[0;32mI (88146) TCP/IP socket: 5s elapsed .got 21 frames  [0m
+[0;32mI (93604) TCP/IP socket: 5s elapsed .got 21 frames  [0m
+[0;32mI (99062) TCP/IP socket: 5s elapsed .got 21 frames  [0m
+[0;32mI (104520) TCP/IP socket: 5s elapsed .got 21 frames  [0m
+[0;32mI (109977) TCP/IP socket: 5s elapsed .got 21 frames  [0m
+[0;32mI (115436) TCP/IP socket: 5s elapsed .got 21 frames  [0m
+[0;32mI (120893) 

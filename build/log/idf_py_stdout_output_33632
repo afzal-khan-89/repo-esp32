@@ -1,0 +1,73 @@
+[1/5] cd /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/esp-idf/esptool_py && /home/afzal-khan/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/afzal-khan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x10000 partition --type app /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/partition_table/partition-table.bin /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/keo-teton.bin
+keo-teton.bin binary size 0xd7d10 bytes. Smallest app partition is 0x100000 bytes. 0x282f0 bytes (16%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/bootloader/esp-idf/esptool_py && /home/afzal-khan/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/afzal-khan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x10000 bootloader 0x0 /home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build/bootloader/bootloader.bin
+Bootloader binary size 0x55f0 bytes. 0xaa10 bytes (66%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /home/afzal-khan/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/afzal-khan/esp/esp-idf -D "SERIAL_TOOL=/home/afzal-khan/.espressif/python_env/idf5.0_py3.10_env/bin/python;;/home/afzal-khan/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/afzal-khan/esp/projects/mCamera-esp32/mProject/esp-camera-teton/build -P /home/afzal-khan/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool esp32s3 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x0 bootloader/bootloader.bin 0x20000 keo-teton.bin 0x10000 partition_table/partition-table.bin
+esptool.py v4.6.2
+Serial port /dev/ttyACM0
+Connecting...
+Chip is ESP32-S3 (revision v0.1)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 34:85:18:ac:92:78
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00020000 to 0x000f7fff...
+Flash will be erased from 0x00010000 to 0x00010fff...
+Compressed 22000 bytes to 13890...
+Writing at 0x00000000... (100 %)
+Wrote 22000 bytes (13890 compressed) at 0x00000000 in 0.7 seconds (effective 241.3 kbit/s)...
+Hash of data verified.
+Compressed 883984 bytes to 556729...
+Writing at 0x00020000... (2 %)
+Writing at 0x00029ef4... (5 %)
+Writing at 0x00035318... (8 %)
+Writing at 0x0003cd2b... (11 %)
+Writing at 0x00042988... (14 %)
+Writing at 0x0004d448... (17 %)
+Writing at 0x000534f0... (20 %)
+Writing at 0x00059679... (23 %)
+Writing at 0x0005f0cd... (26 %)
+Writing at 0x000667e4... (29 %)
+Writing at 0x0006c362... (32 %)
+Writing at 0x000724b4... (35 %)
+Writing at 0x00077acf... (38 %)
+Writing at 0x0007d331... (41 %)
+Writing at 0x00082d4d... (44 %)
+Writing at 0x00088780... (47 %)
+Writing at 0x0008e4df... (50 %)
+Writing at 0x00094378... (52 %)
+Writing at 0x00099494... (55 %)
+Writing at 0x0009e47f... (58 %)
+Writing at 0x000a348c... (61 %)
+Writing at 0x000a8883... (64 %)
+Writing at 0x000adb04... (67 %)
+Writing at 0x000b2efa... (70 %)
+Writing at 0x000b952d... (73 %)
+Writing at 0x000becb2... (76 %)
+Writing at 0x000c47fe... (79 %)
+Writing at 0x000ca78f... (82 %)
+Writing at 0x000cfe28... (85 %)
+Writing at 0x000d6305... (88 %)
+Writing at 0x000e0922... (91 %)
+Writing at 0x000e6943... (94 %)
+Writing at 0x000ec682... (97 %)
+Writing at 0x000f24b5... (100 %)
+Wrote 883984 bytes (556729 compressed) at 0x00020000 in 12.5 seconds (effective 564.1 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 104...
+Writing at 0x00010000... (100 %)
+Wrote 3072 bytes (104 compressed) at 0x00010000 in 0.1 seconds (effective 357.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

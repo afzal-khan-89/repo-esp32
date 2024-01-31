@@ -1,0 +1,230 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x17e8
+load:0x403c9700,len:0xd90
+load:0x403cc700,len:0x3018
+entry 0x403c9930
+[0;32mI (25) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time 13:58:12[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.1[0m
+[0;32mI (31) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (46) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00020020 vaddr=3c0a0020 size=268f0h (157936) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=00046918 vaddr=3fc9a400 size=057b8h ( 22456) load[0m
+[0;32mI (130) esp_image: segment 2: paddr=0004c0d8 vaddr=40374000 size=03f40h ( 16192) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=95fd4h (614356) map[0m
+[0;32mI (233) esp_image: segment 4: paddr=000e5ffc vaddr=40377f40 size=1246ch ( 74860) load[0m
+[0;32mI (257) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (257) boot: Disabling RNG early entropy source...[0m
+[0;32mI (269) cpu_start: Multicore app[0m
+[0;32mI (269) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (269) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (272) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (278) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (283) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (288) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (293) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (299) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (305) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (311) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (317) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (323) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (327) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (332) esp_psram: Speed: 80MHz[0m
+[0;32mI (336) cpu_start: Pro cpu up.[0m
+[0;32mI (340) cpu_start: Starting app cpu, entry point is 0x403756c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (798) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (807) cpu_start: Pro cpu start user code[0m
+[0;32mI (807) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (807) cpu_start: Application information:[0m
+[0;32mI (810) cpu_start: Project name:     keo-teton[0m
+[0;32mI (816) cpu_start: App version:      ed1cb40-dirty[0m
+[0;32mI (821) cpu_start: Compile time:     Jan 26 2024 12:01:45[0m
+[0;32mI (827) cpu_start: ELF file SHA256:  04e791f466c38c3e...[0m
+[0;32mI (833) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (838) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (843) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (848) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (853) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (860) heap_init: At 3FCA5F08 len 00043808 (270 KiB): DRAM[0m
+[0;32mI (866) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (873) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (879) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (885) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (893) spi_flash: detected chip: gd[0m
+[0;32mI (897) spi_flash: flash io: qio[0m
+[0;33mW (901) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (915) app_start: Starting scheduler on CPU0[0m
+[0;32mI (919) app_start: Starting scheduler on CPU1[0m
+[0;32mI (919) main_task: Started on CPU0[0m
+[0;32mI (929) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (937) main_task: Calling app_main()[0m
+[0;32mI (941) esp32-cam Webserver: ESP32 CAM Web Server .......
+[0m
+[0;32mI (959) pp: pp rom version: e7ae62f[0m
+[0;32mI (959) net80211: net80211 rom version: e7ae62f[0m
+I (961) wifi:wifi driver task: 3fcb7ff8, prio:23, stack:6656, core=0
+[0;32mI (964) system_api: Base MAC address is not set[0m
+[0;32mI (969) system_api: read default base MAC address from EFUSE[0m
+I (979) wifi:wifi firmware version: e2d0ad8
+I (980) wifi:wifi certification version: v7.0
+I (983) wifi:config NVS flash: enabled
+I (986) wifi:config nano formating: disabled
+I (991) wifi:Init data frame dynamic rx buffer num: 32
+I (995) wifi:Init management frame dynamic rx buffer num: 32
+I (1001) wifi:Init management short buffer num: 32
+I (1005) wifi:Init static tx buffer num: 16
+I (1009) wifi:Init tx cache buffer num: 32
+I (1013) wifi:Init static tx FG buffer num: 2
+I (1017) wifi:Init static rx buffer size: 1600
+I (1021) wifi:Init static rx buffer num: 10
+I (1025) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1029) wifi_init: rx ba win: 6[0m
+[0;32mI (1033) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1037) wifi_init: udp mbox: 6[0m
+[0;32mI (1041) wifi_init: tcp mbox: 6[0m
+[0;32mI (1045) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1049) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1053) wifi_init: tcp mss: 1440[0m
+[0;32mI (1057) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1062) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1070) phy_init: phy_version 610,2bff4c8,Jul 27 2023,20:22:14[0m
+I (1108) wifi:mode : softAP (34:85:18:ac:8b:a5)
+I (1110) wifi:Total power save buffer number: 8
+I (1111) wifi:Init max length of beacon: 752/752
+I (1111) wifi:Init max length of beacon: 752/752
+[0;32mI (1115) s3 ll_cam: DMA Channel=4[0m
+[0;32mI (1118) cam_hal: cam init ok[0m
+[0;32mI (1122) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (1126) sccb: sccb_i2c_port=1[0m
+[0;32mI (1140) camera: Detected camera at address=0x30[0m
+[0;32mI (1143) camera: Detected OV2640 camera[0m
+[0;32mI (1143) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1224) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 4[0m
+[0;32mI (1224) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 16, dma_buffer_size: 30720[0m
+[0;32mI (1232) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 20[0m
+[0;32mI (1243) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1250) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1256) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1263) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1269) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1276) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1282) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1289) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1295) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1302) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1308) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1315) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1321) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1328) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1334) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1341) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1347) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1354) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1360) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1367) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1373) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1380) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1386) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1393) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1400) cam_hal: cam config ok[0m
+[0;32mI (1403) ov2640: Set PLL: clk_2x: 1, clk_div: 7, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1482) esp32-cam Webserver: web server initialized .... [0m
+[0;32mI (1483) TCP/IP socket: Socket created[0m
+[0;32mI (1483) TCP/IP socket: Socket binded[0m
+[0;32mI (1486) TCP/IP socket: Socket listening ...[0m
+[0;32mI (1502) esp32-cam Webserver: ESP32 CAM Web Server is up and running
+[0m
+[0;32mI (1502) main_task: Returned from app_main()[0m
+I (12565) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1
+I (12565) wifi:station: 28:d0:ea:5f:dc:3c join, AID=1, bgn, 40U
+[0;32mI (12603) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.254.2[0m
+[0;32mI (12603) wifi: SoftAP client connected with IP: 192.168.254.2.[0m
+I (12791) wifi:<ba-add>idx:2 (ifx:1, 28:d0:ea:5f:dc:3c), tid:0, ssn:29, winSize:64
+[0;32mI (26719) TCP/IP socket: Socket accepted ... [0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (31851) TCP/IP socket: 5s elapsed 
+ [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (37138) TCP/IP socket: 5s elapsed 
+ [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (42421) TCP/IP socket: 5s elapsed 
+ [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (47722) TCP/IP socket: 5s elapsed 
+ [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (53006) TCP/IP socket: 5s elapsed 
+ [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (58304) TCP/IP socket: 5s elapsed 
+ [0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (63599) TCP/IP socket: 5s elapsed 
+ [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (68899) TCP/IP socket: 5s elapsed 
+ [0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (74188) TCP/IP socket: 5s elapsed 
+ [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (79482) TCP/IP socket: 5s elapsed 
+ [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (84690) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (90075) TCP/IP socket: 5s elapsed 
+ [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (95373) TCP/IP socket: 5s elapsed 
+ [0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (100670) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (105971) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (111260) TCP/IP socket: 5s elapsed 
+ [0m
+[0;31mE (112544) TCP/IP socket: Error occurred during sending: errno 104[0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (118289) TCP/IP socket: Socket accepted ... [0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (123293) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (128582) TCP/IP socket: 5s elapsed 
+ [0m
+[0;32mI (133874) TCP/IP socket: 5s elapsed 
+ [0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (139171) TCP/IP socket: 5s elapsed 
+ [0m
+[0;31mE (140771) TCP/IP socket: Error occurred during sending: errno 104[0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (144290) TCP/IP socket: Socket accepted ... [0m
+[0;33mW (155233) TCP/IP socket: Connection closed[0m
+[0;32mI (158379) TCP/IP socket: Socket accepted ... [0m
